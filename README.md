@@ -1,32 +1,31 @@
 ## My Journal
 
 ### Content
-<ol>
-  <li>
-  <li>Overview
-  <li>Documentation
-  <li>Creator
-  <li>Copyright and license
-  <li>Object Oriented Analysis
-  <li>Quality Factors
-  <li>Data Structures and Algorithms
-  <li>Big O'notations
-  <li>UML Notations
-  <li>Process and Metrics
-  <li>Design Patterns
-  <li>Operations System Basics
-  <li>Computer Organization Basic
-  <li>Network Basic
-  <li>Requirement Analysis
-  <li>Testing
-  <li>Dependency Management
-  <li>Dependency Injection
-  <li>Continuous Integration
-  <li>Version Control
-  <li>Internationalization (il8n)
-  <li>Architectural Patterns
-  <li>Writing Clean Code
-  <li>Other...
+<ol>  
+  <li>Overview</li>
+  <li>Documentation</li>
+  <li>Creator</li>
+  <li>Copyright and license</li>
+  <li>Object Oriented Analysis</li>
+  <li>Quality Factors</li>
+  <li>Data Structures and Algorithms</li>
+  <li>Big O'notations</li>
+  <li>UML Notations</li>
+  <li>Process and Metrics</li>
+  <li>Design Patterns</li>
+  <li>Operations System Basics</li>
+  <li>Computer Organization Basic</li>
+  <li>Network Basic</li>
+  <li>Requirement Analysis</li>
+  <li>Testing</li>
+  <li>Dependency Management</li>
+  <li>Dependency Injection</li>
+  <li>Continuous Integration</li>
+  <li>Version Control</li>
+  <li>Internationalization (il8n)</li>
+  <li>Architectural Patterns</li>
+  <li>Writing Clean Code</li>
+  <li>Other...</li>
 </ol>
 
 ### Blog
