@@ -30,5 +30,5 @@
 For more details see [Blog](http://keeyanajones.github.io/website/).
 
 ### Contact
-Having trouble with Development? Check out my [Journal](http://keeyanajones.github.io/Journal/) or [contact met](https://github.com/keeyanajones) and I’ll help.
+Having trouble with Development? Check out my [Journal](http://keeyanajones.github.io/Journal/) or [contact me](https://github.com/keeyanajones) and I’ll help.
 
