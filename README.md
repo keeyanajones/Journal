@@ -26,8 +26,8 @@
   <li>Internationalization (il8n)</li>
   <li>Architectural Patterns</li>
   <li>Writing Clean Code</li>
-  <li>Color Systems :new:</li>
-  <li>Icons :new:</li>
+  <li>[Color Systems](https://keeyanajones.github.io/Journal/color.html) :new:</li>
+  <li>[Icons](https://keeyanajones.github.io/Journal/icon.html) :new:</li>
   <li>Other...</li>  
 </ol>
 
