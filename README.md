@@ -2,38 +2,36 @@
 [https://keeyanajones.github.io/Journal/](https://keeyanajones.github.io/Journal/)
 
 ### Content
-<ol>  
-  <li>Overview</li>
-  <li>Documentation</li>
-  <li>Creator</li>
-  <li>Copyright and license</li>
-  <li>Object Oriented Analysis</li>
-  <li>Quality Factors</li>
-  <li>Data Structures and Algorithms</li>
-  <li>Big O'notations</li>
-  <li>UML Notations</li>
-  <li>Process and Metrics</li>
-  <li>Design Patterns</li>
-  <li>Operations System Basics</li>
-  <li>Computer Organization Basic</li>
-  <li>Network Basic</li>
-  <li>Requirement Analysis</li>
-  <li>Testing</li>
-  <li>Dependency Management</li>
-  <li>Dependency Injection</li>
-  <li>Continuous Integration</li>
-  <li>Version Control</li>
-  <li>Internationalization (il8n)</li>
-  <li>Architectural Patterns</li>
-  <li>Writing Clean Code</li>
-  <li>[Color Systems](https://keeyanajones.github.io/Journal/color.html) :new:</li>
-  <li>[Icons](https://keeyanajones.github.io/Journal/icon.html) :new:</li>
-  <li>Other...</li>  
-</ol>
+  * Overview
+  * Documentation
+  * Creator
+  * Copyright and license
+  * Object Oriented Analysis
+  * Quality Factors
+  * Data Structures and Algorithms
+  * Big O'notations
+  * UML Notations
+  * Process and Metrics
+  * Design Patterns
+  * Operations System Basics
+  * Computer Organization Basic
+  * Network Basic
+  * Requirement Analysis
+  * Testing
+  * Dependency Management
+  * Dependency Injection
+  * Continuous Integration
+  * Version Control
+  * Internationalization (il8n)
+  * Architectural Patterns
+  * Writing Clean Code
+  * [Color Systems](https://keeyanajones.github.io/Journal/color.html) :new:
+  * [Icons](https://keeyanajones.github.io/Journal/icon.html) :new:
+  * Other...
+
 
 ### Blog
 For more details see [Blog](http://keeyanajones.github.io/website/).
 
 ### Contact
 Having trouble with Development? Check out my [Journal](http://keeyanajones.github.io/Journal/) or [contact me](https://github.com/keeyanajones) and I’ll help.
-
