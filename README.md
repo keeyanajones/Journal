@@ -1,4 +1,5 @@
 ## My Journal
+[https://keeyanajones.github.io/Journal/](https://keeyanajones.github.io/Journal/)
 
 ### Content
 <ol>  
@@ -25,7 +26,9 @@
   <li>Internationalization (il8n)</li>
   <li>Architectural Patterns</li>
   <li>Writing Clean Code</li>
-  <li>Other...</li>
+  <li>Color Systems :new:</li>
+  <li>Icons :new:</li>
+  <li>Other...</li>  
 </ol>
 
 ### Blog
