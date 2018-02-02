@@ -2,14 +2,14 @@
 [https://keeyanajones.github.io/Journal/](https://keeyanajones.github.io/Journal/)
 
 ### Content
-  * Overview
-  * Documentation
-  * Creator
-  * Copyright and license
+  * [Overview](https://keeyanajones.github.io/Journal/#overview) :new:
+  * [Documentation](https://keeyanajones.github.io/Journal/#documentation) :new:
+  * [Creator](https://keeyanajones.github.io/Journal/#creator) :new:
+  * [Copyright and license](https://keeyanajones.github.io/Journal/#creator) :new:
   * Object Oriented Analysis
   * Quality Factors
-  * Data Structures and Algorithms
-  * Big O'notations
+  * [Data Structures and Algorithms](https://keeyanajones.github.io/Journal/datastructures.html) :new:
+  * [Big O'notations](https://keeyanajones.github.io/Journal/bigo.html) :new:
   * UML Notations
   * Process and Metrics
   * Design Patterns
