@@ -884,9 +884,9 @@ import java.util.*;
 class HashMaps{  
  public static void main(String args[]){  
   HashMap<Integer, String> hm = new HashMap<Integer, String>();  
-   hm.put(100,"Amit");  
-   hm.put(101,"Vijay");  
-   hm.put(102,"Rahul");  
+   hm.put(100,"Apples");  
+   hm.put(101,"Oranges");  
+   hm.put(102,"Bananas");  
   
   for(Map.Entry m:hm.entrySet()){  
    System.out.println(m.getKey()+" "+m.getValue());  
@@ -906,10 +906,10 @@ import java.util.*;
 class TreeMaps{  
  public static void main(String args[]){  
   TreeMap<Integer, String> hm = new TreeMap<Integer, String>();  
-   hm.put(100,"Amit");  
-   hm.put(102,"Ravi");  
-   hm.put(101,"Vijay");  
-   hm.put(103,"Rahul");  
+   hm.put(100,"Apple");  
+   hm.put(102,"Orange");  
+   hm.put(101,"Banana");  
+   hm.put(103,"Cherry");  
   
   for(Map.Entry m:hm.entrySet()){  
    System.out.println(m.getKey()+" "+m.getValue());  
@@ -929,9 +929,9 @@ import java.util.*;
 class LinkedHashMaps{  
  public static void main(String args[]){     
   LinkedHashMap<Integer,String> hm = new LinkedHashMap<Integer,String>();    
-   hm.put(100,"Amit");  
-   hm.put(101,"Vijay");  
-   hm.put(102,"Rahul");  
+   hm.put(100,"Bread");  
+   hm.put(101,"Milk");  
+   hm.put(102,"Sugar");  
   
   for(Map.Entry m:hm.entrySet()){  
    System.out.println(m.getKey()+" "+m.getValue());  
@@ -969,16 +969,16 @@ class Lists{
  public static void main(String args[]){    
      
   List<String> al = new ArrayList<String>();//creating arraylist    
-   al.add("Ravi");//adding object in arraylist    
-   al.add("Vijay");    
-   al.add("Ravi");    
-   al.add("Ajay");    
+   al.add("Tuna");//adding object in arraylist    
+   al.add("Salmon");    
+   al.add("Shrimp");    
+   al.add("Cod");    
     
   List<String> al2 = new LinkedList<String>();//creating linkedlist    
    al2.add("James");//adding object in linkedlist    
-   al2.add("Serena");    
-   al2.add("Swati");    
-   al2.add("Junaid");    
+   al2.add("Mary");    
+   al2.add("Joe");    
+   al2.add("Kelly");    
     
   System.out.println("arraylist: "+al);  
   System.out.println("linkedlist: "+al2);  
@@ -1010,10 +1010,10 @@ import java.util.*;
 class ArrayLists{  
  public static void main(String args[]){  
   ArrayList<String> list = new ArrayList<String>();//Creating arraylist  
-   list.add("Ravi");//Adding object in arraylist  
-   list.add("Vijay");  
-   list.add("Ravi");  
-   list.add("Ajay");  
+   list.add("Nick");//Adding object in arraylist  
+   list.add("Eric");  
+   list.add("Mike");  
+   list.add("Rodney");  
   //Traversing list through Iterator  
   Iterator itr=list.iterator();  
   while(itr.hasNext()){  
@@ -1044,10 +1044,10 @@ import java.util.*;
 public class LinkedLists{  
  public static void main(String args[]){    
   LinkedList<String> al = new LinkedList<String>();  
-   al.add("Ravi");  
-   al.add("Vijay");  
-   al.add("Ravi");  
-   al.add("Ajay");  
+   al.add("Call of Duty");  
+   al.add("BattleField");  
+   al.add("Counter Strike");  
+   al.add("Doom");  
   
   Iterator<String> itr=al.iterator();  
   while(itr.hasNext()){  
@@ -1199,10 +1199,10 @@ class HashSets {
  public static void main(String args[]){  
   //Creating HashSet and adding elements  
   HashSet<String> hset = new HashSet<String>();  
-   hset.add("Ravi");  
-   hset.add("Vijay");  
-   hset.add("Ravi");  
-   hset.add("Ajay");  
+   hset.add("Minecraft");  
+   hset.add("Monster Hunter");  
+   hset.add("Far Cry");  
+   hset.add("Mega Man");  
   
    //Traversing elements  
    Iterator<String> itr = hset.iterator();  
@@ -1235,10 +1235,10 @@ class TreeSets {
  public static void main(String args[]){  
   //Creating and adding elements  
   TreeSet<String> tset = new TreeSet<String>();  
-   tset.add("Ravi");  
-   tset.add("Vijay");  
-   tset.add("Ravi");  
-   tset.add("Ajay");  
+   tset.add("Atari");  
+   tset.add("PlayStation");  
+   tset.add("Xbox");  
+   tset.add("Nintendo");  
  
   //Traversing elements  
   Iterator<String> itr = tset.iterator();  
@@ -1271,10 +1271,10 @@ class LinkedHashSets {
  public static void main(String args[]){  
   //Creating and adding elements   
   LinkedHashSet<String> lhset = new LinkedHashSet<String>();  
-   lhset.add("Ravi");  
-   lhset.add("Vijay");  
-   lhset.add("Ravi");  
-   lhset.add("Ajay");  
+   lhset.add("Cards");  
+   lhset.add("Chess");  
+   lhset.add("Checkers");  
+   lhset.add("Uno");  
 
   //Traversing elements     
   Iterator<String> itr = lhset.iterator();  
