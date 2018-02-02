@@ -1,0 +1,1932 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>My Journal</title>
+    <link rel="stylesheet"  
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"          
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+          crossorigin="anonymous">    
+       
+    <!-- Latest compiled and minified CSS --> 
+    <link rel="stylesheet" 
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="assets/stylesheets/pygment_trac.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/gif">
+    <link rel="shortcut icon" href="assets/images/favicon.png">    
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+      <div class="wrapper">                       
+      <header>
+        <h2><span class="fa fa-book fa-3x" aria-hidden="true"></span>
+            <span class="fa fa-pencil " aria-hidden="true"></span><br/>
+            Journal </h2>
+        <p class="view"><sup>A Journal for GitHub Pages</sup><br/>        
+        <a href="http://github.com/keeyanajones/Journal">
+                <span class="fa fa-github" aria-hidden="true"></span> 
+                View the Project on GitHub 
+                <small>keeyanajones/Journal</small></a><br/>                                        
+                <a href="index.html">
+                         <span class="fa fa-bookmark " aria-hidden="true"></span>
+                        Overview</a><br/>                                            
+                <strong> &gt; Data Structures and Algorithms</strong><br/>
+                          
+                 <a href="#primitive">&UnderBar;&UnderBar;&UnderBar;
+                 <span class="fa fa-bookmark-o " aria-hidden="true"></span>
+                         1 Primitive Data Type</a><br/>
+                 <a href="#composite">&UnderBar;&UnderBar;&UnderBar; 
+                 <span class="fa fa-bookmark-o " aria-hidden="true"></span>
+                         2 Composite Data Type</a><br/>          
+                 <a href="#abstract">&UnderBar;&UnderBar;&UnderBar;
+                 <span class="fa fa-bookmark-o " aria-hidden="true"></span>
+                         3 Abstract Data Type</a><br/>                               
+                 <a href="#sorting">&UnderBar;&UnderBar;&UnderBar;
+                         <span class="fa fa-bookmark " aria-hidden="true"></span>
+                         4 Sorting</a><br/>
+                 <a href="#shuffling">&UnderBar;&UnderBar;&UnderBar;                
+                         <span class="fa fa-bookmark " aria-hidden="true"></span>
+                         5 Shuffling</a><br/>
+                 <a href="#manipulation">&UnderBar;&UnderBar;&UnderBar;                
+                         <span class="fa fa-bookmark " aria-hidden="true"></span>
+                         6 Manipulation</a><br/>                                                
+                 <a href="#search">&UnderBar;&UnderBar;&UnderBar;                
+                         <span class="fa fa-bookmark " aria-hidden="true"></span>
+                         7 Searching</a><br/>                        
+                 <a href="#graphs">&UnderBar;&UnderBar;&UnderBar;                
+                         <span class="fa fa-bookmark " aria-hidden="true"></span>
+                         8 Graphs</a><br/>                        
+                 <a href="#strings">&UnderBar;&UnderBar;&UnderBar;                
+                         <span class="fa fa-bookmark " aria-hidden="true"></span>
+                         9 Strings</a><br/>                        
+                 <a href="#context">&UnderBar;&UnderBar;&UnderBar;                
+                         <span class="fa fa-bookmark " aria-hidden="true"></span>
+                         10 Context</a>
+                </p>
+                                                
+        <ul>    
+          <li>
+              <a href="https://github.com/keeyanajones/Journal/archive/master.zip">
+                  <span class="fa fa-file-archive-o" aria-hidden="true"></span><br/>
+                  Download <br/> ZIP</a></li>                  
+          <li>
+              <a href="https://github.com/keeyanajones/Journal/master">
+                  <span class="fa fa-clone" aria-hidden="true"></span><br/>
+                  Clone <br/> Desktop</a></li>                  
+          <li>
+              <a href="http://github.com/keeyanajones/Journal">
+                  <span class="fa fa-code-fork" aria-hidden="true"></span><br/>
+                  Fork On <br/> GitHub</a></li>
+        </ul>
+                  
+          </div>
+         </div>
+        </div>  
+      </header>
+                  
+      <section>
+      <span class="fa fa-bookmark " aria-hidden="true"></span> 
+           Data Structures and Algorithms
+          <ol>
+             <a href="#primitive">
+             <li><span class="fa fa-bookmark-o " aria-hidden="true"></span>
+                    Primitive Data Type</a></li>
+             <ul>
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#boolean">1.1 JavaBoolean</a></li>
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#character">1.2 JavaCharacter</a></li>
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#floating">1.3 JavaFloatPoint</a></li>
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#fixed">1.4 JavaFixedPoint</a></li>
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#double">1.5 JavaDouble</a></li>
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#integer">1.6 Javainteger, JavaShort, 
+                        JavaLong, and JavaByte</a></li>
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#string">1.7 StringToIntJava</a></li>
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#reference">1.8 JavaReference 
+                        <sup>(c/c++ pointer)</sup></a></li>
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#enumerated">1.9 JavaEnumeration</a></li>                        
+             </ul>
+             
+             <li><a href="#composite">
+             <span class="fa fa-bookmark-o " aria-hidden="true"></span>
+                    Composite Data Type</a>
+             <ul>
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#array">2.1 Array</a></li> 
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#record">2.2 Record, Tuple, and Structure</a></li> 
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#union">2.3 Union</a></li> 
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#tagged">2.4 Tagged Union</a></li> 
+             </ul>
+                 
+              <li><a href="#abstract">
+             <span class="fa fa-bookmark-o " aria-hidden="true"></span>
+                    Abstract Data Type</a>                       
+            <ul>    
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#container">3.1 Container</a></li> 
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#associative">3.2 Associative Array</a></li>
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#list">3.3 list</a></li>                 
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#multimap">3.4 Multimap</a></li> 
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#set">3.5 Set</a></li> 
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#multiset">3.6 Multiset / Bag</a></li> 
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#stack">3.7 Stack</a></li> 
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#queue">3.8 Queue</a></li> 
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#tree">3.9 Tree</a></li> 
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#graph">3.10 Graph</a></li> 
+                <li><span class="fa fa-file-code-o " aria-hidden="true"></span> 
+                    <a href="#class">3.11 Class</a></li> 
+             </ul>
+             </li>
+          </ol>
+
+<hr/>
+                
+        <p>There are numerous types of data structures, generally built upon 
+            simpler primitive data types</p>
+        
+        <a name="type" id="type"></a>            
+        <h4>Type</h4>
+        <p>Data type is a way to classify various types of data such as 
+           integer, string, etc. which determines the values that can be used 
+           with the corresponding type of data, the type of operations that can 
+           be performed on the corresponding type of data. There are two data 
+           types:</p>
+
+        <a name="primitive" id="primitive"></a>                               
+        <h5>1.) Primitive Data Type </h5>
+        <p>Those data types for which a language has built-in support are known 
+           as Built-in Data types. For example, most of the languages provide 
+           the following built-in data types.</p>               
+        
+        <a name="boolean" id="boolean"></a>
+        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+          <div class="card-header"><strong>1.1 Boolean, logical values true and false</strong></div>
+          <div class="card-body">
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>
+<pre>
+<code>  
+boolean result = true;
+boolean b1 = true;
+boolean b2 = false;
+boolean b3 = (10 > 2);        
+</code>    
+</pre>
+          </p>
+          </div>
+        </div>                
+
+        <a name="character" id="character"></a>
+        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+          <div class="card-header"><strong>1.2 Character (character, char)</strong></div>
+          <div class="card-body">
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>                            
+<pre>
+<code>  
+char capitalC = 'C';
+char ch1 = 'a';
+char ch2 = 65; /* ASCII code of 'A'*/
+</code>    
+</pre>                
+          </p>
+          </div>
+          </div>
+
+        <a name="floating" id="floating"></a>
+        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+          <div class="card-header"><strong>1.3 Floating-point, single-precision real 
+                                       number values (float, double, real, 
+                                       double precision)</strong></div>
+          <div class="card-body">
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>                    
+<pre>
+<code>  
+float f = 10.4f;
+float f1  = 123.4f;
+float pi =  3.14_15F;
+</code>    
+</pre>
+          </p>
+          </div>
+        </div>                
+
+        <a name="fixed" id="fixed"></a>
+        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+          <div class="card-header"><strong>1.4 Fixed-point number (fixed) with a variety
+                                       of precisions and a programmer-selected 
+                                       scale</strong></div>
+          <div class="card-body">
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>                        
+<pre>
+<code>  
+BigDecimal a = new BigDecimal("31234"); 
+</code>    
+</pre>
+          </p>
+          </div>
+        </div>                
+
+        <a name="double" id="double"></a>
+        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+          <div class="card-header"><strong>1.5 Double, a wider floating-point size</strong></div>
+          <div class="card-body">
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>                           
+<pre>
+<code>  
+double d = 1232.44;
+double d1 = 123.4;
+// same value as d1, but in scientific notation
+double d2 = 1.234e2;
+</code>    
+</pre>
+          </p>
+          </div>
+        </div>                
+
+        <a name="integer" id="integer"></a>
+        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+          <div class="card-header"><strong>1.6 Integer (int, short, long, byte) with a 
+                                   variety of precisions</strong></div>
+          <div class="card-body">
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>                
+<pre>
+<code>  
+byte b1 = 100;
+byte b2 = 20;
+
+int i = 0;
+int j = 100;
+// The number 26, in decimal
+int decVal = 26;
+//  The number 26, in hexadecimal
+int hexVal = 0x1a;
+// The number 26, in binary
+int binVal = 0b11010;
+
+short s1 = 50;
+short s2 = 42;
+
+long timeInMilliseconds = new Date().getTime();
+long creditCardNumber = 1234_5678_9012_3456L;
+</code>    
+</pre>      
+          </p>
+          </div>
+        </div>                
+
+        <a name="string" id="string"></a>
+        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+          <div class="card-header"><strong>1.7 String, a sequence of characters</strong></div>
+          <div class="card-body">
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>                
+<pre>
+<code>                
+int i = 11;               
+float pi =  3.14_15F;
+String fs;
+String str = Integer.toString(i);
+String greeting = "Hello world!"; 
+int len = greeting.length();
+
+  System.out.println("int to String : " + i);
+
+  System.out.println("Welcome! " + greeting + 
+                   "My Name is Keeyana");
+  System.out.printf("The value of the float " +
+                  "variable is %f, while " +
+                  "the value of the " + 
+                  "integer variable is %d, " +
+                  "and the string is %s", 
+                  pi, i, str); 
+    
+  fs = String.format("The value of the float " +
+                   "variable is %f, while " +
+                   "the value of the " + 
+                   "integer variable is %d, " +
+                   " and the string is %s",
+                   pi, i, str);
+    
+  System.out.println(fs);
+ }
+}
+</code>
+</pre>
+            </p>
+          </div>
+        </div>       
+        
+        <a name="reference" id="reference"></a>
+        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+          <div class="card-header"><strong>1.8 Reference (Pointer)</strong></div>
+          <div class="card-body">
+            <p class="card-title">C/C++ Pointers vs Java References</p>
+
+            <p>Java doesn’t have pointers; Java has references.</p>
+            <ul>
+              <li>Reference: A reference is a variable that refers to something else 
+                  and can be used as an alias for that something else.</li>
+              <li>Pointer: A pointer is a variable that stores a memory address, for 
+                  the purpose of acting as an alias to what is stored at that 
+                  address.</li>
+            </ul>
+
+            <p>So, a pointer is a reference, but a reference is not necessarily a pointer. 
+               Pointers are a particular implementation of the concept of a reference, and 
+               the term tends to be used only for languages that give you direct access to 
+               the memory address.</p>
+
+            <p>See <a href="#context">Context</a> for Programming Languages</p>    
+
+            <p>So overall Java doesn’t have pointers (in the C/C++ sense) because it doesn’t 
+               need them for general purpose OOP programming. Furthermore, adding pointers 
+               to Java would undermine security and robustness and make the language more 
+               complex.</p>  
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          C/C++</span>                        
+              
+<pre>
+<code>  
+// A simple CPP program to illustrate 
+// the concept of pointers and 
+// their manipulations in C/C++
+#include <iostream>
+using namespace std;
+ 
+int main() {
+   int number = 88;    
+   int * pNumber;  
+   
+   // assign the address of the variable number 
+   // to pointer pNumber
+   pNumber = &number;  
+ 
+   // Print content of pNumber 
+   cout << pNumber << endl;  
+   
+   // Print address of number
+   cout << &number << endl;  
+   
+   // Print value pointed to by pNumber
+   cout << *pNumber << endl; 
+   
+   // Print value of number
+   cout << number << endl;   
+ 
+   // Re-assign value pointed to by pNumber
+   *pNumber = 99;            
+   cout << pNumber << endl;  
+   cout << &number << endl;  
+   cout << *pNumber << endl; 
+   cout << number << endl;  
+                             
+   cout << &pNumber << endl; 
+}
+</code>    
+</pre>
+              <span class="badge badge-pill badge-light">          
+          JAVA</span><br/><br/>
+            
+<pre>
+<code>
+// A simple Java program 
+// to illustrate the concept of 
+// references 
+class Reference {
+  double length;
+  double breadth;
+}
+
+public class JavaReference {
+     
+  public static void main(String args[]) {    
+  // r1 is reference variable which contain 
+  // the address of Actual Reference Object.
+  Reference r1 = new Reference();
+      
+  // r2 is another reference variable
+  // r2 is initialized with r1 means:
+  // r1 and r2 both are referring same object 
+  // thus it does not create duplicate object 
+  // nor does it allocate extra memory.
+  Reference r2 = r1;
+    
+  r1.length = 10;
+  r2.length = 20;
+    
+  System.out.println("Value of R1's Length : " 
+                     + r1.length);
+  System.out.println("Value of R2's Length : " 
+                     + r2.length);
+
+  }
+}    
+</code>
+</pre>    
+            </p>
+          </div>
+        </div>                
+
+        <a name="enumerated" id="enumerated"></a>
+        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+          <div class="card-header"><strong>1.9 Enumerated Type</strong></div>
+          <div class="card-body">            
+            <p class="card-title">Enumerations serve the purpose of 
+               representing a group of named constants in a programming 
+               language. For example the 4 suits in a deck of playing 
+               cards may be 4 enumerators named Club, Diamond, Heart, 
+               and Spade, belonging to an enumerated type named Suit. 
+               Other examples include natural enumerated types (like the 
+               planets, days of the week, colors, directions, etc.).</p>
+               
+            <p>Enums are used when we know all possible values at compile 
+               time, such as choices on a menu, rounding modes, command line 
+               flags, etc. It is not necessary that the set of constants in 
+               an enum type stay fixed for all time.</p>
+            
+            <p>See <a href="context.html">Context</a> for Programming Languages</p>    
+            
+            <sup>In Java, enums are represented using enum data type. Java 
+                enums are more powerful than C/C++ enums . In Java, we can 
+                also add variables, methods and constructors to it. The main 
+                objective of enum is to define our own data types(Enumerated 
+                Data Types).<br/><br/>
+            
+                NOTE: Enum declaration can be done outside a Class or inside a 
+                Class but not inside a Method.</sup>  
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>                           
+<pre>
+<code>  
+// A simple enum example where enum is declared
+// outside any class (Note enum keyword instead of
+// class keyword)
+
+enum Color {
+    RED, ORANGE, YELLOW,
+    GREEN, BLUE, PURPLE,
+    WHITE, BLACK;
+}
+ 
+public class Test {
+ // Driver method
+ public static void main(String[] args) {
+   Color c1 = Color.RED;
+     System.out.println(c1);
+ }
+}
+</code>    
+</pre>
+          </p>
+          </div>
+        </div>                
+
+        <a name="composite" id="composite"></a>    
+        <h5>2.) Composite Data Type</h5>
+        <p>Those data types which are implementation independent as they can be 
+           implemented in one or the other way are known as derived data types. 
+           These data types are normally built by the combination of primary or 
+           built-in data types and associated operations on them.</p>
+
+<a name="array" id="array"></a>         
+<div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+  <div class="card-header"><strong>2.1 Array</strong></div>
+  <div class="card-body">
+    <p class="card-title">An array is a number of elements in a specific order, typically 
+                all of the same type. Elements are accessed using an integer 
+                index to specify which element is required (Depending on the 
+                language, individual elements may either all be forced to be 
+                the same type, or may be of almost any type). Typical 
+                implementations allocate contiguous memory words for the 
+                elements of arrays (but this is not always a necessity). Arrays 
+                may be associative, fixed-length or resizable. </p>     
+    <p class="card-title">Array</p>
+                <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>
+<pre>
+<code>
+public class Array {
+  public static void main(String args[]){      
+    // declaration and instantiation
+    int a[] = new int[5];   
+      a[0] = 10; // initialization  
+      a[1] = 20;  
+      a[2] = 70;  
+      a[3] = 40;  
+      a[4] = 50;  
+  
+    // printing array  
+    // length is the property of array  
+    for(int i = 0; i < a.length; i++) 
+      System.out.println(a[i]);  
+  }
+}
+   </code>
+</pre>            
+    
+    </p>
+  </div>
+</div>
+
+<a name="record" id="record"></a>        
+<div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+  <div class="card-header"><strong>2.2 Record or Tuple or Structure</strong></div>
+  <div class="card-body">
+    <p class="card-title">Record (also called tuple or structure or struct) is an aggregate data 
+                structure. A record is a value that contains other values, 
+                typically in fixed number and sequence and typically indexed by 
+                names. The elements of records are usually called fields or 
+                members. </p>  
+    <p class="card-text">         
+<p class="card-title">Record</p>        
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>
+<pre>
+   <code>
+class Record {
+  private final String userName;
+  private final int userID;
+  private final int rowID;
+
+  public Record(String userName, int userID, int rowID) {
+    this.userName = userName;
+    this.userID = userID;
+    this.rowID = rowID;
+  }
+
+  public String getUserName() {
+    return userName;
+  }
+  public int getUserID() {
+    return userID;
+  }
+  public int getRowID() {
+    return rowID;
+  }  
+}    
+   </code>
+</pre>            
+    
+<p class="card-title">Tuple</p>        
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>
+<pre>
+  <code>
+public class Tuple {    
+// data in an instance 
+  private String userName;
+  private int userID;
+  private int rowID;
+  
+ public void setUserName(String data) {
+    userName = data;
+  } 
+  public void setUserID(int data) {
+    userID = data;
+  }
+  public void setRowID(int data) {
+    rowID = data;
+  }
+  
+  public String getUserName() { return userName; }
+  public int getUserID() { return userID; }
+  public int getRowID() { return rowID; }  
+}
+  </code>
+</pre>        
+
+<p class="card-title">Structure</p>        
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>
+<pre>
+  <code>
+class Structure {
+  String userName;
+  int userID;
+  int rowID;
+
+  public void setUserName(String data) {
+   this.userName = data;
+  } 
+  public void setUserID(int data) {
+   this.userID = data;
+  }
+  public void setRowID(int data) {
+   this.rowID = data;
+  }
+  
+  public String getUserName() { return userName; }
+  public int getUserID() { return userID; }
+  public int getRowID() { return rowID; }  
+}             
+  </code>
+</pre>                
+    </p>
+  </div>
+</div>                       
+
+<a name="union" id="union"></a>        
+<div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+  <div class="card-header"><strong>2.3 Union</strong></div>
+  <div class="card-body">
+    <p class="card-title">A union is a data structure that specifies which of a 
+                number of permitted primitive types may be stored in its 
+                instances, e.g. float or long integer. Contrast with a record, 
+                which could be defined to contain a float and an integer; 
+                whereas in a union, there is only one value at a time. Enough 
+                space is allocated to contain the widest member datatype. </p>  
+    <p class="card-text">                    
+   <p class="card-title">Union</p>
+               <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>
+<pre>
+  <code>
+import java.util.*;
+
+public class Union {
+     
+  public static void main(String args[]) {
+
+    Set<Integer> A = new HashSet<Integer>();
+    A.addAll(Arrays.asList(2,4,6,8,10));
+ 
+    Set<Integer> B = new HashSet<Integer>();
+    B.addAll(Arrays.asList(1,2,3,4,5));
+ 
+ // Union: Set of members that belong to set A "or" set B
+    Set<Integer> union = new HashSet<Integer>();
+    union.addAll(A);
+    union.addAll(B);
+ 
+    System.out.println("A: " + A);
+    System.out.println("B: " + B);
+    System.out.println("union: " + union);
+  }
+}
+   </code>
+</pre>                
+   
+   </p>
+  </div>
+</div>
+        
+<a name="tagged" id="tagged"></a>
+<div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+  <div class="card-header"><strong>2.4 Tagged Union</strong></div>
+  <div class="card-body">
+    <p class="card-title">A tagged union (also called variant, variant record, 
+                discriminated union, or disjoint union) contains an additional 
+                field indicating its current type, for enhanced type 
+                safety. </p>
+    
+    <sup>* NOTE: I know union types were specifically not included in Java, due to 
+             the security and type-safety issues.  I wanted a complete
+             journal though so I added the following.  </sup>
+    
+    <p class="card-text">                                        
+  <p class="card-title">Tagged Union <sup>Well, Kind of</sup></p>
+              <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>
+<pre>
+   <code>
+enum Type {
+ // base case the union of two types: 
+ BASECASE, //some and none 
+ // next case is Either the next case: 
+ NEXTCASE, //a, b or t , exception
+ // last case type arbitrary types: 
+ LASTCASE //right, left or success, failure 
+}
+
+public class TaggedUnion {
+ Type type;
+  
+ TaggedUnion(Type type) {
+    this.type = type;
+ }   
+      
+ public void getMyType() {
+  switch (type) {
+   case BASECASE:
+    System.out.println("Is there a Base Type?");
+    System.out.println("Yes");
+    break;                    
+   case NEXTCASE:
+    System.out.println("What is the Next Type?");
+    System.out.println(" Yes - a, b or t, exception");
+    break;
+   case LASTCASE: 
+    System.out.println("What are the last Types?");
+    System.out.println("Yes - right, left or "); 
+    System.out.println("success, failure");
+    break;
+   default:
+    System.out.println("In Base Type was NONE");
+    break;
+   }
+ }
+   
+ public static void main(String[] args) {
+   TaggedUnion obj1 = new TaggedUnion(Type.NEXTCASE);
+   obj1.getMyType();
+   TaggedUnion obj2 = new TaggedUnion(Type.LASTCASE);
+   obj2.getMyType();
+ }
+}
+  </code>
+</pre>                
+    </p>            
+  </div>
+</div>      
+        
+        
+        <a name="abstract" id="abstract"></a>    
+        <h5>3.) Abstract Data Type</h5>
+        <p>An abstract data type (ADT) is a mathematical model for data types, 
+           where a data type is defined by its behavior (semantics) from the 
+           point of view of a user of the data, specifically in terms of 
+           possible values, possible operations on data of this type, and the 
+           behavior of these operations. This contrasts with data structures, 
+           which are concrete representations of data, and are the point of 
+           view of an implementer, not a user.</p>
+
+        <a name="container" id="container"></a>                
+        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+          <div class="card-header"><strong>3.1 Container</strong></div>
+          <div class="card-body">
+            <p class="card-title">A container is a class, a data structure, or an abstract data 
+                        type (ADT) whose instances are collections of other objects. 
+                        They store objects in an organized way that follows specific 
+                        access rules. The size of the container depends on the number 
+                        of objects (elements) it contains. Underlying (inherited) 
+                        implementations of various container types may vary in size and 
+                        complexity, and provide flexibility in choosing the right 
+                        implementation for any given scenario. </p>  
+            
+            <p>In Java, the server and containers are as follows:</p>                
+            <ul>
+                <li>Java EE server: 
+                    The runtime portion of a Java EE product. 
+                    A Java EE server provides EJB and web containers.</li>
+                <li>EJB container: 
+                    Manages the execution of enterprise beans 
+                    for Java EE applications. Enterprise beans and their 
+                    container run on the Java EE server.</li>
+                <li>Web container: 
+                    Manages the execution of web pages, 
+                    servlets, and some EJB components for Java EE 
+                    applications. Web components and their container run on 
+                    the Java EE server.</li>
+                <li>Application client container: 
+                    Manages the execution of 
+                    application client components. Application clients and 
+                    their container run on the client.</li>
+                <li>Applet container: 
+                    Manages the execution of applets. 
+                    Consists of a web browser and a Java Plug-in running on 
+                    the client together.</li>
+            </ul>
+            
+            <p class="card-text">           
+            <p class="card-title">Container Class</p>
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>
+<pre>
+  <code>
+import java.awt.BorderLayout;
+import java.awt.Button;
+import java.awt.Component;
+import java.awt.Frame;
+import java.awt.Panel;
+import java.awt.TextArea;
+
+public class Container {
+ public static void main(String[] args) {
+  // Create a frame
+  Frame frame = new Frame("Example Frame");
+  Panel panel = new Panel();
+
+  // Add several buttons to the container
+  panel.add(new Button("Button_A"));
+  panel.add(new Button("Button_B"));
+  panel.add(new Button("Button_C"));
+
+  // Add a text area in the center of the frame
+  Component textArea = new TextArea("Sample text");
+  frame.add(textArea, BorderLayout.CENTER);
+
+  // Add the container to the bottom of the frame
+  frame.add(panel, BorderLayout.SOUTH);
+
+  // Display the frame
+  int frameWidth = 300;
+  int frameHeight = 300;
+  frame.setSize(frameWidth, frameHeight);
+  frame.setVisible(true);
+ }
+}      
+  </code> 
+</pre>                       
+    </p>
+  </div>
+</div>    
+
+        
+<a name="associative" id="associative"></a>                
+<div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+  <div class="card-header"><strong>3.2 Associative Array</strong></div>
+  <div class="card-body">
+    <p class="card-title">An collection of (key, value) pairs, such that each 
+        possible key appears at most once in the collection.</p>
+    <p>  
+     HashMap, TreeMap, and LinkedHashMap    
+    </p>  
+    <p class="card-text">         
+    <p class="card-title">HashMap</p>
+                <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>
+<pre>
+   <code>
+import java.util.*;  
+
+class HashMaps{  
+ public static void main(String args[]){  
+  HashMap<Integer, String> hm = new HashMap<Integer, String>();  
+   hm.put(100,"Amit");  
+   hm.put(101,"Vijay");  
+   hm.put(102,"Rahul");  
+  
+  for(Map.Entry m:hm.entrySet()){  
+   System.out.println(m.getKey()+" "+m.getValue());  
+  }  
+ }  
+}  
+   </code>
+</pre>            
+    
+  <p class="card-title">TreeMap</p>
+              <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>
+<pre>
+   <code>    
+import java.util.*;  
+
+class TreeMaps{  
+ public static void main(String args[]){  
+  TreeMap<Integer, String> hm = new TreeMap<Integer, String>();  
+   hm.put(100,"Amit");  
+   hm.put(102,"Ravi");  
+   hm.put(101,"Vijay");  
+   hm.put(103,"Rahul");  
+  
+  for(Map.Entry m:hm.entrySet()){  
+   System.out.println(m.getKey()+" "+m.getValue());  
+  }  
+ }  
+}      
+  </code>
+</pre>   
+  
+  <p class="card-title">LinkedHashMap</p>
+              <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>
+<pre>
+   <code>    
+import java.util.*;  
+
+class LinkedHashMaps{  
+ public static void main(String args[]){     
+  LinkedHashMap<Integer,String> hm = new LinkedHashMap<Integer,String>();    
+   hm.put(100,"Amit");  
+   hm.put(101,"Vijay");  
+   hm.put(102,"Rahul");  
+  
+  for(Map.Entry m:hm.entrySet()){  
+   System.out.println(m.getKey()+" "+m.getValue());  
+  }  
+ }  
+}    
+  </code>
+</pre>   
+    </p>
+  </div>
+</div>        
+
+<a name="list" id="list"></a>                
+<div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+  <div class="card-header"><strong>3.3 List</strong></div>
+  <div class="card-body">
+    <p class="card-title">A linked list (also just called list) is a linear collection of 
+                data elements of any type, called nodes, where each node has 
+                itself a value, and points to the next node in the linked list. 
+                The principal advantage of a linked list over an array, is that 
+                values can always be efficiently inserted and removed without 
+                relocating the rest of the list. Certain other operations, such 
+                as random access to a certain element, are however slower on 
+                lists than on arrays. </p>  
+    
+    <p class="card-text">        
+  <p class="card-title">Array List vs Linked List</p>
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>  
+<pre>
+   <code>
+import java.util.*;    
+
+class Lists{    
+ public static void main(String args[]){    
+     
+  List<String> al = new ArrayList<String>();//creating arraylist    
+   al.add("Ravi");//adding object in arraylist    
+   al.add("Vijay");    
+   al.add("Ravi");    
+   al.add("Ajay");    
+    
+  List<String> al2 = new LinkedList<String>();//creating linkedlist    
+   al2.add("James");//adding object in linkedlist    
+   al2.add("Serena");    
+   al2.add("Swati");    
+   al2.add("Junaid");    
+    
+  System.out.println("arraylist: "+al);  
+  System.out.println("linkedlist: "+al2);  
+ }    
+} 
+   </code>
+</pre>                        
+    
+    
+    <p>ArrayList and LinkedList both implements List interface and maintains 
+       insertion order. Both are non synchronized classes.But there are many 
+       differences between ArrayList and LinkedList classes.</p>
+    
+    <p>ArrayList</p>	
+    <ul>
+     <li>ArrayList internally uses dynamic array to store the elements.</li>	
+     <li>Manipulation with ArrayList is slow because it internally uses array. 
+         If any element is removed from the array, all the bits are shifted in 
+         memory.</li>
+     <li>ArrayList class can act as a list only because it implements List only.</li>
+     <li>ArrayList is better for storing and accessing data.</li>
+    </ul>
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>    
+<pre>
+   <code>
+import java.util.*;  
+
+class ArrayLists{  
+ public static void main(String args[]){  
+  ArrayList<String> list = new ArrayList<String>();//Creating arraylist  
+   list.add("Ravi");//Adding object in arraylist  
+   list.add("Vijay");  
+   list.add("Ravi");  
+   list.add("Ajay");  
+  //Traversing list through Iterator  
+  Iterator itr=list.iterator();  
+  while(itr.hasNext()){  
+   System.out.println(itr.next());  
+  }  
+ }  
+}       
+   </code>
+</pre>                        
+   
+    <p>LinkedList</p>
+    <ul>
+     <li>LinkedList internally uses doubly linked list to store the elements.</li>
+     <li>Manipulation with LinkedList is faster than ArrayList because it uses 
+         doubly linked list so no bit shifting is required in memory.</li>
+     <li>LinkedList class can act as a list and queue both because it 
+         implements List and Deque interfaces.</li>
+     <li>LinkedList is better for manipulating data.</li>
+    </ul> 
+
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>
+    
+<pre>
+   <code>
+import java.util.*;  
+
+public class LinkedLists{  
+ public static void main(String args[]){    
+  LinkedList<String> al = new LinkedList<String>();  
+   al.add("Ravi");  
+   al.add("Vijay");  
+   al.add("Ravi");  
+   al.add("Ajay");  
+  
+  Iterator<String> itr=al.iterator();  
+  while(itr.hasNext()){  
+   System.out.println(itr.next());  
+  }  
+ }  
+}       
+   </code>
+</pre>                        
+    </p>
+  </div>
+</div>
+            
+
+<a name="multimap" id="multimap"></a>        
+<div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+  <div class="card-header"><strong>3.4 Multimap</strong></div>
+  <div class="card-body">
+    <p class="card-title">A multimap (sometimes also multihash or multidict) is a 
+                generalization of a map or associative array abstract data type 
+                in which more than one value may be associated with and 
+                returned for a given key. Both map and multimap are particular 
+                cases of containers (for example, see C++ Standard Template 
+                Library containers). Often the multimap is implemented as a map 
+                with lists or sets as the map values. </p>  
+    
+    <p>Guava is an open source, Java-based library developed by Google. It 
+       facilitates best coding practices and helps reduce coding errors. It 
+       provides utility methods for collections, caching, primitives support, 
+       concurrency, common annotations, string processing, I/O, and 
+       validations.</p>
+    <p class="card-text">            
+  <p class="card-title">Multimap Technique</p>
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>  
+<pre>
+  <code>
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.Multimap;
+
+public class MultiMaps {
+ public static void main(String args[]) {   
+  MultiMaps tester = new MultiMaps();
+  Multimap<String,String> multimap = tester.getMultimap();
+
+  List<String> lowerList = (List<String>)multimap.get("lower");
+  System.out.println("Initial lower case list");
+  System.out.println(lowerList.toString());
+
+  lowerList.add("f");
+  System.out.println("Modified lower case list");
+  System.out.println(lowerList.toString());
+
+  List<String> upperList = (List<String>)multimap.get("upper");
+  System.out.println("Initial upper case list");
+  System.out.println(upperList.toString());
+
+  upperList.remove("D");
+  System.out.println("Modified upper case list");
+  System.out.println(upperList.toString());
+
+  Map<String, Collection<String>> map = multimap.asMap();
+  System.out.println("Multimap as a map");
+
+  for (Map.Entry<String,  Collection<String>> entry : map.entrySet()) {
+    String key = entry.getKey();
+    Collection<String> value =  multimap.get("lower");
+    System.out.println(key + ":" + value);
+  }
+
+  System.out.println("Keys of Multimap");
+  Set<String> keys =  multimap.keySet();
+
+  for(String key:keys) {
+    System.out.println(key);
+  }
+
+  System.out.println("Values of Multimap");
+  Collection<String> values = multimap.values();
+  System.out.println(values);
+ }
+
+ private Multimap<String,String> getMultimap() {
+   // Map<String, List<String>>
+   // lower -> a, b, c, d, e
+   // upper -> A, B, C, D
+
+  Multimap<String,String> multimap = ArrayListMultimap.create();
+     
+  multimap.put("lower", "a");
+  multimap.put("lower", "b");
+  multimap.put("lower", "c");
+  multimap.put("lower", "d");
+  multimap.put("lower", "e");
+
+  multimap.put("upper", "A");
+  multimap.put("upper", "B");
+  multimap.put("upper", "C");
+  multimap.put("upper", "D");		
+
+  return multimap;
+ }
+}
+  </code>
+</pre>            
+  
+    </p>
+  </div>
+</div>    
+
+<a name="set" id="set"></a>        
+<div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+  <div class="card-header"><strong>3.5 Set</strong></div>
+  <div class="card-body">
+    <p class="card-title">A set is an abstract data type that can store certain values, 
+                without any particular order, and no repeated values. It is a 
+                computer implementation of the mathematical concept of a finite 
+                set. Unlike most other collection types, rather than retrieving 
+                a specific element from a set, one typically tests a value for 
+                membership in a set. </p>  
+    <p class="card-text">        
+  <p class="card-title">Various Classes <sup>(HashSet, TreeSet, LinkedHashSet)</sup></p>
+
+  <p>HashSet<br/>
+Java HashSet class is used to create a collection that uses a hash table for 
+storage. It inherits the AbstractSet class and implements Set interface.
+The important points about Java HashSet class are:</p>
+  
+<ul>
+  <li>HashSet stores the elements by using a mechanism called hashing.</li>
+  <li>HashSet contains unique elements only.</li>
+</ul>
+
+<sup>NOTE: List can contain duplicate elements whereas Set contains unique 
+    elements only.</sup>
+  
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>  
+  <pre>
+  <code>
+import java.util.*;  
+
+class HashSets {  
+ public static void main(String args[]){  
+  //Creating HashSet and adding elements  
+  HashSet<String> hset = new HashSet<String>();  
+   hset.add("Ravi");  
+   hset.add("Vijay");  
+   hset.add("Ravi");  
+   hset.add("Ajay");  
+  
+   //Traversing elements  
+   Iterator<String> itr = hset.iterator();  
+   while(itr.hasNext()){  
+   System.out.println(itr.next());  
+  }  
+ }  
+} 
+  </code>
+</pre>            
+
+<p>TreeSet<br/>
+Java TreeSet class implements the Set interface that uses a tree for storage. 
+It inherits AbstractSet class and implements NavigableSet interface. The 
+objects of TreeSet class are stored in ascending order. The important points 
+about Java TreeSet class are:</p>
+
+<ul>
+  <li>Contains unique elements only like HashSet.</li>
+  <li>Access and retrieval times are quiet fast.</li>
+  <li>Maintains ascending order.</li>
+</ul>
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>
+<pre>
+  <code>
+import java.util.*;  
+
+class TreeSets {  
+ public static void main(String args[]){  
+  //Creating and adding elements  
+  TreeSet<String> tset = new TreeSet<String>();  
+   tset.add("Ravi");  
+   tset.add("Vijay");  
+   tset.add("Ravi");  
+   tset.add("Ajay");  
+ 
+  //Traversing elements  
+  Iterator<String> itr = tset.iterator();  
+  while(itr.hasNext()){  
+   System.out.println(itr.next());  
+  }  
+ }  
+}  
+  </code>
+</pre>            
+
+<p>LinkdedHashSet<br/>
+Java LinkedHashSet class is a Hash table and Linked list implementation of the 
+set interface. It inherits HashSet class and implements Set interface.
+The important points about Java LinkedHashSet class are:</p> 
+<ul>
+  <li>Contains unique elements only like HashSet.</li>
+  <li>Provides all optional set operations, and permits null elements.</li>
+  <li>Maintains insertion order.</li>
+</ul>
+ 
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>
+                
+<pre>
+  <code>
+import java.util.*;  
+
+class LinkedHashSets {  
+ public static void main(String args[]){  
+  //Creating and adding elements   
+  LinkedHashSet<String> lhset = new LinkedHashSet<String>();  
+   lhset.add("Ravi");  
+   lhset.add("Vijay");  
+   lhset.add("Ravi");  
+   lhset.add("Ajay");  
+
+  //Traversing elements     
+  Iterator<String> itr = lhset.iterator();  
+  while(itr.hasNext()){  
+   System.out.println(itr.next());  
+  }  
+ }  
+}  
+  </code>
+</pre>              
+
+  </div>
+</div>
+
+<a name="multiset" id="multiset"></a>        
+<div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+  <div class="card-header"><strong>3.6 Multiset / Bag</strong></div>
+  <div class="card-body">
+    <p class="card-title">A Multiset (or bag) is a generalization of the concept of a set 
+                that, unlike a set, allows multiple instances of the multiset's 
+                elements. For example, {a, a, b} and {a, b} are different 
+                multisets although they are the same set. However, order does 
+                not matter, so {a, a, b} and {a, b, a} are the same 
+                multiset. </p>  
+    <p class="card-text">        
+  <p class="card-title">MultiSet</p>
+              <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>
+<pre>
+   <code> 
+import java.util.Iterator;
+import java.util.Set;
+
+import com.google.common.collect.HashMultiset;
+import com.google.common.collect.Multiset;
+
+public class MultiSets {
+ public static void main(String args[]) {   
+  //create a multiset collection
+  Multiset<String> multiset = HashMultiset.create();      
+   multiset.add("a");
+   multiset.add("b");
+   multiset.add("c");
+   multiset.add("d");
+   multiset.add("a");
+   multiset.add("b");
+   multiset.add("c");
+   multiset.add("b");
+   multiset.add("b");
+   multiset.add("b");
+      
+//print the occurrence of an element
+   System.out.println("Occurrence of 'b' : 
+                      "+multiset.count("b"));
+      
+//print the total size of the multiset
+   System.out.println("Total Size : "+multiset.size());
+      
+//get the distinct elements of the multiset as set
+   Set<String> set = multiset.elementSet();
+   
+//display the elements of the set
+   System.out.println("Set [");
+      
+   for (String s : set) {
+    System.out.println(s);
+   }
+
+   System.out.println("]");
+      
+//display all the elements of the multiset using iterator
+   Iterator<String> iterator  = multiset.iterator();
+   System.out.println("MultiSet [");
+
+   while(iterator.hasNext()) {
+    System.out.println(iterator.next());
+   }
+      
+   System.out.println("]");
+      
+//display the distinct elements of the multiset 
+//with their occurrence count
+   System.out.println("MultiSet [");
+
+   for (Multiset.Entry<String> entry : multiset.entrySet()) {
+    System.out.println("Element: " + entry.getElement() +
+                ", Occurrence(s): " + entry.getCount());
+   }
+     System.out.println("]");
+
+//remove extra occurrences
+   multiset.remove("b",2);
+      
+//print the occurrence of an element
+   System.out.println("Occurence of 'b' : " 
+                + multiset.count("b"));
+ }
+}
+   </code>
+</pre>                          
+  
+  </div>
+</div>
+
+<a name="stack" id="stack"></a>        
+<div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+  <div class="card-header"><strong>3.7 Stack</strong></div>
+  <div class="card-body">
+    <p class="card-title">A stack is an abstract data type that serves as a collection of 
+                elements, with two principal operations:
+                <ul>
+                    <li>push, which adds an element to the collection, and
+                    <li>pop, which removes the most recently added element that
+                        was not yet removed.
+                </ul>                                 
+                The order in which elements come off a stack gives rise to its 
+                alternative name, LIFO (last in, first out). Additionally, a peek 
+                operation may give access to the top without modifying the 
+                stack. </p>  
+  
+    <p class="card-text">                        
+  <p class="card-title">Stack</p>
+              <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>
+<pre>
+  <code>
+import java.util.*;
+
+public class Stacks {
+ static void showpush(Stack st, int a) {
+  st.push(new Integer(a));
+  System.out.println("push(" + a + ")");
+  System.out.println("stack: " + st);
+ }
+
+ static void showpop(Stack st) {
+  System.out.print("pop -> ");
+  Integer a = (Integer) st.pop();
+  System.out.println(a);
+  System.out.println("stack: " + st);
+ }
+
+ public static void main(String args[]) {
+  Stack st = new Stack();
+  System.out.println("stack: " + st);
+   showpush(st, 42);
+   showpush(st, 66);
+   showpush(st, 99);
+   showpop(st);
+   showpop(st);
+   showpop(st);
+   try {
+     showpop(st);
+   } catch (EmptyStackException e) {
+    System.out.println("empty stack");
+  }
+ }
+}
+  </code>
+</pre>             
+    </p>
+  </div>
+</div>    
+
+<a name="queue" id="queue"></a>        
+<div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+  <div class="card-header"><strong>3.8 Queue</strong></div>
+  <div class="card-body">
+    <p class="card-title">A Queue (Double-ended queue or Priority queue) is a particular 
+                kind of abstract data type or collection in which the entities 
+                in the collection are kept in order and the principle (or only) 
+                operations on the collection are the addition of entities to 
+                the rear terminal position, known as enqueue, and removal of 
+                entities from the front terminal position, known as dequeue. 
+                This makes the queue a First-In-First-Out (FIFO) data 
+                structure. </p>  
+    
+    <p class="card-text">        
+  <p class="card-title">Queue</p>
+              <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>
+<pre>
+  <code>
+import java.util.*;
+
+public class Queues {
+ public static void main(String[] args) {		
+  Queue<String> queue = new LinkedList<>();
+   queue.add("one");
+   queue.add("two");
+   queue.add("three");
+   queue.add("four");
+   queue.add("five");
+   queue.add("six");
+   queue.add("seven");
+   queue.add("eight");
+   
+    System.out.println("Queue: " +queue);
+    System.out.println("Element: " +queue.element());  
+    System.out.println("Peek: " +queue.peek());  
+    
+    System.out.println();            
+    System.out.println("Iterating the queue elements:");  
+    
+   Iterator itr = queue.iterator();  
+   
+   while(itr.hasNext()){  
+    System.out.println(itr.next());  
+   }  
+   
+   queue.remove(); 
+   queue.poll();  
+    System.out.println();        
+    System.out.println("After removing two elements:");
+    
+    Iterator<String> itr2 = queue.iterator();  
+    
+    while(itr2.hasNext()){  
+     System.out.println(itr2.next());  
+    }      
+    
+   queue.remove("three");
+   
+    System.out.println("Queue: " +queue);
+    System.out.println("Queue Size: " + queue.size());
+    System.out.println("Queue Contains element 
+       'two' or not? : " + queue.contains("two"));
+    System.out.println("Queue Contains element 
+       'five' or not? : " + queue.contains("five"));
+
+   // To empty the queue
+   queue.clear();
+ }
+}       
+  </code>
+</pre>
+
+  <p class="card-title">Priority Queue</p>
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>  
+<pre>
+  <code>
+import java.util.*;
+
+public class PriorityQueues {
+ public static void main(String[] args) {		
+  PriorityQueue<String> queue = new PriorityQueue<String>(); 
+   queue.add("one");
+   queue.add("two");
+   queue.add("three");
+   queue.add("four");
+   queue.add("five");
+   queue.add("six");
+   queue.add("seven");
+   queue.add("eight");
+   
+    System.out.println("Queue: " +queue);
+    System.out.println("Element: " +queue.element());  
+    System.out.println("Peek: " +queue.peek());  
+    
+    System.out.println();            
+    System.out.println("Iterating the queue elements:");  
+    
+   Iterator itr = queue.iterator();  
+   
+   while(itr.hasNext()){  
+    System.out.println(itr.next());  
+   }  
+   
+   queue.remove(); 
+   queue.poll();  
+    System.out.println();        
+    System.out.println("After removing two elements:");  
+    
+    Iterator<String> itr2 = queue.iterator();  
+    
+    while(itr2.hasNext()){  
+     System.out.println(itr2.next());  
+    }      
+    
+   queue.remove("three");
+   
+    System.out.println("Queue: " +queue);
+    System.out.println("Queue Size: " + queue.size());
+    System.out.println("Queue Contains element
+      'two' or not? : " + queue.contains("two"));
+    System.out.println("Queue Contains element 
+      'five' or not? : " + queue.contains("five"));
+
+   // To empty the queue
+   queue.clear();
+ }
+} 
+  </code>
+</pre>
+  
+    <p>Deque</p>
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>    
+    <pre>
+      <code>
+import java.util.*;
+
+public class Deques {
+ public static void main(String[] args) {		
+  Deque<String> deque = new ArrayDeque<String>();  
+   deque.offer("one");
+   deque.offer("two");
+   deque.add("three");
+   deque.add("four");
+   deque.add("five");
+   deque.offerFirst("six");
+   deque.add("seven");
+   deque.add("eight");
+  
+  System.out.println("After offerFirst Traversal...");  
+   for(String s:deque){  
+     System.out.println(s);  
+   }  
+
+//Print the first element of the ArrayDeque.
+   System.out.println("First element: " 
+                + deque.getFirst());
+
+//Print the last element of the ArrayDeque.
+   System.out.println("Last element: " 
+                + deque.getLast());
+
+   deque.poll();  
+//Remove the first element same as poll()  
+   deque.pollFirst();
+   deque.pollLast();  
+   
+  System.out.println();       
+  System.out.println("After pollLast() Traversal...");  
+   for(String s:deque){  
+    System.out.println(s);  
+   }  
+ }
+}          
+      </code>
+    </pre>
+  </div>
+</div>            
+
+<a name="tree" id="tree"></a>        
+<div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+  <div class="card-header"><strong>3.9 Tree</strong></div>
+  <div class="card-body">
+    <p class="card-title">A tree is a widely used abstract data type (ADT)—or data 
+                structure implementing this ADT—that simulates a hierarchical 
+                tree structure, with a root value and subtrees of children with 
+                a parent node, represented as a set of linked nodes. A tree 
+                can be defined recursively (locally) as a collection of nodes 
+                (starting at a root node), where each node is a data structure 
+                consisting of a value, together with a list of references to 
+                nodes (the "children"), with the constraints that no reference 
+                is duplicated, and none points to the root. </p>  
+    <p class="card-text">        
+  <p class="card-title">Node</p>
+            <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>
+                
+  <pre>
+    <code>
+import java.util.*;
+
+public class Node<T> {
+ private T data = null;
+ private List<Node<T>> children = new ArrayList<>();
+ private Node<T> parent = null;
+ 
+ public Node(T data) {
+  this.data = data;
+ }
+ 
+ public Node<T> addChild(Node<T> child) {
+  child.setParent(this);
+  this.children.add(child);
+  return child;
+ }
+ 
+ public void addChildren(List<Node<T>> children) {
+  children.forEach(each -> each.setParent(this));
+  this.children.addAll(children);
+ }
+
+ public List<Node<T>> getChildren() {
+  return children;
+ }
+
+ public T getData() {
+  return data;
+ }
+
+ public void setData(T data) {
+  this.data = data;
+ }
+
+ private void setParent(Node<T> parent) {
+  this.parent = parent;
+ }
+
+ public Node<T> getParent() {
+  return parent;
+ }
+}        
+    </code>
+  </pre>
+    
+  <p>Tree</p>
+        <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>  
+<pre>
+  <code>                
+public class Trees {
+ public static void main(String[] args) {
+  Node<String> root = createTree();
+  printTree(root, " ");
+ }
+
+ private static Node<String> createTree() {
+  Node<String> root = new Node<>("root");
+
+  Node<String> node1 = root.addChild(new Node<String>("node 1"));
+
+  Node<String> node11 = node1.addChild(new Node<String>("node 11"));
+  Node<String> node111 = node11.addChild(new Node<String>("node 111"));
+  Node<String> node112 = node11.addChild(new Node<String>("node 112"));
+
+  Node<String> node12 = node1.addChild(new Node<String>("node 12"));
+
+  Node<String> node2 = root.addChild(new Node<String>("node 2"));
+
+  Node<String> node21 = node2.addChild(new Node<String>("node 21"));
+  Node<String> node211 = node2.addChild(new Node<String>("node 22"));
+   return root;
+ }
+
+ private static <T> void printTree(Node<T> node, 
+                                  String appender) {
+  System.out.println(appender + node.getData());
+  node.getChildren().forEach(each ->  
+          printTree(each, appender + appender));
+ }
+}
+  </code>
+</pre>            
+    </p>
+  </div>
+</div>
+
+<a name="graph" id="graph"></a>        
+<div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+  <div class="card-header"><strong>3.10 Graph</strong></div>
+  <div class="card-body">
+    <p class="card-title">A graph is an abstract data type that is meant to implement the 
+                undirected graph and directed graph concepts from mathematics, 
+                specifically the field of graph theory. A graph consists of a 
+                finite (and possibly mutable) set of vertices or nodes or 
+                points, together with a set of unordered pairs of these 
+                vertices for an undirected graph or a set of ordered pairs for 
+                a directed graph. These pairs are known as edges, arcs, or 
+                lines for an undirected graph and as arrows, directed edges, 
+                directed arcs, or directed lines for a directed graph. The 
+                vertices may be part of the graph structure, or may be external 
+                entities represented by integer indices or references. </p>  
+    <p class="card-text">        
+    <p class="card-title">Graph</p>
+    
+    <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>
+                
+<pre>
+  <code>
+import java.util.*;
+ 
+public abstract class Graphs {
+ private int numVertices;
+ private int numEdges;
+ 
+ public Graphs() {
+  numVertices = 0;
+  numEdges = 0;
+ }
+ 
+ public int getNumVertices() {
+  return numVertices;
+ }
+ 
+ public int getNumEdges() {
+  return numEdges;
+ }
+  
+ public void setNumVertices(int v) {
+  numVertices = v;
+ }
+
+ public void setNumEdges(int e) {
+  numEdges = e;
+ }
+
+ public abstract boolean inEdgeExists(int v, int w) 
+         throws VertexOutOfBoundsException;
+
+ public abstract boolean outEdgeExists(int v, int w) 
+         throws VertexOutOfBoundsException;
+
+ public abstract void addVertex();
+
+ public abstract void addEdge(int v, int w) 
+         throws VertexOutOfBoundsException;
+
+ public abstract void removeVertex() 
+         throws VertexOutOfBoundsException;
+
+ public abstract void removeEdge(int v, int w) 
+         throws VertexOutOfBoundsException;
+
+ public abstract int getInDegree(int v) 
+         throws VertexOutOfBoundsException;
+
+ public abstract int getOutDegree(int v) 
+         throws VertexOutOfBoundsException;
+
+ public abstract List<Integer> getNeighbors(int v) 
+         throws VertexOutOfBoundsException;
+
+ public abstract List<Integer> getNeighborsTwoApart(int v) 
+         throws VertexOutOfBoundsException;
+
+ public List<Integer> getDegreeSeq() 
+         throws VertexOutOfBoundsException {
+  List<Integer> degreeSeq = new ArrayList<Integer>();
+  
+  int degrees = 0;
+  
+  for (int i = 0; i < getNumVertices(); i++) {
+   degrees = getInDegree(i) + getOutDegree(i);
+   degreeSeq.add(degrees);
+  }
+  
+  Collections.sort(degreeSeq);
+  Collections.reverse(degreeSeq);
+   return degreeSeq;
+ } 
+ public static void main(String[] args) {}
+}
+
+// custom exception
+public class VertexOutOfBoundsException 
+    extends Exception {
+  public VertexOutOfBoundsException() {        
+      super();    
+  }
+
+  public VertexOutOfBoundsException(String message) {
+    super(message);
+  }
+}
+
+  public static void main(String args[]) {   
+  
+ } 
+}            
+ </code>
+</pre>            
+    </p>     
+  </div>
+</div>            
+
+<a name="class" id="class"></a>        
+<div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+  <div class="card-header"><strong>3.11 Class</strong></div>
+  <div class="card-body">
+    <p class="card-title">A class is a data structure that contains data fields, like a 
+                record, as well as various methods which operate on the contents
+                of the record. In the context of object-oriented programming, 
+                records are known as plain old data structures to distinguish 
+                them from classes.</p>  
+    <p class="card-text">  
+      <p class="card-title">Class</p>
+      <p class="card-text"><span class="badge badge-pill badge-light">          
+          JAVA</span>
+<pre>
+  <code>                
+public class Classes {
+ // Create an array
+ private final static int SIZE = 15;
+ private int[] arrayOfInts = new int[SIZE];
+     
+ public Classes() {
+   // fill the array with ascending integer values
+   for (int i = 0; i < SIZE; i++) {
+       arrayOfInts[i] = i;
+  }
+ }
+     
+ public void printEven() {
+  // Print out values of even indices of the array
+  ClassesIterator iterator = this.new EvenIterator();
+  while (iterator.hasNext()) {
+   System.out.print(iterator.next() + " ");
+  }
+  System.out.println();
+ }
+     
+ interface ClassesIterator extends java.util.Iterator<Integer> { }
+// Inner class implements the ClassesIterator interface,
+// which extends the Iterator<Integer> interface
+ private class EvenIterator implements ClassesIterator {
+  // Start stepping through the array from the beginning
+  private int nextIndex = 0;
+         
+  public boolean hasNext() {             
+  // Check if the current element is the last in the array
+   return (nextIndex <= SIZE - 1);
+  }        
+        
+ public Integer next() {
+  // Record a value of an even index of the array
+  Integer retValue = 
+          Integer.valueOf(arrayOfInts[nextIndex]);
+  // Get the next even element
+  nextIndex += 2;
+   return retValue;
+  }
+ }
+     
+ public static void main(String s[]) {
+ // Fill the array with integer values and print out only
+ // values of even indices
+  Classes cl = new Classes();
+   cl.printEven();
+ }
+}
+  </code>
+</pre>         
+  </p>    
+      </div>
+    </div>
+      </section>
+        
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+    crossorigin="anonymous"></script>      
+      
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
