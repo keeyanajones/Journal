@@ -2,15 +2,15 @@
 [https://keeyanajones.github.io/Journal/](https://keeyanajones.github.io/Journal/)
 
 ### Content
-  * [Overview](https://keeyanajones.github.io/Journal/#overview) :new:
-  * [Documentation](https://keeyanajones.github.io/Journal/#documentation) :new:
-  * [Creator](https://keeyanajones.github.io/Journal/#creator) :new:
-  * [Copyright and license](https://keeyanajones.github.io/Journal/#creator) :new:
-  * Object Oriented Analysis
-  * Quality Factors
+  * [Overview](https://keeyanajones.github.io/Journal/#overview) 
+  * [Documentation](https://keeyanajones.github.io/Journal/#documentation) 
+  * [Creator](https://keeyanajones.github.io/Journal/#creator) 
+  * [Copyright and license](https://keeyanajones.github.io/Journal/#creator) 
+  * Object Oriented Analysis and Design :new:
+  * Quality Factors :new:
   * [Data Structures and Algorithms](https://keeyanajones.github.io/Journal/datastructures.html) :new:
   * [Big O'notations](https://keeyanajones.github.io/Journal/bigo.html) :new:
-  * UML Notations
+  * Unified Modeling Language (UML) Notations :new:
   * Process and Metrics
   * Design Patterns
   * Operations System Basics
@@ -27,8 +27,9 @@
   * Writing Clean Code
   * [Color Systems](https://keeyanajones.github.io/Journal/color.html) :new:
   * [Icons](https://keeyanajones.github.io/Journal/icon.html) :new:
-  * Other...
-
+  * Images :new:
+  * Web :new:
+  * Projects :new:
 
 ### Blog
 For more details see [Blog](http://keeyanajones.github.io/website/).
