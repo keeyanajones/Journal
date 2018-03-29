@@ -3,9 +3,7 @@
 
 ### Content
   * [Overview](https://keeyanajones.github.io/Journal/#overview) 
-  * [Documentation](https://keeyanajones.github.io/Journal/#documentation) 
-  * [Creator](https://keeyanajones.github.io/Journal/#creator) 
-  * [Copyright and license](https://keeyanajones.github.io/Journal/#creator) 
+  * The Problem Solving :new:
   * Object Oriented Analysis and Design :new:
   * Quality Factors :new:
   * [Data Structures and Algorithms](https://keeyanajones.github.io/Journal/datastructures.html) :new:
