@@ -9,8 +9,8 @@
   * [Data Structures and Algorithms](https://keeyanajones.github.io/Journal/datastructures.html) :new:
   * [Big O'notations](https://keeyanajones.github.io/Journal/bigo.html) :new:
   * Unified Modeling Language (UML) Notations :new:
-  * Process and Metrics
-  * Design Patterns
+  * Process and Metrics :new:
+  * Design Patterns :new:
   * Operations System Basics
   * Computer Organization Basic
   * Network Basic
