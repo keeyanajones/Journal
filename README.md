@@ -3,31 +3,28 @@
 
 ### Content
   * [Overview](https://keeyanajones.github.io/Journal/#overview) 
-  * The Problem Solving :new:
+  * Getting Started :new:
+  * The Problem Solving Process :new:
   * Object Oriented Analysis and Design :new:
-  * Quality Factors :new:
-  * [Data Structures and Algorithms](https://keeyanajones.github.io/Journal/datastructures.html) :new:
-  * [Big O'notations](https://keeyanajones.github.io/Journal/bigo.html) :new:
-  * Unified Modeling Language (UML) Notations :new:
-  * Process and Metrics :new:
+  * Quality Factors Classification :new:
+  * Data Structures in Java :new:
+  * Algorithms :new:
+    * Sorting
+    * Shuffling
+    * Searching
+    * Graphs
+    * Trees
+    * Recursion
+  * Big O' Notations :new:
+  * Unified Modeling Language (UML) :new:
   * Design Patterns :new:
-  * Operations System Basics
-  * Computer Organization Basic
-  * Network Basic
-  * Requirement Analysis
-  * Testing
-  * Dependency Management
-  * Dependency Injection
-  * Continuous Integration
-  * Version Control
-  * Internationalization (il8n)
-  * Architectural Patterns
-  * Writing Clean Code
-  * [Color Systems](https://keeyanajones.github.io/Journal/color.html) :new:
-  * [Icons](https://keeyanajones.github.io/Journal/icon.html) :new:
-  * Images :new:
-  * Web :new:
-  * Projects :new:
+  * Testing :new:
+  * Documentation and Version Control :new:
+  * Appendix :new:
+    * Color
+    * Images
+    * Projects
+    * Reference
 
 ### Blog
 For more details see [Blog](http://keeyanajones.github.io/website/).
