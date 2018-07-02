@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+## My Journal
+[https://keeyanajones.github.io/Journal/](https://keeyanajones.github.io/Journal/)
 
-You can use the [editor on GitHub](https://github.com/keeyanajones/Journal/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Content
+  * [Overview](https://keeyanajones.github.io/Journal/#overview) 
+  * Getting Started :new:
+  * The Problem Solving Process :new:
+  * Object Oriented Analysis and Design :new:
+  * Quality Factors Classification :new:
+  * Data Structures in Java :new:
+  * Algorithms :new:
+    * Sorting
+    * Shuffling
+    * Searching
+    * Graphs
+    * Trees
+    * Recursion
+  * Big O' Notations :new:
+  * Unified Modeling Language (UML) :new:
+  * Design Patterns :new:
+  * Testing :new:
+  * Documentation and Version Control :new:
+  * Appendix :new:
+    * Color
+    * Images
+    * Projects
+    * Reference
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Blog
+For more details see [Blog](http://keeyanajones.github.io/website/).
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/keeyanajones/Journal/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Contact
+Having trouble with Development? Check out my [Journal](http://keeyanajones.github.io/Journal/) or [contact me](https://github.com/keeyanajones) and I’ll help.
