@@ -1,323 +1,209 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>My Journal</title>
-    <link rel="stylesheet"  
-          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"          
-          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
-          crossorigin="anonymous">    
-       
-    <!-- Latest compiled and minified CSS --> 
+    <title>My Journal</title>   
+    <!-- Latest compiled and minified CSS -->     
+    <!-- Font Awesome 5.0.13 -->     
+    <link rel="stylesheet" 
+          href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" 
+          crossorigin="anonymous">         
+    <!-- Bootstrap 3.3.7 --> 
     <link rel="stylesheet" 
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
           crossorigin="anonymous">
+    <!-- Custom Style Pygment and Icons -->     
     <link rel="stylesheet" href="assets/stylesheets/styles.css">
     <link rel="stylesheet" href="assets/stylesheets/pygment_trac.css">
     <link rel="icon" href="assets/images/favicon.ico" type="image/gif">
     <link rel="shortcut icon" href="assets/images/favicon.png">    
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   
   <body>
-    <div class="wrapper">                       
+    <div class="wrapper">               
+    <!-- Header -->         
       <header>
-        <h2><span class="fa fa-book fa-3x" aria-hidden="true"></span>
-            <span class="fa fa-pencil " aria-hidden="true"></span><br/>
+        <h2><span class="fa fa-book fa-5x"></span>
+          <span class="fa fa-pencil-alt fa-2x"></span><br/>
             Journal </h2>
+          
         <p class="view"><sup>A Journal for GitHub Pages</sup><br/>        
-        <a href="http://github.com/keeyanajones/Journal">
-                <span class="fa fa-github" aria-hidden="true"></span> 
-                View the Project on GitHub 
-                <small>keeyanajones/Journal</small></a><br/>                                        
-                <strong> &gt; Language</strong><br/>                                            
-                   
-                    <button class="btn btn-group btn-group-xs btn-primary" role="group" type="button">
-                      Java <span class="badge">50+</span>
-                    </button>                
-                
-                    <button class="btn btn-group btn-group-xs" role="group" type="button">
-                      Go <span class="badge">0</span>
-                    </button>
-                
-                    <button class="btn btn-group btn-group-xs" role="group" type="button">
-                      Swift <span class="badge">0</span>
-                    </button>
-                
-                    <button class="btn btn-group btn-group-xs" role="group" type="button">
-                      Ruby <span class="badge">0</span>
-                    </button>
-                            
-                    <button class="btn btn-group btn-group-xs" role="group" type="button">
-                      Python <span class="badge">0</span>
-                    </button>                               
-                
-                    <button class="btn btn-group btn-group-xs btn-primary" role="group" type="button">
-                      C <span class="badge">1</span>
-                    </button>                    
-                
-                    <button class="btn btn-group btn-group-xs btn-primary" role="group" type="button">
-                      C++ <span class="badge">1</span>
-                    </button>                    
-
-                
-                    <button class="btn btn-group btn-group-xs" role="group" type="button">
-                      C# <span class="badge">0</span>
-                    </button>                                        
-            
-                    <button class="btn btn-group btn-group-xs" role="group" type="button">
-                      Rust <span class="badge">0</span>
-                    </button>
-            
-                    <button class="btn btn-group btn-group-xs" role="group" type="button">
-                      CSS <span class="badge">0</span>
-                    </button>
-            
-                    <button class="btn btn-group btn-group-xs" role="group" type="button">
-                      PHP <span class="badge">0</span>
-                    </button>
-                
-                    <button class="btn btn-group btn-group-xs" role="group" type="button">
-                      .Net <span class="badge">0</span>
-                    </button>
-            
-                    <button class="btn btn-group btn-group-xs" role="group" type="button">
-                      JavaScript <span class="badge">0</span>
-                    </button>                  
-                <br/>    
-         <table>       
-                <tr>                
-                    <td><span class="badge">Polymer</span></td>
-                    <td><span class="badge">Ember</span></td>
-                    <td><span class="badge">Angular</span></td>   
-                </tr>
-                <tr>                    
-                    <td><span class="badge">Vue</span></td>                    
-                    <td><span class="badge">Meteor</span></td>
-                    <td><span class="badge">Mean</span></td>               
-                </tr>
-                <tr>                    
-                    <td><span class="badge">Express</span></td>                    
-                    <td><span class="badge">Babel</span></td>
-                    <td><span class="badge">React</span></td>
-                    
-            </tr>
-          </table>         
-            
-
-                </p>
-                                                
+          <a href="https://github.com/keeyanajones/Journal">
+            <span class="fab fa-github"></span> 
+              View the Journal on GitHub 
+              <small>keeyanajones/Journal</small></a>
+        </p><br/>                                        
+              
+        <button class="btn btn-lg btn-block btn-default" type="button">
+          JAVA <span class="fab fa-java fa-2x"></span> 
+               <span class="badge"> 50+ </span>
+        </button>                
+        <br/>                
+         <a href="https://github.com/keeyanajones/Java-Data-Structures">
+            <small><span class="fab fa-github"></span>                 
+              keeyanajones/Java-Data-Structures</small></a>  
+         <a href="https://github.com/keeyanajones/Java-Design-Patterns">
+            <small><span class="fab fa-github"></span> 
+              keeyanajones/Java-Design-Patterns</small></a>                
+         <a href="https://github.com/keeyanajones/Java-Problems">
+            <small><span class="fab fa-github"></span> 
+              keeyanajones/Java-Problems</small></a>        
+          <a href="https://github.com/keeyanajones/Java-Sorting-Algorithms">
+            <small><span class="fab fa-github"></span>      
+             keeyanajones/Java-Sorting-Algorithms</small></a>                
+        <br/>
         <ul>    
-          <li>
-              <a href="https://github.com/keeyanajones/Journal/archive/master.zip">
-                  <span class="fa fa-file-archive-o" aria-hidden="true"></span><br/>
+          <li><a href="https://github.com/keeyanajones/Journal/archive/master.zip">
+              <span class="fa fa-file-archive" aria-hidden="true"></span><br/>
                   Download <br/> ZIP</a></li>                  
-          <li>
-              <a href="https://github.com/keeyanajones/Journal/master">
-                  <span class="fa fa-clone" aria-hidden="true"></span><br/>
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-clone" aria-hidden="true"></span><br/>
                   Clone <br/> Desktop</a></li>                  
-          <li>
-              <a href="http://github.com/keeyanajones/Journal">
-                  <span class="fa fa-code-fork" aria-hidden="true"></span><br/>
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-code-branch" aria-hidden="true"></span><br/>
                   Fork On <br/> GitHub</a></li>
-        </ul>
-                  
-          </div>
-         </div>
-        </div>  
+        </ul>                         
       </header>
+    <!-- ./header --> 
+    </div>          
+      
+    <section>
+      <h2>Journal for 
+        <span class="fab fa-git-square" aria-hidden="true"></span>
+        Hub Pages</h2>
         
-        
-        
-      <section>
-        <h2>Journal for 
-        <span class="fa fa-git-square" aria-hidden="true"></span>Hub Pages</h2>
-
-        <a name="overview" id="overview"></a>        
-          <h3><span class="fa fa-list-alt " aria-hidden="true"></span>
-              Overview</h3>                  
-
-        <p>My journal addresses issues of computer applications, 
-             information and communication systems, software engineering 
-             and management, CAD/CAM/CAE, numerical analysis and 
-             simulations, finite element methods and analyses, robotics, 
-             computer applications in multimedia and new technologies, 
-             computer aided learning and training.  More on this 
-            <a href="#documentation">journal...</a></p>
-
-        <a name="contents" id="contents"></a>   
-        <h4><span class="fa fa-th-list " aria-hidden="true"></span> 
-            Contents</h4>                          
-
-        <p>My journal is a web based copy of my hand written journal of 
-            Computer Application and related Information Technology source
-            materials gathered over years of work.</p>
+        <h3><span class="fa fa-list-alt " aria-hidden="true"></span>
+          <a name="about-this-journal" class="anchor" 
+             href="#about-this-journal">
+            <span class="header-link"></span></a>
+          About these Essays</h3>                 
+     
+        <p>Last updated on June 14th, 2018</p>              
+        <p>My Software Journal 
+          (<a href="https://twitter.com/keeyanajones">
+              @keeyanajones</a>)</p>
+                     
+      <p>This Github Repository is a series of hand written 
+         essays about Software Engineering. Over 20 essays of all types, 
+         finished and in progress pieces with cover sheets, evaluation sheets 
+         and chart checklist.  It covers Java SE Version 8 and is also based on 
+         the 
+        <a href="https://docs.oracle.com/javase/8/" target="_blank">
+            Java Documentation</a> ,            
+        <a href="https://docs.oracle.com/javase/8/docs/api/index.html" 
+             target="_blank">              
+              API Reference</a>,               
+        <a href="https://docs.oracle.com/javase/tutorial/tutorialLearningPaths.html" 
+           target="_blank">
+        <em>Java Tutorials : Learning Paths</em></a>, and         
+        <a href="https://www.tutorialspoint.com/" target="_blank">
+          Tutorials Point</a></p>
                     
         <p>Repository and application documentation, included in this 
-            repository in the root directory,as a readme <sup>(.md)</sup>.</p>
-        
-        <a href="#overview">
-          <span class="fa fa-bookmark-o " aria-hidden="true"></span>
-             Overview</a>
-        <ol>            
-             <li><a href="#documentation">
-             <span class="fa fa-bookmark-o " aria-hidden="true"></span>
-                  Documentation</a></li>
-             <li><a href="#creator">
-             <span class="fa fa-bookmark-o " aria-hidden="true"></span>
-                  Creator</a></li>
-             <li><a href="#copyright">
-             <span class="fa fa-bookmark-o " aria-hidden="true"></span>
-                  Copyright and license</a></li>                  
-         </ol> 
+           repository in the root directory, as a readme <sup>(.md)</sup>.
+           This specifically covers the most common sub-disciplines: </p>
+      
+        <p>See <a href="opening-essay/index.html">
+           The Opening Essay</a></p>
+                    
+        <a name="contents" id="contents"></a>   
+        <h4><span class="fa fa-th-list " aria-hidden="true"></span> 
+            Table of Contents</h4>                          
+      
+            <ol>                    
+               <li><a href="getting-started/index.html">Getting Started</a></li>
+               <li><a href="problem-solving/index.html">The Problem Solving Process</a></li>           
+               <li><a href="ooad-process/index.html">Object Oriented Analysis and Design</a></li>
+               <li><a href="quality-factors/index.html">Quality Factors Classification</a></li>           
+               <li><a href="data-structures/index.html">Data Structures in Java</a></li>
+               <li><a href="algorithms/index.html">Algorithms</a></li>
+               <ul>
+                 <li><a href="algorithms/sorting/index.html">Sorting</a></li>
+                 <li><a href="algorithms/shuffling/index.html">Shuffling</a></li>
+                 <li><a href="algorithms/searching/index.html">Searching</a></li>
+                 <li><a href="algorithms/graphs/index.html">Graphs</a></li>
+                 <li><a href="algorithms/trees/index.html">Trees</a></li>
+                 <li><a href="algorithms/recursion/index.html">Recursion</a></li>
+               </ul>               
+               <li><a href="big-o-notations/index.html">Big O' Notations</a></li>
+               <li><a href="uml/index.html">Unified Modeling Language (UML)</a></li>
+               <li><a href="design-patterns/index.html">Design Patterns</a></li>
+               <li><a href="testing/index.html">Testing</a></li>
+               <li><a href="documentation-version/index.html">Documentation and Version Control</a></li>
 
-
-         <span class="fa fa-bookmark " aria-hidden="true"></span>
-            1 Object Oriented Analysis<br/>                    
-
-         <span class="fa fa-bookmark " aria-hidden="true"></span>
-            2 Quality Factors<br/>                    
-
-         <span class="fa fa-bookmark " aria-hidden="true"></span>
-         <a href="datastructures.html">
-            3 Data Structures and Algorithms</a><br/>
-
-         <span class="fa fa-bookmark " aria-hidden="true"></span>
-         <a href="bigo.html">
-            4 Big O'notations</a><br/>                                
-        
-         <span class="fa fa-bookmark " aria-hidden="true"></span>
-            5 UML Notations<br/>                      
-        
-         <span class="fa fa-bookmark " aria-hidden="true"></span>
-            6 Process and Metrics<br/>                                                        
-
-         <span class="fa fa-bookmark " aria-hidden="true"></span>
-            7 Design Patterns<br/>                    
-
-         <span class="fa fa-bookmark " aria-hidden="true"></span>
-            8 Operations System Basics<br/>                  
-
-         <span class="fa fa-bookmark " aria-hidden="true"></span>
-            9 Computer Organization Basic<br/>                                
-
-         <span class="fa fa-bookmark " aria-hidden="true"></span>
-            10 Network Basic<br/>                    
-
-         <span class="fa fa-bookmark " aria-hidden="true"></span>
-            11 Requirement Analysis<br/>                    
-
-         <span class="fa fa-bookmark " aria-hidden="true"></span>
-            12 Testing<br/>                   
-
-         <span class="fa fa-bookmark " aria-hidden="true"></span>
-            13 Dependency Management<br/>                    
-
-         <span class="fa fa-bookmark " aria-hidden="true"></span>
-            14 Dependency Injection<br/>                                                          
-
-         <span class="fa fa-bookmark " aria-hidden="true"></span>
-            15 Continuous Integration<br/>                                        
-
-         <span class="fa fa-bookmark " aria-hidden="true"></span>
-            16 Version Control<br/>                                                           
-         
-         <span class="fa fa-bookmark " aria-hidden="true"></span>
-            17 Internationalization (i18n)<br/>                   
-            
-         <span class="fa fa-bookmark " aria-hidden="true"></span>
-            18 Architectural Patterns<br/>     
-
-         <span class="fa fa-bookmark " aria-hidden="true"></span>
-            19 Writing Clean Code<br/>                    
-        
-         <span class="fa fa-bookmark " aria-hidden="true"></span>
-            20 Other<br/>
-
-         <span class="fa fa-bookmark-o " aria-hidden="true"></span>
-         <a href="color.html">
-             Color</a><br/>
-         <span class="fa fa-bookmark-o " aria-hidden="true"></span>
-         <a href="icon.html">
-             Icons</a><br/>
-         <span class="fa fa-bookmark-o " aria-hidden="true"></span>
-             Web<br/>        
-         <span class="fa fa-bookmark-o " aria-hidden="true"></span>
-             Amazon Web Services<br/>            
-         <span class="fa fa-bookmark-o " aria-hidden="true"></span>
-             Twitch<br/>
-         <span class="fa fa-bookmark-o " aria-hidden="true"></span>
-             Youtube<br/> 
-         <span class="fa fa-bookmark-o " aria-hidden="true"></span>
-             Mixer<br/><br/>  
-                   
-        
-        <p>See the Releases section of our GitHub project for changelogs for 
+            <li><a href="appendix/index.html">Appendix</a></li>
+            <ul>          
+               <li><a href="appendix-colors/index.html">Color</a></li>
+               <li><a href="appendix-images/index.html">Images</a></li>
+               <li><a href="appendix-projects/index.html">Projects</a></li>
+               <li><a href="appendix-references/index.html">Reference</a></li>           
+            </ul>       
+                  
+        </ol>
+      
+        <p>You can find the repository on GitHub:&nbsp;
+          <a href="https://github.com/keeyanajones/journal">
+            <span class="fab fa-github" aria-hidden="true"></span> 
+            keeyanajones/journal
+          </a>.        
+          Corrections are always welcome.</p>
+      
+        <p><a role="button" class="btn btn-primary" 
+              href="getting-started/index.html">
+            NEXT: Getting Started &rarr;</a></p>
+                                 
+        <p><sup>See the Releases section of our GitHub project for changelogs for 
            each release version of the project. Release announcement posts on 
            my official <a href="https://keeyanajones.github.io/website/" 
              target="_blank"> blog</a> contain summaries of the most 
-           noteworthy changes made in each release.</p>                           
-        
-        <a name="documentation" id="documentation"></a>
-        <h3><span class="fa fa-files-o" aria-hidden="true"></span> 
-            Documentation</h3>
- 
-        <h4>Objectives</h4>
-        <p>The objective of the journal is to help professionals working in the 
-            field, educators and policy makers to contribute, to disseminate 
-            information and to learn from each other|s work. This Journal also 
-            aims at establishing channels of communication between consultants,
-            myself, academics, computer manufacturers, software developers and 
-            users worldwide.</p> 
-
-        <h4>Readership</h4>
-        <p>Professionals, academics, researchers, and managers.</p>
-        
-        <a name="creator" id="creator"></a>
-        <h3><span class="fa fa-users" aria-hidden="true"></span> 
-            Creator</h3>
-        <p>Keeyana Jones - <span class="fa fa-user" aria-hidden="true"></span><br/>
-            <a href="https://www.linkedin.com/in/keeyana-jones-5a275514">                
-                <span class="fa fa-linkedin" aria-hidden="true"></span> -
-                  https://www.linkedin.com/in/keeyana-jones-5a275514</a><br/>
-            
-            <a href="https://Keeyanajones.github.io/website/">
-                <span class="fa fa-github" aria-hidden="true"></span> -
-                https://Keeyanajones.github.io/</a><br/>
+           noteworthy changes made in each release.</sup></p>                           
                 
-            <a href="mailto:keeyanajones@yahoo.com">
-                <span class="fa fa-envelope" aria-hidden="true"></span> -
-                keeyanajones@yahoo.com</a>
-        </p>
+        <a name="contact" id="contact"></a>
+        <h4><span class="fa fa-users" aria-hidden="true"></span> 
+            Contact</h4>
 
+        <p><a href="https://github.com/keeyanajones"  target="_blank">
+            Keeyana Jones - <span class="fa fa-user" aria-hidden="true"></span>
+            </a></p>
+            
+        <a href="https://Keeyanajones.github.io/website/"  target="_blank">
+            <span class="fab fa-github-alt" aria-hidden="true"></span> -
+            https://Keeyanajones.github.io/</a><br/>   
+
+        <a href="https://www.linkedin.com/in/keeyana-jones-5a275514" 
+           target="_blank">                
+            <span class="fab fa-linkedin" aria-hidden="true" ></span> -
+              https://www.linkedin.com/in/keeyana-jones-5a275514</a><br/>            
+
+        <a href="mailto:keeyanajones@yahoo.com">
+            <span class="fa fa-envelope" aria-hidden="true"></span> -
+            keeyanajones@yahoo.com</a><br/><br/>
+                                 
         <a name="copyright" id="copyright"></a>
-        <h3><span class="fa fa-copyright" aria-hidden="true"></span> 
-            Copyright and license</h3>
-        <p>Code and documentation copyright 2018 Keeyana Jones. Code released 
-            under the MIT license. Docs released under Creative Commons.</p>           
-      </section>
+        <p><sup><span class="fa fa-copyright" aria-hidden="true"></span> 
+            <strong>Copyright and license</strong><br/>
+            Code and documentation copyright 2018 Keeyana Jones. Code released 
+            under the MIT license. Docs released under Creative Commons.
+        </sup></p>           
         
+         <a href="#top">
+             <span class="fa fa-arrow-up" aria-hidden="true">                 
+             </span></a>
+    </section>
+          
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
-            crossorigin="anonymous"></script>      
-   
-    <script src="javascripts/scale.fix.js"></script>
+            crossorigin="anonymous"></script>         
+    <script src="assets/javascripts/scale.fix.js"></script>
   </body>
 </html>
-
-
-

@@ -1,8 +1,3 @@
-
-.pagination { overflow: hidden; padding: 1em; background: #eee; margin-top: 1em; }
-.pagination-prev {float:left;}
-.pagination-next {float:right;}
-
 body {
   background-color: #fff;
   padding:50px;
@@ -118,7 +113,7 @@ header {
 
 header ul {
   list-style:none;
-  height:45px;
+  height:40px;
   padding:0;
   background: #f4f4f4;
   border-radius:5px;
@@ -130,7 +125,7 @@ header li {
   width:89px;
   float:left;
   border-right:1px solid #e0e0e0;
-  height:45px;
+  height:40px;
 }
 
 header li:first-child a {
