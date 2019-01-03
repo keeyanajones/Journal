@@ -1,12 +1,9 @@
 ## About My Code Journal
-This Github Repository is a series of essays about Software Engineering. 
-Over 20 essays of all types, finished and in progress pieces with cover sheets, 
-evaluation sheets and chart checklist. It covers Java SE Version 8, 
-other languages, and typical sub-disciplines.
+This Github Repository is a series of essays of all types, finished and in progress about Software Engineering that cover Java SE Version 8, other languages, and typical sub-disciplines.
 
 See [The Opening Essay](http://keeyanajones.github.io/Journal/opening-essay)
 
-###Table of Contents
+### Table of Contents
 <ol>
     <li>Getting Started</li>
     <li>OOAD and UML Diagrams</li>
