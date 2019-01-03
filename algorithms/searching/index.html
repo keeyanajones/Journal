@@ -14,7 +14,13 @@
     <link rel="stylesheet" 
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
-          crossorigin="anonymous">
+          crossorigin="anonymous">    
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>  
+    
     <!-- Custom Style Pygment and Icons -->     
     <link rel="stylesheet" href="../../assets/stylesheets/styles.css">
     <link rel="stylesheet" href="../../assets/stylesheets/pygment_trac.css">
@@ -30,15 +36,15 @@
     <div class="wrapper">               
     <!-- Header -->         
       <header>
-        <h2><span class="fa fa-book fa-5x"></span>
-          <span class="fa fa-pencil-alt fa-2x"></span><br/>
-            Journal </h2>
+        <h2>
+          <span class="fa fa-book fa-5x"></span>
+          <span class="fa fa-pencil-alt fa-2x"></span><br/>          
+          <span class="fab fa-git-square" aria-hidden="true"></span>Hub Pages</h2>
           
-        <p class="view"><sup>A Journal for GitHub Pages</sup><br/>        
-          <a href="https://github.com/keeyanajones/Journal">
+        <p class="view"><sup>A Code Journal for GitHub Pages</sup><br/>        
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
             <span class="fab fa-github"></span> 
-              View the Journal on GitHub 
-              <small>keeyanajones/Journal</small></a>
+              View the Code Journal on GitHub</a>
         </p><br/>                                        
               
         <button class="btn btn-lg btn-block btn-default" type="button">
@@ -75,19 +81,13 @@
     </div>          
       
     <section>
-        <h2>Journal for 
-        <span class="fab fa-git-square" aria-hidden="true"></span>Hub Pages</h2>
-
-          <h3><span class="fa fa-project-diagram " aria-hidden="true"></span>
+        <h2><span class="fa fa-project-diagram " aria-hidden="true"></span>
               <a name="searching" class="anchor" href="#searching">
               <span class="header-link"></span></a>
-          Algorithms in Java : <em>Searching</em></h3>                  
+          Algorithms <sup>in Java : <em>Searching</em></sup></h2>                  
      
-        <p>Last updated on May 11th, 2018</p>
-              
-        <p>A Journal by Keeyana Jones 
-         (<a href="https://twitter.com/keeyanajones">@keeyanajones</a>)</p>
-                                   
+        <p><sup>Last updated on January 1st, 2019</p>
+                                                 
         <ol class="breadcrumb">
           <li><a href="../../index.html">Home</a></li>
           <li><a href="../index.html">Algorithms</a></li>
@@ -136,11 +136,10 @@
                 is found then that particular item is returned, otherwise the 
                 search continues till the end of the data collection.</p>
 
-
-Algorithm
+ALGORITHM
 <pre>
 <code>
-Linear Search ( Array A, Value x)
+Linear Search (Array A, Value x)
 
 Step 1: Set i to 1
 Step 2: if i > n then go to step 7
@@ -154,7 +153,7 @@ Step 8: Exit
 </code>
 </pre>
 
-Pseudocode
+PSEUDOCODE 
 <pre>
 <code>
 procedure linear_search (list, value)
@@ -239,7 +238,7 @@ mid = low + (high - low) / 2
                   the count of comparisons to be made to very less numbers.</li>
             </ul>
                 
-Pseudocode
+PSEUDOCODE 
             <p>The pseudocode of binary search algorithms should look like 
                this:</p>
 <pre>
@@ -345,7 +344,7 @@ Step 7 − Repeat until match.
 </code>
 </pre>
 
-Pseudocode
+PSEUDOCODE
 <pre>
 <code>
 A → Array list
@@ -364,7 +363,7 @@ Procedure Interpolation_Search()
          EXIT: Failure, Target not found
       end if
       
-      Set Mid = Lo + ((Hi - Lo) / (A[Hi] - A[Lo])) * (X - A[Lo]) 
+      Set Mid = Lo + ((Hi - Lo)/(A[Hi] - A[Lo])) * (X - A[Lo]) 
 
       if A[Mid] = X
          EXIT: Success, Target found at Mid
@@ -416,10 +415,10 @@ Hash Function
 (37,98)
 
 Sr. No.	Key	Hash         Array Index
-1	1	1 % 20 = 1	1
-2	2	2 % 20 = 2	2
+1	1	1  % 20 = 1	1
+2	2	2  % 20 = 2	2
 3	42	42 % 20 = 2	2
-4	4	4 % 20 = 4	4
+4	4	4  % 20 = 4	4
 5	12	12 % 20 = 12	12
 6	14	14 % 20 = 14	14
 7	17	17 % 20 = 17	17
@@ -437,18 +436,18 @@ Sr. No.	Key	Hash         Array Index
 
 <pre>
 <code>
-Sr. No.	Key	Hash         Array Index   After Linear 
-                                           Probing, 
-                                           Array Index
-1	1	1 % 20 = 1	1           1
-2	2	2 % 20 = 2	2           2
-3	42	42 % 20 = 2	2           3
-4	4	4 % 20 = 4	4           4
-5	12	12 % 20 = 12	12          12
-6	14	14 % 20 = 14	14          14
-7	17	17 % 20 = 17	17          17
-8	13	13 % 20 = 13	13          13
-9	37	37 % 20 = 17	17          18
+Sr. No.	Key	   Hash       Array    After Linear 
+                              Index    Probing, 
+                                       Array Index
+1	1	1  % 20 = 1	1         1
+2	2	2  % 20 = 2	2         2
+3	42	42 % 20 = 2	2         3
+4	4	4  % 20 = 4	4         4
+5	12	12 % 20 = 12	12        12
+6	14	14 % 20 = 14	14        14
+7	17	17 % 20 = 17	17        17
+8	13	13 % 20 = 13	13        13
+9	37	37 % 20 = 17	17        18
 </code>
 </pre>
 
@@ -492,7 +491,7 @@ int hashCode(int key){
            the array. Use linear probing to get the element ahead if the element
            is not found at the computed hash code.</p>
 
-Example
+EXAMPLE
 <pre>
 <code>
 struct DataItem *search(int key) {
@@ -523,7 +522,7 @@ struct DataItem *search(int key) {
            the array. Use linear probing for empty location, if an element is 
            found at the computed hash code.</p>
 
-Example
+EXAMPLE
 <pre>
 <code>
 void insert(int key,int data) {
@@ -557,7 +556,7 @@ void insert(int key,int data) {
            is not found at the computed hash code. When found, store a dummy 
            item there to keep the performance of the hash table intact.</p>
 
-Example
+EXAMPLE
 <pre>
 <code>
 struct DataItem* delete(struct DataItem* item) {
@@ -607,8 +606,8 @@ struct DataItem* delete(struct DataItem* item) {
         </ul>
         
     <p>You can read more at: 
-        <a href="https://go.java/">
-           https://go.java</a></p>
+        <a href="https://go.java/" target="_blank">
+           <small>https://go.java</small></a></p>
 
       <!-- pagination -->
        <a role="button" class="btn btn-primary pull-left"  
@@ -630,9 +629,7 @@ struct DataItem* delete(struct DataItem* item) {
         
          <a href="#top">
              <span class="fa fa-arrow-up" aria-hidden="true">                 
-             </span></a>         
-
-                   
+             </span></a>                            
     </section>
         
     <!-- jQuery library -->

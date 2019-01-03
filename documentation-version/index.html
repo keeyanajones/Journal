@@ -15,6 +15,12 @@
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
           crossorigin="anonymous">
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>      
+    
     <!-- Custom Style Pygment and Icons -->     
     <link rel="stylesheet" href="../assets/stylesheets/styles.css">
     <link rel="stylesheet" href="../assets/stylesheets/pygment_trac.css">
@@ -30,15 +36,15 @@
     <div class="wrapper">               
     <!-- Header -->         
       <header>
-        <h2><span class="fa fa-book fa-5x"></span>
-          <span class="fa fa-pencil-alt fa-2x"></span><br/>
-            Journal </h2>
+        <h2>
+          <span class="fa fa-book fa-5x"></span>
+          <span class="fa fa-pencil-alt fa-2x"></span><br/>          
+          <span class="fab fa-git-square" aria-hidden="true"></span>Hub Pages</h2>
           
-        <p class="view"><sup>A Journal for GitHub Pages</sup><br/>        
-          <a href="https://github.com/keeyanajones/Journal">
+        <p class="view"><sup>A Code Journal for GitHub Pages</sup><br/>        
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
             <span class="fab fa-github"></span> 
-              View the Journal on GitHub 
-              <small>keeyanajones/Journal</small></a>
+              View the Code Journal on GitHub</a>
         </p><br/>                                        
               
         <button class="btn btn-lg btn-block btn-default" type="button">
@@ -75,30 +81,20 @@
     </div>          
       
     <section>
-        <h2>Journal for 
-        <span class="fab fa-git-square" aria-hidden="true"></span>Hub Pages</h2>
-
-        
-          <h3><span class="fa fa-file-alt" aria-hidden="true"></span>
+        <h2><span class="fa fa-file-alt" aria-hidden="true"></span>
               <a name="documentation-version" class="anchor" href="#documentation-version">
               <span class="header-link"></span></a>
-          Documentation &amp; Version Control</h3>                  
+          Documentation &amp; Version Control</h2>                  
      
-        <p>Last updated on May 30th, 2018</p>
-      
-        
-        <p>A Journal by Keeyana Jones 
-         (<a href="https://twitter.com/keeyanajones">@keeyanajones</a>)</p>
-                                   
+        <p><sup>Last updated on January 2nd, 2019</sup></p>
+                                                
         <ol class="breadcrumb">
           <li><a href="../index.html">Home</a></li>
           <li class="active"><a href="#documentation-version">
                   Documentation &amp; Version</a></li>
         </ol>
                                  
-        <a name="documentation" id="documentation"></a>            
-
-        <h4>Documentation</h4>
+        <a name="documentation" id="documentation"></a>                    
         <p>Software documentation is written text or illustration that 
             accompanies computer software or is embedded in the source code. It 
             either explains how it operates or how to use it, and may mean 
@@ -107,8 +103,7 @@
         <p>Documentation is an important part of software engineering. Types 
             of documentation include:</p>
 
-        <ol>
-            
+        <ol>            
           <li>Software Documentation</li>
           <li>Product Documentation - describes the product that is being 
                                       developed and provides instructions 
@@ -156,68 +151,74 @@
 <hr/>
         
         <a name="version" id="version"></a>            
-
-        <h4>Version Control</h4>
-        <p>version control, also known as revision control or source control,
+        <h3>Version Control</h3>
+        <p>Version control, also known as revision control or source control,
             is the management of changes to documents, computer programs, large 
             web sites, and other collections of information. Changes are usually
             identified by a number or letter code, termed the "revision number",
             "revision level", or simply "revision". </p>
         
-        <h4>GIT CHEAT SHEET</h4>
-        
-        <h5>INSTALL GIT</h5>
+        Git Cheat Sheet - 
+        <a href="https://education.github.com/git-cheat-sheet-education.pdf" 
+           target="_blank">
+            <small>
+                https://education.github.com/git-cheat-sheet-education.pdf
+            </small>
+        </a><br/>
 
+        <h4>INSTALL GIT</h4>
         <p>GitHub provides desktop clients that include a graphical user
             interface for the most common repository actions and an 
             automatically updating command line edition of Git for advanced 
             scenarios.</p>
         
-        GitHub Desktop User Guides - 
+        GitHub Desktop User Guides - <span class="fab fa-github-alt fa-2x"></span>
         <a href="https://help.github.com/desktop/guides/" target="_blank">
-            https://help.github.com/desktop/guides</a><br/>
+            <small>https://help.github.com/desktop/guides</small></a>
             
-        GitHub for Windows - 
+        GitHub for Windows - <span class="fab fa-windows fa-2x"></span>
         <a href="https://windows.github.com" target="_blank">
-            https://windows.github.com</a><br/>
+            <small>https://windows.github.com</small></a>
             
-        GitHub for Mac - 
+        GitHub for Mac - <span class="fab fa-apple fa-2x"></span>
         <a href="https://mac.github.com" target="_blank">
-            https://mac.github.com</a><br/>
+            <small>https://mac.github.com</small></a>
             
-        Git for All Platforms - 
+        Git for All Platforms - <span class="fab fa-git fa-2x"></span>
         <a href="https://git-scm.com" target="_blank">
-            https://git-scm.com</a><br/><br/>
+            <small>https://git-scm.com</small></a><br/>
 
-        <h5>CONFIGURE TOOLING</h5>
+            
+        <h4>CONFIGURE TOOLING</h4>
         <p>Configure user information for all local repositories</p>
-<pre>
-$ git config --global user.name "[<kbd>name</kbd>]"
+        
+<pre><code class="console">
+$ git config --global user.name "[NAME]"
   Sets the name you want attached to your commit transactions
 
-$ git config --global user.email "[<kbd>email address</kbd>]"
+$ git config --global user.email "[EMAIL ADDRESS]"
   Sets the email you want attached to your commit transactions
 
 $ git config --global color.ui auto
   Enables helpful colorization of command line output
-</pre>
+</code></pre>
 
-        <h5>CREATE REPOSITORIES</h5>
+        <h4>CREATE REPOSITORIES</h4>
         <p>Start a new repository or obtain one from an existing URL</p>
 
-<pre>
+<pre><code class="console">
 $ git init [<kbd>project-name</kbd>]
   Creates a new local repository with the specified name
  
 $ git clone [<kbd>url</kbd>]
   Downloads a project and its entire version history
-</pre>
+</code></pre>
         
 
-        <h5>MAKE CHANGES</h5>
+        <h4>MAKE CHANGES</h4>
         <p>Review edits and crafts a commit transaction</p>
 
-<pre>
+<pre><code class="console">
 $ git status
   Lists all new or modified files to be committed
 
@@ -234,14 +235,14 @@ $ git diff --staged
   Shows file differences between staging and 
   the last file version
 
-$ git commit -m "[<kbd>descriptive message</kbd>]"
+$ git commit -m "[DESCRIPTIVE MESSAGE]"
   Records file snapshots permanently in version history
-</pre>
+</code></pre>
 
-        <h5>GROUP CHANGES</h5>
+        <h4>GROUP CHANGES</h4>
         <p>Name a series of commits and combine completed efforts</p>
 
-<pre>        
+<pre><code class="console">
 $ git branch
   Lists all local branches in the current repository
 
@@ -258,12 +259,12 @@ $ git merge [<kbd>branch</kbd>]
 
 $ git branch -d [<kbd>branch-name</kbd>]
   Deletes the specified branch        
-</pre>        
+</code></pre>        
 
-        <h5>REFACTOR FILENAMES</h5>
+        <h4>REFACTOR FILENAMES</h4>
         <p>Relocate and remove versioned files</p>
 
-<pre>
+<pre><code class="console">
 $ git rm [<kbd>file</kbd>]
   Deletes the file from the working directory 
   and stages the deletion
@@ -274,12 +275,12 @@ $ git rm --cached [<kbd>file</kbd>]
 
 $ git mv [<kbd>file-original</kbd>] [<kbd>file-renamed</kbd>]
   Changes the file name and prepares it for commit
-</pre>
+</code></pre>
 
-        <h5>SUPPRESS TRACKING</h5>
+        <h4>SUPPRESS TRACKING</h4>
         <p>Exclude temporary files and paths</p>
 
-<pre>        
+<pre><code class="console">
 *.log
 build/
 temp-*
@@ -289,12 +290,12 @@ temp-*
 
 $ git ls-files --other --ignored --exclude-standard
   Lists all ignored files in this project
-</pre>
+</code></pre>
 
-        <h5>SAVE FRAGMENTS</h5>
+        <h4>SAVE FRAGMENTS</h4>
         <p>Shelve and restore incomplete changes</p>
 
-<pre>
+<pre><code class="console">
 $ git stash
   Temporarily stores all modified tracked files
 
@@ -306,12 +307,12 @@ $ git stash pop
 
 $ git stash drop
   Discards the most recently stashed changeset
-</pre>
+</code></pre>
 
-        <h5>REVIEW HISTORY</h5>
+        <h4>REVIEW HISTORY</h4>
         <p>Browse and inspect the evolution of project files</p>
 
-<pre>
+<pre><code class="console">
 $ git log
   Lists version history for the current branch
 
@@ -323,24 +324,24 @@ $ git diff [<kbd>first-branch</kbd>]...[<kbd>second-branch</kbd>]
 
 $ git show [<kbd>commit</kbd>]
   Outputs metadata and content changes of the specified commit
-</pre>        
+</code></pre>        
 
 
-        <h5>REDO COMMITS</h5>
-        <p>Erase mistakes and craf replacement history</p>
+        <h4>REDO COMMITS</h4>
+        <p>Erase mistakes and craft replacement history</p>
 
-<pre>
+<pre><code class="console">
 $ git reset [<kbd>commit</kbd>]
-  Undoes all commits after [<kbd>commit</kbd>], preserving changes locally
+  Undo all commits after [<kbd>commit</kbd>], preserving changes locally
 
 $ git reset --hard [<kbd>commit</kbd>]
-  Discards all history and changes back to the specified commit
-</pre>
+  Discard all history and changes back to the specified commit
+</code></pre>
 
-        <h5>SYNCHRONIZE CHANGES</h5>
+        <h4>SYNCHRONIZE CHANGES</h4>
         <p>Register a repository bookmark and exchange version history</p>
 
-<pre>
+<pre><code class="console">
 $ git fetch [<kbd>bookmark</kbd>]
   Downloads all history from the repository bookmark
 
@@ -352,7 +353,7 @@ $ git push [<kbd>alias</kbd>] [<kbd>branch</kbd>]
 
 $ git pull
   Downloads bookmark history and incorporates changes        
-</pre>        
+</code></pre>        
         
 <hr/>        
 
@@ -380,8 +381,15 @@ $ git pull
         </ul>
         
     <p>You can read more at: 
-        <a href="https://en.wikipedia.org/wiki/Software_documentation">
-           https://en.wikipedia.org/wiki/Software_documentation</a></p>
+        <a href="https://en.wikipedia.org/wiki/Software_documentation"
+           target="_blank">
+           <small>https://en.wikipedia.org/wiki/Software_documentation</small>
+        </a>
+        and 
+        <a href="https://education.github.com/git-cheat-sheet-education.pdf"
+           target="_blank">
+        <small>https://education.github.com/git-cheat-sheet-education.pdf</small>    
+    </p>
 
       <!-- pagination -->
        <a role="button" class="btn btn-primary pull-left"  
@@ -403,9 +411,7 @@ $ git pull
         
          <a href="#top">
              <span class="fa fa-arrow-up" aria-hidden="true">                 
-             </span></a>         
-
-                   
+             </span></a>                            
     </section>
         
     <!-- jQuery library -->

@@ -15,6 +15,12 @@
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
           crossorigin="anonymous">
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>          
+    
     <!-- Custom Style Pygment and Icons -->     
     <link rel="stylesheet" href="../assets/stylesheets/styles.css">
     <link rel="stylesheet" href="../assets/stylesheets/pygment_trac.css">
@@ -30,15 +36,15 @@
     <div class="wrapper">               
     <!-- Header -->         
       <header>
-        <h2><span class="fa fa-book fa-5x"></span>
-          <span class="fa fa-pencil-alt fa-2x"></span><br/>
-            Journal </h2>
+        <h2>
+          <span class="fa fa-book fa-5x"></span>
+          <span class="fa fa-pencil-alt fa-2x"></span><br/>          
+          <span class="fab fa-git-square" aria-hidden="true"></span>Hub Pages</h2>
           
-        <p class="view"><sup>A Journal for GitHub Pages</sup><br/>        
-          <a href="https://github.com/keeyanajones/Journal">
+        <p class="view"><sup>A Code Journal for GitHub Pages</sup><br/>        
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
             <span class="fab fa-github"></span> 
-              View the Journal on GitHub 
-              <small>keeyanajones/Journal</small></a>
+              View the Code Journal on GitHub</a>
         </p><br/>                                        
               
         <button class="btn btn-lg btn-block btn-default" type="button">
@@ -75,23 +81,17 @@
     </div>          
       
     <section>
-        <h2>Journal for 
-        <span class="fab fa-git-square" aria-hidden="true"></span>Hub Pages</h2>
-        
-          <h3><span class="fa fa-object-group " aria-hidden="true"></span>
+        <h2><span class="fa fa-object-group " aria-hidden="true"></span>
               <a name="design-patterns" class="anchor" href="#design-paterns">
               <span class="header-link"></span></a>
-          Design Patterns in Java</h3>                  
+          Design Patterns <sup>in Java</sup></h2>                  
      
-        <p>Last updated on June 30th, 2018</p>
-        
-        <p>A Journal by Keeyana Jones 
-         (<a href="https://twitter.com/keeyanajones">@keeyanajones</a>)</p>
-                                   
+        <p><sup>Last updated on January 2nd, 2019</sup></p>
+                                           
         <ol class="breadcrumb">
           <li><a href="../index.html">Home</a></li>
           <li class="active"><a href="#design-patterns">
-                  Design Patterns in Java</a></li>
+                  Design Patterns <sup>in Java</sup></a></li>
         </ol>
                                  
         <a name="patterns" id="patterns"></a>            
@@ -103,7 +103,7 @@
            numerous software developers over quite a substantial period of 
            time.</p>
 
-        <h5>What is Gang of Four (GOF)?</h5>
+        <h3>What is Gang of Four (GOF)?</h3>
         <p>In 1994, four authors Erich Gamma, Richard Helm, Ralph Johnson and 
            John Vlissides published a book titled Design Patterns - Elements of 
            Reusable Object-Oriented Software which initiated the concept of 
@@ -118,7 +118,7 @@
           <li>Favor object composition over inheritance</li>
         </ul>
 
-        <h5>Usage of Design Pattern</h5>
+        <h4>Usage of Design Pattern</h4>
         <p>Design Patterns have two main usages in software development.</p>
 
         <h5>Common platform for developers</h5>
@@ -169,7 +169,7 @@
         <hr/>
         
         <a name="creational" id="creational"></a>
-        <h4>Creational Patterns</h4>
+        <h3>Creational Patterns</h3>
         <ul>        
           <li><a href="#factory">Factory</a> 
                         : Define an interface for creating a single object, but 
@@ -1420,7 +1420,7 @@ Shape : Rectangle
         <hr/>
         
         <a name="structural" id="structural"></a>
-        <h4>Structural Patterns</h4>
+        <h3>Structural Patterns</h3>
 
         <ul>
           <li><a href="#adapter">Adapter, Wrapper, or Translator</a>
@@ -3074,7 +3074,7 @@ Displaying test_10mb.jpg
         <hr/>
 
         <a name="behavioral" id="behavioral"></a>
-        <h4>Behavioral Patterns</h4>
+        <h3>Behavioral Patterns</h3>
 
         <ul>
           <li><a href="#chain">Chain of responsibility</a>
@@ -5158,7 +5158,7 @@ Displaying Computer.
         <hr/>
         
         <a name="j2ee" id="j2ee"></a>
-        <h4>Java Platform Enterprise Edition Patterns</h4>
+        <h3>Java Platform Enterprise Edition Patterns</h3>
 
         <ul>
           <li><a href="#mvc">Model View Controller (MVC)</a> :	 
@@ -6898,8 +6898,12 @@ Student: [RollNo : 0, Name : Michael ]
         </ul>
         
     <p>You can read more at: 
-        <a href="https://en.wikipedia.org/wiki/Software_design_pattern">
-           https://en.wikipedia.org/wiki/Software_design_pattern</a></p>
+        <a href="https://en.wikipedia.org/wiki/Software_design_pattern" target="_blank">          
+            <small>
+            https://en.wikipedia.org/wiki/Software_design_pattern
+            </small>
+        </a>
+    </p>
 
       <!-- pagination -->
        <a role="button" class="btn btn-primary pull-left"  

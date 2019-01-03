@@ -15,6 +15,12 @@
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
           crossorigin="anonymous">
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>    
+    
     <!-- Custom Style Pygment and Icons -->     
     <link rel="stylesheet" href="../assets/stylesheets/styles.css">
     <link rel="stylesheet" href="../assets/stylesheets/pygment_trac.css">
@@ -30,15 +36,15 @@
     <div class="wrapper">               
     <!-- Header -->         
       <header>
-        <h2><span class="fa fa-book fa-5x"></span>
-          <span class="fa fa-pencil-alt fa-2x"></span><br/>
-            Journal </h2>
+        <h2>
+          <span class="fa fa-book fa-5x"></span>
+          <span class="fa fa-pencil-alt fa-2x"></span><br/>          
+          <span class="fab fa-git-square" aria-hidden="true"></span>Hub Pages</h2>
           
-        <p class="view"><sup>A Journal for GitHub Pages</sup><br/>        
-          <a href="https://github.com/keeyanajones/Journal">
+        <p class="view"><sup>A Code Journal for GitHub Pages</sup><br/>        
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
             <span class="fab fa-github"></span> 
-              View the Journal on GitHub 
-              <small>keeyanajones/Journal</small></a>
+              View the Code Journal on GitHub</a>
         </p><br/>                                        
               
         <button class="btn btn-lg btn-block btn-default" type="button">
@@ -75,23 +81,17 @@
     </div>          
       
     <section>
-        <h2>Journal for 
-        <span class="fab fa-git-square" aria-hidden="true"></span>Hub Pages</h2>
-        
-          <h3><span class="fa fa-database " aria-hidden="true"></span>
+        <h2><span class="fa fa-database " aria-hidden="true"></span>
               <a name="data-structures" class="anchor" href="#data-structures">
               <span class="header-link"></span></a>
-          Data Structures in Java</h3>                  
+          Data Structures <sup>in Java</sup></h2>                  
      
-        <p>Last updated on April 22nd, 2018</p>
-              
-        <p>A Journal by Keeyana Jones 
-         (<a href="https://twitter.com/keeyanajones">@keeyanajones</a>)</p>
-                                   
+        <p><sup>Last updated on January 1st, 2019</sup></p>
+                                                 
         <ol class="breadcrumb">
           <li><a href="../index.html">Home</a></li>
           <li class="active"><a href="#data-structures">
-                  Data Structures in Java</a></li>
+                Data Structures <sup>in Java</sup></a></li>
         </ol>
                                  
       <p>There are numerous types of data structures, generally built upon 
@@ -111,7 +111,7 @@
                              operations of the data structure.</li>
       </ul>
        
-      <h4>Characteristics of a Data Structures</h4>      
+      <h3>Characteristics of a Data Structures</h3>      
       <ul>
         <li>Correctness − Data structure implementation should implement its 
                           interface correctly.</li>
@@ -214,7 +214,6 @@
 
     <hr/>
     
-
     <a name="primitive" class="anchor" href="#primitive"></a>
     <h3>Primitive Data Type</h3>
     <p>Those data types for which a language has built-in support are known as 
@@ -228,12 +227,12 @@
        target="_blank"> 
        JavaBoolean.java</a>
     
-<pre>
+<pre><code class="java">
 boolean result = true;
 boolean b1 = true;
 boolean b2 = false;
 boolean b3 = (10 > 2);        
-</pre>
+</code></pre>
     
 <h4>Character (character, char)</h4>
 
@@ -242,11 +241,11 @@ boolean b3 = (10 > 2);
        target="_blank"> 
        JavaCharacter.java</a>
     
-<pre>
+<pre><code class="java">
 char capitalC = 'C';
 char ch1 = 'a';
 char ch2 = 65; /* ASCII code of 'A'*/
-</pre>
+</code></pre>
     
 <h4>Floating-point, single-precision real number values (float, double, real, double precision)</h4>
 
@@ -255,11 +254,11 @@ char ch2 = 65; /* ASCII code of 'A'*/
        target="_blank"> 
        JavaFloating.java</a>
     
-<pre>
+<pre><code class="java">
 float f = 10.4f;
 float f1  = 123.4f;
 float pi =  3.14_15F;
-</pre>
+</code></pre>
     
 <h4>Fixed-point number (fixed) with a variety of precisions and a programmer-selected scale</h4>
 
@@ -268,14 +267,14 @@ float pi =  3.14_15F;
        target="_blank"> 
        JavaFixed.java</a>
     
-<pre>
+<pre><code class="java">
 BigDecimal a = new BigDecimal("31234"); 
 BigDecimal b = new BigDecimal("215.87");
 
 // We can also initialize using MathContext.
 MathContext mc = new MathContext(2, RoundingMode.CEILING);
 BigDecimal c = new BigDecimal("215.87", mc); 
-</pre>
+</code></pre>
 
 <h4>Double, a wider floating-point size</h4>
 
@@ -284,12 +283,12 @@ BigDecimal c = new BigDecimal("215.87", mc);
        target="_blank"> 
        JavaDouble.java</a>
     
-<pre>
+<pre><code class="java">
 double d = 1232.44;
 double d1 = 123.4;
 // same value as d1, but in scientific notation
 double d2 = 1.234e2;
-</pre>
+</code></pre>
 
 <h4>Integer (int, short, long, byte) with a variety of precisions</h4>
 
@@ -298,7 +297,7 @@ double d2 = 1.234e2;
        target="_blank"> 
        JavaInteger.java</a>
 
-<pre>
+<pre><code class="java">
 byte b1 = 100;
 byte b2 = 20;
 
@@ -316,7 +315,7 @@ short s2 = 42;
 
 long timeInMilliseconds = new Date().getTime();
 long creditCardNumber = 1234_5678_9012_3456L;
-</pre>    
+</code></pre>    
 
 <h4>String, a sequence of characters</h4>
 
@@ -325,7 +324,7 @@ long creditCardNumber = 1234_5678_9012_3456L;
        target="_blank"> 
        JavaString.java</a>
 
-<pre>                
+<pre><code class="java">
 int i = 11;               
 float pi =  3.14_15F;
 String fs;
@@ -354,7 +353,7 @@ int len = greeting.length();
   System.out.println(fs);
  }
 }
-</pre>
+</code></pre>
 
 <h4>Reference (Pointer): C/C++ Pointers vs Java References</h4>
 
@@ -383,7 +382,7 @@ int len = greeting.length();
        target="_blank"> 
        JavaReference.java</a>    
     
-<pre>
+<pre><code class="java">
 // A simple Java program 
 // to illustrate the concept of 
 // references 
@@ -415,7 +414,7 @@ public class JavaReference {
 
   }
 }    
-</pre>
+</code></pre>
 
 <h4>Enumerated Type</h4>
     <p>Enumerations serve the purpose of representing a group of named constants
@@ -443,7 +442,7 @@ public class JavaReference {
        target="_blank"> 
        JavaEnumeration.java</a>
     
-<pre>  
+<pre><code class="java">
 // A simple enum example where enum is declared
 // outside any class (Note enum keyword instead of
 // class keyword)
@@ -461,7 +460,7 @@ public class Test {
      System.out.println(c1);
  }
 }
-</pre>
+</code></pre>
  
     <hr/>
     
@@ -530,7 +529,7 @@ public class Test {
        target="_blank"> 
        JavaArray.java</a>
 
-<pre>
+<pre><code class="java">
 public class Array {
   public static void main(String args[]){      
     // declaration and instantiation
@@ -547,7 +546,7 @@ public class Array {
       System.out.println(a[i]);  
   }
 }
-</pre>   
+</code></pre>   
 
     <h4>Record or Tuple or Structure</h4>
     <p>Record (also called tuple or structure or struct) is an aggregate data 
@@ -560,7 +559,7 @@ public class Array {
        target="_blank"> 
        JavaRecord.java</a>
 
-<pre>
+<pre><code class="java">
 class Record {
   private final String userName;
   private final int userID;
@@ -582,14 +581,14 @@ class Record {
     return rowID;
   }  
 }    
-</pre>
+</code></pre>
 
     See <span class="fa fa-file-code"></span></a>
     <a href="https://github.com/keeyanajones/Java-Data-Structures/blob/master/src/composite/JavaTuple.java"
        target="_blank"> 
        JavaTuple.java</a>
 
-<pre> 
+<pre><code class="java">
 public class Tuple {    
 // data in an instance 
   private String userName;
@@ -610,14 +609,14 @@ public class Tuple {
   public int getUserID() { return userID; }
   public int getRowID() { return rowID; }  
 }
-</pre>
+</code></pre>
 
     See <span class="fa fa-file-code"></span></a>
     <a href="https://github.com/keeyanajones/Java-Data-Structures/blob/master/src/composite/JavaStructure.java"
        target="_blank"> 
        JavaStructure.java</a>
 
-<pre> 
+<pre><code class="java">
 class Structure {
   String userName;
   int userID;
@@ -637,7 +636,7 @@ class Structure {
   public int getUserID() { return userID; }
   public int getRowID() { return rowID; }  
 }             
-</pre>  
+</code></pre>  
 
     <h4>Union</h4>
     <p>A union is a data structure that specifies which of a number of permitted 
@@ -652,7 +651,7 @@ class Structure {
        target="_blank"> 
        JavaUnion.java</a>
 
-<pre>
+<pre><code class="java">
 import java.util.*;
 
 public class Union {
@@ -675,7 +674,7 @@ public class Union {
     System.out.println("union: " + union);
   }
 }
-</pre>
+</code></pre>
 
     <h4>Tagged Union</h4>
     <p>A tagged union (also called variant, variant record, discriminated union,
@@ -686,14 +685,14 @@ public class Union {
                     due to the security and type-safety issues. I wanted a 
                     complete journal though so I added the following.</sup></p>
 
-Tagged Union Well, Kind of ( ͡◉ ͜ʖ ͡◉)<br/>
+Tagged Union Well, Kind of (͡◉͜ʖ͡◉)<br/>
 
     See <span class="fa fa-file-code"></span></a>
     <a href="https://github.com/keeyanajones/Java-Data-Structures/blob/master/src/composite/JavaTaggedUnion.java"
        target="_blank"> 
        JavaTaggedUnion.java</a>
 
-<pre>
+<pre><code class="java">
 enum Type {
  // base case the union of two types: 
  BASECASE, //some and none 
@@ -738,7 +737,7 @@ public class TaggedUnion {
    obj2.getMyType();
  }
 }
-</pre>
+</code></pre>
 
 <hr/>
 
@@ -785,7 +784,7 @@ public class TaggedUnion {
        target="_blank"> 
        JavaContainer.java</a>
 
-<pre>
+<pre><code class="java">
 import java.awt.BorderLayout;
 import java.awt.Button;
 import java.awt.Component;
@@ -818,7 +817,7 @@ public class Container {
   frame.setVisible(true);
  }
 }      
-</pre>
+</code></pre>
 
     <h4>Associative Array</h4>
     <p>An collection of (key, value) pairs, such that each possible key appears 
@@ -831,7 +830,7 @@ HashMap, TreeMap, and LinkedHashMap<br/>
        target="_blank"> 
        JavaHashMap.java</a>
 
-<pre>
+<pre><code class="java">
 import java.util.*;
 
 public class HashMap {
@@ -851,14 +850,14 @@ public class HashMap {
     System.out.println(fruitMapping);
   }
 }
-</pre>
+</code></pre>
 
     See <span class="fa fa-file-code"></span></a>
     <a href="https://github.com/keeyanajones/Java-Data-Structures/blob/master/src/adt/JavaTreeMap.java"
        target="_blank"> 
        JavaTreeMap.java</a>
 
-<pre>    
+<pre><code class="java">
 import java.util.*;
 
 public class JavaTreeMap {
@@ -876,14 +875,14 @@ public class JavaTreeMap {
     System.out.println(fruitMapping);
   }
 }   
-</pre>
+</code></pre>
 
     See <span class="fa fa-file-code"></span></a>
     <a href="https://github.com/keeyanajones/Java-Data-Structures/blob/master/src/adt/JavaLinkedHashMap.java"
        target="_blank"> 
        JavaLinkedHashMap.java</a>
 
-<pre>    
+<pre><code class="java">
 import java.util.*;
 
 public class JavaLinkedHashMap {
@@ -902,7 +901,7 @@ public class JavaLinkedHashMap {
     System.out.println(fruitMapping);
   }
 }
-</pre>
+</code></pre>
 
     <h4>List</h4>
     <p>A linked list (also just called list) is a linear collection of data 
@@ -918,7 +917,7 @@ public class JavaLinkedHashMap {
        target="_blank"> 
        JavaList.java</a>
 
-<pre>
+<pre><code class="java">
 import java.util.*;    
 
 class Lists{    
@@ -940,13 +939,13 @@ class Lists{
   System.out.println("linkedlist: "+al2);  
  }    
 } 
-</pre>
+</code></pre>
 
     <p>ArrayList and LinkedList both implements List interface and maintains 
         insertion order. Both are non synchronized classes.But there are many 
         differences between ArrayList and LinkedList classes.</p>
 
-ArrayList
+<h4>ArrayList</h4>
 
     <ul>
       <li>ArrayList internally uses dynamic array to store the elements.</li>
@@ -963,7 +962,7 @@ ArrayList
        target="_blank"> 
        JavaArrayList.java</a>
 
-<pre>
+<pre><code class="java">
 import java.util.*;  
 
 class ArrayLists{  
@@ -980,9 +979,9 @@ class ArrayLists{
   }  
  }  
 }       
-</pre>
+</code></pre>
 
-LinkedList
+<h4>LinkedList</h4>
 
     <ul>
       <li>LinkedList internally uses doubly linked list to store the 
@@ -999,7 +998,7 @@ LinkedList
        target="_blank"> 
        JavaLinkedList.java</a>
 
-<pre>
+<pre><code class="java">
 import java.util.*;  
 
 public class LinkedLists{  
@@ -1016,7 +1015,7 @@ public class LinkedLists{
   }  
  }  
 }       
-</pre>   
+</code></pre>   
 
     <h4>Multimap</h4>
     <p>A multimap (sometimes also multihash or multidict) is a generalization 
@@ -1037,7 +1036,7 @@ public class LinkedLists{
        target="_blank"> 
        JavaMultiMap.java</a>
 
-<pre>
+<pre><code class="java">
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -1109,7 +1108,7 @@ public class MultiMaps {
   return multimap;
  }
 }
-</pre>
+</code></pre>
 
     <h4>Set</h4>
     <p>A set is an abstract data type that can store certain values, without 
@@ -1120,8 +1119,7 @@ public class MultiMaps {
 
     <p>Various Classes (HashSet, TreeSet, LinkedHashSet)</p>
 
-HashSet
-
+    <h4>HashSet</h4>
     <p>Java HashSet class is used to create a collection that uses a hash table 
        for storage. It inherits the AbstractSet class and implements Set 
        interface. The important points about Java HashSet class are:</p>
@@ -1139,7 +1137,7 @@ HashSet
        target="_blank"> 
        JavaHashSet.java</a>    
     
-<pre>
+<pre><code class="java">
 import java.util.*;  
 
 class HashSets {  
@@ -1158,10 +1156,9 @@ class HashSets {
   }  
  }  
 } 
-</pre>
+</code></pre>
 
-    TreeSet
-
+    <h4>TreeSet</h4>
     <p>Java TreeSet class implements the Set interface that uses a tree for 
        storage. It inherits AbstractSet class and implements NavigableSet 
        interface. The objects of TreeSet class are stored in ascending order. 
@@ -1178,7 +1175,7 @@ class HashSets {
        target="_blank"> 
        JavaTreeSet.java</a>    
     
-<pre>
+<pre><code class="java">
 import java.util.*;  
 
 class TreeSets {  
@@ -1197,10 +1194,9 @@ class TreeSets {
   }  
  }  
 }  
-</pre>
+</code></pre>
 
-    LinkdedHashSet
-
+    <h4>LinkdedHashSet</h4>
     <p>Java LinkedHashSet class is a Hash table and Linked list implementation 
        of the set interface. It inherits HashSet class and implements Set 
        interface. The important points about Java LinkedHashSet class are:</p>
@@ -1216,7 +1212,7 @@ class TreeSets {
        target="_blank"> 
        JavaLinkedHashSet.java</a>
     
-<pre>
+<pre><code class="java">
 import java.util.*;  
 
 class LinkedHashSets {  
@@ -1235,8 +1231,7 @@ class LinkedHashSets {
   }  
  }  
 }  
-</pre>
-
+</code></pre>
 
     <h4>Multiset / Bag</h4>
     <p>A Multiset (or bag) is a generalization of the concept of a set that, 
@@ -1250,7 +1245,7 @@ class LinkedHashSets {
        target="_blank"> 
        JavaMultiSet.java</a>
 
-<pre>
+<pre><code class="java">
 import java.util.Iterator;
 import java.util.Set;
 
@@ -1319,7 +1314,7 @@ public class MultiSets {
                 + multiset.count("b"));
  }
 }
-</pre>
+</code></pre>
    
     <h4>Stack</h4>
     <p>A stack is an abstract data type that serves as a collection of elements,
@@ -1340,7 +1335,7 @@ public class MultiSets {
        target="_blank"> 
        JavaStack.java</a>
 
-<pre>
+<pre><code class="java">
 import java.util.*;
 
 public class Stacks {
@@ -1373,7 +1368,7 @@ public class Stacks {
   }
  }
 }
-</pre>
+</code></pre>
 
     <h4>Queue</h4>
     <p>A Queue (Double-ended queue or Priority queue) is a particular kind of 
@@ -1389,7 +1384,7 @@ public class Stacks {
        target="_blank"> 
        JavaQueue.java</a>
 
-<pre>
+<pre><code class="java">
 import java.util.*;
 
 public class Queues {
@@ -1441,15 +1436,14 @@ public class Queues {
    queue.clear();
  }
 }       
-</pre>
-
+</code></pre>
     
     See <span class="fa fa-file-code"></span></a>
     <a href="https://github.com/keeyanajones/Java-Data-Structures/blob/master/src/adt/JavaPriorityQueue.java"
        target="_blank"> 
        JavaPriorityQueue.java</a>
 
-<pre>
+<pre><code class="java">
 import java.util.*;
 
 public class PriorityQueues {
@@ -1501,14 +1495,14 @@ public class PriorityQueues {
    queue.clear();
  }
 } 
-</pre>
+</code></pre>
 
     See <span class="fa fa-file-code"></span></a>
     <a href="https://github.com/keeyanajones/Java-Data-Structures/blob/master/src/adt/JavaDeque.java"
        target="_blank"> 
        JavaDeque.java</a>
 
-<pre>
+<pre><code class="java">
 import java.util.*;
 
 public class Deques {
@@ -1548,8 +1542,9 @@ public class Deques {
    }  
  }
 }          
-</pre>
+</code></pre>
 
+    <a name="tree" class="anchor" href="#tree"></a>        
     <h4>Tree</h4>
     <p>A tree is a widely used abstract data type (ADT)—or data structure 
        implementing this ADT—that simulates a hierarchical tree structure, 
@@ -1565,7 +1560,7 @@ public class Deques {
        target="_blank"> 
        JavaNode.java</a>
 
-<pre>
+<pre><code class="java">
 import java.util.*;
 
 public class Node {
@@ -1608,14 +1603,14 @@ public class Node {
   return parent;
  }
 }        
-</pre>
+</code></pre>
 
     See <span class="fa fa-file-code"></span></a>
     <a href="https://github.com/keeyanajones/Java-Data-Structures/blob/master/src/adt/JavaTree.java"
        target="_blank"> 
        JavaTree.java</a>
 
-<pre>                
+<pre><code class="java">
 public class Trees {
  public static void main(String[] args) {
   Node root = createTree();
@@ -1647,9 +1642,9 @@ public class Trees {
           printTree(each, appender + appender));
  }
 }
-</pre>
+</code></pre>
 
-
+    <a name="graph" class="anchor" href="#graph"></a>    
     <h4>Graph</h4>
     <p>A graph is an abstract data type that is meant to implement the 
        undirected graph and directed graph concepts from mathematics, 
@@ -1667,7 +1662,7 @@ public class Trees {
        target="_blank"> 
        JavaGraph.java</a>
 
-<pre>
+<pre><code class="java">
 import java.util.*;
  
 public abstract class Graphs {
@@ -1758,8 +1753,7 @@ public class VertexOutOfBoundsException
   
  } 
 }            
-</pre>
-
+</code></pre>
 
     <h4>Class</h4>
     <p>A class is a data structure that contains data fields, like a record, as 
@@ -1772,7 +1766,7 @@ public class VertexOutOfBoundsException
        target="_blank"> 
        JavaClass.java</a>
 
-<pre>                
+<pre><code class="java">
 public class Classes {
  // Create an array
  private final static int SIZE = 15;
@@ -1823,7 +1817,7 @@ public class Classes {
    cl.printEven();
  }
 }
-</pre>      
+</code></pre>      
            
 <hr/>
 
@@ -1848,8 +1842,8 @@ public class Classes {
         </ul>
         
     <p>You can read more at: 
-        <a href="https://go.java/">
-           https://go.java</a></p>
+        <a href="https://go.java/" target="_blank">
+           <small>https://go.java</small></a></p>
 
       <!-- pagination -->
        <a role="button" class="btn btn-primary pull-left"  
@@ -1871,9 +1865,7 @@ public class Classes {
         
          <a href="#top">
              <span class="fa fa-arrow-up" aria-hidden="true">                 
-             </span></a>         
-
-                   
+             </span></a>                            
     </section>
         
     <!-- jQuery library -->

@@ -15,6 +15,12 @@
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
           crossorigin="anonymous">
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>    
+    
     <!-- Custom Style Pygment and Icons -->     
     <link rel="stylesheet" href="../assets/stylesheets/styles.css">
     <link rel="stylesheet" href="../assets/stylesheets/pygment_trac.css">
@@ -30,15 +36,15 @@
     <div class="wrapper">               
     <!-- Header -->         
       <header>
-        <h2><span class="fa fa-book fa-5x"></span>
-          <span class="fa fa-pencil-alt fa-2x"></span><br/>
-            Journal </h2>
+        <h2>
+          <span class="fa fa-book fa-5x"></span>
+          <span class="fa fa-pencil-alt fa-2x"></span><br/>          
+          <span class="fab fa-git-square" aria-hidden="true"></span>Hub Pages</h2>
           
-        <p class="view"><sup>A Journal for GitHub Pages</sup><br/>        
-          <a href="https://github.com/keeyanajones/Journal">
+        <p class="view"><sup>A Code Journal for GitHub Pages</sup><br/>        
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
             <span class="fab fa-github"></span> 
-              View the Journal on GitHub 
-              <small>keeyanajones/Journal</small></a>
+              View the Code Journal on GitHub</a>
         </p><br/>                                        
               
         <button class="btn btn-lg btn-block btn-default" type="button">
@@ -75,84 +81,80 @@
     </div>          
       
     <section>
-        <h2>Journal for 
-        <span class="fab fa-git-square" aria-hidden="true"></span>Hub Pages</h2>
-
         
-          <h3><span class="fa fa-project-diagram " aria-hidden="true"></span>
+          <h2><span class="fa fa-project-diagram " aria-hidden="true"></span>
               <a name="algroithms" class="anchor" href="#algorithms">
               <span class="header-link"></span></a>
-          Algorithms in Java</h3>                  
+            Algorithms <sup>in Java</sup></h2>                  
      
-        <p>Last updated on May 11th, 2018</p>
-      
-        
-        <p>A Journal by Keeyana Jones 
-         (<a href="https://twitter.com/keeyanajones">@keeyanajones</a>)</p>
-                                   
+        <p><sup>Last updated on January 1st, 2019</sup></p>
+                                                 
         <ol class="breadcrumb">
           <li><a href="../index.html">Home</a></li>
           <li class="active"><a href="#algorithms">
-                 Algorithms in Java</a></li>
+                 Algorithms <sup>in Java</sup></a></li>
         </ol>
         
         <p>Algorithms are a step-by-step procedure, which defines a set of 
            instructions to be executed in a certain order to get the desired 
-           output. Algorithms are generally created independent of underlying 
-           languages, i.e. an algorithm can be implemented in more than one 
+           output; generally created independent of underlying 
+           languages, i.e. they can be implemented in more than one 
            programming language.</p>
+        
+        <p>From the data structure point of view some important categories:</p>
+        
+        <p><sup>see <a href="../data-structures/index.html">Data Structures</a> 
+         to learn more...</sup></p>
 
-        <p>From the data structure point of view, following are some important 
-            categories of algorithms:</p>
 
         <ul>
-          <li>Search − Algorithm to search an item in a data structure.
+          <li>Search − search an item in a data structure
               (see <a href="searching/index.html">Searching</a>)</li>
-          <li>Sort − Algorithm to sort items in a certain order. 
+          <li>Sort −  sort items in a certain order 
               (see <a href="sorting/index.html">Sorting</a>)</li>
-          <li>Insert − Algorithm to insert item in a data structure.
+          <li>Insert − insert item in a data structure
               (see <a href="shuffling/index.html">Shuffling</a>)</li>
-          <li>Update − Algorithm to update an existing item in a data structure.</li>
-          <li>Delete − Algorithm to delete an existing item from a data structure.</li>
+          <li>Update − update an existing item in a data structure</li>
+          <li>Delete − delete an existing item from a data structure</li>
         </ul>
         
-          <p>NOTE: (also see <a href="graphs/index.html">graphs</a>,
-                             <a href="trees/index.html">trees</a>, and 
-                             <a href="recursion/index.html">recursion</a>)</li></p>
-        
+          <p><sup>see <a href="graphs/index.html">Graphs</a>,
+                      <a href="trees/index.html">Trees</a>, and 
+                      <a href="recursion/index.html">Recursion</a> to 
+                  learn more...
+            </sup>
+          </p>            
         <br/>
 
-        <h4>Characteristics of an Algorithm</h4>
-        <p>Not all procedures can be called an algorithm. An algorithm should 
+        <a name="characteristics" class="anchor" href="#characteristics"></a>
+        <h3>Characteristics</h3>
+        <p>Not all procedures can be called an algorithm; it should 
            have the following characteristics:</p>
 
         <ul>
-          <li>Unambiguous − Algorithm should be clear and unambiguous. Each of 
+          <li>Unambiguous − be clear and unambiguous. Each of 
                             its steps (or phases), and their inputs/outputs 
-                            should be clear and must lead to only one 
-                            meaning.</li>
-          <li>Input − An algorithm should have 0 or more well-defined 
+                            clear and must lead to only one meaning.</li>
+          <li>Input −  have 0 or more well-defined 
                       inputs.</li>
-          <li>Output − An algorithm should have 1 or more well-defined outputs, 
-                       and should match the desired output.</li>
-          <li>Finiteness − Algorithms must terminate after a finite number of 
-                           steps.</li>
-          <li>Feasibility − Should be feasible with the available 
-                            resources.</li>
-          <li>Independent − An algorithm should have step-by-step directions, 
-                            which should be independent of any programming 
-                            code.</li>
+          <li>Output − have 1 or more well-defined outputs, 
+                       and match the desired output.</li>
+          <li>Finiteness − must terminate after a finite number of steps.</li>
+          <li>Feasibility − feasible with the available resources.</li>
+          <li>Independent − have step-by-step directions, which is independent 
+                            of any programming code.</li>
         </ul>
 
         <p>Algorithm writing is a process and is executed after the problem 
-           domain is well-defined. That is, we should know the problem domain, 
+           domain is well-defined; knowing the problem domain, 
            for which we are designing a solution.</p>
-
-        <p>Problem − Design an algorithm to add two numbers and display the 
+ 
+        <h4>EXAMPLE</h4>
+        <p>PROBLEM − Design an algorithm to add two numbers and display the 
                      result.</p>
 
 <pre>
-<code>        
+<code>
 Step 1 − START
 Step 2 − declare three integers a, b &amp; c
 Step 3 − define values of a &amp; b
@@ -163,8 +165,7 @@ Step 7 − STOP
 </code>
 </pre>
 
-
-<p>Alternatively, the algorithm can be written as:</p>
+<p>Alternatively, it can be written as:</p>
 
 <pre>
 <code>
@@ -178,42 +179,57 @@ Step 5 − STOP
 
         <p>In design and analysis of algorithms, usually the second method is 
            used to describe an algorithm. It makes it easy for the analyst to 
-           analyze the algorithm ignoring all unwanted definitions. He can 
-           observe what operations are being used and how the process is 
-           flowing.</p>
+           analyze the algorithm ignoring all unwanted definitions. Observe what 
+           operations are being used and how the process is flowing.</p>
 
+        <p>Steps of algorithm design:</p>
+          <ol>
+            <li>Define the Problem</li>
+            <li>Develop a model</li>
+            <li>Specification of the algorithm</li>
+            <li>Designing an algorithm</li>
+            <li>Checking the correctness of the algorithm</li>
+            <li>Analysis of algorithm</li>
+            <li>Implementation of algorithm</li>
+            <li>Program testing</li>
+            <li>Documentation preparation</li>
+          </ol>
+        
+        <p><sup>see <a href="problem-solving/index.html">Problem Solving</a> 
+         to learn more...</sup></p>
+        
         <p>Writing step numbers, is optional.</p>
 
-        <p>We design an algorithm to get a solution of a given problem. A 
+        <p>Design an algorithm to get a solution of a given problem. A 
            problem can be solved in more than one ways.</p>
 
-        <p>Hence, many solution algorithms can be derived for a given problem. 
-           The next step is to analyze those proposed solution algorithms and 
+        <p>Hence, many solutions can be derived for a given problem. 
+           The next step is to analyze those proposed algorithms and 
            implement the best suitable solution.</p>
-
-        <h4>Algorithm Analysis</h4>
-        <p>Efficiency of an algorithm can be analyzed at two different stages, 
-           before implementation and after implementation. They are the 
-           following:</p>
+        
+        <a name="analysis" class="anchor" href="#analysis"></a>
+        <h4>Analysis</h4>
+        <p>Efficiency of can be analyzed at two different stages, 
+           before and after implementation are the following:</p>
 
         <ul>
           <li>A Priori Analysis − This is a theoretical analysis of an 
-              algorithm. Efficiency of an algorithm is measured by assuming 
+              algorithm. Efficiency of it is measured by assuming 
               that all other factors, for example, processor speed, are 
-              constant and have no effect on the implementation.</li>
+              constant and have no effect on the implementation. It deals with 
+              the execution or running time of various operations involved. The 
+              running time of an operation can be defined as the number of 
+              computer instructions executed per operation.</li>
+            
           <li>A Posterior Analysis − This is an empirical analysis of an 
               algorithm. The selected algorithm is implemented using 
               programming language. This is then executed on target computer 
               machine. In this analysis, actual statistics like running time 
               and space required, are collected.</li>
-        </ul>
+        </ul>    
         
-        <p>We shall learn about a priori algorithm analysis. Algorithm analysis 
-           deals with the execution or running time of various operations 
-           involved. The running time of an operation can be defined as the 
-           number of computer instructions executed per operation.</p>
-
-        <h5>Algorithm Complexity</h5>
+        <a name="complexity" class="anchor" href="#complexity"></a>
+        <h4>Complexity</h4>
         <p>Suppose X is an algorithm and n is the size of input data, the time 
            and space used by the algorithm X are the two main factors, which 
            decide the efficiency of X.</p>
@@ -229,18 +245,20 @@ Step 5 − STOP
         <p>The complexity of an algorithm f(n) gives the running time and/or the
            storage space required by the algorithm in terms of n as the size of 
            input data.</p>
-
+        
+        <a name="space-complexity" class="anchor" href="#space-complexity"></a>
         <h4>Space Complexity</h4>
         <p>Space complexity of an algorithm represents the amount of memory 
            space required by the algorithm in its life cycle. The space required 
-           by an algorithm is equal to the sum of the following two components:
-        <p>
+           by them is equal to the sum of the following two components:
+        </p>
           
         <ul>    
           <li>A fixed part that is a space required to store certain data and 
               variables, that are independent of the size of the problem. For 
               example, simple variables and constants used, program size, 
               etc.</li>
+          
           <li>A variable part is a space required by variables, whose size 
               depends on the size of the problem. For example, dynamic memory 
               allocation, recursion stack space, etc.</li>
@@ -263,6 +281,7 @@ Step 3 -  Stop
            S(P) = 1 + 3. Now, space depends on data types of given variables 
            and constant types and it will be multiplied accordingly.</p>
 
+        <a name="time-complexity" class="anchor" href="#time-complexity"></a>        
         <h4>Time Complexity</h4>
         <p>Time complexity of an algorithm represents the amount of time 
            required by the algorithm to run to completion. Time requirements 
@@ -272,21 +291,21 @@ Step 3 -  Stop
 
         <p>For example, addition of two n-bit integers takes n steps. 
            Consequently, the total computational time is T(n) = c ∗ n, where c 
-           is the time taken for the addition of two bits. Here, we observe 
+           is the time taken for the addition of two bits. Here, observe 
            that T(n) grows linearly as the input size increases.</p>
           
-
+        <a name="asymptotic-analysis" class="anchor" href="#asymptotic-analysis"></a>
         <h3>Asymptotic Analysis</h3>
         <p>Asymptotic analysis of an algorithm refers to defining the 
            mathematical boundation/framing of its run-time performance. Using 
-           asymptotic analysis, we can very well conclude the best case, 
+           asymptotic analysis, conclude the best case, 
            average case, and worst case scenario of an algorithm.</p>
 
-        <p>Asymptotic analysis is input bound i.e., if there's no input to the 
+        <p>It is input bound i.e., if there's no input to the 
            algorithm, it is concluded to work in a constant time. Other than 
            the "input" all other factors are considered constant.</p>
 
-        <p>Asymptotic analysis refers to computing the running time of any 
+        <p>It also refers to computing the running time of any 
            operation in mathematical units of computation. For example, the 
            running time of one operation is computed as f(n) and may be for 
            another operation it is computed as g(n2). This means the first 
@@ -294,7 +313,6 @@ Step 3 -  Stop
            and the running time of the second operation will increase 
            exponentially when n increases. Similarly, the running time of both 
            operations will be nearly the same if n is significantly small.</p>
-
 
         <p>Usually, the time required by an algorithm falls under three types:
             
@@ -304,6 +322,7 @@ Step 3 -  Stop
           <li>Worst Case − Maximum time required for program execution.</li>
         </ul>
 
+        <a name="asymptotic-notations" class="anchor" href="#asymptotic-notations"></a>        
         <h4>Asymptotic Notations</h4>
         <p>Following are the commonly used asymptotic notations to calculate 
            the running time complexity of an algorithm.</p>
@@ -314,12 +333,15 @@ Step 3 -  Stop
           <li>&theta; Notation</li>
         </ul>
 
-        
+        <a name="big-o-notation" class="anchor" href="#big-o-notations"></a>        
         <h4>Big Oh Notation, Ο</h4>
         <p>The notation Ο(n) is the formal way to express the upper bound of an 
            algorithm's running time. It measures the worst case time complexity 
            or the longest amount of time an algorithm can possibly take to 
            complete.</p>
+       
+        <p><sup>see <a href="../big-o-notations/index.html">Big O'Notations</a> 
+         to learn more...</sup></p>
         
         For example, for a function f(n)
 
@@ -333,6 +355,7 @@ n0 such that f(n) ≤ c.g(n) for all n > n0. }
 </code>
 </pre>
 
+        <a name="omega-notation" class="anchor" href="#omega-notation"></a>  
         <h4>Omega Notation, &Omega;</h4>
 
         <p>The notation Ω(n) is the formal way to express the lower bound of an 
@@ -340,10 +363,13 @@ n0 such that f(n) ≤ c.g(n) for all n > n0. }
            or the best amount of time an algorithm can possibly take to 
            complete.</p>
 
+        <p><sup>see <a href="../big-o-notations/index.html">Big O'Notations</a> 
+         to learn more...</sup></p>
+        
         For example, for a function f(n)
 
 <pre>
-<code>        
+<code>
 Ω(f(n)) ≥ { g(n) : there exists c > 0 
 
 and 
@@ -351,13 +377,17 @@ and
 n0 such that g(n) ≤ c.f(n) for all n > n0. }
 </code>
 </pre>
-
+           
+        <a name="theta-notations" class="anchor" href="#theta-notation"></a>                
         <h4>Theta Notation, &theta;</h4>
         
         <p>The notation θ(n) is the formal way to express both the lower bound 
            and the upper bound of an algorithm's running time. It is represented
            as follows:</p>
 
+        <p><sup>see <a href="../big-o-notations/index.html">Big O'Notations</a> 
+         to learn more...</sup></p>
+        
 <pre>
 <code>
 θ(f(n)) = { g(n) if and only if g(n) =  Ο(f(n)) 
@@ -368,6 +398,7 @@ g(n) = Ω(f(n)) for all n > n0. }
 </code>
 </pre>
 
+        <a name="common-asymptotic-notations" class="anchor" href="#common-asymptotic-notations"></a>                
         <h4>Common Asymptotic Notations</h4>
         
 <pre>
@@ -384,8 +415,7 @@ exponential	2Ο(n)
 </code>
 </pre>        
         
-        <h3>Greedy Algorithms</h3>
-        
+        <h3>Greedy Algorithms</h3>        
         <p>An algorithm is designed to achieve optimum solution for a given 
            problem. In greedy algorithm approach, decisions are made from the 
            given solution domain. As being greedy, the closest solution that 
@@ -426,7 +456,6 @@ exponential	2Ο(n)
            optimized solution and may fail where global optimization is a major 
            concern.</p>
 
-        <h4>Examples</h4>
         <p>Most networking algorithms use the greedy approach. Here is a list 
            of few of them:</p>
 
@@ -475,7 +504,6 @@ exponential	2Ο(n)
            problem. This algorithmic approach works recursively and conquer 
            &amp; merge steps works so close that they appear as one.</p>
 
-        <h4>Examples</h4>
         <p>The following computer algorithms are based on divide-and-conquer 
            programming approach:</p>
 
@@ -525,7 +553,6 @@ exponential	2Ο(n)
            sub-problem. Dynamic algorithms use memorization to remember the 
            output of already solved sub-problems.</p>
 
-        <h4>Example</h4>
         <p>The following computer problems can be solved using dynamic 
             programming approach:</p>
 
@@ -573,8 +600,8 @@ exponential	2Ο(n)
         </ul>
         
     <p>You can read more at: 
-        <a href="https://go.java/">
-           https://go.java</a></p>
+        <a href="https://go.java/" target="_blank">
+           <small>https://go.java</small></a></p>
 
       <!-- pagination -->
        <a role="button" class="btn btn-primary pull-left"  

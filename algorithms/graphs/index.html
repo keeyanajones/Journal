@@ -15,6 +15,12 @@
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
           crossorigin="anonymous">
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>     
+    
     <!-- Custom Style Pygment and Icons -->     
     <link rel="stylesheet" href="../../assets/stylesheets/styles.css">
     <link rel="stylesheet" href="../../assets/stylesheets/pygment_trac.css">
@@ -30,15 +36,15 @@
     <div class="wrapper">               
     <!-- Header -->         
       <header>
-        <h2><span class="fa fa-book fa-5x"></span>
-          <span class="fa fa-pencil-alt fa-2x"></span><br/>
-            Journal </h2>
+        <h2>
+          <span class="fa fa-book fa-5x"></span>
+          <span class="fa fa-pencil-alt fa-2x"></span><br/>          
+          <span class="fab fa-git-square" aria-hidden="true"></span>Hub Pages</h2>
           
-        <p class="view"><sup>A Journal for GitHub Pages</sup><br/>        
-          <a href="https://github.com/keeyanajones/Journal">
+        <p class="view"><sup>A Code Journal for GitHub Pages</sup><br/>        
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
             <span class="fab fa-github"></span> 
-              View the Journal on GitHub 
-              <small>keeyanajones/Journal</small></a>
+              View the Code Journal on GitHub</a>
         </p><br/>                                        
               
         <button class="btn btn-lg btn-block btn-default" type="button">
@@ -75,18 +81,12 @@
     </div>          
       
     <section>
-        <h2>Journal for 
-        <span class="fab fa-git-square" aria-hidden="true"></span>Hub Pages</h2>
-
-          <h3><span class="fa fa-project-diagram " aria-hidden="true"></span>
-              <a name="graphs" class="anchor" href="#graphs">
-              <span class="header-link"></span></a>
-          Algorithms in Java : <em>Graphs</em></h3>                  
+      <h2><span class="fa fa-project-diagram " aria-hidden="true"></span>
+        <a name="graphs" class="anchor" href="#graphs">
+          <span class="header-link"></span></a>
+            Algorithms <sup>in Java : <em>Graphs</em></sup></h2>                  
      
-        <p>Last updated on May 11th, 2018</p>
-              
-        <p>A Journal by Keeyana Jones 
-         (<a href="https://twitter.com/keeyanajones">@keeyanajones</a>)</p>
+        <p><sup>Last updated on January 3rd, 2019</sup></p>              
                                    
         <ol class="breadcrumb">
           <li><a href="../../index.html">Home</a></li>
@@ -115,11 +115,9 @@
 V = {a, b, c, d, e}
 E = {ab, ac, bd, cd, de}
 </code>
-</pre>
-
-            
-            <h4>Graph Data Structure</h4>
-            
+</pre>    
+                        
+            <h3>Graph Data Structure</h3>            
             <p>A graph data structure consists of a finite (and possibly 
                mutable) set of vertices or nodes or points, together with a set 
                of unordered pairs of these vertices for an undirected graph or 
@@ -134,6 +132,9 @@ E = {ab, ac, bd, cd, de}
                value, such as a symbolic label or a numeric attribute 
                (cost, capacity, length, etc.).</p>
 
+        <p><sup>see <a href="../../data-structures/index.html#graph">Data Structures</a> 
+         to learn more...</sup></p>
+            
             <p>Mathematical graphs can be represented in data structure. We can 
                represent a graph using an array of vertices and a 
                two-dimensional array of edges. Before we proceed further, let's 
@@ -348,8 +349,8 @@ E = {ab, ac, bd, cd, de}
         </ul>
         
     <p>You can read more at: 
-        <a href="https://go.java/">
-           https://go.java</a></p>
+        <a href="https://go.java/" target="_blank">
+           <small>https://go.java</small></a></p>
 
       <!-- pagination -->
        <a role="button" class="btn btn-primary pull-left"  
@@ -371,9 +372,7 @@ E = {ab, ac, bd, cd, de}
         
          <a href="#top">
              <span class="fa fa-arrow-up" aria-hidden="true">                 
-             </span></a>         
-
-                   
+             </span></a>                            
     </section>
         
     <!-- jQuery library -->

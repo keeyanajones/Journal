@@ -15,6 +15,12 @@
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
           crossorigin="anonymous">
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>  
+    
     <!-- Custom Style Pygment and Icons -->     
     <link rel="stylesheet" href="../../assets/stylesheets/styles.css">
     <link rel="stylesheet" href="../../assets/stylesheets/pygment_trac.css">
@@ -30,15 +36,15 @@
     <div class="wrapper">               
     <!-- Header -->         
       <header>
-        <h2><span class="fa fa-book fa-5x"></span>
-          <span class="fa fa-pencil-alt fa-2x"></span><br/>
-            Journal </h2>
+        <h2>
+          <span class="fa fa-book fa-5x"></span>
+          <span class="fa fa-pencil-alt fa-2x"></span><br/>          
+          <span class="fab fa-git-square" aria-hidden="true"></span>Hub Pages</h2>
           
-        <p class="view"><sup>A Journal for GitHub Pages</sup><br/>        
-          <a href="https://github.com/keeyanajones/Journal">
+        <p class="view"><sup>A Code Journal for GitHub Pages</sup><br/>        
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
             <span class="fab fa-github"></span> 
-              View the Journal on GitHub 
-              <small>keeyanajones/Journal</small></a>
+              View the Code Journal on GitHub</a>
         </p><br/>                                        
               
         <button class="btn btn-lg btn-block btn-default" type="button">
@@ -74,28 +80,19 @@
     <!-- ./header --> 
     </div>          
       
-    <section>
-        
-        <h2>Journal for 
-        <span class="fab fa-git-square" aria-hidden="true"></span>Hub Pages</h2>
-
-        
-          <h3><span class="fa fa-project-diagram " aria-hidden="true"></span>
+    <section>        
+        <h2><span class="fa fa-project-diagram " aria-hidden="true"></span>
               <a name="sorting" class="anchor" href="#sorting">
               <span class="header-link"></span></a>
-          Algorithms in Java : <em>Sorting</em></h3>                  
+          Algorithms <sup>in Java : <em>Sorting</em></sup></h2>                  
      
-        <p>Last updated on May 11th, 2018</p>
-      
-        
-        <p>A Journal by Keeyana Jones 
-         (<a href="https://twitter.com/keeyanajones">@keeyanajones</a>)</p>
-                                   
+        <p><sup>Last updated on January 1st, 2019<sup></p>
+                                         
         <ol class="breadcrumb">
           <li><a href="../../index.html">Home</a></li>
           <li><a href="../index.html">Algorithms</a></li>
           <li class="active"><a href="#sorting">
-                 Sorting</a></li>
+                Sorting</a></li>
         </ol>
                             
         <p>There are numerous types of sorting, generally that puts elements of 
@@ -121,7 +118,7 @@
            access, though often can be applied with suitable modification to 
            either type of data.</p>
 
-        <h4>In-place Sorting and Not-in-place Sorting</h4>
+        <h3>In-place Sorting and Not-in-place Sorting</h3>
         <p>Sorting algorithms may require some extra space for comparison and 
            temporary storage of few data elements. These algorithms do not 
            require any extra space and sorting is said to happen in-place, or 
@@ -133,8 +130,7 @@
            which uses equal or more space is called not-in-place sorting. 
            Merge-sort is an example of not-in-place sorting.</p>
 
-        <h4>Stable and Not Stable Sorting</h4>
-        
+        <h4>Stable and Not Stable Sorting</h4>        
         <ul>
           <li>If a sorting algorithm, after sorting the contents, does not 
               change the sequence of similar content in which they appear, it 
@@ -374,7 +370,7 @@
        MergeSort.java</a>    
           
 <pre>
-<code>  
+<code class="java">  
 public class MergeSort {   
  private int[] array;
  private int[] tempMergArr;
@@ -479,7 +475,7 @@ public class MergeSort {
        InsertionSort.java</a>                
             
 <pre>
-<code>            
+<code class="java">
 public class InsertionSort { 
  public static void main(String[] args) {                 
   // create an int array we want to sort 
@@ -550,7 +546,7 @@ public class InsertionSort {
        BubbleSort.java</a>    
                       
 <pre>
-<code>              
+<code class="java">
 public class BubbleSort { 
  public static void main(String[] args) {
   // create an int array we want to 
@@ -622,7 +618,7 @@ public class BubbleSort {
        QuickSort.java</a>                
             
 <pre>
-<code>              
+<code class="java">
 public class QuickSort {        
  private int array[];
  private int length;
@@ -735,7 +731,7 @@ public class QuickSort {
        HeapSort.java</a>                
             
 <pre>
-<code>              
+<code class="java">
 import java.util.*;
 
 public class HeapSort {
@@ -834,7 +830,7 @@ public class HeapSort {
        CountingSort.java</a>                
             
 <pre>
-<code>              
+<code class="java">
 import java.util.*;
 
 public class CountingSort {
@@ -922,7 +918,7 @@ public class CountingSort {
        SelectionSort.java</a>    
             
 <pre>
-<code>              
+<code class="java">
 public class SelectionSort {
 
  public static void main(String[] args) {
@@ -1262,7 +1258,7 @@ public class SelectionSort {
        BinaryTreeSort.java</a>                
             
 <pre>
-<code>  
+<code class="java">
 public class BinaryTreeSort {
  // basic node stored in a tree
  class Node {
@@ -1419,7 +1415,7 @@ public class BinaryTreeSort {
        CocktailSort.java</a>                
             
 <pre>
-<code>  
+<code class="java">
 public class CocktailSort {        
  public static void cocktailSort(int[] intArray) {
   boolean swapped;
@@ -1494,7 +1490,7 @@ public class CocktailSort {
        CombSort.java</a>                
             
 <pre>
-<code>  
+<code class="java">
 public class CombSort {
  // To find gap between elements
  int getNextGap(int gap) {
@@ -1619,7 +1615,7 @@ public class CombSort {
        CycleSort.java</a>                
             
 <pre>
-<code>  
+<code class="java">
 public class CycleSort {
  public static void main(String[] args) {
   // create an int array we want to 
@@ -1884,7 +1880,7 @@ public class CycleSort {
        ShellSort.java</a>                
             
 <pre>
-<code>      
+<code class="java">
 import java.util.*;
 
 public class ShellSort { 
@@ -2258,7 +2254,7 @@ public class ShellSort {
        BucketSort.java</a>                
             
 <pre>
-<code>  
+<code class="java">
 import java.util.*;
 
 public class BucketSort {    
@@ -2387,7 +2383,7 @@ public class BucketSort {
        RadixSort.java</a>                
             
 <pre>
-<code>  
+<code class="java">
 import java.util.*;
 
 public class RadixSort {    
@@ -2817,7 +2813,7 @@ static void print(int intArray[], int n) {
        BitonicSort.java</a>                
             
 <pre>
-<code>  
+<code class="java">
 /** 
  * Java program for Bitonic Sort. Note that this program
  * works only when size of input is a power of 2. 
@@ -2932,6 +2928,7 @@ public class BitonicSort {
                 deck of cards by throwing the deck into the air, picking the 
                 cards up at random, and repeating the process until the deck is 
                 sorted. Its name comes from the word bogus.</p>
+
 <pre>
 <code>  
 ...
@@ -2999,8 +2996,7 @@ public class BitonicSort {
                 the stack and used to flip all pancakes above it. A pancake 
                 number is the minimum number of flips required for a given 
                 number of pancakes. </p>
-            <p>    
-                It is a variation of the sorting problem in which the only 
+            <p>It is a variation of the sorting problem in which the only 
                 allowed operation is to reverse the elements of some prefix of 
                 the sequence. Unlike a traditional sorting algorithm, which 
                 attempts to sort with the fewest comparisons possible, the goal 
@@ -3151,8 +3147,8 @@ public class BitonicSort {
         </ul>
         
     <p>You can read more at: 
-        <a href="https://go.java/">
-           https://go.java</a></p>
+        <a href="https://go.java/" target="_blank">
+           <small>https://go.java</small></a></p>
 
       <!-- pagination -->
        <a role="button" class="btn btn-primary pull-left"  

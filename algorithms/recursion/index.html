@@ -15,6 +15,12 @@
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
           crossorigin="anonymous">
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>      
+    
     <!-- Custom Style Pygment and Icons -->     
     <link rel="stylesheet" href="../../assets/stylesheets/styles.css">
     <link rel="stylesheet" href="../../assets/stylesheets/pygment_trac.css">
@@ -30,15 +36,15 @@
     <div class="wrapper">               
     <!-- Header -->         
       <header>
-        <h2><span class="fa fa-book fa-5x"></span>
-          <span class="fa fa-pencil-alt fa-2x"></span><br/>
-            Journal </h2>
+        <h2>
+          <span class="fa fa-book fa-5x"></span>
+          <span class="fa fa-pencil-alt fa-2x"></span><br/>          
+          <span class="fab fa-git-square" aria-hidden="true"></span>Hub Pages</h2>
           
-        <p class="view"><sup>A Journal for GitHub Pages</sup><br/>        
-          <a href="https://github.com/keeyanajones/Journal">
+        <p class="view"><sup>A Code Journal for GitHub Pages</sup><br/>        
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
             <span class="fab fa-github"></span> 
-              View the Journal on GitHub 
-              <small>keeyanajones/Journal</small></a>
+              View the Code Journal on GitHub</a>
         </p><br/>                                        
               
         <button class="btn btn-lg btn-block btn-default" type="button">
@@ -75,19 +81,13 @@
     </div>          
       
     <section>
-        <h2>Journal for 
-        <span class="fab fa-git-square" aria-hidden="true"></span>Hub Pages</h2>
-
-          <h3><span class="fa fa-project-diagram " aria-hidden="true"></span>
+        <h2><span class="fa fa-project-diagram " aria-hidden="true"></span>
               <a name="recursion" class="anchor" href="#recursion">
               <span class="header-link"></span></a>
-          Algorithms in Java : <em>Recursion</em></h3>                  
+          Algorithms <sup>in Java : <em>Recursion</em></sup></h2>
      
-        <p>Last updated on May 11th, 2018</p>
-              
-        <p>A Journal by Keeyana Jones 
-         (<a href="https://twitter.com/keeyanajones">@keeyanajones</a>)</p>
-                                   
+        <p><sup>Last updated on January 1st, 2019</sup></p>
+                                                 
         <ol class="breadcrumb">
           <li><a href="../../index.html">Home</a></li>
           <li><a href="../index.html">Algorithms</a></li>
@@ -103,7 +103,7 @@
            &beta; that in turn calls the original function &alpha;. The 
            function &alpha; is called recursive function.</p>
 
-        <p>Example − a function calling itself.</p>
+        <p>EXAMPLE − a function calling itself.</p>
 
 <pre>
 <code>
@@ -117,7 +117,7 @@ int function(int value) {
 </code>
 </pre>
 
-        <p>Example − a function that calls another function which in turn calls 
+        <p>EXAMPLE − a function that calls another function which in turn calls 
                      it again.</p>
 
 <pre>
@@ -132,7 +132,7 @@ int function(int value) {
 </code>
 </pre>
 
-            <h5>Properties</h5>
+            <h3>Properties</h3>
             <p>A recursive function can go infinite like a loop. To avoid 
                infinite running of recursive function, there are two properties 
                that a recursive function must have:</p>
@@ -148,7 +148,7 @@ int function(int value) {
                                          base criteria.</li>
             </ul>
 
-            <h5>Implementation</h5>
+            <h4>Implementation</h4>
             <p>Many programming languages implement recursion by means of 
                stacks. Generally, whenever a function (caller) calls another 
                function (callee) or itself as callee, the caller function 
@@ -168,13 +168,13 @@ int function(int value) {
                variables, formal parameters, return address and all information 
                passed to the caller function.</p>
 
-            <h5>Analysis of Recursion</h5>
+            <h4>Analysis of Recursion</h4>
             <p>One may argue why to use recursion, as the same task can be done 
                with iteration. The first reason is, recursion makes a program 
                more readable and because of latest enhanced CPU systems, 
                recursion is more efficient than iterations.</p>
 
-            <h5>Time Complexity</h5>
+            <h4>Time Complexity</h4>
             <p>In case of iterations, we take number of iterations to count the 
                time complexity. Likewise, in case of recursion, assuming 
                everything is constant, we try to figure out the number of times 
@@ -182,7 +182,7 @@ int function(int value) {
                Ο(1), hence the (n) number of times a recursive call is made 
                makes the recursive function Ο(n).</p>
 
-            <h5>Space Complexity</h5>
+            <h4>Space Complexity</h4>
             <p>Space complexity is counted as what amount of extra space is 
                required for a module to execute. In case of iterations, the 
                compiler hardly requires any extra space. The compiler keeps 
@@ -192,7 +192,7 @@ int function(int value) {
                space complexity of recursive function may go higher than that 
                of a function with iteration.</p>
 
-            <h5>Tower of Hanoi</h5>
+            <h4>Tower of Hanoi</h4>
             <p>Tower of Hanoi, is a mathematical puzzle which consists of three 
                towers (pegs) and more than one rings is as depicted:</p>
 
@@ -201,7 +201,7 @@ int function(int value) {
                There are other variations of the puzzle where the number of 
                disks increase, but the tower count remains the same.</p>
 
-            <h5>Rules</h5>
+            <h4>Rules</h4>
             <p>The mission is to move all the disks to some another tower 
                without violating the sequence of arrangement. A few rules to 
                be followed for Tower of Hanoi are:
@@ -220,7 +220,7 @@ int function(int value) {
                 2<sup>n</sup>−1 steps. This presentation shows that a puzzle 
                 with 3 disks has taken 2<sup>3</sup> - 1 = 7 steps.
 
-            <h5>Algorithm</h5>
+            <h5>ALGORITHM</h5>
             <p>To write an algorithm for Tower of Hanoi, first we need to learn 
                 how to solve this problem with lesser amount of disks, say → 1 
                 or 2. We mark three towers with name, source, destination and 
@@ -288,9 +288,9 @@ STOP
         </ul>
         
     <p>You can read more at: 
-        <a href="https://go.java/">
-           https://go.java</a></p>
-
+        <a href="https://go.java/" target="_blank">
+           <small>https://go.java</small></a></p>
+           
       <!-- pagination -->
        <a role="button" class="btn btn-primary pull-left"  
                href="../index.html">
@@ -311,9 +311,7 @@ STOP
         
          <a href="#top">
              <span class="fa fa-arrow-up" aria-hidden="true">                 
-             </span></a>         
-
-                   
+             </span></a>                            
     </section>
         
     <!-- jQuery library -->
