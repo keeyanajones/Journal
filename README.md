@@ -19,16 +19,16 @@ See [The Opening Essay](https://keeyanajones.github.io/Journal/opening-essay)
   + [Graphs](https://keeyanajones.github.io/Journal/algorithms/graphs)
   + [Trees](https://keeyanajones.github.io/Journal/algorithms/trees)
   + [Recursion](https://keeyanajones.github.io/Journal/algorithms/recursion)
-    - [Big O' Notations](https://keeyanajones.github.io/Journal/big-o-notations)
-    - [Unified Modeling Language (UML)](https://keeyanajones.github.io/Journal/uml)
-    - [Design Patterns](https://keeyanajones.github.io/Journal/design-patterns)
-    - [Testing](https://keeyanajones.github.io/Journal/testing)
-    - [Documentation and Version Control](https://keeyanajones.github.io/Journal/documentation-version)
-    - [Appendix](https://keeyanajones.github.io/Journal/appendix)
-      + Color
-      + Images
-      + Projects
-      + Reference
+- [Big O' Notations](https://keeyanajones.github.io/Journal/big-o-notations)
+- [Unified Modeling Language (UML)](https://keeyanajones.github.io/Journal/uml)
+- [Design Patterns](https://keeyanajones.github.io/Journal/design-patterns)
+- [Testing](https://keeyanajones.github.io/Journal/testing)
+- [Documentation and Version Control](https://keeyanajones.github.io/Journal/documentation-version)
+- [Appendix](https://keeyanajones.github.io/Journal/appendix)
+  + Color
+  + Images
+  + Projects
+  + Reference
 
 ### Blog
 For more details see [Blog](https://keeyanajones.github.io/website/).
