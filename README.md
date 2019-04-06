@@ -8,6 +8,13 @@ See [The Opening Essay](https://keeyanajones.github.io/Journal/opening-essay)
 
 ### Table of Contents
 - [Getting Started](https://keeyanajones.github.io/Journal/getting-started)
+- Learning Plan*
+- Experiments*
+  + JavaScript*
+  + Python*
+  + Java*
+  + Data Science*
+  + Games*
 - [OOAD and UML Diagrams](https://keeyanajones.github.io/Journal/ooad-process)
 - [Quality Factors Classification](https://keeyanajones.github.io/Journal/quality-factors)
 - [Data Structures in Java](https://keeyanajones.github.io/Journal/data-structures)
@@ -23,13 +30,18 @@ See [The Opening Essay](https://keeyanajones.github.io/Journal/opening-essay)
 - [Unified Modeling Language (UML)](https://keeyanajones.github.io/Journal/uml)
 - [Design Patterns](https://keeyanajones.github.io/Journal/design-patterns)
 - [Testing](https://keeyanajones.github.io/Journal/testing)
+  + Manual
+  + Automation
 - [Documentation and Version Control](https://keeyanajones.github.io/Journal/documentation-version)
+  + Logging
 - [Appendix](https://keeyanajones.github.io/Journal/appendix)
   + Color
   + Images
-  + Projects
+  + UX/UI *
+  + Projects*
+  + Notes*
   + Reference
-
+ 
 ### Blog
 For more details see [Blog](https://keeyanajones.github.io/website/).
 
