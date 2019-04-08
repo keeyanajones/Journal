@@ -11,7 +11,7 @@ See [The Opening Essay](https://keeyanajones.github.io/Journal/opening-essay)
 - Learning Plan*
 - Experiments*
   + Node*
-   - Chibi-Elf-Bot
+     Chibi-Elf-Bot
   + Python*
   + Java*
   + Data Science*
