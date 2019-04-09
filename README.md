@@ -10,7 +10,7 @@ See [The Opening Essay](https://keeyanajones.github.io/Journal/opening-essay)
 - [Getting Started](https://keeyanajones.github.io/Journal/getting-started)
 - Learning Plan*
 - Experiments*
-  + Node*
+  + Node - [Chibi-Elf-Bot](https://keeyanajones.github.io/Journal/experiments/node/chibi-elf-bot.html)
   + Python*
   + Java*
   + Data Science*
