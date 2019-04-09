@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Code Journal: Testing Automation</title>   
+    <!-- Latest compiled and minified CSS -->     
+    <!-- Font Awesome 5.0.13 -->     
+    <link rel="stylesheet" 
+          href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" 
+          crossorigin="anonymous">         
+    <!-- Bootstrap 3.3.7 --> 
+    <link rel="stylesheet" 
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+          crossorigin="anonymous">
+    <!-- Custom Style Pygment and Icons -->     
+    <link rel="stylesheet" href="../assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="../assets/stylesheets/pygment_trac.css">
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/gif">
+    <link rel="shortcut icon" href="../assets/images/favicon.png">    
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+    <div class="wrapper">               
+    <!-- Header -->         
+      <header>
+          <img src="../assets/images/pb_Image.png" class="img-fluid" alt="me"/>
+        <p class="view">A Code Journal for 
+            <span class="fab fa-git-square" aria-hidden="true"></span>
+                Hub Pages<br/>        
+                
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
+            <span class="fab fa-github"></span> 
+              View the Code Journal on GitHub</a></p>
+                      
+                        
+            <button class="btn btn-md btn-default" type="button">
+                <span class="fab fa-java fa-2x"></span> 
+            </button>                
+            
+            <button class="btn btn-md btn-default" type="button">
+                <span class="fab fa-python fa-2x"></span> 
+            </button>                        
+
+            <button class="btn btn-md btn-default" type="button">
+                <span class="fab fa-r-project  fa-2x"></span> 
+            </button>                
+            
+            <button class="btn btn-md btn-default" type="button">
+            <span class="fab fa-js fa-2x"></span> 
+            </button>                              
+
+            <br/><br/>
+            
+            <a href="https://github.com/keeyanajones/">
+            <small><span class="fab fa-github-alt"></span>                 
+            Repositories and latest Contribution Activity</small></a>                 
+              
+        <br/>
+        
+        <!-- Download, Clone, or Fork -->
+        <ul>    
+          <li><a href="https://github.com/keeyanajones/Journal/archive/master.zip">
+              <span class="fa fa-file-archive" aria-hidden="true"></span><br/>
+                  Download <br/> ZIP</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-clone" aria-hidden="true"></span><br/>
+                  Clone <br/> Desktop</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-code-branch" aria-hidden="true"></span><br/>
+                  Fork On <br/> GitHub</a></li>
+        </ul>                                 
+      </header>
+    <!-- ./header --> 
+    </div>          
+      
+    <section>
+        <h2><span class="fa fa-clipboard-list" aria-hidden="true"></span>
+              <a name="testing" class="anchor" href="#testing">
+              <span class="header-link"></span></a>
+          Testing : Automation</h2>                  
+     
+        <p><sup><span class="fa fa-calendar"></span>
+                Last updated on January 2nd, 2019</sup></p>
+                                                
+        <ol class="breadcrumb">
+            <li><span class="fa fa-bookmark"></span>
+                <a href="../index.html">Home</a></li>
+          <li><a href="index.html">
+                <span class="fa fa-bookmark"></span> Testing</a></li>
+          <li class="active"><a href="#automation">
+                <span class="fa fa-bookmark"></span> Automation</a></li>                
+        </ol>
+                                 
+        <a name="testing" id="testing"></a>            
+
+        <h4>Automation Testing</h4>
+        <p>Automation testing, which is also known as Test Automation, is when 
+           the tester writes scripts and uses another software to test the 
+           product. This process involves automation of a manual process. 
+           Automation Testing is used to re-run the test scenarios that were 
+           performed manually, quickly, and repeatedly.</p>
+
+        <p>Apart from regression testing, automation testing is also used to 
+           test the application from load, performance, and stress point of 
+           view. It increases the test coverage, improves accuracy, and saves 
+           time and money in comparison to manual testing.</p>
+
+        <h5>What is Automate?</h5>
+        <p>It is not possible to automate everything in a software. The areas 
+           at which a user can make transactions such as the login form or 
+           registration forms, any area where large number of users can access 
+           the software simultaneously should be automated.</p>
+           
+        <p>Furthermore, all GUI items, connections with databases, field 
+           validations, etc. can be efficiently tested by automating the manual
+           process.</p>
+
+        <h5>When to Automate?</h5>
+        <p>Test Automation should be used by considering the following aspects 
+           of a software:</p>
+        <ul>
+          <li>Large and critical projects</li>
+          <li>Projects that require testing the same areas frequently</li>
+          <li>Requirements not changing frequently</li>
+          <li>Accessing the application for load and performance with many 
+              virtual users</li>
+          <li>Stable software with respect to manual testing</li>
+          <li>Availability of time</li>
+        </ul>
+
+        <h5>How to Automate?</h5>
+        <p>Automation is done by using a supportive computer language like VB 
+           scripting and an automated software application. There are many tools 
+           available that can be used to write automation scripts. Before 
+           mentioning the tools, let us identify the process that can be used to
+           automate the testing process:</p>
+
+        <ul>
+          <li>Identifying areas within a software for automation</li>
+          <li>Selection of appropriate tool for test automation</li>
+          <li>Writing test scripts</li>
+          <li>Development of test suits</li>
+          <li>Execution of scripts</li>
+          <li>Create result reports</li>
+          <li>Identify any potential bug or performance issues</li>
+        </ul>
+
+        <p><sup>See <a href="../testing/selenium/index.html">
+            Selenium Examples</a> for more...</sup></p>
+
+        
+        <h6>Automation Tools</h6>
+        <p>The following tools can be used for automation testing:</p>
+
+        <ul>
+          <li>HP Quick Test Professional</li>
+          <li>Selenium</li>
+          <li>IBM Rational Functional Tester</li>
+          <li>SilkTest</li>
+          <li>TestComplete</li>
+          <li>Testing Anywhere</li>
+          <li>WinRunner</li>
+          <li>LoadRunner</li>
+          <li>Visual Studio Test Professional</li>
+          <li>WATIR</li>
+        </ul>
+        
+
+        <h3><a name="take-five" class="anchor" href="#take-five">
+          <span class="header-link"></span></a>
+          Review</h3>
+          
+        <p>Alright, let's recap what I've just learned:</p>
+    
+        <ul>             
+          <li>There are 2 types which can be classified in testing manual 
+            and automation</li>                          
+          <li>There are many methods of software testing including 
+            reviews, walkthroughs, or inspections are referred to as 
+            static testing, whereas actually executing programmed code 
+            with a given set of test cases is referred to as dynamic 
+            testing.</li>
+          <li>There are two main levels of software testing which are 
+            functional broken down into unit, integration, system and 
+            acceptance; non-functional broken down into defined 
+            technical qualities.</li>
+          <li>Commonly used documentation related to testing are Test 
+            Plans, Test Scenarios, Test Cases, and Traceability 
+            Matrixes</li>                
+            <li>Estimating the efforts required for testing is one of the 
+                major and important tasks in SDLC.</li>                         
+        </ul>
+        
+    <p>You can read more at: 
+        <a href="https://en.wikipedia.org/wiki/Software_testing" target="_blank">
+           <small>https://en.wikipedia.org/wiki/Software_testing</small></a></p>
+
+      <!-- pagination -->
+       <a role="button" class="btn btn-primary pull-left"  
+               href="../design-patterns/index.html">
+            &larr; PREVIOUS: Design Patterns</a>
+          
+      <a role="button" class="btn btn-primary pull-right" 
+              href="../documentation-version/index.html">
+            NEXT: Documents &amp; Version Control &rarr;</a><br/><br/>
+    </section>
+        
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+            crossorigin="anonymous"></script>         
+    <script src="../assets/javascripts/scale.fix.js"></script>
+  </body>
+</html>
+
+        
+        

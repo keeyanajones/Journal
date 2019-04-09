@@ -1,0 +1,942 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Code Journal: Experiments | Chibi-Elf-Bot </title>   
+    <!-- Latest compiled and minified CSS -->
+    <!-- Font Awesome 5.7.0 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+          crossorigin="anonymous">
+    <!-- Bootstrap 3.3.7 -->    
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">    
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>        
+    
+    <!-- Custom Style Pygment and Icons -->
+    <link rel="stylesheet" href="../../assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="../../assets/stylesheets/pygment_trac.css">
+    <link rel="icon" href="../../assets/images/favicon.ico" type="image/gif">
+    <link rel="shortcut icon" href="../../assets/images/favicon.png">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="wrapper">
+   <!-- Header -->         
+      <header>
+          <img src="../../assets/images/pb_Image.png" class="img-fluid" alt="me"/>
+        <p class="view">A Code Journal for 
+            <span class="fab fa-git-square" aria-hidden="true"></span>
+                Hub Pages<br/>        
+                
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
+            <span class="fab fa-github"></span> 
+              View the Code Journal on GitHub</a></p>
+                      
+                        
+            <button class="btn btn-md btn-default" type="button">
+                <span class="fab fa-java fa-2x"></span> 
+            </button>                
+            
+            <button class="btn btn-md btn-default" type="button">
+                <span class="fab fa-python fa-2x"></span> 
+            </button>                        
+
+            <button class="btn btn-md btn-default" type="button">
+                <span class="fab fa-r-project  fa-2x"></span> 
+            </button>                
+            
+            <button class="btn btn-md btn-default" type="button">
+            <span class="fab fa-js fa-2x"></span> 
+            </button>                              
+
+            <br/><br/>
+            
+            <a href="https://github.com/keeyanajones/">
+            <small><span class="fab fa-github-alt"></span>                 
+            Repositories and latest Contribution Activity</small></a>                 
+              
+        <br/>
+        
+        <!-- Download, Clone, or Fork -->
+        <ul>    
+          <li><a href="https://github.com/keeyanajones/Journal/archive/master.zip">
+              <span class="fa fa-file-archive" aria-hidden="true"></span><br/>
+                  Download <br/> ZIP</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-clone" aria-hidden="true"></span><br/>
+                  Clone <br/> Desktop</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-code-branch" aria-hidden="true"></span><br/>
+                  Fork On <br/> GitHub</a></li>
+        </ul>                                 
+      </header>
+    <!-- ./header --> 
+    </div>
+      
+    <section>       
+      <h2><span class="fas fa-flask " aria-hidden="true"></span>
+          <a name="experiments" class="anchor" href="#experiments">
+            <span class="header-link"></span></a>
+          Chibi-Elf-Bot</h2>                  
+     
+        <p><sup><span class="fa fa-calendar"></span>
+                Last updated on April 9th, 2019</sup></p>
+              
+        <ol class="breadcrumb">
+            <li><span class="fa fa-bookmark"></span>
+                <a href="../../index.html"> Code Journal </a></li>
+            <li><a href="../index.html"><span class="fa fa-bookmark"></span>
+                Experiments</a></li>
+            <li class="active"><a href="#experiments">
+                <span class="fa fa-bookmark"></span>
+                Chibi-Elf-Bot</a></li>                                
+        </ol>  
+                <p><img src="../../assets/images/chibibot.png" 
+                        style="float: left; padding: 5px;" 
+                        class="img-fluid" alt=""/></p>
+                <p>Chibi Elf Bot conducts conversations via auditory or textual 
+                    methods to convincingly simulate how a human would behave 
+                    as a conversational partner, thereby passing the practical 
+                    purposes including customer service or information 
+                    acquisition. The experiment is to make a conversational AI
+                    to use the gaming messaging apps and speech based assistants
+                    to automate communication and personalize customer experiences.                    
+                </p>
+                <p>Bots can be classified into usage categories such as 
+                    conversational commerce (e-commerce via chat), analytics, 
+                    communication, customer support, design, developer tools, 
+                    education, entertainment, finance, food, games, health, HR, 
+                    marketing, news, personal, productivity, shopping, social, 
+                    sports, travel and utilities. 
+                    experiment                                      
+                </p>
+                
+See <span class="fa fa-file-code"></span></a>
+     <a href="https://github.com/keeyanajones/node/blob/master/src/package.json"
+        target="_blank">package.json</a>
+    
+<pre><code>// package.json
+{ ...
+  "dependencies": {
+    "@mixer/client-node": "^3.3.1",
+    "chalk": "2.4.2",
+    "common-tags": "1.8.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "discord.js": "11.4.2",
+    "ejs": "~2.5.7",
+    "eslint": "5.15.1",
+    "express": "~4.16.0",
+    "googleapis": "^27.0.0",
+    "http-errors": "~1.6.2",
+    "libsodium-wrappers": "0.7.4",
+    "moment": "2.24.0",
+    "morgan": "~1.9.0",
+    "ms": "2.1.1",
+    "opusscript": "0.0.6 ",
+    "tmi.js": "1.4.2",
+    "winston": "3.2.1",
+    "ws": "^6.2.0"
+  }
+...
+}
+</code></pre>
+                
+See <span class="fa fa-file-code"></span></a>
+     <a href="https://github.com/keeyanajones/node/blob/master/src/app.js"
+        target="_blank">app.js</a>
+    
+<pre><code>// app.js
+const createError = require('http-errors');
+const express = require('express');
+const tmi = require('tmi.js');// tmi.js module
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const Discord = require('discord.js');// discord.js module
+const Mixer = require('@mixer/client-node');// mixer module
+const ws = require('ws');
+const http = require('http');
+const fs = require('fs');
+const readline = require('readline');
+const {google} = require('googleapis');
+const hostname = '127.0.0.1';
+const port = 3000;
+...
+</code></pre>
+    
+<h3>Commands List</h3>
+<ul>
+INFORMATION
+<ul>
+   chibielf, 
+   info, chatterlist, uptime, and commands
+</ul>
+ROLES AND RANKS
+<ul>
+   addrank, rank, ranks, deleterank, addrole, roles, and roleinfo 
+</ul>
+MANAGEMENT
+<ul>
+   announce, giveaway, winner, warn, unwarn, clear, slow, slowoff, mod, 
+   and unmod
+</ul>
+MODERATOR
+<ul>
+   clean, timeout, kick, ban, unban, mute, unmute, ignore, warn, and getlogs
+</ul>
+MUSIC
+<ul>
+   play, skip, playlist, now playing, stop, seek, and next
+</ul>
+FUN
+<ul>
+   whisper, poll , poll results , joke, quote, pet, country, weather, google, 
+   ask, facts, meme, and roast
+   </ul>
+MISC
+   <ul>
+   afk, ask google, and avatar
+   </ul>
+TAGS
+   <ul>
+   tags, tag, untag, and edittag
+   </ul>
+</ul>           
+
+        <h4><a name="oauth" class="anchor" href="#oauth">
+          <span class="header-link"></a></span>
+            OAuth
+       </h4>        
+
+        <p>OAuth is an open standard for access delegation, commonly used as 
+           a way for Internet users to grant websites or applications access 
+           to their information on other websites but without giving them the 
+           passwords.</p>
+
+See <span class="fa fa-file-code"></span></a>
+     <a href="https://gist.github.com/keeyanajones/174b08a8cb8441963be5025d56502a8a#file-oauth-js"
+        target="_blank">oauth.js</a>
+        
+<pre><code>// oauth.js
+...
+// This is the client ID and client secret that you obtained
+// while registering the application
+const clientID = '<your client id>'
+const clientSecret = '<your client secret>'
+
+const app = express();
+
+// Declare the redirect route
+app.get('/oauth/redirect', (req, res) => {
+  // The req.query object has the query params that
+  // were sent to this route. We want the `code` param
+  const requestToken = req.query.code;
+
+  someThingsomeThing({
+    // make a POST request
+    method: 'post',
+    // to the Github authentication API, with the client ID, 
+    // client secret and request token
+    url: `https://somewhere.com/login/oauth/access_token
+            ?client_id=
+                ${clientID}&client_secret=
+                ${clientSecret}&code=
+                ${requestToken}`,
+    // Set the content type header, so that we get the 
+    // response in JSOn
+    headers: {
+         accept: 'application/json'
+    }
+  }).then((response) => {
+    // Once we get the response, extract the access token from
+    // the response body
+    const accessToken = response.data.access_token
+    // redirect the user to the welcome page, along with the 
+    // access token
+    res.redirect(`/welcome.html?access_token=${accessToken}`);
+  })
+})
+...
+</code></pre>
+               
+        <h4><a name="mixer" class="anchor" href="#mixer">
+          <span class="header-link"></span></a>                
+        Mixer Rest API</h4>        
+
+        <p><img src="../../assets/images/bot-mixer.png" class='img-fluid' 
+                    style='float: right; padding: 5px;' alt=""/>
+           FTL (Faster Than Light) Technology with other platforms leave you 
+           waiting 2-5 seconds, our streaming protocol delivers content with 
+           less than one second of latency.</p>
+
+        <p>Interactivity is the cornerstone of everything we offer. From 
+           selecting built-in soundboards and visual elements, to 4-player 
+           co-streams, viewers can interact with their favorite streamers 
+           in ways that are deeper, more personal, and (most importantly) 
+           more fun.</p>
+
+        <p>Mixer makes it easy to start streaming your gameplay. In just a 
+           couple of clicks, you can easily start broadcasting on Windows 10 
+           or Xbox One – no extra software required.</p>
+
+        <p>The first built-in cooperative streaming experience on a streaming 
+           platform where up to 4 streamers can combine their streams into a 
+           single viewer experience. With up to three other friends, you can 
+           launch a stream with separate stream sources in one shared Mixer 
+           page and one centralized chat</p>
+         
+        See <span class="fa fa-file-code"></span></a>
+        <a href="https://github.com/keeyanajones/mixer-chatbot/"
+           target="_blank">mixer-bot starter</a>
+       
+<pre><code>
+// With OAuth we don't need to log in, the OAuth 
+// Provider will attach the required information 
+// to all requests after this call.
+// Get the user that the Access Token provided 
+// belongs to.
+client.request('GET', 'users/current')
+.then(response => {
+ userInfo = response.body;
+  return new 
+   Mixer.ChatService(client).join(response.body.channel.id);
+})
+.then(response => {
+    const body = response.body;
+    return createChatSocket(userInfo.id, 
+                            userInfo.channel.id, 
+                            body.endpoints, 
+                            body.authkey);
+})
+.catch(error => {
+    console.error('Something went wrong with Mixer.');
+    console.error(error);
+});
+
+/**
+ * Creates a Mixer chat socket and sets up listeners to 
+ * various chat events.
+*/
+function createChatSocket (userId, 
+                           channelId, 
+                           endpoints, 
+                           authkey) {
+ // Chat connection
+ const socket = new Mixer.Socket(ws, endpoints).boot();
+ // Greet a joined user
+ socket.on('UserJoin', data => {
+  console.log('${data.username} has joined');
+  socket.call('msg', 
+       [`Hi ${data.username}! I'm chibibot! Write 
+        !commands to see what I can do!`]);
+ });
+
+ // React to our !chibielf command
+ socket.on('ChatMessage', data => {
+  if (data.message.message[0].
+      data.toLowerCase().startsWith('!chibielf')) {
+       socket.call('msg', [`Hi @${data.user_name} 
+                   and welcome to the stream!`]);
+       console.log(`Welcomed ${data.user_name}`);
+    }
+ });
+
+   ...
+
+ // Handle errors
+ socket.on('error', error => {
+    console.error('Socket error');
+    console.error(error);
+ });
+
+ return socket.auth(channelId, userId, authkey)
+ .then(() => {
+    console.log('Login to Mixer successful');
+    return socket.call('msg', 
+     ['Hi! I\'m chibielf! Write !chibielf and 
+      I will say hi back to you!']);
+ });
+}
+</code></pre>
+  <!------------------------------------------------// 
+       Nixer :  Tab Navigation
+    // ----------------------------------------------->
+<div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active">
+        <a href="#mixerSuccessLog" 
+           aria-controls="mixerSuccessLog" 
+           role="tab" data-toggle="tab">
+            Success Log</a></li>            
+    <li role="presentation">
+        <a href="#mixerThingsToRevisit" 
+           aria-controls="mixerThingsToRevisit" 
+           role="tab" data-toggle="tab">
+            Things to Revisit</a></li>           
+    <li role="presentation">
+        <a href="#mixerGoals" 
+           aria-controls="mixerGoals" 
+           role="tab" data-toggle="tab">
+            Goals</a></li>           
+    <li role="presentation">
+        <a href="#mixerLessonsLearned" 
+           aria-controls="mixerLessonsLearned" 
+           role="tab" data-toggle="tab">
+            Lessons Learned</a></li>
+  </ul>
+  <!------------------------------------------------// 
+       Mixer :  Tab panes 
+    // ----------------------------------------------->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="mixerSuccessLog">
+<pre><code class="console">
+Feb 28, 2019 5:40:24 AM "BUILD SUCCESSFUL (total time: 0)" 
+</code></pre>
+    </div>
+      
+    <div role="tabpanel" class="tab-pane" id="mixerThingsToRevisit">
+      <p>Mixer Commands, the application Model, console logging, and 
+         Settings</p>
+    </div> 
+    
+    <div role="tabpanel" class="tab-pane" id="mixerGoals">
+    <p>Provide conversational AI to use the gaming messaging apps and speech 
+        based assistants to automate communication and personalize customer 
+        experiences for Mixer channel under a varying amount of resources 
+        and priorities</p>    
+    </div>
+      
+    <div role="tabpanel" class="tab-pane" id="mixerLessonsLearned">
+    <p>Mixer Mixplay, Core, and Chat API</p>        
+    </div>      
+  </div>
+</div>  
+<!------ /. Mixer:  Tab panes   ------->
+                    
+        <h4><a name="discord" class="anchor" href="#discord"></a> 
+            <span class="header-link"></span> 
+            Discord API</h4>        
+
+        <p><img src="../../assets/images/bot-discord.png" class="img-fluid" 
+                style="float: left; padding: 5px;" alt=""/>
+            
+           Discord is a proprietary freeware VoIP application and digital 
+           distribution platform designed for video gaming communities, that 
+           specializes in text, image, video and audio communication between 
+           users in a chat channel with over 200 million unique users of the 
+           software.</p>
+        
+        <p>Players love to show off what they are playing with Discord’s status 
+            feature. With Rich Presence you can add beautiful art and detailed 
+            information to show off your game even more. This lets players know 
+            what their friends are doing, so they can decide to ask to join in 
+            and play together.</p>
+        
+        <strong>Discord</strong><br/>
+        
+        See <span class="fa fa-file-code"></span>
+        <a href="https://github.com/keeyanajones/Java-Problems/blob/master/src/forLoopFunction.java"
+           target="_blank"> discord-bot</a>     
+        
+<pre><code>// Discord 
+...
+// when the client is ready, run this code
+// this event will only trigger one time after logging in
+client.on ('ready', () => {
+    console.log("Conected as " + client.user.tag + " Ready!");
+    
+client.on('message', message => {
+// send back "Welecome to my Discord Server!" to the channel 
+// the message was sent in
+    if (message.content === '!chibielf') {
+        message.channel.send('Hi! I\'m Chibielf! Welcome to 
+                              the Discord Server!');
+    }
+});    
+        
+// client.user.setActivity        
+client.user.setActivity("Live Youtube", {type: "WATCHING"});
+
+// CHANNEL 
+client.guilds.forEach((guild) => {
+    console.log(guild.name);
+    guild.channels.forEach((channel) => {
+        console.log(` - ${channel.name} 
+                        ${channel.type} 
+                        ${channel.id}`);
+    });                  
+});          
+
+// For General Channel id 398581574427213826  
+// @generalTextChannel and @generalVoiceChannel
+    let generalChannel = 
+           client.channels.get("398581574427213826");
+    const attachment = 
+       new Discord.Attachment
+           ("../assets/img/avatar.png");    
+    generalChannel.send(attachment);
+});
+
+// MESSAGE 
+client.on('message', (receivedMessage) => {
+   if (receivedMessage.author === client.user) {
+       return;   
+    }
+
+// REPEAT MESSAGE
+   receivedMessage.channel.send("Message received : " + 
+        receivedMessage.author.toString() + " : " + 
+        receivedMessage.content);
+    
+   receivedMessage.guild.emojis.forEach(customEmoji => {
+       console.log(`${customEmoji.name} ${customEmoji.id}`);
+       receivedMessage.react(customEmoji); 
+   });
+});
+
+client.on('message', message => {
+    if (!message.content.startsWith(prefix) || 
+         message.author.bot) return;
+
+    const args = 
+           message.content.slice(prefix.length).split(/ +/);
+    const command = args.shift().toLowerCase();
+
+// INFO
+    if (command === 'info') {
+        if (!args.length) {
+            return message.channel.send
+                  (`You did not provide any arguments, 
+                 ${message.author}!`);
+	} else if (args[0] === 'foo') {
+            return message.channel.send('bar');
+	}
+	message.channel.send(`First argument: ${args[0]}`);                
+   ...
+});
+
+// login to Discord with app token
+client.login(token);
+</code></pre>
+
+  <!------------------------------------------------// 
+       Discord:  Tab Navigation
+    // ----------------------------------------------->
+<div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active">
+        <a href="#discordSuccessLog" 
+           aria-controls="discordSuccessLog" 
+           role="tab" data-toggle="tab">
+            Success Log</a></li>            
+    <li role="presentation">
+        <a href="#discordThingsToRevisit" 
+           aria-controls="discordThingsToRevisit" 
+           role="tab" data-toggle="tab">
+            Things to Revisit</a></li>           
+    <li role="presentation">
+        <a href="#discordGoals" 
+           aria-controls="discordGoals" 
+           role="tab" data-toggle="tab">
+            Goals</a></li>           
+    <li role="presentation">
+        <a href="#discordLessonsLearned" 
+           aria-controls="discordLessonsLearned" 
+           role="tab" data-toggle="tab">
+            Lessons Learned</a></li>
+  </ul>
+  <!------------------------------------------------// 
+       Discord :  Tab panes 
+    // ----------------------------------------------->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="discordSuccessLog">
+<pre><code class="console">
+Feb 28, 2019 5:40:24 AM "BUILD SUCCESSFUL (total time: 0)" 
+</code></pre>
+
+    </div>      
+    <div role="tabpanel" class="tab-pane" id="discordThingsToRevisit">
+      <p>Discord API offerings for both bots and OAuth2 integrations
+          for making !wumpus commands and log In With Discord. </p>    
+    </div>     
+      
+    <div role="tabpanel" class="tab-pane" id="discordGoals">
+    <p>Provide the best satisfying solution under a varying amount of resources 
+       and priorities</p>    
+    </div>      
+    <div role="tabpanel" class="tab-pane" id="discordLessonsLearned">
+    <p>Voice connections operate in a similar fashion to the Gateway 
+       connection. However, they use a different set of payloads and 
+       a separate UDP-based connection for voice data transmission.</p>        
+    </div>      
+  </div>
+</div>  
+<!------ /. Discord :  Tab panes   ------->
+            
+    <h4><a name="twitch" class="anchor" href="#twitch"></a>
+        <span class="header-link"></span> Twitch API</h4>        
+
+    <p><img src="../../assets/images/bot-twitch.png" class="img-fluid" 
+                style="float: right; padding: 5px;" alt=""/>        
+        
+    Twitch Gaming Solutions provides developers products and solutions that 
+    extend the lifecycle of entertainment beyond the screen.</p>
+
+<p>Twitch Extensions enable you to create live apps that interact with the 
+    stream, as a panel on a channel, or with chat. Create interactive 
+    experiences such as mini-games, leaderboards, live gear information and 
+    more.</p>
+
+<p>Twitch Insights enable registering your games to access free insights about 
+    your streamers, viewers, and performance on Twitch.</p>
+
+<p>Twitch API enables applications to work with clips, games, streams and 
+    users.</p>
+
+        See <span class="fa fa-file-code"></span></a>
+        <a href="https://github.com/keeyanajones/Java-Problems/blob/master/src/twitch-bot"
+           target="_blank"> 
+            twitch-bot</a>
+
+<pre><code>// TWITCH
+// Define configuration options
+let options = {
+    options: {        
+        debug: true
+    },
+    connection: {
+        reconnect: true,
+        secure: true
+    },
+    identity: {
+        username: "User-Name",
+        password: "oauth:token XXX.xxx.XXX"
+    },
+    channels: [ "Channel 123" ]
+// logger: Object - Custom logger with the methods 
+//                  info, warn, and error
+};
+
+// Create a client with our options
+let client = new tmi.client(options);
+// Register our event handlers (defined below)
+client.on('message', onMessageHandler);
+client.on('connected', onConnectedHandler);
+// Connect to Twitch..
+client.connect();
+
+client.on('connected', (address, port) => {
+    client.action('User-Name-Bob', 
+                  'Hello, the bot is now connected');    
+});
+// Called every time a message comes in
+function onMessageHandler (target, context, msg, self) {
+  if (self) { return; } // Ignore messages from the bot
+// Remove whitespace from chat message
+  const commandName = msg.trim();
+// If the command is known, let's execute it
+  if (commandName === '!dice') {
+    const num = rollDice();
+    client.say(target, `You rolled a ${num}`);
+    console.log(`* Executed ${commandName} command`);
+  } else {
+    console.log(`* Unknown command ${commandName}`);
+  }     
+}
+// Function called when the "dice" command is issued
+function rollDice () {
+  const sides = 6;
+  return Math.floor(Math.random() * sides) + 1;
+}
+// Called every time the bot connects to Twitch chat
+function onConnectedHandler (addr, port) {
+  console.log(`* Connected to ${addr}:${port}`);
+}
+</code></pre>
+
+  <!------------------------------------------------// 
+       Twitch :  Tab Navigation
+    // ----------------------------------------------->
+<div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active">
+        <a href="#twitchSuccessLog" 
+           aria-controls="twitchSuccessLog" 
+           role="tab" data-toggle="tab">
+            Success Log</a></li>            
+    <li role="presentation">
+        <a href="#twitchThingsToRevisit" 
+           aria-controls="twitchThingsToRevisit" 
+           role="tab" data-toggle="tab">
+            Things to Revisit</a></li>           
+    <li role="presentation">
+        <a href="#twitchGoals" 
+           aria-controls="twitchGoals" 
+           role="tab" data-toggle="tab">
+            Goals</a></li>           
+    <li role="presentation">
+        <a href="#twitchLessonsLearned" 
+           aria-controls="twitchLessonsLearned" 
+           role="tab" data-toggle="tab">
+            Lessons Learned</a></li>
+  </ul>
+
+  <!------------------------------------------------// 
+       Twitch :  Tab panes 
+    // ----------------------------------------------->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="twitchSuccessLog">
+<pre><code class="console">
+Feb 28, 2019 5:40:24 AM "BUILD SUCCESSFUL (total time: 0)" 
+</code></pre>
+    </div>      
+    <div role="tabpanel" class="tab-pane" id="twitchThingsToRevisit">
+      <p>Twitch Extensions, Marketplace, Insights, Game Solutions, 
+         and the API.</p>
+    </div>    
+    <div role="tabpanel" class="tab-pane" id="twitchGoals">
+    <p>Provide the best satisfying solution under a varying amount of resources 
+        and priorities.</p>   
+    </div>      
+    <div role="tabpanel" class="tab-pane" id="twitchLessonsLearned">
+    <p>Twitch clips, games, streams, and users API References.</p>        
+    </div>      
+  </div>
+</div>  
+<!------ /. Twitch :  Tab panes   ------->
+                   
+    <h4><a name="youtube" class="anchor" href="#youtube"></a>
+        <span class="header-link"></span> Youtube API</h4>        
+ 
+    <img src="../../assets/images/bot-youtube.png" class="img-fluid" 
+                style="float: left; padding: 5px;" alt=""/>
+        
+        <p>Integrate YouTube videos and functionality into your website or 
+           application.</p>
+
+        <p>YouTube Analytics and Reporting APIs allow you retrieve YouTube 
+            Analytics data for YouTube videos and channels.</p>
+
+        <p>YouTube Data API lets your application retrieve YouTube content 
+            while also enabling YouTube users to manage their YouTube 
+            accounts.</p>
+
+        <p>YouTube for Android adds YouTube functionality to your Android 
+            apps.</p>
+
+        <p>YouTube IFrame Player API embeds a YouTube player in your 
+            application.</p>
+
+        <p>YouTube Live Streaming API allows you to create, update, and manage 
+            live events on YouTube.</p>
+
+        <p>YouTube Subscribe Button enables users to subscribe to your channel 
+            with one click.</p>
+        
+        See <span class="fa fa-file-code"></span></a>
+    
+        <a href="https://github.com/keeyanajones/Java-Problems/blob/master/src/youtube-bot"
+           target="_blank">             
+            youtube-bot</a>
+        
+<pre><code>// Sample code for youtube
+...
+// If modifying these scopes, delete token.json.
+const SCOPES = 
+   ['https://www.googleapis.com/auth/drive.metadata.readonly'];
+// The file token.json stores the user's access and refresh 
+// tokens, and is created automatically when the authorization 
+// flow completes for the first time.
+const TOKEN_PATH = 'token.json';
+
+// Load client secrets from a local file.
+fs.readFile('credentials.json', (err, content) => {
+  if (err) return 
+    console.log('Error loading client secret file:', 
+                 err);
+// Authorize a client with credentials, then call the 
+// Google Drive API.
+  authorize(JSON.parse(content), listFiles);
+});
+
+/**
+ * Create an OAuth2 client with the given credentials, and
+ * then execute the given callback function.
+ * @param {Object} credentials The authorization client 
+ *                 credentials.
+ * @param {function} callback The callback to call with 
+ *                   the authorized client.
+ */
+function authorize(credentials, callback) {
+  const {client_secret, client_id, redirect_uris} = 
+         credentials.installed;
+  const oAuth2Client = new google.auth.OAuth2(
+      client_id, client_secret, redirect_uris[0]);
+
+  // Check if we have previously stored a token.
+  fs.readFile(TOKEN_PATH, (err, token) => {
+    if (err) return getAccessToken(oAuth2Client, callback);
+    oAuth2Client.setCredentials(JSON.parse(token));
+    callback(oAuth2Client);
+  });
+}
+
+/**
+ * Get and store new token after prompting for user 
+ * authorization, and then execute the given callback 
+ * with the authorized OAuth2 client.
+ * @param {google.auth.OAuth2} oAuth2Client The OAuth2 
+ *                             client to get token for.
+ * @param {getEventsCallback} callback The callback for 
+ *                            the authorized client.
+ */
+function getAccessToken(oAuth2Client, callback) {
+  const authUrl = oAuth2Client.generateAuthUrl({
+    access_type: 'offline',
+    scope: SCOPES,
+  });
+  console.log('Authorize this app by visiting this url:', 
+               authUrl);
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+  rl.question('Enter the code from that page here: ', 
+                (code) => {
+    rl.close();
+    oAuth2Client.getToken(code, (err, token) => {
+      if (err) return 
+        console.error('Error retrieving access token', 
+                       err);
+      oAuth2Client.setCredentials(token);
+      // Store the token to disk for later program executions
+      fs.writeFile(TOKEN_PATH, JSON.stringify(token), 
+                     (err) => {
+        if (err) return console.error(err);
+        console.log('Token stored to', TOKEN_PATH);
+      });
+      callback(oAuth2Client);
+    });
+  });
+}
+
+/**
+ * Lists the names and IDs of up to 10 files.
+ * @param {google.auth.OAuth2} auth An authorized OAuth2 
+ *                             client.
+ */
+function listFiles(auth) {
+  const drive = google.drive({version: 'v3', auth});
+  drive.files.list({
+    pageSize: 10,
+    fields: 'nextPageToken, files(id, name)',
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' 
+                                 + err);
+    const files = res.data.files;
+    if (files.length) {
+      console.log('Files:');
+      files.map((file) => {
+        console.log(`${file.name} (${file.id})`);
+      });
+    } else {
+      console.log('No files found.');
+    }
+  });
+}
+...
+</code></pre>
+
+  <!------------------------------------------------// 
+       Youtube :  Tab Navigation
+    // ----------------------------------------------->
+<div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active">
+        <a href="#youtubeSuccessLog" 
+           aria-controls="youtubeSuccessLog" 
+           role="tab" data-toggle="tab">
+            Success Log</a></li>            
+    <li role="presentation">
+        <a href="#youtubeThingsToRevisit" 
+           aria-controls="youtubeThingsToRevisit" 
+           role="tab" data-toggle="tab">
+            Things to Revisit</a></li>           
+    <li role="presentation">
+        <a href="#youtubeGoals" 
+           aria-controls="youtubeGoals" 
+           role="tab" data-toggle="tab">
+            Goals</a></li>           
+    <li role="presentation">
+        <a href="#youtubeLessonsLearned" 
+           aria-controls="youtubeLessonsLearned" 
+           role="tab" data-toggle="tab">
+            Lessons Learned</a></li>
+  </ul>
+
+  <!------------------------------------------------// 
+       Youtube:  Tab panes 
+    // ----------------------------------------------->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="youtubeSuccessLog">
+<pre><code class="console">
+Feb 28, 2019 5:40:24 AM "BUILD SUCCESSFUL (total time: 0)" 
+</code></pre>
+    </div>
+      
+    <div role="tabpanel" class="tab-pane" id="youtubeThingsToRevisit">
+      <p>Playing videos, adding data, live streaming, analytics and reporting, 
+          subscribe buttons</p>    
+    </div> 
+    
+    <div role="tabpanel" class="tab-pane" id="youtubeGoals">
+    <p>Provide the best satisfying solution under a varying amount of resources 
+        and priorities</p>    
+    </div>
+      
+    <div role="tabpanel" class="tab-pane" id="youtubeLessonsLearned">
+    <p>Youtube resources are vast and cover everything from API, widgets and 
+        tools, analytics, data, Android and IOS resources.  </p>        
+    </div>      
+  </div>
+</div>  
+<!------ /. Youtube:  Tab panes   ------->
+
+<hr/>
+
+      <!-- pagination -->
+      <a role="button" class="btn btn-primary pull-left" 
+         href="../index.html">
+            &larr; PREVIOUS: Experiments</a>
+      
+      <a role="button" class="btn btn-primary pull-right" 
+         href="../../appendix-projects/index.html">
+            NEXT: Projects &rarr;</a><br/><br/>              
+    </section>
+        
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+            crossorigin="anonymous"></script>         
+    <script src="../assets/javascripts/scale.fix.js"></script>    
+  </body>
+</html>

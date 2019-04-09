@@ -1,45 +1,51 @@
 ## About My Code Journal
 
-[http://keeyanajones.github.io/Journal](http://keeyanajones.github.io/Journal)
+[https://keeyanajones.github.io/Journal](https://keeyanajones.github.io/Journal)
 
 This Github Repository is a series of essays of all types, finished and in progress about Software Engineering that cover Java SE Version 8, other languages, and typical sub-disciplines.
 
-See [The Opening Essay](http://keeyanajones.github.io/Journal/opening-essay)
+See [The Opening Essay](https://keeyanajones.github.io/Journal/opening-essay)
 
 ### Table of Contents
-<ol>
-    <li>Getting Started</li>
-    <li>OOAD and UML Diagrams</li>
-    <li>Quality Factors Classification</li>
-    <li>Data Structures in Java</li>
-    <li>Algorithms</li>
-    <ol>
-        <li>Problem Solving</li>
-        <li>Sorting</li>
-        <li>Shuffling</li>
-        <li>Searching</li>
-        <li>Graphs</li>
-        <li>Trees</li>
-        <li>Recursion</li>
-    </ol>
-    <li>Big O' Notations</li>
-    <li>Unified Modeling Language (UML)</li>
-    <li>Design Patterns</li>
-    <li>Testing</li>
-    <li>Documentation and Version Control</li>
-    <li>Appendix</li>
-    <ol>
-        <li>Color</li>
-        <li>Images</li>
-        <li>Projects</li>
-        <li>Reference</li>
-    </ol>
-</ol>
-
+- [Getting Started](https://keeyanajones.github.io/Journal/getting-started)
+- Learning Plan*
+- Experiments*
+  + Node*
+  + Python*
+  + Java*
+  + Data Science*
+  + Games*
+- [OOAD and UML Diagrams](https://keeyanajones.github.io/Journal/ooad-process)
+- [Quality Factors Classification](https://keeyanajones.github.io/Journal/quality-factors)
+- [Data Structures in Java](https://keeyanajones.github.io/Journal/data-structures)
+- [Algorithms](https://keeyanajones.github.io/Journal/algorithms)
+  + [Problem Solving](https://keeyanajones.github.io/Journal/algorithms/problem-solving)
+  + [Sorting](https://keeyanajones.github.io/Journal/algorithms/sorting)
+  + [Shuffling](https://keeyanajones.github.io/Journal/algorithms/shuffling)
+  + [Searching](https://keeyanajones.github.io/Journal/algorithms/searching)
+  + [Graphs](https://keeyanajones.github.io/Journal/algorithms/graphs)
+  + [Trees](https://keeyanajones.github.io/Journal/algorithms/trees)
+  + [Recursion](https://keeyanajones.github.io/Journal/algorithms/recursion)
+- [Big O' Notations](https://keeyanajones.github.io/Journal/big-o-notations)
+- [Unified Modeling Language (UML)](https://keeyanajones.github.io/Journal/uml)
+- [Design Patterns](https://keeyanajones.github.io/Journal/design-patterns)
+- [Testing](https://keeyanajones.github.io/Journal/testing)
+  + Manual
+  + Automation
+- [Documentation and Version Control](https://keeyanajones.github.io/Journal/documentation-version)
+  + Logging
+- [Appendix](https://keeyanajones.github.io/Journal/appendix)
+  + Color
+  + Images
+  + UX/UI *
+  + Projects*
+  + Notes*
+  + Reference
+ 
 ### Blog
-For more details see [Blog](http://keeyanajones.github.io/website/).
+For more details see [Blog](https://keeyanajones.github.io/website/).
 
 ### Contact
-Having trouble with Development? Check out my [Journal](http://keeyanajones.github.io/Journal/) 
+Having trouble with Development? Check out my [Journal](https://keeyanajones.github.io/Journal/) 
 or [contact me](https://github.com/keeyanajones) and I’ll help.
 
