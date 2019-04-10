@@ -11,7 +11,7 @@ See [The Opening Essay](https://keeyanajones.github.io/Journal/opening-essay)
 - Learning Plan*
 - Experiments*
   + Chat API's
-   - [Chibi-Elf-Bot](https://keeyanajones.github.io/Journal/experiments/node/chibi-elf-bot.html)
+   - [Bot](https://keeyanajones.github.io/Journal/experiments/node/chibi-elf-bot.html)
   + Code-Playground
   + Analytic Data as a Service
    - Leads-Manager Groups
