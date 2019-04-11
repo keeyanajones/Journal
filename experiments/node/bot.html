@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Code Journal: Experiments | Chibi-Elf-Bot </title>   
+    <title>Code Journal: Experiments | Bot</title>   
     <!-- Latest compiled and minified CSS -->
     <!-- Font Awesome 5.7.0 -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
@@ -89,10 +89,10 @@
       <h2><span class="fas fa-flask " aria-hidden="true"></span>
           <a name="experiments" class="anchor" href="#experiments">
             <span class="header-link"></span></a>
-          Chibi-Elf-Bot</h2>                  
+            Bot</h2>
      
         <p><sup><span class="fa fa-calendar"></span>
-                Last updated on April 9th, 2019</sup></p>
+                Last updated on April 11th, 2019</sup></p>
               
         <ol class="breadcrumb">
             <li><span class="fa fa-bookmark"></span>
@@ -101,12 +101,12 @@
                 Experiments</a></li>
             <li class="active"><a href="#experiments">
                 <span class="fa fa-bookmark"></span>
-                Chibi-Elf-Bot</a></li>                                
+                Bot</a></li>                                
         </ol>  
-                <p><img src="../../assets/images/chibibot.png" 
+                <p><img src="../../assets/images/bothero.png"
                         style="float: left; padding: 5px;" 
                         class="img-fluid" alt=""/></p>
-                <p>Chibi Elf Bot conducts conversations via auditory or textual 
+                <p>This Bot conducts conversations via auditory or textual 
                     methods to convincingly simulate how a human would behave 
                     as a conversational partner, thereby passing the practical 
                     purposes including customer service or information 
@@ -114,6 +114,7 @@
                     to use the gaming messaging apps and speech based assistants
                     to automate communication and personalize customer experiences.                    
                 </p>
+
                 <p>Bots can be classified into usage categories such as 
                     conversational commerce (e-commerce via chat), analytics, 
                     communication, customer support, design, developer tools, 
@@ -178,42 +179,78 @@ const port = 3000;
 </code></pre>
     
 <h3>Commands List</h3>
+
 <ul>
-INFORMATION
-<ul>
-   chibielf, 
-   info, chatterlist, uptime, and commands
-</ul>
-ROLES AND RANKS
-<ul>
-   addrank, rank, ranks, deleterank, addrole, roles, and roleinfo 
-</ul>
-MANAGEMENT
-<ul>
-   announce, giveaway, winner, warn, unwarn, clear, slow, slowoff, mod, 
-   and unmod
-</ul>
-MODERATOR
-<ul>
-   clean, timeout, kick, ban, unban, mute, unmute, ignore, warn, and getlogs
-</ul>
-MUSIC
-<ul>
-   play, skip, playlist, now playing, stop, seek, and next
-</ul>
-FUN
-<ul>
-   whisper, poll , poll results , joke, quote, pet, country, weather, google, 
-   ask, facts, meme, and roast
-   </ul>
-MISC
-   <ul>
-   afk, ask google, and avatar
-   </ul>
-TAGS
-   <ul>
-   tags, tag, untag, and edittag
-   </ul>
+    INFORMATION
+    <ul>
+       <li>!bot - </li>
+       <li>!info - </li>
+       <li>!chatterlist - </li>
+       <li>!uptime - </li>
+       <li>!commands - </li>
+    </ul>
+    ROLES AND RANKS
+    <ul>
+       <li>!addrank | !rank | !ranks | !deleterank </li>
+       <li>!addrole | !roles | !roleinfo </li>
+    </ul>
+    MANAGEMENT
+    <ul>
+       <li>!announce - </li>
+       <li><kbd>!giveaway <kbd></li>
+       <li>!winner - </li>
+       <li>!warn | !unwarn</li>
+       <li>!clear - </li>
+       <li>!slow | !slowoff</li>
+       <li><kbd>!mod</kbd> | <kbd>!unmod</kbd></li>
+    </ul>
+    MODERATOR
+    <ul>
+       <li>!clean - </li>
+       <li><kbd>!timeout {username} [duration]</kbd> |
+           <kbd>!timeout {username} clear</kbd>      
+       </li>
+       <li>!kick - </li>
+       <li><kbd>!ban {username}</kbd>  | <kbd>!unban {username}</kbd> </li>
+       <li><kbd>!mute {username}</kbd> | <kbd>!unmute {username}</kbd></li>
+       <li>!ignore - </li>
+       <li>!warn - </li>
+       <li>!getlogs - </li>
+    </ul>
+    MUSIC
+    <ul>
+       <li>!play - </li>
+       <li>!skip - </li>
+       <li>!playlist - </li>
+       <li>!now playing - </li>
+       <li>!stop - </li>
+       <li>!seek - </li>
+       <li>!next - </li>
+    </ul>
+    FUN
+    <ul>
+       <li><kbd>!whisper {username} [message]</kbd></li>
+       <li>!poll | !poll results</li>
+       <li>!joke - </li>
+       <li>!quote - </li>
+       <li>!pet - </li>
+       <li>!country - </li>
+       <li>!weather - </li>
+       <li>!google | !ask google </li>
+       <li>!ask - </li>
+       <li>!facts - </li>
+       <li>!meme - </li>
+       <li>!roast - </li>
+    </ul>
+    MISC
+    <ul>
+        <li>!afk - </li>
+        <li>!avatar - </li>
+    </ul>
+    TAGS
+    <ul>
+        <li>!tags | !tag | !untag | !edittag </li>
+    </ul>
 </ul>           
 
         <h4><a name="oauth" class="anchor" href="#oauth">
@@ -276,8 +313,8 @@ app.get('/oauth/redirect', (req, res) => {
           <span class="header-link"></span></a>                
         Mixer Rest API</h4>        
 
-        <p><img src="../../assets/images/bot-mixer.png" class='img-fluid' 
-                    style='float: right; padding: 5px;' alt=""/>
+        <p><img src="../../assets/images/botboy.png" 
+                style='float: right; padding: 5px;' alt=""/>
            FTL (Faster Than Light) Technology with other platforms leave you 
            waiting 2-5 seconds, our streaming protocol delivers content with 
            less than one second of latency.</p>
@@ -431,9 +468,8 @@ Feb 28, 2019 5:40:24 AM "BUILD SUCCESSFUL (total time: 0)"
             <span class="header-link"></span> 
             Discord API</h4>        
 
-        <p><img src="../../assets/images/bot-discord.png" class="img-fluid" 
-                style="float: left; padding: 5px;" alt=""/>
-            
+        <p><img src="../../assets/images/girlbot.png" class="img-fluid"                 
+                style="float: left; padding: 5px;" alt=""/>            
            Discord is a proprietary freeware VoIP application and digital 
            distribution platform designed for video gaming communities, that 
            specializes in text, image, video and audio communication between 
@@ -591,9 +627,8 @@ Feb 28, 2019 5:40:24 AM "BUILD SUCCESSFUL (total time: 0)"
     <h4><a name="twitch" class="anchor" href="#twitch"></a>
         <span class="header-link"></span> Twitch API</h4>        
 
-    <p><img src="../../assets/images/bot-twitch.png" class="img-fluid" 
-                style="float: right; padding: 5px;" alt=""/>        
-        
+    <p><img src="../../assets/images/guybot.png" class="img-fluid"             
+            style="float: right; padding: 5px;" alt=""/>               
     Twitch Gaming Solutions provides developers products and solutions that 
     extend the lifecycle of entertainment beyond the screen.</p>
 
@@ -722,11 +757,10 @@ Feb 28, 2019 5:40:24 AM "BUILD SUCCESSFUL (total time: 0)"
 <!------ /. Twitch :  Tab panes   ------->
                    
     <h4><a name="youtube" class="anchor" href="#youtube"></a>
-        <span class="header-link"></span> Youtube API</h4>        
- 
-    <img src="../../assets/images/bot-youtube.png" class="img-fluid" 
-                style="float: left; padding: 5px;" alt=""/>
+        <span class="header-link"></span> Youtube API</h4> 
         
+        <img src="../../assets/images/avatar.png" class="img-fluid" 
+                style="float: left; padding: 5px;" alt=""/>        
         <p>Integrate YouTube videos and functionality into your website or 
            application.</p>
 
