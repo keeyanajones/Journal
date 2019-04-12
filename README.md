@@ -10,7 +10,7 @@ See [The Opening Essay](https://keeyanajones.github.io/Journal/opening-essay)
 - [Getting Started](https://keeyanajones.github.io/Journal/getting-started)
 - Learning Plan
 - Experiments
-  + [Bot](https://keeyanajones.github.io/Journal/experiments/node/bot.html)  
+  + [Bot Chat API's](https://keeyanajones.github.io/Journal/experiments/node/bot.html)  
   + Discord Code Playground*
   + Facebook Warm Up Marketing*
   + Twitch Extensions*
