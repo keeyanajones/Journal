@@ -11,16 +11,13 @@ See [The Opening Essay](https://keeyanajones.github.io/Journal/opening-essay)
 - Learning Plan*
 - Experiments*
   + Chat API's
-   - [Bot](https://keeyanajones.github.io/Journal/experiments/node/chibi-elf-bot.html)
-  + Code-Playground
-  + Analytic Data as a Service
-   - Leads-Manager Groups
-   - Twitch Extensions
-   - GamePlay and Music Playlist 
-   - Facebook Traffic and Fan Landing-Page
-   - Mixer's Mixplay and Season2
-   - Youtube's player, subscribe, and upload-widget
-   - Remote-Work 
+   - [Bot](https://keeyanajones.github.io/Journal/experiments/node/chibi-elf-bot.html)  
+   - Discord Code Playground*
+   - Facebook Warm Up Marketing
+   - Twitch Extensions*
+   - GamePlay and Music Playlist*
+   - Mixer's Mixplay and Season2*
+   - Youtube's player, subscribe, and upload-widget*
 - [OOAD and UML Diagrams](https://keeyanajones.github.io/Journal/ooad-process)
 - [Quality Factors Classification](https://keeyanajones.github.io/Journal/quality-factors)
 - [Data Structures in Java](https://keeyanajones.github.io/Journal/data-structures)
