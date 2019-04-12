@@ -8,13 +8,15 @@ See [The Opening Essay](https://keeyanajones.github.io/Journal/opening-essay)
 
 ### Table of Contents
 - [Getting Started](https://keeyanajones.github.io/Journal/getting-started)
-- Learning Plan*
-- Experiments*
-  + Node*
-  + Python*
-  + Java*
-  + Data Science*
-  + Games*
+- Learning Plan
+- Experiments
+  + [Bot Chat API's](https://keeyanajones.github.io/Journal/experiments/node/bot.html)  
+  + Discord Code Playground*
+  + Facebook Warm Up Marketing*
+  + Twitch Extensions*
+  + GamePlay and Music Playlist*
+  + Mixer's Mixplay and Season2*
+  + Youtube's player, subscribe, and upload-widget*
 - [OOAD and UML Diagrams](https://keeyanajones.github.io/Journal/ooad-process)
 - [Quality Factors Classification](https://keeyanajones.github.io/Journal/quality-factors)
 - [Data Structures in Java](https://keeyanajones.github.io/Journal/data-structures)
@@ -44,8 +46,3 @@ See [The Opening Essay](https://keeyanajones.github.io/Journal/opening-essay)
  
 ### Blog
 For more details see [Blog](https://keeyanajones.github.io/website/).
-
-### Contact
-Having trouble with Development? Check out my [Journal](https://keeyanajones.github.io/Journal/) 
-or [contact me](https://github.com/keeyanajones) and I’ll help.
-
