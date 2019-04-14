@@ -124,6 +124,8 @@
                     experiment                                      
                 </p>
                 
+                <p>React Frontend and Express Backend</p>
+                
 See <span class="fa fa-file-code"></span></a>
      <a href="https://github.com/keeyanajones/node/blob/master/src/package.json"
         target="_blank">package.json</a>
@@ -173,8 +175,65 @@ const http = require('http');
 const fs = require('fs');
 const readline = require('readline');
 const {google} = require('googleapis');
+const Carina = require('carina').Carina;
 const hostname = '127.0.0.1';
 const port = 3000;
+...
+</code></pre>
+
+        <h4><a name="oauth" class="anchor" href="#oauth">
+          <span class="header-link"></a></span>
+            OAuth
+       </h4>        
+
+        <p>OAuth is an open standard for access delegation, commonly used as 
+           a way for Internet users to grant websites or applications access 
+           to their information on other websites but without giving them the 
+           passwords.</p>
+
+See <span class="fa fa-file-code"></span></a>
+     <a href="https://gist.github.com/keeyanajones/174b08a8cb8441963be5025d56502a8a#file-oauth-js"
+        target="_blank">oauth.js</a>
+        
+<pre><code>// oauth.js
+...
+// This is the client ID and client secret that you obtained
+// while registering the application
+const clientID = '<your client id>'
+const clientSecret = '<your client secret>'
+
+const app = express();
+
+// Declare the redirect route
+app.get('/oauth/redirect', (req, res) => {
+  // The req.query object has the query params that
+  // were sent to this route. We want the `code` param
+  const requestToken = req.query.code;
+
+  someThingsomeThing({
+    // make a POST request
+    method: 'post',
+    // to the Github authentication API, with the client ID, 
+    // client secret and request token
+    url: `https://somewhere.com/login/oauth/access_token
+            ?client_id=
+                ${clientID}&client_secret=
+                ${clientSecret}&code=
+                ${requestToken}`,
+    // Set the content type header, so that we get the 
+    // response in JSOn
+    headers: {
+         accept: 'application/json'
+    }
+  }).then((response) => {
+    // Once we get the response, extract the access token from
+    // the response body
+    const accessToken = response.data.access_token
+    // redirect the user to the welcome page, along with the 
+    // access token
+    res.redirect(`/welcome.html?access_token=${accessToken}`);
+  })
+})
 ...
 </code></pre>
     
@@ -237,7 +296,6 @@ const port = 3000;
        <li>!country - </li>
        <li>!weather - </li>
        <li>!google | !ask google </li>
-       <li>!ask - </li>
        <li>!facts - </li>
        <li>!meme - </li>
        <li>!roast - </li>
@@ -252,62 +310,6 @@ const port = 3000;
         <li>!tags | !tag | !untag | !edittag </li>
     </ul>
 </ul>           
-
-        <h4><a name="oauth" class="anchor" href="#oauth">
-          <span class="header-link"></a></span>
-            OAuth
-       </h4>        
-
-        <p>OAuth is an open standard for access delegation, commonly used as 
-           a way for Internet users to grant websites or applications access 
-           to their information on other websites but without giving them the 
-           passwords.</p>
-
-See <span class="fa fa-file-code"></span></a>
-     <a href="https://gist.github.com/keeyanajones/174b08a8cb8441963be5025d56502a8a#file-oauth-js"
-        target="_blank">oauth.js</a>
-        
-<pre><code>// oauth.js
-...
-// This is the client ID and client secret that you obtained
-// while registering the application
-const clientID = '<your client id>'
-const clientSecret = '<your client secret>'
-
-const app = express();
-
-// Declare the redirect route
-app.get('/oauth/redirect', (req, res) => {
-  // The req.query object has the query params that
-  // were sent to this route. We want the `code` param
-  const requestToken = req.query.code;
-
-  someThingsomeThing({
-    // make a POST request
-    method: 'post',
-    // to the Github authentication API, with the client ID, 
-    // client secret and request token
-    url: `https://somewhere.com/login/oauth/access_token
-            ?client_id=
-                ${clientID}&client_secret=
-                ${clientSecret}&code=
-                ${requestToken}`,
-    // Set the content type header, so that we get the 
-    // response in JSOn
-    headers: {
-         accept: 'application/json'
-    }
-  }).then((response) => {
-    // Once we get the response, extract the access token from
-    // the response body
-    const accessToken = response.data.access_token
-    // redirect the user to the welcome page, along with the 
-    // access token
-    res.redirect(`/welcome.html?access_token=${accessToken}`);
-  })
-})
-...
-</code></pre>
                
         <h4><a name="mixer" class="anchor" href="#mixer">
           <span class="header-link"></span></a>                
@@ -336,8 +338,8 @@ app.get('/oauth/redirect', (req, res) => {
            page and one centralized chat</p>
          
         See <span class="fa fa-file-code"></span></a>
-        <a href="https://github.com/keeyanajones/mixer-chatbot/"
-           target="_blank">mixer-bot starter</a>
+        <a href="https://github.com/keeyanajones/mixer-bot/"
+           target="_blank">mixer-bot</a>
        
 <pre><code>
 // With OAuth we don't need to log in, the OAuth 
@@ -485,8 +487,8 @@ Feb 28, 2019 5:40:24 AM "BUILD SUCCESSFUL (total time: 0)"
         <strong>Discord</strong><br/>
         
         See <span class="fa fa-file-code"></span>
-        <a href="https://github.com/keeyanajones/Java-Problems/blob/master/src/forLoopFunction.java"
-           target="_blank"> discord-bot</a>     
+        <a href="https://github.com/keeyanajones/discord-bot"
+           target="_blank">discord-bot</a>     
         
 <pre><code>// Discord 
 ...
@@ -644,9 +646,8 @@ Feb 28, 2019 5:40:24 AM "BUILD SUCCESSFUL (total time: 0)"
     users.</p>
 
         See <span class="fa fa-file-code"></span></a>
-        <a href="https://github.com/keeyanajones/Java-Problems/blob/master/src/twitch-bot"
-           target="_blank"> 
-            twitch-bot</a>
+        <a href="https://github.com/keeyanajones/twitch-bot"
+           target="_blank">twitch-bot</a>
 
 <pre><code>// TWITCH
 // Define configuration options
@@ -785,9 +786,8 @@ Feb 28, 2019 5:40:24 AM "BUILD SUCCESSFUL (total time: 0)"
         
         See <span class="fa fa-file-code"></span></a>
     
-        <a href="https://github.com/keeyanajones/Java-Problems/blob/master/src/youtube-bot"
-           target="_blank">             
-            youtube-bot</a>
+        <a href="https://github.com/keeyanajones/youtube-bot"
+           target="_blank">youtube-bot</a>
         
 <pre><code>// Sample code for youtube
 ...
