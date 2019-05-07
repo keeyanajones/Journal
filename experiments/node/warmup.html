@@ -1,0 +1,485 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Code Journal : Experiments :: Facebook Warm Up Marketing</title>   
+    <!-- Latest compiled and minified CSS -->
+    <!-- Font Awesome 5.7.0 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+          crossorigin="anonymous">
+    <!-- Bootstrap 3.3.7 -->    
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">    
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>        
+    
+    <!-- Custom Style Pygment and Icons -->
+    <link rel="stylesheet" href="../../assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="../../assets/stylesheets/pygment_trac.css">
+    <link rel="icon" href="../../assets/images/favicon.ico" type="image/gif">
+    <link rel="shortcut icon" href="../../assets/images/favicon.png">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="wrapper">
+    <!-- Header -->         
+      <header>
+          <img src="../../assets/images/pb_Image.png" class="img-fluid" alt="me"/>
+        <p class="view">A Code Journal for 
+            <span class="fab fa-git-square" aria-hidden="true"></span>
+                Hub Pages<br/>        
+                
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
+            <span class="fab fa-github"></span> 
+              View the Code Journal on GitHub</a></p>
+                      
+                        
+            <button class="btn btn-md btn-default" type="button">
+                <span class="fab fa-java fa-2x"></span> 
+            </button>                
+            
+            <button class="btn btn-md btn-default" type="button">
+                <span class="fab fa-python fa-2x"></span> 
+            </button>                        
+
+            <button class="btn btn-md btn-default" type="button">
+                <span class="fab fa-r-project  fa-2x"></span> 
+            </button>                
+            
+            <button class="btn btn-md btn-default" type="button">
+            <span class="fab fa-js fa-2x"></span> 
+            </button>                              
+
+            <br/><br/>
+            
+            <a href="https://github.com/keeyanajones/">
+            <small><span class="fab fa-github-alt"></span>                 
+            Repositories and latest Contribution Activity</small></a>                 
+              
+        <br/>
+        
+        <!-- Download, Clone, or Fork -->
+        <ul>    
+          <li><a href="https://github.com/keeyanajones/Journal/archive/master.zip">
+              <span class="fa fa-file-archive" aria-hidden="true"></span><br/>
+                  Download <br/> ZIP</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-clone" aria-hidden="true"></span><br/>
+                  Clone <br/> Desktop</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-code-branch" aria-hidden="true"></span><br/>
+                  Fork On <br/> GitHub</a></li>
+        </ul>                                 
+      </header>
+    <!-- ./header --> 
+    </div>
+      
+    <section>       
+      <h2><span class="fas fa-flask " aria-hidden="true"></span>
+          <a name="experiments" class="anchor" href="#experiments">
+            <span class="header-link"></span></a>
+            Facebook Warm Up Marketing</h2>
+     
+        <p><sup><span class="fa fa-calendar"></span>
+                Last updated on April 12th, 2019</sup></p>
+              
+        <ol class="breadcrumb">
+            <li><span class="fa fa-bookmark"></span>
+                <a href="../../index.html"> Home </a></li>
+            <li><a href="../index.html"><span class="fa fa-bookmark"></span>
+                Experiments</a></li>
+            <li class="active"><a href="#experiments">
+                <span class="fa fa-bookmark"></span>
+                Facebook Warm Up Marketing</a></li>                                
+        </ol>  
+                <p><img src="../../assets/images/bothero.png"
+                        style="float: left; padding: 5px;" 
+                        class="img-fluid" alt=""/></p>
+                <p>This Bot conducts conversations via auditory or textual 
+                    methods to convincingly simulate how a human would behave 
+                    as a conversational partner, thereby passing the practical 
+                    purposes including customer service or information 
+                    acquisition. The experiment is to make a conversational AI
+                    to use the gaming messaging apps and speech based assistants
+                    to automate communication and personalize customer experiences.                    
+                </p>
+
+                <p>Bots can be classified into usage categories such as 
+                    conversational commerce (e-commerce via chat), analytics, 
+                    communication, customer support, design, developer tools, 
+                    education, entertainment, finance, food, games, health, HR, 
+                    marketing, news, personal, productivity, shopping, social, 
+                    sports, travel and utilities. 
+                    experiment                                      
+                </p>
+                
+See <span class="fa fa-file-code"></span></a>
+     <a href="https://github.com/keeyanajones/node/blob/master/src/package.json"
+        target="_blank">package.json</a>
+    
+<pre><code>// package.json
+{ ...
+  "dependencies": {
+    "@mixer/client-node": "^3.3.1",
+    "chalk": "2.4.2",
+    "common-tags": "1.8.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "discord.js": "11.4.2",
+    "ejs": "~2.5.7",
+    "eslint": "5.15.1",
+    "express": "~4.16.0",
+    "googleapis": "^27.0.0",
+    "http-errors": "~1.6.2",
+    "libsodium-wrappers": "0.7.4",
+    "moment": "2.24.0",
+    "morgan": "~1.9.0",
+    "ms": "2.1.1",
+    "opusscript": "0.0.6 ",
+    "tmi.js": "1.4.2",
+    "winston": "3.2.1",
+    "ws": "^6.2.0"
+  }
+...
+}
+</code></pre>
+                
+See <span class="fa fa-file-code"></span></a>
+     <a href="https://github.com/keeyanajones/node/blob/master/src/app.js"
+        target="_blank">app.js</a>
+    
+<pre><code>// app.js
+const createError = require('http-errors');
+const express = require('express');
+const tmi = require('tmi.js');// tmi.js module
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const Discord = require('discord.js');// discord.js module
+const Mixer = require('@mixer/client-node');// mixer module
+const ws = require('ws');
+const http = require('http');
+const fs = require('fs');
+const readline = require('readline');
+const {google} = require('googleapis');
+const hostname = '127.0.0.1';
+const port = 3000;
+...
+</code></pre>
+
+        <h4><a name="oauth" class="anchor" href="#oauth">
+          <span class="header-link"></a></span>
+            OAuth
+       </h4>        
+
+        <p>OAuth is an open standard for access delegation, commonly used as 
+           a way for Internet users to grant websites or applications access 
+           to their information on other websites but without giving them the 
+           passwords.</p>
+
+See <span class="fa fa-file-code"></span></a>
+     <a href="https://gist.github.com/keeyanajones/174b08a8cb8441963be5025d56502a8a#file-oauth-js"
+        target="_blank">oauth.js</a>
+        
+<pre><code>// oauth.js
+...
+// This is the client ID and client secret that you obtained
+// while registering the application
+const clientID = '<your client id>'
+const clientSecret = '<your client secret>'
+
+const app = express();
+
+// Declare the redirect route
+app.get('/oauth/redirect', (req, res) => {
+  // The req.query object has the query params that
+  // were sent to this route. We want the `code` param
+  const requestToken = req.query.code;
+
+  someThingsomeThing({
+    // make a POST request
+    method: 'post',
+    // to the Github authentication API, with the client ID, 
+    // client secret and request token
+    url: `https://somewhere.com/login/oauth/access_token
+            ?client_id=
+                ${clientID}&client_secret=
+                ${clientSecret}&code=
+                ${requestToken}`,
+    // Set the content type header, so that we get the 
+    // response in JSOn
+    headers: {
+         accept: 'application/json'
+    }
+  }).then((response) => {
+    // Once we get the response, extract the access token from
+    // the response body
+    const accessToken = response.data.access_token
+    // redirect the user to the welcome page, along with the 
+    // access token
+    res.redirect(`/welcome.html?access_token=${accessToken}`);
+  })
+})
+...
+</code></pre>
+    
+<h3>Commands List</h3>
+
+<ul>
+    INFORMATION
+    <ul>
+       <li>!bot - </li>
+       <li>!info - </li>
+       <li>!chatterlist - </li>
+       <li>!uptime - </li>
+       <li>!commands - </li>
+    </ul>
+    ROLES AND RANKS
+    <ul>
+       <li>!addrank | !rank | !ranks | !deleterank </li>
+       <li>!addrole | !roles | !roleinfo </li>
+    </ul>
+    MANAGEMENT
+    <ul>
+       <li>!announce - </li>
+       <li><kbd>!giveaway <kbd></li>
+       <li>!winner - </li>
+       <li>!warn | !unwarn</li>
+       <li>!clear - </li>
+       <li>!slow | !slowoff</li>
+       <li><kbd>!mod</kbd> | <kbd>!unmod</kbd></li>
+    </ul>
+    MODERATOR
+    <ul>
+       <li>!clean - </li>
+       <li><kbd>!timeout {username} [duration]</kbd> |
+           <kbd>!timeout {username} clear</kbd>      
+       </li>
+       <li>!kick - </li>
+       <li><kbd>!ban {username}</kbd>  | <kbd>!unban {username}</kbd> </li>
+       <li><kbd>!mute {username}</kbd> | <kbd>!unmute {username}</kbd></li>
+       <li>!ignore - </li>
+       <li>!warn - </li>
+       <li>!getlogs - </li>
+    </ul>
+    MUSIC
+    <ul>
+       <li>!play - </li>
+       <li>!skip - </li>
+       <li>!playlist - </li>
+       <li>!now playing - </li>
+       <li>!stop - </li>
+       <li>!seek - </li>
+       <li>!next - </li>
+    </ul>
+    FUN
+    <ul>
+       <li><kbd>!whisper {username} [message]</kbd></li>
+       <li>!poll | !poll results</li>
+       <li>!joke - </li>
+       <li>!quote - </li>
+       <li>!pet - </li>
+       <li>!country - </li>
+       <li>!weather - </li>
+       <li>!google | !ask google </li>
+       <li>!facts - </li>
+       <li>!meme - </li>
+       <li>!roast - </li>
+    </ul>
+    MISC
+    <ul>
+        <li>!afk - </li>
+        <li>!avatar - </li>
+    </ul>
+    TAGS
+    <ul>
+        <li>!tags | !tag | !untag | !edittag </li>
+    </ul>
+</ul>           
+               
+        <h4><a name="mixer" class="anchor" href="#mixer">
+          <span class="header-link"></span></a>                
+        Mixer Rest API</h4>        
+
+        <p><img src="../../assets/images/botboy.png" 
+                style='float: right; padding: 5px;' alt=""/>
+           FTL (Faster Than Light) Technology with other platforms leave you 
+           waiting 2-5 seconds, our streaming protocol delivers content with 
+           less than one second of latency.</p>
+
+        <p>Interactivity is the cornerstone of everything we offer. From 
+           selecting built-in soundboards and visual elements, to 4-player 
+           co-streams, viewers can interact with their favorite streamers 
+           in ways that are deeper, more personal, and (most importantly) 
+           more fun.</p>
+
+        <p>Mixer makes it easy to start streaming your gameplay. In just a 
+           couple of clicks, you can easily start broadcasting on Windows 10 
+           or Xbox One – no extra software required.</p>
+
+        <p>The first built-in cooperative streaming experience on a streaming 
+           platform where up to 4 streamers can combine their streams into a 
+           single viewer experience. With up to three other friends, you can 
+           launch a stream with separate stream sources in one shared Mixer 
+           page and one centralized chat</p>
+         
+        See <span class="fa fa-file-code"></span></a>
+        <a href="https://github.com/keeyanajones/mixer-chatbot/"
+           target="_blank">mixer-bot starter</a>
+       
+<pre><code>
+// With OAuth we don't need to log in, the OAuth 
+// Provider will attach the required information 
+// to all requests after this call.
+// Get the user that the Access Token provided 
+// belongs to.
+client.request('GET', 'users/current')
+.then(response => {
+ userInfo = response.body;
+  return new 
+   Mixer.ChatService(client).join(response.body.channel.id);
+})
+.then(response => {
+    const body = response.body;
+    return createChatSocket(userInfo.id, 
+                            userInfo.channel.id, 
+                            body.endpoints, 
+                            body.authkey);
+})
+.catch(error => {
+    console.error('Something went wrong with Mixer.');
+    console.error(error);
+});
+
+/**
+ * Creates a Mixer chat socket and sets up listeners to 
+ * various chat events.
+*/
+function createChatSocket (userId, 
+                           channelId, 
+                           endpoints, 
+                           authkey) {
+ // Chat connection
+ const socket = new Mixer.Socket(ws, endpoints).boot();
+ // Greet a joined user
+ socket.on('UserJoin', data => {
+  console.log('${data.username} has joined');
+  socket.call('msg', 
+       [`Hi ${data.username}! I'm chibibot! Write 
+        !commands to see what I can do!`]);
+ });
+
+ // React to our !chibielf command
+ socket.on('ChatMessage', data => {
+  if (data.message.message[0].
+      data.toLowerCase().startsWith('!chibielf')) {
+       socket.call('msg', [`Hi @${data.user_name} 
+                   and welcome to the stream!`]);
+       console.log(`Welcomed ${data.user_name}`);
+    }
+ });
+
+   ...
+
+ // Handle errors
+ socket.on('error', error => {
+    console.error('Socket error');
+    console.error(error);
+ });
+
+ return socket.auth(channelId, userId, authkey)
+ .then(() => {
+    console.log('Login to Mixer successful');
+    return socket.call('msg', 
+     ['Hi! I\'m chibielf! Write !chibielf and 
+      I will say hi back to you!']);
+ });
+}
+</code></pre>
+  <!------------------------------------------------// 
+       Nixer :  Tab Navigation
+    // ----------------------------------------------->
+<div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active">
+        <a href="#mixerSuccessLog" 
+           aria-controls="mixerSuccessLog" 
+           role="tab" data-toggle="tab">
+            Success Log</a></li>            
+    <li role="presentation">
+        <a href="#mixerThingsToRevisit" 
+           aria-controls="mixerThingsToRevisit" 
+           role="tab" data-toggle="tab">
+            Things to Revisit</a></li>           
+    <li role="presentation">
+        <a href="#mixerGoals" 
+           aria-controls="mixerGoals" 
+           role="tab" data-toggle="tab">
+            Goals</a></li>           
+    <li role="presentation">
+        <a href="#mixerLessonsLearned" 
+           aria-controls="mixerLessonsLearned" 
+           role="tab" data-toggle="tab">
+            Lessons Learned</a></li>
+  </ul>
+  <!------------------------------------------------// 
+       Mixer :  Tab panes 
+    // ----------------------------------------------->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="mixerSuccessLog">
+<pre><code class="console">
+Feb 28, 2019 5:40:24 AM "BUILD SUCCESSFUL (total time: 0)" 
+</code></pre>
+    </div>
+      
+    <div role="tabpanel" class="tab-pane" id="mixerThingsToRevisit">
+      <p>Mixer Commands, the application Model, console logging, and 
+         Settings</p>
+    </div> 
+    
+    <div role="tabpanel" class="tab-pane" id="mixerGoals">
+    <p>Provide conversational AI to use the gaming messaging apps and speech 
+        based assistants to automate communication and personalize customer 
+        experiences for Mixer channel under a varying amount of resources 
+        and priorities</p>    
+    </div>
+      
+    <div role="tabpanel" class="tab-pane" id="mixerLessonsLearned">
+    <p>Mixer Mixplay, Core, and Chat API</p>        
+    </div>      
+  </div>
+</div>  
+<!------ /. Mixer:  Tab panes   ------->
+
+<hr/>
+      <!-- pagination -->
+      <a role="button" class="btn btn-primary pull-left" 
+         href="../index.html">
+            &larr; PREVIOUS: Experiments</a>
+      
+      <a role="button" class="btn btn-primary pull-right" 
+         href="../../appendix-projects/index.html">
+            NEXT: Projects &rarr;</a><br/><br/>              
+    </section>
+        
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+            crossorigin="anonymous"></script>         
+    <script src="../assets/javascripts/scale.fix.js"></script>    
+  </body>
+</html>

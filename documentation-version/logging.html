@@ -95,7 +95,7 @@
         </h2>                  
      
         <p><sup><span class="fa fa-calendar"></span>
-                Last updated on January 2nd, 2019</sup></p>
+                Last updated on May 6th, 2019</sup></p>
                                                 
         <ol class="breadcrumb">
             <li><span class="fa fa-bookmark"></span>
@@ -117,205 +117,185 @@
            can glean insights, resolve bugs much quicker, and detect problems 
            early as they happen.</p>
                
-        <h4>Logging</h4>
+        <h4>TYPES OF LOGS</h4>
         
-        Git Cheat Sheet - 
-        <a href="https://education.github.com/git-cheat-sheet-education.pdf" 
-           target="_blank">
-            <small>
-                https://education.github.com/git-cheat-sheet-education.pdf
-            </small>
+        <ul>
+            <li>PERFORMANCE—measure and track performance with automatic 
+                             logging.</li>
+            <li>DEBUGGING—first step in debugging is log analysis to see where 
+                           the error occurred and conditions.</li>
+            <li>ERROR TRACKING—when errors started, how often they occurred, 
+                                for whom they occurred, if they’ve been 
+                                resolved, and if they’ve resurfaced to keep 
+                                track of errors.</li>
+            <li>ANALYZING LOGS—rich sources of information to analyze logs to 
+                                discover usage patterns to guide decisions.
+            <li>CUSTOM LOGS-chat logs for example.</li> 
+        </ul>
+        
+        <h4>WHAT TO LOG</h4>        
+        <p>What to log really depends on your situation. But to give a good 
+           starting points, log data usually includes:</p>        
+        <ul>
+           <li>Timestamp or log entry</li>
+           <li>Timing data for request</li>
+           <li>Request endpoint data (i.e. paths “/users” and verbs "GET or POST")</li>
+           <li>IP of the requesting party</li>
+           <li>Correlation ID (i.e. for a distributed system)</li>
+        </ul>
+        
+        <h4>HOW TO LOG</h4>        
+        <p>JSON is the default standard for logging in Node.js. Thus, logging 
+           tools support JSON out of the box, and parse JSON logs for anaysis. 
+           This allows visualizing based on nested properties. Any format you 
+           want—strings, delimited, or a custom format should be avoided where 
+           possible. However, you must specify the rules for every different 
+           format, and can be time-consuming.</p>
+        
+        <p>Keeping namespaces dictionary, which allows you to define which 
+           namespace patterns you want and reject any calls to logs that don’t 
+           conform to your namespace dictionary patterns to enforce clean 
+           logging standards throughout the application implementation:</p>
+
+<pre><code>
+logger.info('server.endpoint.get.users.getuserfromapi.format');
+</code></pre>
+        
+        <p>The log originated in the server, in a GET endpoint called 
+           “/users” while it was formatting a response retrieved from 
+           the api. Namespaces make it easy to recognize and locate logging 
+           within the application.</p>
+        
+        <h4>DESIGN PATTERN</h4>        
+        <p>Ideally, logging is to be done in the facade design pattern
+           this type of design pattern comes under structural classification.   
+           It adds an interface to existing systems to hide complex 
+           implementation details to leverage elegant logging code to the 
+           system and provides an interface to clients which allow access. 
+           This pattern involves a single class which provides simplified 
+           methods required by client and delegates calls to methods of 
+           existing system classes. This pattern is often used when creating
+           a simplified interface that performs many other actions behind the 
+           scenes.</p> 
+                
+        <p>See <span class="fa fa-file-code"></span>
+        <a href="../design-patterns/index.html#facade"> 
+            Facade Design Pattern</a> to learn more...</p>
+             
+        <p>The thinking here is using functional programming in Node.js by 
+           passing the handler function as a callback to the handler function, 
+           allowing execution of the function within the context of a try/catch
+           to apply error handling in a way that makes sense to centralize logs 
+           for visualization, searching, and troubleshooting.</p>        
+                        
+        <p>Finally, we access logging middleware:</p> 
+            
+         Winston Logging - <span class="fab fa-github fa-2x"></span>
+        <a href="https://github.com/winstonjs/winston" target="_blank">
+            <small>https://github.com/winstonjs</small>
+        </a>
+         Morgan Logging - <span class="fab fa-github fa-2x"></span>
+        <a href="https://github.com/expressjs/morgan" target="_blank">
+            <small>https://github.com/expressjs/morgan</small>
         </a><br/>
+                      
+        <!-----------------------
+        //// Logging :  Tab Navigation
+        ------------------------>
+        <div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">            
+            <li role="presentation" class="active">            
+            <a href="#winston" 
+            aria-controls="winston" 
+            role="tab" data-toggle="tab">
+            Winston</a></li>            
+            <li role="presentation">
+            <a href="#morgan" 
+            aria-controls="morgan" 
+            role="tab" data-toggle="tab">
+            Morgan</a></li>           
+        </ul>
+        <!------------------------------------------------// 
+          Tab panes 
+        // ----------------------------------------------->
+        <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="winston">        
+        <p>Winston is designed to be a simple and universal logging library 
+           with support for multiple transports. A transport is essentially 
+           a storage device for your logs. Each winston logger can have 
+           multiple transports (see: Transports) configured at different 
+           levels (see: Logging levels). For example, one may want error 
+           logs to be stored in a persistent remote location (like a database), 
+           but all logs output to the console or a local file.</p>
 
-        <h4>INSTALL GIT</h4>
-        <p>GitHub provides desktop clients that include a graphical user
-            interface for the most common repository actions and an 
-            automatically updating command line edition of Git for advanced 
-            scenarios.</p>
+        <p>Winston aims to decouple parts of the logging process to make it 
+           more flexible and extensible. Attention is given to supporting 
+           flexibility in log formatting (see: Formats) & levels 
+           (see: Using custom logging levels), and ensuring those APIs 
+           decoupled from the implementation of transport logging 
+           (i.e. how the logs are stored / indexed, see: Adding Custom 
+           Transports) to the API that they exposed to the programmer.
+        </p>
         
-        GitHub Desktop User Guides - <span class="fab fa-github-alt fa-2x"></span>
-        <a href="https://help.github.com/desktop/guides/" target="_blank">
-            <small>https://help.github.com/desktop/guides</small></a>
-            
-        GitHub for Windows - <span class="fab fa-windows fa-2x"></span>
-        <a href="https://windows.github.com" target="_blank">
-            <small>https://windows.github.com</small></a>
-            
-        GitHub for Mac - <span class="fab fa-apple fa-2x"></span>
-        <a href="https://mac.github.com" target="_blank">
-            <small>https://mac.github.com</small></a>
-            
-        Git for All Platforms - <span class="fab fa-git fa-2x"></span>
-        <a href="https://git-scm.com" target="_blank">
-            <small>https://git-scm.com</small></a><br/>
+<pre><code>
+const logger = winston.createLogger({
+  level: 'info',
+  format: winston.format.json(),
+  defaultMeta: { service: 'user-service' },
+  transports: [
+ //
+ // - Write to all logs with level `info` and 
+ //   below to `combined.log` 
+ // - Write all logs error (and below) to `error.log`.
+ //
+    new winston.transports.File(
+                { filename: 'error.log', level: 'error' }),
+    new winston.transports.File(
+                { filename: 'combined.log' })
+  ]
+});
 
-            
-        <h4>CONFIGURE TOOLING</h4>
-        <p>Configure user information for all local repositories</p>
+//
+// If we're not in production then log to the `console` 
+// with the format:
+//`${info.level}: ${info.message} JSON.stringify({ ...rest })`
+// 
+if (process.env.NODE_ENV !== 'production') {
+  logger.add(new winston.transports.Console({
+    format: winston.format.simple()
+  }));
+}
+</code></pre>
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="morgan">       
+        <p>HTTP request logger middleware for node.js.</p>
         
-<pre><code class="console">
-$ git config --global user.name "[NAME]"
-  Sets the name you want attached to your commit transactions
+<pre><code>
+var express = require('express')
+var fs = require('fs')
+var morgan = require('morgan')
+var path = require('path')
 
-$ git config --global user.email "[EMAIL ADDRESS]"
-  Sets the email you want attached to your commit transactions
+var app = express()
 
-$ git config --global color.ui auto
-  Enables helpful colorization of command line output
-</code></pre>
+// create a write stream (in append mode)
+var accessLogStream = 
+    fs.createWriteStream(path.join(__dirname, 'access.log'), 
+                                  { flags: 'a' })
 
-        <h4>CREATE REPOSITORIES</h4>
-        <p>Start a new repository or obtain one from an existing URL</p>
+// setup the logger
+app.use(morgan('combined', { stream: accessLogStream }))
 
-<pre><code class="console">
-$ git init [<kbd>project-name</kbd>]
-  Creates a new local repository with the specified name
- 
-$ git clone [<kbd>url</kbd>]
-  Downloads a project and its entire version history
-</code></pre>
-        
-
-        <h4>MAKE CHANGES</h4>
-        <p>Review edits and crafts a commit transaction</p>
-
-<pre><code class="console">
-$ git status
-  Lists all new or modified files to be committed
-
-$ git add [<kbd>file</kbd>]
-  Snapshots the file in preparation for versioning
-
-$ git reset [<kbd>file</kbd>]
-  Unstages the file, but preserve its contents
-
-$ git diff
-  Shows file differences not yet staged
-
-$ git diff --staged
-  Shows file differences between staging and 
-  the last file version
-
-$ git commit -m "[DESCRIPTIVE MESSAGE]"
-  Records file snapshots permanently in version history
-</code></pre>
-
-        <h4>GROUP CHANGES</h4>
-        <p>Name a series of commits and combine completed efforts</p>
-
-<pre><code class="console">
-$ git branch
-  Lists all local branches in the current repository
-
-$ git branch [<kbd>branch-name</kbd>]
-  Creates a new branch
-
-$ git checkout [<kbd>branch-name</kbd>]
-  Switches to the specified branch and updates 
-  the working directory
-
-$ git merge [<kbd>branch</kbd>]
-  Combines the specified branch’s history into 
-  the current branch
-
-$ git branch -d [<kbd>branch-name</kbd>]
-  Deletes the specified branch        
-</code></pre>        
-
-        <h4>REFACTOR FILENAMES</h4>
-        <p>Relocate and remove versioned files</p>
-
-<pre><code class="console">
-$ git rm [<kbd>file</kbd>]
-  Deletes the file from the working directory 
-  and stages the deletion
-
-$ git rm --cached [<kbd>file</kbd>]
-  Removes the file from version control but preserves 
-  the file locally
-
-$ git mv [<kbd>file-original</kbd>] [<kbd>file-renamed</kbd>]
-  Changes the file name and prepares it for commit
-</code></pre>
-
-        <h4>SUPPRESS TRACKING</h4>
-        <p>Exclude temporary files and paths</p>
-
-<pre><code class="console">
-*.log
-build/
-temp-*
-  A text file named .gitignore suppresses 
-  accidental versioning of files and paths 
-  matching the specified patterns
-
-$ git ls-files --other --ignored --exclude-standard
-  Lists all ignored files in this project
-</code></pre>
-
-        <h4>SAVE FRAGMENTS</h4>
-        <p>Shelve and restore incomplete changes</p>
-
-<pre><code class="console">
-$ git stash
-  Temporarily stores all modified tracked files
-
-$ git stash list
-  Lists all stashed changesets
-
-$ git stash pop
-  Restores the most recently stashed files
-
-$ git stash drop
-  Discards the most recently stashed changeset
-</code></pre>
-
-        <h4>REVIEW HISTORY</h4>
-        <p>Browse and inspect the evolution of project files</p>
-
-<pre><code class="console">
-$ git log
-  Lists version history for the current branch
-
-$ git log --follow [<kbd>file</kbd>]
-  Lists version history for a file, including renames
-
-$ git diff [<kbd>first-branch</kbd>]...[<kbd>second-branch</kbd>]
-  Shows content differences between two branches
-
-$ git show [<kbd>commit</kbd>]
-  Outputs metadata and content changes of the specified commit
-</code></pre>        
-
-
-        <h4>REDO COMMITS</h4>
-        <p>Erase mistakes and craft replacement history</p>
-
-<pre><code class="console">
-$ git reset [<kbd>commit</kbd>]
-  Undo all commits after [<kbd>commit</kbd>], preserving changes locally
-
-$ git reset --hard [<kbd>commit</kbd>]
-  Discard all history and changes back to the specified commit
-</code></pre>
-
-        <h4>SYNCHRONIZE CHANGES</h4>
-        <p>Register a repository bookmark and exchange version history</p>
-
-<pre><code class="console">
-$ git fetch [<kbd>bookmark</kbd>]
-  Downloads all history from the repository bookmark
-
-$ git merge [<kbd>bookmark</kbd>]/[<kbd>branch</kbd>]
-  Combines bookmark’s branch into current local branch
-
-$ git push [<kbd>alias</kbd>] [<kbd>branch</kbd>]
-  Uploads all local branch commits to GitHub
-
-$ git pull
-  Downloads bookmark history and incorporates changes        
-</code></pre>        
-        
+app.get('/', function (req, res) {
+  res.send('hello, world!')
+})
+</code></pre>                   
+        </div>        
+        </div>
+        </div>
+    
 <hr/>        
 
         <h3><a name="take-five" class="anchor" href="#take-five">
@@ -323,33 +303,47 @@ $ git pull
           Review</h3>
           
         <p>Alright, let's recap what I've just learned:</p>
-    
+            
         <ul>
-            there are 6 main categories of software documentation:            
-            <ul>                            
-              <li>Software, Product, Process, System, User, and Marketing 
-                  Documentation</li>
-
-              <ul>
-                <li>The sub categories of Process Documentation includes Plans, 
-                    Estimates, Schedules, Reports, Working papers, and 
-                    Standards</li>
-                <li>The sub categories of System Documentation includes 
-                    Requirements, Architecture/Design, Technical, Validation, 
-                    Verification, Testing, Maintenance, and Help Guides</li>
-              </ul>              
-            </ul>            
+           <li>Logging is an important part of the complete application life cycle. 
+               The point is to centralize logs for visualization, searching, and 
+               troubleshooting.</li>
+        
+           <li>Typically, there are 5 types of logs:</li>
+           
+                <ul>                            
+                    <li>performance, debugging, error tracking, analysis, and custom</li>
+                </ul>
+           
+           <li>Logging depends on your situation. But a good starting point includes:</li>
+           
+           <ul>
+              <li>Timestamp or log entry</li>
+              <li>Timing data for request</li>
+              <li>Request endpoint data (i.e. paths “/users” and verbs "GET or POST")</li>
+              <li>IP of the requesting party</li>
+              <li>Correlation ID (i.e. for a distributed system)</li>
+            </ul>  
+            
+           <li>Other things to note:</li>
+           
+            <ul>
+              <li>JSON is the default standard for logging in Node.js.</li>         
+              <li>Namespace dictionary patterns to enforce clean logging standards</li>
+              <li>The Facade design pattern is used to hide complexity</li>
+            </ul>  
+                        
         </ul>
         
     <p>You can read more at: 
-        <a href="https://en.wikipedia.org/wiki/Software_documentation"
+        <a href="https://stackify.com/winston-logging-tutorial/"
            target="_blank">
-           <small>https://en.wikipedia.org/wiki/Software_documentation</small>
+           <small>https://stackify.com/winston-logging-tutorial/</small>
         </a>
         and 
-        <a href="https://education.github.com/git-cheat-sheet-education.pdf"
+        <a href="https://jojozhuang.github.io/tutorial/nodejs/express-combine-morgan-and-winston/"
            target="_blank">
-        <small>https://education.github.com/git-cheat-sheet-education.pdf</small>    
+        <small>https://jojozhuang.github.io/tutorial/nodejs/express-combine-morgan-and-winston/</small>    
     </p>
 
       <!-- pagination -->

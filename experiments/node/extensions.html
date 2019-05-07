@@ -1,0 +1,285 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Code Journal : Experiments :: Twitch Extensions</title>   
+    <!-- Latest compiled and minified CSS -->
+    <!-- Font Awesome 5.7.0 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+          crossorigin="anonymous">
+    <!-- Bootstrap 3.3.7 -->    
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">    
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>        
+    
+    <!-- Custom Style Pygment and Icons -->
+    <link rel="stylesheet" href="../../assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="../../assets/stylesheets/pygment_trac.css">
+    <link rel="icon" href="../../assets/images/favicon.ico" type="image/gif">
+    <link rel="shortcut icon" href="../../assets/images/favicon.png">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="wrapper">
+    <!-- Header -->         
+      <header>
+          <img src="../../assets/images/pb_Image.png" class="img-fluid" alt="me"/>
+        <p class="view">A Code Journal for 
+            <span class="fab fa-git-square" aria-hidden="true"></span>
+                Hub Pages<br/>        
+                
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
+            <span class="fab fa-github"></span> 
+              View the Code Journal on GitHub</a></p>
+                      
+                        
+            <button class="btn btn-md btn-default" type="button">
+                <span class="fab fa-java fa-2x"></span> 
+            </button>                
+            
+            <button class="btn btn-md btn-default" type="button">
+                <span class="fab fa-python fa-2x"></span> 
+            </button>                        
+
+            <button class="btn btn-md btn-default" type="button">
+                <span class="fab fa-r-project  fa-2x"></span> 
+            </button>                
+            
+            <button class="btn btn-md btn-default" type="button">
+            <span class="fab fa-js fa-2x"></span> 
+            </button>                              
+
+            <br/><br/>
+            
+            <a href="https://github.com/keeyanajones/">
+            <small><span class="fab fa-github-alt"></span>                 
+            Repositories and latest Contribution Activity</small></a>                 
+              
+        <br/>
+        
+        <!-- Download, Clone, or Fork -->
+        <ul>    
+          <li><a href="https://github.com/keeyanajones/Journal/archive/master.zip">
+              <span class="fa fa-file-archive" aria-hidden="true"></span><br/>
+                  Download <br/> ZIP</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-clone" aria-hidden="true"></span><br/>
+                  Clone <br/> Desktop</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-code-branch" aria-hidden="true"></span><br/>
+                  Fork On <br/> GitHub</a></li>
+        </ul>                                 
+      </header>
+    <!-- ./header --> 
+    </div>
+      
+    <section>       
+      <h2><span class="fas fa-flask " aria-hidden="true"></span>
+          <a name="experiments" class="anchor" href="#experiments">
+            <span class="header-link"></span></a>
+            Twitch Extensions</h2>
+     
+        <p><sup><span class="fa fa-calendar"></span>
+                Last updated on April 24th, 2019</sup></p>
+              
+        <ol class="breadcrumb">
+            <li><span class="fa fa-bookmark"></span>
+                <a href="../../index.html"> Home </a></li>
+            <li><a href="../index.html"><span class="fa fa-bookmark"></span>
+                Experiments</a></li>
+            <li class="active"><a href="#experiments">
+                <span class="fa fa-bookmark"></span>
+                Twitch Extensions</a></li>                                
+        </ol>  
+               
+    <p>Twitch Gaming Solutions provides developers products and solutions that 
+    extend the lifecycle of entertainment beyond the screen.</p>
+
+    <p>Twitch Extensions enable you to create live apps that interact with the 
+        stream, as a panel on a channel, or with chat. Create interactive 
+        experiences such as mini-games, leaderboards, live gear information and 
+        more.</p>
+
+    <p>Extensions are programmable, interactive overlays and panels,
+       which help broadcasters interact with viewers. With 
+       Extensions, the Twitch community can interact in new ways 
+       such as heat maps, real-time data-driven overlays, 
+       mini-games, music requests, and leaderboards. 
+    </p>
+    <p>Twitch Insights enable registering your games to access free insights about 
+        your streamers, viewers, and performance on Twitch.</p>
+
+    <p>Twitch API enables applications to work with clips, games, streams and 
+        users.</p>
+  
+        See <span class="fa fa-file-code"></span></a>
+        <a href="https://github.com/keeyanajones/twitch-bot/"
+           target="_blank">twitch-bot</a>
+                   
+<pre><code>// TWITCH
+// Define configuration options
+let options = {
+    options: {        
+        debug: true
+    },
+    connection: {
+        reconnect: true,
+        secure: true
+    },
+    identity: {
+        username: "User-Name",
+        password: "oauth:token XXX.xxx.XXX"
+    },
+    channels: [ "Channel 123" ]
+// logger: Object - Custom logger with the methods 
+//                  info, warn, and error
+};
+
+// Create a client with our options
+let client = new tmi.client(options);
+// Register our event handlers (defined below)
+client.on('message', onMessageHandler);
+client.on('connected', onConnectedHandler);
+// Connect to Twitch..
+client.connect();
+
+client.on('connected', (address, port) => {
+    client.action('User-Name-Bob', 
+                  'Hello, the bot is now connected');    
+});
+// Called every time a message comes in
+function onMessageHandler (target, context, msg, self) {
+  if (self) { return; } // Ignore messages from the bot
+// Remove whitespace from chat message
+  const commandName = msg.trim();
+// If the command is known, let's execute it
+  if (commandName === '!dice') {
+    const num = rollDice();
+    client.say(target, `You rolled a ${num}`);
+    console.log(`* Executed ${commandName} command`);
+  } else {
+    console.log(`* Unknown command ${commandName}`);
+  }     
+}
+// Function called when the "dice" command is issued
+function rollDice () {
+  const sides = 6;
+  return Math.floor(Math.random() * sides) + 1;
+}
+// Called every time the bot connects to Twitch chat
+function onConnectedHandler (addr, port) {
+  console.log(`* Connected to ${addr}:${port}`);
+}
+</code></pre>
+
+  <!------------------------------------------------// 
+       Twitch :  Tab Navigation
+    // ----------------------------------------------->
+<div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active">
+        <a href="#twitchSuccessLog" 
+           aria-controls="twitchSuccessLog" 
+           role="tab" data-toggle="tab">
+            Success Log</a></li>            
+    <li role="presentation">
+        <a href="#twitchThingsToRevisit" 
+           aria-controls="twitchThingsToRevisit" 
+           role="tab" data-toggle="tab">
+            Things to Revisit</a></li>           
+    <li role="presentation">
+        <a href="#twitchGoals" 
+           aria-controls="twitchGoals" 
+           role="tab" data-toggle="tab">
+            Goals</a></li>           
+    <li role="presentation">
+        <a href="#twitchLessonsLearned" 
+           aria-controls="twitchLessonsLearned" 
+           role="tab" data-toggle="tab">
+            Lessons Learned</a></li>
+  </ul>
+
+  <!------------------------------------------------// 
+       Twitch :  Tab panes 
+    // ----------------------------------------------->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="twitchSuccessLog">
+<pre><code class="console">
+Feb 28, 2019 5:40:24 AM "BUILD SUCCESSFUL (total time: 0)" 
+</code></pre>
+    </div>      
+    <div role="tabpanel" class="tab-pane" id="twitchThingsToRevisit">
+      <p>Twitch Extensions, Marketplace, Insights, Game Solutions, 
+         and the API.</p>
+    </div>    
+    <div role="tabpanel" class="tab-pane" id="twitchGoals">
+    <p>Provide the best satisfying solution under a varying amount of resources 
+        and priorities.</p>   
+    </div>      
+    <div role="tabpanel" class="tab-pane" id="twitchLessonsLearned">
+    <p>Twitch clips, games, streams, and users API References.</p>        
+    </div>      
+  </div>
+</div>  
+<!------ /. Twitch :  Tab panes   ------->
+
+        <h4><a name="oauth" class="anchor" href="#oauth">
+          <span class="header-link"></a></span>
+            Panel
+       </h4>        
+
+        <p>Panel.</p>
+        <h4><a name="oauth" class="anchor" href="#oauth">
+          <span class="header-link"></a></span>
+            Video Overlay
+       </h4>        
+
+        <p>video Overlay.</p>
+       
+        <h4><a name="oauth" class="anchor" href="#oauth">
+          <span class="header-link"></a></span>
+            Video Component
+       </h4>        
+
+        <p>Video Component.</p>
+        <h4><a name="oauth" class="anchor" href="#oauth">
+          <span class="header-link"></a></span>
+            Other
+       </h4>        
+
+        <p>Other.</p>
+        
+<hr/>
+
+      <!-- pagination -->
+      <a role="button" class="btn btn-primary pull-left" 
+         href="../index.html">
+            &larr; PREVIOUS: Experiments</a>
+      
+      <a role="button" class="btn btn-primary pull-right" 
+         href="../../appendix-projects/index.html">
+            NEXT: Projects &rarr;</a><br/><br/>              
+    </section>
+        
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+            crossorigin="anonymous"></script>         
+    <script src="../assets/javascripts/scale.fix.js"></script>    
+  </body>
+</html>
