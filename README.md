@@ -17,6 +17,9 @@ See [The Opening Essay](https://keeyanajones.github.io/Journal/opening-essay)
   + [GamePlay and Music Playlist](https://keeyanajones.github.io/Journal/experiments/node/playlist.html)*
   + [Mixer's Mixplay](https://keeyanajones.github.io/Journal/experiments/node/mixplay.html)*
   + [Youtube's player, subscribe, and upload-widget](https://keeyanajones.github.io/Journal/experiments/node/youtube.html)*
+  + [Atom Syntax and UI Theme](https://keeyanajones.github.io/Journal/experiments/atom/theme.html)*
+  + [Netbeans Plug-in](https://keeyanajones.github.io/Journal/experiments/netbeans/plugin.html)*
+  + [Twitter Leads](https://keeyanajones.github.io/Journal/experiments/twitter/tweets.html)*
 - [OOAD and UML Diagrams](https://keeyanajones.github.io/Journal/ooad-process)
 - [Quality Factors Classification](https://keeyanajones.github.io/Journal/quality-factors)
 - [Data Structures in Java](https://keeyanajones.github.io/Journal/data-structures)
