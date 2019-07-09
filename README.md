@@ -14,11 +14,8 @@ See [The Opening Essay](https://keeyanajones.github.io/Journal/opening-essay)
 - [Field Reports](https://keeyanajones.github.io/Journal/field-reports)
 - [Experiments](https://keeyanajones.github.io/Journal/experiments)
   + [Bot's](https://keeyanajones.github.io/Journal/experiments/node/bot.html) 
-  ([Mixer](https://keeyanajones.github.io/Journal/experiments/node/mixplay.html)* 
-  [Twitch](https://keeyanajones.github.io/Journal/experiments/node/extensions.html)*  
-  [Discord](https://keeyanajones.github.io/Journal/experiments/node/code.html)*
-  [Youtube](https://keeyanajones.github.io/Journal/experiments/node/youtube.html)*
-  and [Facebook](https://keeyanajones.github.io/Journal/experiments/node/warmup.html)*)  
+  ([Mixer](https://keeyanajones.github.io/Journal/experiments/node/mixplay.html)* / [Twitch](https://keeyanajones.github.io/Journal/experiments/node/extensions.html)* / [Discord](https://keeyanajones.github.io/Journal/experiments/node/code.html)* / 
+  [Youtube](https://keeyanajones.github.io/Journal/experiments/node/youtube.html)* and [Facebook](https://keeyanajones.github.io/Journal/experiments/node/warmup.html)*)  
   + [GamePlay and Music Playlist](https://keeyanajones.github.io/Journal/experiments/node/playlist.html)*
   + [Youtube's player, subscribe, and upload-widget](https://keeyanajones.github.io/Journal/experiments/node/youtube.html)*
   + [Atom Syntax and UI Theme](https://keeyanajones.github.io/Journal/experiments/atom/theme.html)*
