@@ -9,17 +9,25 @@ See [The Opening Essay](https://keeyanajones.github.io/Journal/opening-essay)
 ### Table of Contents
 - [Getting Started](https://keeyanajones.github.io/Journal/getting-started)
 - [Learning Plan](https://keeyanajones.github.io/Journal/learning-plan)
+- [Livestreaming](https://keeyanajones.github.io/Journal/livestream)
+- [Labs](https://keeyanajones.github.io/Journal/labs)
+- [Field Reports](https://keeyanajones.github.io/Journal/field-reports)
 - [Experiments](https://keeyanajones.github.io/Journal/experiments)
-  + [Bot Chat API's](https://keeyanajones.github.io/Journal/experiments/node/bot.html)  
-  + [Discord Code Playground](https://keeyanajones.github.io/Journal/experiments/node/code.html)*
-  + [Facebook Warm Up](https://keeyanajones.github.io/Journal/experiments/node/warmup.html)*
-  + [Twitch Extensions](https://keeyanajones.github.io/Journal/experiments/node/extensions.html)*
+  + [Bot's](https://keeyanajones.github.io/Journal/experiments/node/bot.html) 
+  ([Mixer](https://keeyanajones.github.io/Journal/experiments/node/mixplay.html)* 
+  [Twitch](https://keeyanajones.github.io/Journal/experiments/node/extensions.html)*  
+  [Discord](https://keeyanajones.github.io/Journal/experiments/node/code.html)*
+  [Youtube](https://keeyanajones.github.io/Journal/experiments/node/youtube.html)*
+  and [Facebook](https://keeyanajones.github.io/Journal/experiments/node/warmup.html)*)  
   + [GamePlay and Music Playlist](https://keeyanajones.github.io/Journal/experiments/node/playlist.html)*
-  + [Mixer's Mixplay](https://keeyanajones.github.io/Journal/experiments/node/mixplay.html)*
   + [Youtube's player, subscribe, and upload-widget](https://keeyanajones.github.io/Journal/experiments/node/youtube.html)*
   + [Atom Syntax and UI Theme](https://keeyanajones.github.io/Journal/experiments/atom/theme.html)*
   + [Netbeans Plug-in](https://keeyanajones.github.io/Journal/experiments/netbeans/plugin.html)*
-  + [Twitter Leads](https://keeyanajones.github.io/Journal/experiments/twitter/tweets.html)*
+  + [Twitter Leads](https://keeyanajones.github.io/Journal/experiments/twitter/tweets.html)*  
+- [Gaming](https://keeyanajones.github.io/Journal/gaming)
+  + [Games](https://keeyanajones.github.io/Journal/games)
+  + [Esports](https://keeyanajones.github.io/Journal/esports)
+  + [Pachinko](https://keeyanajones.github.io/Journal/pachinko)
 - [OOAD and UML Diagrams](https://keeyanajones.github.io/Journal/ooad-process)
 - [Quality Factors Classification](https://keeyanajones.github.io/Journal/quality-factors)
 - [Data Structures in Java](https://keeyanajones.github.io/Journal/data-structures)
