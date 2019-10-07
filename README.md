@@ -7,50 +7,72 @@ This Github Repository is a series of essays of all types, finished and in progr
 See [The Opening Essay](https://keeyanajones.github.io/Journal/opening-essay)
 
 ### Table of Contents
-- [Getting Started](https://keeyanajones.github.io/Journal/getting-started)
-- [Learning Plan](https://keeyanajones.github.io/Journal/learning-plan)
-- [Livestreaming](https://keeyanajones.github.io/Journal/livestream)
-- [Labs](https://keeyanajones.github.io/Journal/labs)
-- [Field Reports](https://keeyanajones.github.io/Journal/field-reports)
-- [Experiments](https://keeyanajones.github.io/Journal/experiments)
-  + [Bot's](https://keeyanajones.github.io/Journal/experiments/node/bot.html) 
-  ([Mixer](https://keeyanajones.github.io/Journal/experiments/node/mixplay.html)* / [Twitch](https://keeyanajones.github.io/Journal/experiments/node/extensions.html)* / [Discord](https://keeyanajones.github.io/Journal/experiments/node/code.html)* / 
-  [Youtube](https://keeyanajones.github.io/Journal/experiments/node/youtube.html)* and [Facebook](https://keeyanajones.github.io/Journal/experiments/node/warmup.html)*)  
-  + [GamePlay and Music Playlist](https://keeyanajones.github.io/Journal/experiments/node/playlist.html)*
-  + [Youtube's player, subscribe, and upload-widget](https://keeyanajones.github.io/Journal/experiments/node/youtube.html)*
-  + [Atom Syntax and UI Theme](https://keeyanajones.github.io/Journal/experiments/atom/theme.html)*
-  + [Netbeans Plug-in](https://keeyanajones.github.io/Journal/experiments/netbeans/plugin.html)*
-  + [Twitter Leads](https://keeyanajones.github.io/Journal/experiments/twitter/tweets.html)*  
-- [Gaming](https://keeyanajones.github.io/Journal/gaming)
-  + [Games](https://keeyanajones.github.io/Journal/games)
-  + [Esports](https://keeyanajones.github.io/Journal/esports)
-  + [Pachinko](https://keeyanajones.github.io/Journal/pachinko)
-- [OOAD and UML Diagrams](https://keeyanajones.github.io/Journal/ooad-process)
-- [Quality Factors Classification](https://keeyanajones.github.io/Journal/quality-factors)
-- [Data Structures in Java](https://keeyanajones.github.io/Journal/data-structures)
-- [Algorithms](https://keeyanajones.github.io/Journal/algorithms)
-  + [Problem Solving](https://keeyanajones.github.io/Journal/algorithms/problem-solving)
-  + [Sorting](https://keeyanajones.github.io/Journal/algorithms/sorting)
-  + [Shuffling](https://keeyanajones.github.io/Journal/algorithms/shuffling)
-  + [Searching](https://keeyanajones.github.io/Journal/algorithms/searching)
-  + [Graphs](https://keeyanajones.github.io/Journal/algorithms/graphs)
-  + [Trees](https://keeyanajones.github.io/Journal/algorithms/trees)
-  + [Recursion](https://keeyanajones.github.io/Journal/algorithms/recursion)
-- [Big O' Notations](https://keeyanajones.github.io/Journal/big-o-notations)
-- [Unified Modeling Language (UML)](https://keeyanajones.github.io/Journal/uml)
-- [Design Patterns](https://keeyanajones.github.io/Journal/design-patterns)
-- [Testing](https://keeyanajones.github.io/Journal/testing)
-  + [Manual](https://keeyanajones.github.io/Journal/testing/manual.html)
-  + [Automation](https://keeyanajones.github.io/Journal/testing/automation.html)
-- [Documentation and Version Control](https://keeyanajones.github.io/Journal/documentation-version)
-  + [Logging](https://keeyanajones.github.io/Journal/documentation-version/logging.html)
-- [Appendix](https://keeyanajones.github.io/Journal/appendix)
-  + [Color](https://keeyanajones.github.io/Journal/appendix-colors)
-  + [Images](https://keeyanajones.github.io/Journal/appendix-images)
-  + [UX/UI](https://keeyanajones.github.io/Journal/appendix-ux) *
-  + [Projects](https://keeyanajones.github.io/Journal/appendix-projects)*
-  + [Notes](https://keeyanajones.github.io/Journal/appendix-notes)*
-  + [Reference](https://keeyanajones.github.io/Journal/appendix-references)
+
+<ol>
+  <li><a href="https://keeyanajones.github.io/Journal/getting-started/index.html">GETTING STARTED</a><li>
+  <li><a href="https://keeyanajones.github.io/Journal/learning-plan/index.html">LEARNING PLAN</a></li>
+  <small> 
+    <ul>
+      <li><a href="https://keeyanajones.github.io/Journal/livestream/index.html">LIVESTREAM</a></li>
+      <li><a href="https://keeyanajones.github.io/Journal/gaming/index.html">GAMES</a></li>
+        <ul>  
+          <li><a href="https://keeyanajones.github.io/Journal/esports/index.html">eSports</a></li>            <li><a href="https://keeyanajones.github.io/Journal/pachinko/index.html">Pachinko</a></li>
+        </ul>  
+  
+      <li><a href="https://keeyanajones.github.io/Journal/labs/index.html">LABS</a></li>              
+
+      <ul>
+        <li><a href="https://keeyanajones.github.io/Journal/labs/lab1.html">
+            Latest Lab</a> : JAVASCRIPT</li>
+        <li><a href="https://keeyanajones.github.io/Journal/labs/lab2.html">
+            Lab</a> : SCALA</li>
+        <li><a href="https://keeyanajones.github.io/Journal/labs/lab3.html">
+            Lab</a> : SMALLTALK<br/>
+        <a href="https://keeyanajones.github.io/Journal/labs/index.html">
+          <span class="far fa-folder-open"></span> View All Labs</a></li>
+      </ul>
+      
+      <li><a href="https://keeyanajones.github.io/Journal/field-reports/index.html">REPORTS</a></li>   
+
+      <ul>
+        <li><a href="https://keeyanajones.github.io/Journal/field-reports/report1.html">
+            Latest Report</a> : Social Media</li>
+        <li><a href="https://keeyanajones.github.io/Journal/field-reports/report2.html"></a>
+            Report : Data Science</li>
+        <li><a href="https://keeyanajones.github.io/Journal/field-reports/report3.html"></a>
+            Report : Game Development<br/> 
+        <a href="https://keeyanajones.github.io/Journal/field-reports/index.html">
+          <span class="far fa-folder-open"></span> View All Reports</a></li>                                   
+      </ul>              
+      
+      <li><a href="https://keeyanajones.github.io/Journal/experiments/index.html">EXPERIMENTS</a></li>           
+      <ul>           
+        <li><a href="https://keeyanajones.github.io/Journal/experiments/experiment1.html">
+        Latest Experiment</a> : 
+            Chatbots</li>   
+        </li> 
+        <li><a href="https://keeyanajones.github.io/Journal/experiments/experiment2.html"></a>
+            Experiment : Features</li>
+        <li><a href="https://keeyanajones.github.io/Journal/experiments/experiment3.html"></a>
+            Experiment : Emotes<br/>
+            <a href="https://keeyanajones.github.io/Journal/experiments/index.html">
+              <span class="far fa-folder-open"></span> View All Experiments</a></li>                     
+        </ul>
+    </ul>   
+  </small>
+  </ol>
+  <ul>
+    <li><a href="https://keeyanajones.github.io/Journal/appendix/index.html">APPENDIX</a></li>
+    <small>
+      <ul>  
+        <li><a href="https://keeyanajones.github.io/Journal/appendix-ux/index.html">UX/UI</a></li>
+        <li><a href="https://keeyanajones.github.io/Journal/appendix-projects/index.html">Projects</a></li>
+        <li><a href="https://keeyanajones.github.io/Journal/appendix-notes/index.html">Notes</a></li>
+        <li><a href="https://keeyanajones.github.io/Journal/appendix-references/index.html">Reference</a></li>
+      </ul>  
+    </small>
+  </ul>
+
  
 ### Blog
 For more details see [Blog](https://keeyanajones.github.io/website/).
