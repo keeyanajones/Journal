@@ -4,18 +4,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Code Journal : Experiments</title>   
-    <!-- Latest compiled and minified CSS -->     
-    <!-- Font Awesome 5.0.13 -->     
+    <!-- Latest compiled and minified CSS -->
+    <!-- Font Awesome 5.7.0 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+    crossorigin="anonymous">
+    <!-- Bootstrap 4.3.1 -->    
     <link rel="stylesheet" 
-          href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
-          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" 
-          crossorigin="anonymous">         
-    <!-- Bootstrap 3.3.7 --> 
-    <link rel="stylesheet" 
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
-          crossorigin="anonymous">
-    <!-- Custom Style Pygment and Icons -->     
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">   
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>      
+    
     <link rel="stylesheet" href="../assets/stylesheets/styles.css">
     <link rel="stylesheet" href="../assets/stylesheets/pygment_trac.css">
     <link rel="icon" href="../assets/images/favicon.ico" type="image/gif">
@@ -39,21 +43,22 @@
             <span class="fab fa-github"></span> 
               View the Code Journal on GitHub</a></p>
                                               
-            <button class="btn btn-md btn-default" type="button">
+            <!-- Buttons -->                        
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#java" role="button">            
                 <span class="fab fa-java fa-2x"></span> 
-            </button>                
+            </a>                   
             
-            <button class="btn btn-md btn-default" type="button">
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#python" role="button">
                 <span class="fab fa-python fa-2x"></span> 
-            </button>                        
+            </a>                        
 
-            <button class="btn btn-md btn-default" type="button">
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#r" role="button">
                 <span class="fab fa-r-project  fa-2x"></span> 
-            </button>                
+            </a>                
             
-            <button class="btn btn-md btn-default" type="button">
-            <span class="fab fa-js fa-2x"></span> 
-            </button>                              
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#javascript" role="button">
+                <span class="fab fa-js fa-2x"></span> 
+            </a>                              
 
             <br/><br/>
             
@@ -80,32 +85,39 @@
     </div>          
       
     <section>       
-        <h2><span class="fas fa-flask" aria-hidden="true"></span>
-            <a name="learning-plan" class="anchor" href="#learning-plan">
-              <span class="header-link"></span></a>
+      <h2><span class="fas fa-flask" aria-hidden="true"></span>
+          <a name="learning-plan" class="anchor" href="#learning-plan">
+            <span class="header-link"></span></a>
              Experiments</h2>                  
      
-            <p><sup><span class="fa fa-calendar"></span>
-                  Last updated on May 6th, 2019</sup></p>
-                               
-        <ol class="breadcrumb">
-            <li><span class="fa fa-bookmark"></span> 
-               <a href="../index.html">Home</a></li>
-            <li class="active"><a href="#learning-plan">
-               <span class="fa fa-bookmark"></span>
-                Experiments</a></li>
-        </ol>
+      <p><sup><span class="fa fa-calendar"></span>
+             Last updated on September 20th, 2019</sup></p>                               
+                                                                     
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <span class="fa fa-bookmark"></span> 
+                <a href="../index.html">Home</a></li>    
+            <li class="breadcrumb-item">
+                <span class="fa fa-bookmark"></span> 
+                <a href="../learning-plan/index.html"> Learning Plan</a></li>
+            <li class="breadcrumb-item active" aria-current="labs">
+                <span class="fa fa-bookmark"></span> 
+                Experiments</li>
+          </ol>
+        </nav>     
 
       <p>These experiments are carried out to support, refute, or 
          validate a hypothesis. They provide insight into cause-and-effect by 
          demonstrating what outcome occurs when a particular factor is 
          manipulated. These vary greatly in goal and scale, but always 
-         rely on repeatable procedure and logical analysis of the results.</p>            
-                        
-      <ul>
-        <h3>Node</h3>        
-            <small>
-            Gist Snippets:<br/>
+         rely on repeatable procedure and logical analysis of the results.
+         The success logs, things to revisit, goals, and lessons learned 
+         provided.</p>           
+         
+        <small>               
+           https://gist.github.com Snippets                  
+           <ul>             
                 <a href="https://gist.github.com/keeyanajones/8a7c7998a645774bd2e7a3a16cb07b3b" 
                    target="_blank">
                     package.json</a>,                     
@@ -127,42 +139,53 @@
                 <a href="https://gist.github.com/keeyanajones/4767e8d5b8b4b731498bf2735371a4b7#file-canvas-html" 
                    target="_blank">    
                     canvas.html</a>
-            </small>
+          </ul>    
+         </small>               
+
+        <ul> 
+        <strong>
+          <li><a href="experiment1.html">Experiment 1</a> : Chatbots<sup>[October 21, 2019]</sup></li>                                       
+          <li><a href="experiment2.html"></a> Experiment 2 : Features <sup>[October 27, 2019]</sup></li>
+          <li><a href="experiment3.html"></a> Experiment 3 : Emotes <sup>[November 3, 2019]</sup></li>
+          <li><a href="experiment4.html"></a> Experiment 4 : Mixer <sup>[November 10, 2019]</sup></li>         
+        </strong>   
         
-            <br/><br/>
+          <li><a href="experiment5.html"></a> Experiment 5 : Twitch.tv <sup>[November 17, 2019]</sup></li>
+          <li><a href="experiment6.html"></a> Experiment 6 : Youtube <sup>[November 24, 2019]</sup></li>
+          <li><a href="experiment7.html"></a> Experiment 7 : Facebook <sup>[December 1, 2019]</sup></li>                             
+          <li><a href="experiment8.html"></a> Experiment 8 : Discord<sup>[December 8, 2019]</sup></li>
+          <li><a href="experiment9.html"></a> Experiment 9: Other <sup>[December 15, 2019]</sup></li>
+          <li><a href="experiment10.html"></a> Experiment 10 : Atom 1.39.0 UI &amp; Syntax Theme <sup>[December 22, 2019]</sup></li>
+          <li><a href="experiment11.html"></a> Experiment 11 : Apache Netbean IDE 11.0 Plugin* <sup>[December 29, 2019]</sup></li>
+
+        </ul>
+
+         <sub>#mixer #twitch #discord #youtube #bot #atom #netbeans #twitter 
+             #music #gaming #livestream #video #voice #facebook </sub><br/>
         
-            <li><a href="node/bot.html">Bots</a> with -                 
-                <a href="https://dev.mixer.com/" target="_blank">
-                Mixer</a>, <a href="https://dev.twitch.tv/" target="_blank">                    
-                Twitch</a>, <a href="https://www.youtube.com/yt/dev/" target="_blank">                
-                Youtube</a>, and <a href="https://discordapp.com/developers/applications/" target="_blank">                
-                Discord</a></li>                
-                
-            <li><a href="node/code.html">Discord Code Playground</a>*</li>
-            <li><a href="node/warmup.html">Facebook Warm Up Marketing</a>*</li>
-            <li><a href="node/extensions.html">Twitch Extensions</a>*</li>  
-            <li><a href="node/playlist.html">GamePlay and Music Playlist</a>*</li>
-            <li><a href="node/mixplay.html">Mixer's Mixplay</a>*</li>   
-            <li><a href="node/youtube.html">Youtube's player, subscribe, and upload-widget</a>*</li>
-    </ul>
-                  
-        <hr/>
-          <!-- pagination -->
-        <a role="button" class="btn btn-primary pull-left"  
-           href="../getting-started/index.html">
-                &larr; PREVIOUS: Getting Started</a>          
-        <a role="button" class="btn btn-primary pull-right" 
-           href="../algorithms/problem-solving/index.html">
-                NEXT: Problem Solving &rarr;</a>
+        <br/>
+      
+        <!-- pagination -->
+        <a role="button" class="btn btn-primary float-left"  
+           href="../field-reports/index.html">
+                &larr; PREVIOUS: Field Reports</a>          
+        <a role="button" class="btn btn-primary float-right" 
+           href="../business/index.html">
+                NEXT: Business &rarr;</a>
           <br/><br/>    
     </section>
         
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
-            crossorigin="anonymous"></script>         
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+            crossorigin="anonymous"></script>              
     <script src="../assets/javascripts/scale.fix.js"></script>
   </body>
 </html>

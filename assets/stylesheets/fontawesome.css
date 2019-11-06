@@ -75,24 +75,24 @@
   border-radius: .1em;
   padding: .2em .25em .15em; }
 
-.fa-pull-left {
+.fa-float-left {
   float: left; }
 
-.fa-pull-right {
+.fa-float-right {
   float: right; }
 
-.fa.fa-pull-left,
-.fas.fa-pull-left,
-.far.fa-pull-left,
-.fal.fa-pull-left,
-.fab.fa-pull-left {
+.fa.fa-float-left,
+.fas.fa-float-left,
+.far.fa-float-left,
+.fal.fa-float-left,
+.fab.fa-float-left {
   margin-right: .3em; }
 
-.fa.fa-pull-right,
-.fas.fa-pull-right,
-.far.fa-pull-right,
-.fal.fa-pull-right,
-.fab.fa-pull-right {
+.fa.fa-float-right,
+.fas.fa-float-right,
+.far.fa-float-right,
+.fal.fa-float-right,
+.fab.fa-float-right {
   margin-left: .3em; }
 
 .fa-spin {

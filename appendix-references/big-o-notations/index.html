@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Code Journal: Big O' Notations</title>   
+    <!-- Latest compiled and minified CSS -->
+    <!-- Font Awesome 5.7.0 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+    crossorigin="anonymous">
+    <!-- Bootstrap 4.3.1 -->    
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">   
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>     
+    <!-- Custom Style Pygment and Icons -->     
+    <link rel="stylesheet" href="../../assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="../../assets/stylesheets/pygment_trac.css">
+    <link rel="icon" href="../../assets/images/favicon.ico" type="image/gif">
+    <link rel="shortcut icon" href="../../assets/images/favicon.png">    
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+    <div class="wrapper">               
+    <!-- Header -->         
+      <header>
+          <img src="../../assets/images/pb_Image.png" class="img-fluid" alt="me"/>
+        <p class="view">A Code Journal for 
+            <span class="fab fa-git-square" aria-hidden="true"></span>
+                Hub Pages<br/>        
+                
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
+            <span class="fab fa-github"></span> 
+              View the Code Journal on GitHub</a></p>
+                      
+             <!-- Buttons -->                        
+           <a class="btn btn-md btn-default" href="../../appendix-projects/index.html#java" role="button">            
+                <span class="fab fa-java fa-2x"></span> 
+            </a>                   
+            
+           <a class="btn btn-md btn-default" href="../../appendix-projects/index.html#python" role="button">
+                <span class="fab fa-python fa-2x"></span> 
+            </a>                        
+
+           <a class="btn btn-md btn-default" href="../../appendix-projects/index.html#r" role="button">
+                <span class="fab fa-r-project  fa-2x"></span> 
+            </a>                
+            
+           <a class="btn btn-md btn-default" href="../../appendix-projects/index.html#javascript" role="button">
+                <span class="fab fa-js fa-2x"></span> 
+            </a>                              
+
+            <br/><br/>
+            
+            <a href="https://github.com/keeyanajones/">
+            <small><span class="fab fa-github-alt"></span>                 
+            Repositories and latest Contribution Activity</small></a>                 
+              
+        <br/>
+        
+        <!-- Download, Clone, or Fork -->
+        <ul>    
+          <li><a href="https://github.com/keeyanajones/Journal/archive/master.zip">
+              <span class="fa fa-file-archive" aria-hidden="true"></span><br/>
+                  Download <br/> ZIP</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-clone" aria-hidden="true"></span><br/>
+                  Clone <br/> Desktop</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-code-branch" aria-hidden="true"></span><br/>
+                  Fork On <br/> GitHub</a></li>
+        </ul>                                 
+      </header>
+    <!-- ./header --> 
+    </div>          
+      
+    <section>
+        <h2><span class="fa fa-circle-notch " aria-hidden="true"></span>
+              <a name="big-o-notations" class="anchor" href="#big-o-notations">
+              <span class="header-link"></span></a>
+          Big O' Notations</h2>                  
+     
+        <p><sup><span class="fa fa-calendar"></span>
+                Last updated on August 7th, 2019</sup></p>
+                                                 
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <span class="fa fa-bookmark"></span> 
+        <a href="../../index.html">Home</a></li>      
+    <li class="breadcrumb-item">
+        <a href="../../appendix/index.html"> 
+        <span class="fa fa-bookmark"></span> Appendix</a></li>
+    <li class="breadcrumb-item">
+        <a href="../index.html"> 
+        <span class="fa fa-bookmark"></span> References</a></li>                                        
+    <li class="breadcrumb-item active" aria-current="bigo">        
+        <span class="fa fa-bookmark"></span> Big O' Notations</li>        
+  </ol>
+</nav>                 
+        
+        <p>Big O notation is a mathematical notation that describes the 
+            limiting behavior of a function when the argument tends towards 
+            a particular value or infinity. Big O notation is used to classify 
+            algorithms according to how their running time or space requirements
+            grow as the input size grows. In analytic number theory, 
+            big O notation is often used to express a bound on the difference 
+            between an arithmetical function and a better understood 
+            approximation; a famous example of such a difference is the 
+            remainder term in the prime number theorem.</p>
+        
+        <p>Big O notation characterizes functions according to their growth 
+            rates: different functions with the same growth rate may be 
+            represented using the same O notation.</p>
+
+        <p>The letter O is used because the growth rate of a function is also 
+           referred to as order of the function. A description of a function in 
+           terms of big O notation usually only provides an upper bound on the 
+           growth rate of the function. Associated with big O notation are 
+           several related notations, using the symbols <em>o</em>, &Omega;, 
+           &omega;, and &Theta;, to describe other kinds of bounds on asymptotic 
+           growth rates.</p>
+
+        <p>Big O notation is also used in many other fields to provide similar 
+           estimates.</p>
+        
+        <a name="computer" id="computer"></a>            
+        <h3>Computer Science</h3>        
+        <p>In computer science, the Big O notation often is permitted to be 
+           somewhat abused to describe an asymptotic tight bound where using 
+           Big Theta &Theta; notation might be more factually appropriate in a 
+           given context.</p> 
+           
+        <p>For example, when considering a 
+           function T(n) = 73n<sup>3</sup> + 22n<sup>2</sup> + 58, 
+           all of the following are generally acceptable, but tighter bounds 
+           (i.e., numbers 2 and 3 below) are usually strongly preferred over 
+           looser bounds (i.e., number 1 below).</p>
+            T(n) = O(n<sup>100</sup>)<br/>
+            T(n) = O(n<sup>3</sup>)<br/>
+            T(n) = Θ(n<sup>3</sup>)<br/><br/>
+
+        <p>The equivalent English statements are respectively:</p>
+            T(n) grows asymptotically no faster than n<sup>100</sup><br/>
+            T(n) grows asymptotically no faster than n<sup>3</sup><br/>
+            T(n) grows asymptotically as fast as n<sup>3</sup>.<br/><br/>
+
+        <p>So while all three statements are true, progressively more 
+           information is contained in each. In some fields, however, the 
+           big O notation (number 2 in the lists above) would be used more 
+           commonly than the Big Theta notation (bullets number 3 in the 
+           lists above). </p>
+           
+        <p>For example, if T(n) represents the running time of 
+           a newly developed algorithm for input size n, the inventors and 
+           users of the algorithm might be more inclined to put an upper 
+           asymptotic bound on how long it will take to run without making an 
+           explicit statement about the lower asymptotic bound.</p>
+
+        <p><sup>See <a href="../data-structures/index.html">
+                Data Structures</a> and <a href="../algorithms/index.html">
+                  Algorithms</a> for more...</sup></p>
+        
+        
+        <a name="simple" id="simple"></a>            
+        <h4>Simple Data Structures</h4>        
+        <p>These are normally built from primitive data types like integers, 
+            real, character, Boolean. There are following two types of simple 
+            data structures</p>
+        <ul>
+            <li>Array</li>
+            <li>Structure</li>
+        </ul> 
+        
+        <a name="compound" id="compound"></a>
+        <h4>Compound Data Structures</h4>
+        <p>Simple data structures can be combined in various ways to form more 
+           complex structures called compound data structures. They are 
+           classified into the following two types:</p>
+        
+        <ul>            
+            <li>Linear data structures</li>
+            <p>These data structures are single level data structures. A data 
+               structure is linear if its elements form a sequence. There are 
+               the following types:</p>
+            <ul>
+                <li>Stack</li>
+                <li>Queue</li>
+                <li>Linked List</li>
+            </ul>
+            
+            <br/>
+            
+            <li>Non-linear data structures</li>
+            <p>These are multilevel data structures. Example of non-linear data 
+               structure is Tree.</p>
+        </ul>
+        
+        <p><sup>See <a href="../data-structures/index.html">
+                Data Structures</a> and <a href="../algorithms/index.html">
+                  Algorithms</a> for more...</sup></p>
+
+        <a name="common" id="common"></a>            
+        <h4>Common Operations</h4>        
+        <p>Operations that can be performed on data structures:</p>
+        <ul>
+            <li>Traversing - access each data item exactly once so 
+                that it can be processed.</li>
+            <li>Searching - find out the location of the data 
+                item if it exists in the given collection of data items.</li>
+            <li>Inserting - add a new data item in the given 
+                collection of data items.</li>
+            <li>Deleting - delete an existing data item from 
+                the given collection of data items.</li>
+            <li>Sorting - arrange the data items in some order
+                i.e. in ascending or descending order in case of numerical data 
+                and in dictionary order in case of alphanumeric data.</li>
+            <li>Merging - combine the data items of two sorted 
+                files into single file in the sorted form.</li>        
+        </ul>        
+
+        <p><sup>See <a href="../data-structures/index.html">
+                Data Structures</a> and <a href="../algorithms/index.html">
+                  Algorithms</a> for more...</sup></p>
+
+        
+<!-- Large modal -->
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-primary" data-toggle="modal" 
+        data-target="#myModal0">See Common Operations Table 
+    <span class="fa fa-window-restore"></span></button>
+<br/><br/>
+
+<!-- Modal -->
+<div id="myModal0" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" 
+                data-dismiss="modal" aria-label="Close">
+            <span class="fa fa-window-close" aria-hidden="true"></span></button>
+        <h4 class="modal-title">Common Operations</h4>
+      </div>
+      <div class="modal-body">
+        
+      <table class="table table-striped table-responsive table-condensed table-bordered">
+        <tbody>  
+        <!-- Table Headers -->  					  
+          <tr>
+            <th>Data&nbsp;Structure&nbsp;</th>
+            <th colspan="8">Time Complexity</th>
+            <th>Space</th>
+          </tr>
+          <tr>
+            <th> </th>
+            <th colspan="4">Average&nbsp;</th>
+            <th colspan="4">Worst</th>
+            <th>Worst</th>
+          </tr>
+          <tr>
+            <th> </th>
+            <th>Access</th>
+            <th>Search</th>
+            <th>Insertion</th>
+            <th>Deletion</th>
+            <th>Access</th>
+            <th>Search</th>
+            <th>Insertion</th>
+            <th>Deletion</th>
+            <th> </th>            
+          </tr>          
+
+          <tr>
+            <td>Array</td>
+            <td><em>&theta;(1)</em></td>
+            <td><em>&theta;(n)</em></td>
+            <td><em>&theta;(n)</em></td>
+            <td><em>&theta;(n)</em></td>
+            <td><em>O(1)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>            
+          </tr>          
+
+          <tr>
+            <td>Stack</td>
+            <td><em>&theta;(n)</em></td>
+            <td><em>&theta;(n)</em></td>
+            <td><em>&theta;(1)</em></td>
+            <td><em>&theta;(1)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(1)</em></td>
+            <td><em>O(1)</em></td>
+            <td><em>O(n)</em></td>            
+          </tr>          
+          
+          <tr>
+            <td>Queue</td>
+            <td><em>&theta;(n)</em></td>
+            <td><em>&theta;(n)</em></td>
+            <td><em>&theta;(1)</em></td>
+            <td><em>&theta;(1)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(1)</em></td>
+            <td><em>O(1)</em></td>
+            <td><em>O(n)</em></td>            
+          </tr>          
+          
+          <tr>
+            <td>Singly&nbsp;Linked&nbsp;List</td>
+            <td><em>&theta;(n)</em></td>
+            <td><em>&theta;(n)</em></td>
+            <td><em>&theta;(1)</em></td>
+            <td><em>&theta;(1)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(1)</em></td>
+            <td><em>O(1)</em></td>
+            <td><em>O(n)</em></td>            
+          </tr>          
+          
+          <tr>
+            <td>Doubly&nbsp;Linked&nbsp;List</td>
+            <td><em>&theta;(n)</em></td>
+            <td><em>&theta;(n)</em></td>
+            <td><em>&theta;(1)</em></td>
+            <td><em>&theta;(1)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(1)</em></td>
+            <td><em>O(1)</em></td>
+            <td><em>O(n)</em></td>            
+          </tr>          
+          
+          <tr>
+            <td>Skip&nbsp;List</td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n log(n))</em></td>            
+          </tr>          
+          
+          <tr>
+            <td>Hash&nbsp;Table</td>
+            <td><em>N/A</em></td>
+            <td><em>&theta;(1)</em></td>
+            <td><em>&theta;(1)</em></td>
+            <td><em>&theta;(1)</em></td>
+            <td><em>N/A</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>            
+          </tr>          
+          
+          <tr>
+            <td>Binary&nbsp;Search&nbsp;Tree</td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>            
+          </tr>          
+          
+          <tr>
+            <td>Cartesian&nbsp;Tree</td>
+            <td><em>N/A</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>N/A</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>            
+          </tr>          
+          
+          <tr>
+            <td>B-Tree</td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>O(log(n))</em></td>
+            <td><em>O(log(n))</em></td>
+            <td><em>O(log(n))</em></td>
+            <td><em>O(log(n))</em></td>
+            <td><em>O(n)</em></td>            
+          </tr>          
+          
+          <tr>
+            <td>Red-Black&nbsp;Tree</td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>O(log(n))</em></td>
+            <td><em>O(log(n))</em></td>
+            <td><em>O(log(n))</em></td>
+            <td><em>O(log(n))</em></td>
+            <td><em>O(n)</em></td>            
+          </tr>          
+          
+          <tr>
+            <td>Splay&nbsp;Tree</td>
+            <td><em>N/A</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>N/A</em></td>
+            <td><em>O(log(n))</em></td>
+            <td><em>O(log(n))</em></td>
+            <td><em>O(log(n))</em></td>
+            <td><em>O(n)</em></td>            
+          </tr>          
+          
+          <tr>
+            <td>AVL</td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>O(log(n))</em></td>
+            <td><em>O(log(n))</em></td>
+            <td><em>O(log(n))</em></td>
+            <td><em>O(log(n))</em></td>
+            <td><em>O(n)</em></td>            
+          </tr>          
+          
+          <tr>
+            <td>KD&nbsp;Tree</td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>&theta;(log(n))</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>
+            <td><em>O(n)</em></td>            
+          </tr>                        
+         </tbody> 
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">
+            Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal --> 
+<!-- End Large modal -->
+        
+
+        <a name="sorting" id="sorting"></a>            
+        <h4>Sorting</h4>        
+        <p>Suppose an algorithm is being developed to operate on a set of n 
+           elements. Its developers are interested in finding a function T(n) 
+           that will express how long the algorithm will take to run (in some 
+           arbitrary measurement of time) in terms of the number of elements in 
+           the input set. The algorithm works by first calling a subroutine to 
+           sort the elements in the set and then perform its own operations. 
+           
+        <p>The sort has a known time complexity of O(n<sup>2</sup>), and after the 
+           subroutine runs the algorithm must take an additional 55n<sup>3</sup> + 2n + 10 
+           steps before it terminates. Thus the overall time complexity of the 
+           algorithm can be expressed as T(n) = 55n<sup>3</sup> + O(n<sup>2</sup>). Here the terms 
+           2n+10 are subsumed within the faster-growing O(n<sup>2</sup>). Again, this usage
+           disregards some of the formal meaning of the "=" symbol, but it does 
+           allow one to use the big O notation as a kind of convenient 
+           placeholder.</p>
+
+        <p><sup>See <a href="../data-structures/index.html">
+                Data Structures</a> and <a href="../algorithms/index.html">
+                  Algorithms</a> for more...</sup></p>
+
+<!-- Large modal -->
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-primary" data-toggle="modal" 
+        data-target="#myModal1">See Common Sorting Table 
+    <span class="fa fa-window-restore"></span></button>
+<br/><br/>
+
+<!-- Modal -->
+<div id="myModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" 
+                data-dismiss="modal" aria-label="Close">
+            <span class="fa fa-window-close" aria-hidden="true"></span></button>
+        <h4 class="modal-title">Common Sorting Table</h4>
+      </div>
+      <div class="modal-body">
+        
+      <table class="table table-striped table-responsive table-bordered">
+        <!-- Table Headers -->  
+        <tr>
+          <th>Name</th>
+          <th colspan="3">Time&nbsp;Complexity</th>
+          <th>Space&nbsp;Complexity</th>
+        </tr>        
+                                
+        <tr>
+          <th> </th>
+          <th>Best&nbsp;&nbsp;&nbsp;</th>
+          <th>Average&nbsp;&nbsp;</th>
+          <th>Worst&nbsp;&nbsp;&nbsp;</th>
+          <th>Worst</th>
+        </tr>      
+        
+        <tr>                    
+          <td>Quick&nbsp;Sort</td>
+          <td><em>&Omega;(n log(n))</em></td>
+          <td><em>&Theta;(n log(n))</em></td>
+          <td><em>O(n^2)</em></td>
+          <td><em>O(log(n))</em> </td>
+        </tr>  
+
+        <tr>               
+          <td>Merge&nbsp;Sort</td>
+          <td><em>&Omega;(n log(n))</em></td>
+          <td><em>&Theta;(n log(n))</em></td>
+          <td><em>O(n log(n))</em></td>
+          <td><em>O(n)</em></td>
+        </tr>  
+        
+        <tr>      
+          <td>Tim&nbsp;Sort</td>
+          <td><em>&Omega;(n)</em></td>
+          <td><em>&Theta;(n log(n))</em></td>
+          <td><em>O(n log(n))</em></td>
+          <td><em>O(n)</em></td>
+        </tr>  
+
+        <tr>
+          <td>Heap&nbsp;Sort</td>
+          <td><em>&Omega;(n log(n))</em></td>
+          <td><em>&Theta;(n log(n))</em></td>
+          <td><em>O(n log(n))</em></td>
+          <td><em>O(1)</em></td>
+        </tr>  
+        
+        <tr>
+          <td>Bubble&nbsp;Sort</td>
+          <td><em>&Omega;(n)</em></td>
+          <td><em>&Theta;(n^2)</em></td>
+          <td><em>O(n^2)</em></td>
+          <td><em>O(1)</em></td>
+        </tr>  
+        
+        <tr>
+          <td>Insertion&nbsp;Sort</td>
+          <td>&Omega;(n)</td>
+          <td><em>&Theta;(n^2)</em></td>
+          <td><em>O(n^2)</em></td>
+          <td><em>O(1)</em></td>
+        </tr>  
+
+        <tr>                              
+          <td>Selection&nbsp;Sort</td>
+          <td><em>&Omega;(n^2)</em></td>
+          <td><em>&Theta;(n^2)</em></td>
+          <td><em>O(n^2)</em></td>
+          <td><em>O(1)</em></td>
+        </tr>  
+        
+        <tr>
+          <td>Tree&nbsp;Sort</td>
+          <td><em>&Omega;(n log(n))</em></td>
+          <td><em>&Theta;(n log(n))</em></td>
+          <td><em>O(n^2)</em></td>
+          <td><em>O(n)</em></td>
+        </tr>          
+
+        <tr>          
+          <td>Shell&nbsp;Sort</td>
+          <td><em>&Omega;(n log(n))</em></td>
+          <td><em>&Theta;(n(log(n))^2)</em></td>
+          <td><em>O(n(log(n))^2)</em></td>
+          <td><em>O(1)</em></td>
+        </tr>          
+        
+        <tr>                              
+          <td>Bucket&nbsp;Sort</td>
+          <td><em>&Omega;(n+k)</em></td>
+          <td><em>&Theta;(n+k)</em></td>
+          <td><em>O(n^2)</em></td>
+          <td><em>O(n)</em></td>
+        </tr>      
+        
+        <tr>                                 
+          <td>Radix&nbsp;Sort</td>
+          <td><em>&Omega;(nk)</em></td>
+          <td><em>&Theta;(nk)</em></td>
+          <td><em>O(nk)</em></td>
+          <td><em>O(n+k)</em></td>
+        </tr>          
+        
+        <tr>                              
+          <td>Counting&nbsp;Sort</td>
+          <td><em>&Omega;(n+k) </em></td>
+          <td><em>&Theta;(n+k) </em></td>
+          <td><em>O(n+k) </em></td>
+          <td><em>O(k)</em></td>
+        </tr>  
+
+        <tr>                      
+          <td>Cube&nbsp;Sort</td>
+          <td><em>&Omega;(n)</em></td>
+          <td><em>&Theta;(n log(n))</em></td>
+          <td><em>O(n log(n))</em></td>
+          <td><em>O(n)</em></td>
+        </tr>  
+        
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal --> 
+<!-- End Large modal -->
+                   
+<hr/>
+
+        <h3><a name="take-five" class="anchor" href="#take-five">
+          <span class="header-link"></span></a>
+          Review</h3>
+          
+        <p>Alright, let's recap what I've just learned:</p>
+    
+        <ul>
+            <li>Big O' Notations are a math notation that describes the limiting 
+                behavior of a function when the argument tends toward a 
+                particular value or infinity.</li>          
+        </ul>
+        
+    <p>You can read more at: 
+        <a href="http://bigocheatsheet.com/" target="_blank">
+           <small>http://bigocheatsheet.com</a></small></p>
+
+      <!-- pagination -->
+       <a role="button" class="btn btn-primary float-left"  
+               href="../algorithms/index.html">
+            &larr; PREVIOUS: Algorithms</a>
+          
+      <a role="button" class="btn btn-primary float-right" 
+              href="../uml/index.html">
+            NEXT: UML &rarr;</a><br/><br/>
+    </section>
+        
+    <!-- jQuery library -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+            crossorigin="anonymous"></script>       
+    <script src="../../assets/javascripts/scale.fix.js"></script>
+  </body>
+</html>
+
+      

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Code Journal: Shuffling Algorithms</title>   
+    <!-- Latest compiled and minified CSS -->
+    <!-- Font Awesome 5.7.0 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+    crossorigin="anonymous">
+    <!-- Bootstrap 4.3.1 -->    
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">   
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>     
+    
+    <!-- Custom Style Pygment and Icons -->     
+    <link rel="stylesheet" href="../../../assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="../../../assets/stylesheets/pygment_trac.css">
+    <link rel="icon" href="../../../assets/images/favicon.ico" type="image/gif">
+    <link rel="shortcut icon" href="../../../assets/images/favicon.png">    
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+    <div class="wrapper">               
+    <!-- Header -->         
+      <header>
+          <img src="../../../assets/images/pb_Image.png" class="img-fluid" alt="me"/>
+        <p class="view">A Code Journal for 
+            <span class="fab fa-git-square" aria-hidden="true"></span>
+                Hub Pages<br/>        
+                
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
+            <span class="fab fa-github"></span> 
+              View the Code Journal on GitHub</a></p>
+                      
+            <!-- Buttons -->                        
+           <a class="btn btn-md btn-default" href="../../../appendix-projects/index.html#java" role="button">            
+                <span class="fab fa-java fa-2x"></span> 
+            </a>                   
+            
+           <a class="btn btn-md btn-default" href="../../../appendix-projects/index.html#python" role="button">
+                <span class="fab fa-python fa-2x"></span> 
+            </a>                        
+
+           <a class="btn btn-md btn-default" href="../../../appendix-projects/index.html#r" role="button">
+                <span class="fab fa-r-project  fa-2x"></span> 
+            </a>                
+            
+           <a class="btn btn-md btn-default" href="../../../appendix-projects/index.html#javascript" role="button">
+                <span class="fab fa-js fa-2x"></span> 
+            </a>                              
+
+            <br/><br/>
+            
+            <a href="https://github.com/keeyanajones/">
+            <small><span class="fab fa-github-alt"></span>                 
+            Repositories and latest Contribution Activity</small></a>                 
+              
+        <br/>
+        
+        <!-- Download, Clone, or Fork -->
+        <ul>    
+          <li><a href="https://github.com/keeyanajones/Journal/archive/master.zip">
+              <span class="fa fa-file-archive" aria-hidden="true"></span><br/>
+                  Download <br/> ZIP</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-clone" aria-hidden="true"></span><br/>
+                  Clone <br/> Desktop</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-code-branch" aria-hidden="true"></span><br/>
+                  Fork On <br/> GitHub</a></li>
+        </ul>                                 
+      </header>
+    <!-- ./header --> 
+    </div>          
+      
+    <section>
+          <h2><span class="fa fa-project-diagram " aria-hidden="true"></span>
+              <a name="shuffling" class="anchor" href="#shuffling">
+              <span class="header-link"></span></a>
+          Algorithms <sup>in Java : <em>Shuffling</em></sup></h2>                  
+     
+        <p><sup><span class="fa fa-calendar"></span>
+            Last updated on August 7th, 2019</sup></p>
+                                                 
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <span class="fa fa-bookmark"></span> 
+        <a href="../../../index.html">Home</a></li>      
+    <li class="breadcrumb-item">
+        <a href="../../../appendix/index.html"> 
+        <span class="fa fa-bookmark"></span> Appendix</a></li>
+    <li class="breadcrumb-item">
+        <a href="../../index.html"> 
+        <span class="fa fa-bookmark"></span> References</a></li>                                        
+    <li class="breadcrumb-item">
+        <a href="../index.html">
+        <span class="fa fa-bookmark"></span> Algorithms</a></li>                              
+    <li class="breadcrumb-item active" aria-current="shuffling">        
+        <span class="fa fa-bookmark"></span> Shuffling</li>        
+  </ol>
+</nav>                 
+                                                  
+        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+          <div class="card-body">
+            <p class="card-text">
+           Shuffling is a procedure used to randomize a list to provide an 
+           element of chance in card games for example. Shuffling is often 
+           followed by a cut, to help ensure that the shuffler has not 
+           manipulated the outcome.</p>
+           
+            <p>In this case, an algorithm for generating a random permutation of a 
+           finite sequence—in plain terms, the algorithm shuffles the sequence. 
+           The algorithm effectively puts all the elements into a hat; it 
+           continually determines the next element by randomly drawing an 
+           element from the hat until no elements remain. The algorithm produces
+           an unbiased permutation: every permutation is equally likely. The 
+           modern version of the algorithm is efficient: it takes time 
+           proportional to the number of items being shuffled and shuffles 
+           them in place.</p>                
+                
+            <p>If a computer has access to purely random numbers, it is capable of 
+           generating a "perfect shuffle", a random permutation of the cards; 
+           beware that this terminology (an algorithm that perfectly randomizes 
+           the deck) differs from "a perfectly executed single shuffle", notably
+           a perfectly interleaving faro shuffle. The Fisher–Yates shuffle, 
+           popularized by Donald Knuth, is simple (a few lines of code) and 
+           efficient (O(n) on an n-card deck, assuming constant time for 
+           fundamental steps) algorithm for doing this. Shuffling can be seen as
+           the opposite of sorting.</p>
+
+            <p>There are other, less-desirable algorithms in common use. For 
+            example, one can assign a random number to each card, and then sort 
+            the cards in order of their random numbers. This will generate a 
+            random permutation, unless any of the random numbers generated are 
+            the same as any others (i.e. pairs, triplets etc.). This can be 
+            eliminated either by adjusting one of the pair's values randomly up 
+            or down by a small amount, or reduced to an arbitrarily low 
+            probability by choosing a sufficiently wide range of random number 
+            choices. If using efficient sorting such as mergesort or heapsort 
+            this is an O(n log n) average and worst-case algorithm.</p>          
+
+            <p>The following example shows how to shuffle the elements of a 
+           collection with the help of Collections.shuffle() method of 
+           Collections class.</p>
+        
+    EXAMPLE
+    
+<pre>
+<code class="java">    
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Main {
+ public static void main(String[] argv) throws Exception {
+  ArrayList<String> obj = new ArrayList<String>();
+    obj.add("A");
+    obj.add("E");
+    obj.add("I");
+    obj.add("O");
+    obj.add("U");
+  Collections.shuffle(obj);
+  System.out.println(obj);
+ }   
+}        
+</code>
+</pre>        
+          </div>        
+        </div>
+                       
+<hr/>
+
+        <h3><a name="take-five" class="anchor" href="#take-five">
+          <span class="header-link"></span></a>
+          Review</h3>
+          
+        <p>Alright, let's recap what I've just learned:</p>
+    
+        <ul>
+            <li>Shuffling is a procedure used to randomize a list to provide an 
+                element of chance. In the of algorithms, it is for generating a 
+                random permutation of a finite sequence, the 
+                algorithm shuffles the sequence.</li>          
+        </ul>
+        
+    <p>You can read more at: 
+        <a href="https://go.java/" target="_blank">
+           <small>https://go.java</small></a></p>
+
+      <!-- pagination -->
+       <a role="button" class="btn btn-primary float-left"  
+               href="../index.html">
+            &larr; PREVIOUS: Algorithms</a>
+          
+      <a role="button" class="btn btn-primary float-right" 
+              href="../../uml/index.html">
+            NEXT: UML &rarr;</a><br/><br/>                 
+    </section>
+        
+    <!-- jQuery library -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+            crossorigin="anonymous"></script>      
+    <script src="../../assets/javascripts/scale.fix.js"></script>
+  </body>
+</html>
+
+            

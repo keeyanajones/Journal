@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Code Journal: Testing</title>   
+    <!-- Latest compiled and minified CSS -->
+    <!-- Font Awesome 5.7.0 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+    crossorigin="anonymous">
+    <!-- Bootstrap 4.3.1 -->    
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">   
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>     
+    <!-- Custom Style Pygment and Icons -->     
+    <link rel="stylesheet" href="../../assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="../../assets/stylesheets/pygment_trac.css">
+    <link rel="icon" href="../../assets/images/favicon.ico" type="image/gif">
+    <link rel="shortcut icon" href="../../assets/images/favicon.png">    
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+    <div class="wrapper">               
+    <!-- Header -->         
+      <header>
+          <img src="../../assets/images/pb_Image.png" class="img-fluid" alt="me"/>
+        <p class="view">A Code Journal for 
+            <span class="fab fa-git-square" aria-hidden="true"></span>
+                Hub Pages<br/>        
+                
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
+            <span class="fab fa-github"></span> 
+              View the Code Journal on GitHub</a></p>
+                      
+            <!-- Buttons -->                        
+           <a class="btn btn-md btn-default" href="../../appendix-projects/index.html#java" role="button">            
+                <span class="fab fa-java fa-2x"></span> 
+            </a>                   
+            
+           <a class="btn btn-md btn-default" href="../../appendix-projects/index.html#python" role="button">
+                <span class="fab fa-python fa-2x"></span> 
+            </a>                        
+
+           <a class="btn btn-md btn-default" href="../../appendix-projects/index.html#r" role="button">
+                <span class="fab fa-r-project  fa-2x"></span> 
+            </a>                
+            
+           <a class="btn btn-md btn-default" href="../../appendix-projects/index.html#javascript" role="button">
+                <span class="fab fa-js fa-2x"></span> 
+            </a>                              
+
+            <br/><br/>
+            
+            <a href="https://github.com/keeyanajones/">
+            <small><span class="fab fa-github-alt"></span>                 
+            Repositories and latest Contribution Activity</small></a>                 
+              
+        <br/>
+        
+        <!-- Download, Clone, or Fork -->
+        <ul>    
+          <li><a href="https://github.com/keeyanajones/Journal/archive/master.zip">
+              <span class="fa fa-file-archive" aria-hidden="true"></span><br/>
+                  Download <br/> ZIP</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-clone" aria-hidden="true"></span><br/>
+                  Clone <br/> Desktop</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-code-branch" aria-hidden="true"></span><br/>
+                  Fork On <br/> GitHub</a></li>
+        </ul>                                 
+      </header>
+    <!-- ./header --> 
+    </div>          
+      
+    <section>
+        <h2><span class="fa fa-clipboard-list" aria-hidden="true"></span>
+              <a name="testing" class="anchor" href="#testing">
+              <span class="header-link"></span></a>
+          Testing</h2>                  
+     
+        <p><sup><span class="fa fa-calendar"></span>
+                Last updated on August 7th, 2019</sup></p>
+                                                
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <span class="fa fa-bookmark"></span> 
+        <a href="../../index.html">Home</a></li>      
+    <li class="breadcrumb-item">
+        <a href="../../appendix/index.html"> 
+        <span class="fa fa-bookmark"></span> Appendix</a></li>
+    <li class="breadcrumb-item">
+        <a href="../index.html"> 
+        <span class="fa fa-bookmark"></span> References</a></li>                                        
+    <li class="breadcrumb-item active" aria-current="testing">        
+        <span class="fa fa-bookmark"></span> Testing</li>        
+  </ol>
+</nav>                 
+                                                 
+        <a name="testing" id="testing"></a>            
+        <h4>Manual Testing</h4>
+        <p>Manual testing is the process of manually testing software for 
+           defects. It requires a tester to play the role of an end user 
+           whereby they use most of the application's features to ensure 
+           correct behavior. To guarantee completeness of testing, the tester 
+           often follows a written test plan that leads them through a set of 
+           important test cases. </p>
+
+        <p><sup>See <a href="manual.html">
+                manual</a> for more...</sup></p>
+
+        
+        <h4>Automation Testing</h4>
+        <p>Automation testing, is the use of software separate from the 
+           software being tested to control the execution of tests and the 
+           comparison of actual outcomes with predicted outcomes. Test 
+           automation can automate some repetitive but necessary tasks in a 
+           formalized testing process already in place, or perform additional 
+           testing that would be difficult to do manually. Test automation is 
+           critical for continuous delivery and continuous testing. </p>
+
+        <p><sup>See <a href="automation.html">
+                automation </a> for more...</sup></p>
+        
+<hr/>        
+        
+        <h4>Methods</h4>
+        <p>There are many methods of software testing. Reviews, walk throughs, 
+            or inspections are referred to as static testing, whereas actually 
+            executing programmed code with a given set of test cases is referred
+            to as dynamic testing.</p>
+            
+        <p>Static testing is often implicit, as proofreading, plus when 
+            programming tools/text editors check source code structure or 
+            compilers (pre-compilers) check syntax and data flow as static 
+            program analysis.</p>
+            
+        <p>Dynamic testing takes place when the program itself is run. Dynamic 
+            testing may begin before the program is 100% complete in order to 
+            test particular sections of code and are applied to discrete 
+            functions or modules. Typical techniques for this are either using 
+            stubs/drivers or execution from a debugger environment.</p>
+
+        <ul>
+          <li>Static testing involves verification</li>
+          <li>Dynamic testing involves validation</li>
+        </ul>
+
+        <p>Together they help improve software quality. Among the techniques 
+           for static analysis, mutation testing can be used to ensure the test 
+           cases will detect errors that are introduced by mutating the source 
+           code.</p>
+        
+        <h5>Black-Box Testing</h5>        
+        <p>The technique of testing without having any knowledge of the interior
+            workings of the application is called black-box testing. The tester 
+            is oblivious to the system architecture and does not have access to 
+            the source code. Typically, while performing a black-box test, a 
+            tester will interact with the system's user interface by providing 
+            inputs and examining outputs without knowing how and where the 
+            inputs are worked upon.</p>
+        <p>The following table lists the advantages and disadvantages of 
+            black-box testing.</p>
+
+        <p><sup>See <a href="../testing/junit/index.html">
+                JUnit Examples</a> for more...</sup></p>
+
+        
+<!-- Large modal -->
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-primary" data-toggle="modal" 
+        data-target="#myModalBlackBox">See Black Box Testing Advantages
+    <span class="fa fa-window-restore"></span></button>
+<br/><br/>
+
+        <!-- Modal -->
+        <div id="myModalBlackBox" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" 
+                        data-dismiss="modal" aria-label="Close">
+                    <span class="fa fa-window-close" aria-hidden="true"></span></button>
+                <h4 class="modal-title">Black Box Testing Advantages</h4>
+              </div>
+              <div class="modal-body">
+
+              <table class="table table-striped table-responsive table-condensed table-bordered">
+                <tbody>  
+                <!-- Table Headers -->  					  
+                  <tr>
+                      <th>Advantages</th>
+                    <th>Disadvantages&nbsp;</th>
+                  </tr>
+
+                <tr>
+                    <td>
+                    <ul>    
+                      <li>Well suited and efficient for large code segments.</li>
+                      <li>Code access is not required.</li>
+                      <li>Clearly separates user's perspective from the developer's <br/>
+                          perspective through visibly defined roles.</li>
+                      <li>Large numbers of moderately skilled testers can test the <br/>
+                          application with no knowledge of implementation, programming <br/>
+                          language, or operating systems.</li>
+                    </ul>    
+                    </td>
+
+                    <td>
+                    <ul>    
+                      <li>Limited coverage, since only a selected number of test <br/>
+                          scenarios is actually performed.</li>
+                      <li>Inefficient testing, due to the fact that the tester only has<br/>
+                          limited knowledge about an application.</li>
+                      <li>Blind coverage, since the tester cannot target specific code<br/>
+                          segments or error-prone areas.</li>
+                      <li>The test cases are difficult to design.</li>
+                    </ul>
+                    </td>
+                </tr>          
+
+                 </tbody> 
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal --> 
+        <!-- End Large modal -->
+
+        <h5>White-Box Testing</h5>
+        <p>White-box testing is the detailed investigation of internal logic 
+           and structure of the code. White-box testing is also called glass 
+           testing or open-box testing. In order to perform white-box testing 
+           on an application, a tester needs to know the internal workings of 
+           the code.</p>
+        <p>The tester needs to have a look inside the source code and find out 
+           which unit/chunk of the code is behaving inappropriately.</p>
+        <p>The following table lists the advantages and disadvantages of 
+            white-box testing.</p>
+
+        <p><sup>See <a href="../testing/junit/index.html">
+                JUnit Example</a> for more...</sup></p>
+        
+<!-- Large modal -->
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-primary" data-toggle="modal" 
+        data-target="#myModalWhiteBox">See White Box Testing Advantages
+    <span class="fa fa-window-restore"></span></button>
+<br/><br/>
+
+        <!-- Modal -->
+        <div id="myModalWhiteBox" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" 
+                        data-dismiss="modal" aria-label="Close">
+                    <span class="fa fa-window-close" aria-hidden="true"></span></button>
+                <h4 class="modal-title">White Box Testing Advantages</h4>
+              </div>
+              <div class="modal-body">
+
+              <table class="table table-striped table-responsive table-condensed table-bordered">
+                <tbody>  
+                <!-- Table Headers -->  					  
+                  <tr>
+                      <th>Advantages</th>
+                    <th>Disadvantages&nbsp;</th>
+                  </tr>
+
+                <tr>
+                    <td>
+                        <ul>    
+                          <li>As the tester has knowledge of the source code, it becomes <br/>
+                              very easy to find out which type of data can help in testing <br/>
+                              the application effectively.</li>
+                          <li>It helps in optimizing the code.</li>
+                          <li>Extra lines of code can be removed which can bring in hidden <br/>
+                              defects.</li>
+                          <li>Due to the tester's knowledge about the code, maximum coverage<br/>
+                              is attained during test scenario writing.</li>
+                        </ul>    
+                    </td>
+
+                    <td>
+                        <ul>    
+                          <li>Due to the fact that a skilled tester is needed to <br/>
+                              perform white-box testing, the costs are increased.</li>
+                          <li>Sometimes it is impossible to look into every nook and <br/>
+                              corner to find out hidden errors that may create problems,<br/>
+                              as many paths will go untested.</li>
+                          <li>It is difficult to maintain white-box testing, as it <br/>
+                              requires specialized tools like code analyzers and <br/>
+                              debugging tools.</li>
+                        </ul>
+                    </td>
+                </tr>          
+
+                 </tbody> 
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal --> 
+        <!-- End Large modal -->
+        
+        <h5>Grey-Box Testing</h5>
+        <p>Grey-box testing is a technique to test the application with having 
+            a limited knowledge of the internal workings of an application. In 
+            software testing, the phrase the more you know, the better carries 
+            a lot of weight while testing an application.</p>
+        
+        <p>Mastering the domain of a system always gives the tester an edge 
+            over someone with limited domain knowledge. Unlike black-box 
+            testing, where the tester only tests the application's user 
+            interface; in grey-box testing, the tester has access to design 
+            documents and the database. Having this knowledge, a tester can 
+            prepare better test data and test scenarios while making a test 
+            plan.</p>
+
+
+        <p><sup>See <a href="../testing/junit/index.html">
+                JUnit Examples</a> for more...</sup></p>
+        
+<!-- Large modal -->
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-primary" data-toggle="modal" 
+        data-target="#myModalGreyBox">See Grey Box Testing Advantages
+    <span class="fa fa-window-restore"></span></button>
+<br/><br/>
+
+        <!-- Modal -->
+        <div id="myModalGreyBox" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" 
+                        data-dismiss="modal" aria-label="Close">
+                    <span class="fa fa-window-close" aria-hidden="true"></span></button>
+                <h4 class="modal-title">Grey Box Testing Advantages</h4>
+              </div>
+              <div class="modal-body">
+
+              <table class="table table-striped table-responsive table-condensed table-bordered">
+                <tbody>  
+                <!-- Table Headers -->  					  
+                  <tr>
+                      <th>Advantages</th>
+                    <th>Disadvantages&nbsp;</th>
+                  </tr>
+
+                <tr>
+                    <td>
+                        <ul>    
+                          <li>Offers combined benefits of black-box and 
+                              white-box testing wherever possible.</li>
+                          <li>Grey box testers don't rely on the source code; 
+                              instead they rely on interface definition and 
+                              functional specifications.</li>
+                          <li>Based on the limited information available, a 
+                              grey-box tester can design excellent test 
+                              scenarios especially around communication 
+                              protocols and data type handling.</li>
+                          <li>The test is done from the point of view of the 
+                              user and not the designer.</li>
+                        </ul>    
+                    </td>
+
+                    <td>
+                        <ul>    
+                          <li>Since the access to source code is not available, 
+                              the ability to go over the code and test coverage 
+                              is limited.</li>
+                          <li>The tests can be redundant if the software 
+                              designer has already run a test case.</li>
+                          <li>Testing every possible input stream is unrealistic
+                              because it would take an unreasonable amount of 
+                              time; therefore, many program paths will go 
+                              untested.</li>
+                        </ul>
+                    </td>
+                </tr>          
+
+                 </tbody> 
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal --> 
+        <!-- End Large modal -->
+
+
+        <h5>A Comparison of Testing Methods</h5>
+        <p>The following table lists the points that differentiate black-box 
+            testing, grey-box testing, and white-box testing.</p>
+
+<!-- Large modal -->
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-primary" data-toggle="modal" 
+        data-target="#myModalBoxCompare">See Box Testing Comparison
+    <span class="fa fa-window-restore"></span></button>
+<br/><br/>
+
+        <!-- Modal -->
+        <div id="myModalBoxCompare" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" 
+                        data-dismiss="modal" aria-label="Close">
+                    <span class="fa fa-window-close" aria-hidden="true"></span></button>
+                <h4 class="modal-title">Box Testing Comparison</h4>
+              </div>
+              <div class="modal-body">
+
+              <table class="table table-striped table-responsive table-condensed table-bordered">
+                <tbody>  
+                <!-- Table Headers -->  					  
+                  <tr>
+                    <th>Black Box </th>
+                    <th>Grey Box</th>
+                    <th>White Box</th>                    
+                  </tr>
+
+                  <tr>
+                  <td>
+                    <ul>    
+                      <li>The internal workings of an <br/>
+                          application need not be known.</li>
+                      <li>Also known as closed-box testing, <br/>
+                          data-driven testing, or functional <br/>
+                          testing.</li>
+                      <li>Performed by end-users and also <br/>
+                          by testers and developers.</li>
+                      <li>Testing is based on external <br/>
+                          expectations - Internal behavior <br/>
+                          of the application is unknown.</li>
+                      <li>It is exhaustive and the least <br/>
+                          time-consuming.</li>
+                      <li>Not suited for algorithm testing.</li>
+                      <li>This can only be done by <br/>
+                          trial-and-error method.</li>
+                    </ul>    
+                  </td>
+
+                  <td>
+                    <ul>    
+                      <li>The tester has limited knowledge <br/>
+                          of the internal workings of the <br/>
+                          application.</li>
+                      <li>Also known as translucent testing, <br/>
+                          as the tester has limited knowledge <br/>
+                          of the insides of the application.</li>
+                      <li>Performed by end-users and also by <br/>
+                          testers and developers.</li>
+                      <li>Testing is done on the basis of <br/>
+                          high-level database diagrams and <br/>
+                          data flow diagrams.</li>
+                      <li>Partly time-consuming and exhaustive.</li>
+                      <li>Not suited for algorithm testing.</li>
+                      <li>Data domains and internal boundaries <br/>
+                          can be tested, if known.</li>
+                    </ul>
+                  </td>                  
+
+                  <td>
+                    <ul>    
+                      <li>Tester has full knowledge of the <br/>
+                          internal workings of the application.</li>
+                      <li>Also known as clear-box testing, <br/>
+                          structural testing, or code-based <br/>
+                          testing.</li>
+                      <li>Normally done by testers and <br/>
+                          developers.</li>
+                      <li>Internal workings are fully known <br/>
+                          and the tester can design test data<br/>
+                          accordingly.</li>
+                      <li>The most exhaustive and time-consuming <br/>
+                          type of testing.</li>
+                      <li>Suited for algorithm testing.</li>
+                      <li>Data domains and internal boundaries <br/>
+                          can be better tested.</li>
+                    </ul>
+                  </td>                    
+                  </tr>          
+
+                 </tbody> 
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal --> 
+        <!-- End Large modal -->
+        
+<hr/>
+
+        <h4>Levels</h4> 
+
+        <p>There are different levels during the process of testing. Levels of 
+            testing include different methodologies that can be used 
+            while conducting software testing. The main levels of software 
+            testing are:</p>
+        
+        <ul>
+          <li>Functional Testing : typically broken down into four components - 
+              unit testing, integration testing, system testing and acceptance 
+              testing – usually executed in this order.</li>
+          
+          <li>Non-functional Testing : typically broken down into defined 
+              technical qualities (like vulnerability, scalability, 
+              usability).</li>
+        </ul>
+
+        <h4>Functional Testing</h4>
+        <p>This is a type of black-box testing that is based on the 
+            specifications of the software that is to be tested. The 
+            application is tested by providing input and then the results are 
+            examined that need to conform to the functionality it was intended 
+            for. Functional testing of a software is conducted on a complete, 
+            integrated system to evaluate the system's compliance with its 
+            specified requirements.</p>
+        <p>There are five steps that are involved while testing an application 
+            for functionality.</p>
+
+        <ol>
+          <li>The determination of the functionality that the intended 
+              application is meant to perform.</li>
+          <li>The creation of test data based on the specifications of the 
+              application.</li>
+          <li>The output based on the test data and the specifications of the 
+              application.</li>
+          <li>The writing of test scenarios and the execution of test cases.</li>
+          <li>The comparison of actual and expected results based on the 
+              executed test cases.</li>
+        </ol>
+
+        <p>An effective testing practice will see the above steps applied to the 
+           testing policies of every organization and hence it will make sure 
+           that the organization maintains the strictest of standards when it 
+           comes to software quality.</p>
+
+        <h5>Unit Testing</h5>
+        <p>This type of testing is performed by developers before the setup is 
+            handed over to the testing team to formally execute the test cases. 
+            Unit testing is performed by the respective developers on the 
+            individual units of source code assigned areas. The developers use 
+            test data that is different from the test data of the quality 
+            assurance team.</p>
+        
+        <p>The goal of unit testing is to isolate each part of the program and 
+            show that individual parts are correct in terms of requirements and 
+            functionality.</p>
+
+        <h6>Limitations of Unit Testing</h6>
+        <p>Testing cannot catch each and every bug in an application. It is 
+           impossible to evaluate every execution path in every software 
+           application. The same is the case with unit testing.</p>
+        <p>There is a limit to the number of scenarios and test data that a 
+            developer can use to verify a source code. After having exhausted 
+            all the options, there is no choice but to stop unit testing and 
+            merge the code segment with other units.</p>
+
+        <h5>Integration Testing</h5>
+        <p>Integration testing is defined as the testing of combined parts of 
+            an application to determine if they function correctly. Integration 
+            testing can be done in two ways: Bottom-up integration testing and 
+            Top-down integration testing.</p>
+
+        <h6>Integration Testing Method</h6>
+
+        <ul>
+          <li>Bottom-up integration<br/>
+            This testing begins with unit testing, followed by tests of 
+            progressively higher-level combinations of units called modules or 
+            builds.</li>
+
+          <li>Top-down integration<br/>
+            In this testing, the highest-level modules are tested first and 
+            progressively, lower-level modules are tested thereafter.</li>
+        </ul>
+
+        <p>In a comprehensive software development environment, bottom-up 
+            testing is usually done first, followed by top-down testing. The 
+            process concludes with multiple tests of the complete application, 
+            preferably in scenarios designed to mimic actual situations.</p>
+
+        <h5>System Testing</h5>
+        <p>System testing tests the system as a whole. Once all the components 
+            are integrated, the application as a whole is tested rigorously to 
+            see that it meets the specified Quality Standards. This type of 
+            testing is performed by a specialized testing team.</p>
+
+        <p>System testing is important because of the following reasons:</p>
+
+        <ul>
+          <li>System testing is the first step in the Software Development Life 
+              Cycle, where the application is tested as a whole.</li>
+          <li>The application is tested thoroughly to verify that it meets the 
+              functional and technical specifications.</li>
+          <li>The application is tested in an environment that is very close to 
+              the production environment where the application will be 
+              deployed.</li>
+          <li>System testing enables us to test, verify, and validate both the 
+              business requirements as well as the application 
+              architecture.</li>
+        </ul>
+
+        <h5>Regression Testing</h5>
+        <p>Whenever a change in a software application is made, it is quite 
+            possible that other areas within the application have been affected 
+            by this change. Regression testing is performed to verify that a 
+            fixed bug hasn't resulted in another functionality or business rule 
+            violation. The intent of regression testing is to ensure that a 
+            change, such as a bug fix should not result in another fault being 
+            uncovered in the application.</p>
+
+        <p>Regression testing is important because of the following reasons:</p>
+        <ul>
+          <li>Minimize the gaps in testing when an application with changes made
+              has to be tested.</li>
+          <li>Testing the new changes to verify that the changes made did not 
+              affect any other area of the application.</li>
+          <li>Mitigates risks when regression testing is performed on the 
+              application.</li>
+          <li>Test coverage is increased without compromising timelines.</li>
+          <li>Increase speed to market the product.</li>
+        </ul>
+
+        <h5>Acceptance Testing</h5>
+        <p>This is arguably the most important type of testing, as it is 
+            conducted by the Quality Assurance Team who will gauge whether the 
+            application meets the intended specifications and satisfies the 
+            client’s requirement. The QA team will have a set of pre-written 
+            scenarios and test cases that will be used to test the 
+            application.</p>
+        
+        <p>More ideas will be shared about the application and more tests can 
+            be performed on it to gauge its accuracy and the reasons why the
+            project was initiated. Acceptance tests are not only intended to 
+            point out simple spelling mistakes, cosmetic errors, or interface 
+            gaps, but also to point out any bugs in the application that will 
+            result in system crashes or major errors in the application.</p>
+        
+        <p>By performing acceptance tests on an application, the testing team 
+            will reduce how the application will perform in production. There 
+            are also legal and contractual requirements for acceptance of the 
+            system.</p>
+
+        <h5>Alpha Testing</h5>
+        <p>This test is the first stage of testing and will be performed amongst
+            the teams (developer and QA teams). Unit testing, integration 
+            testing and system testing when combined together is known as alpha 
+            testing. During this phase, the following aspects will be tested in 
+            the application:</p>
+
+        <ul>
+          <li>Spelling Mistakes</li>
+          <li>Broken Links</li>
+          <li>Cloudy Directions</li>
+          <li>The Application will be tested on machines with the lowest 
+              specification to test loading times and any latency problems.</li>
+        </ul>
+        
+        <h5>Beta Testing</h5>
+        <p>This test is performed after alpha testing has been successfully 
+           performed. In beta testing, a sample of the intended audience tests 
+           the application. Beta testing is also known as pre-release testing. 
+           Beta test versions of software are ideally distributed to a wide 
+           audience on the Web, partly to give the program a "real-world" test 
+           and partly to provide a preview of the next release. In this phase, 
+           the audience will be testing the following:</p>
+
+        <ul>
+          <li>Users will install, run the application and send their feedback 
+              to the project team.</li>
+          <li>Typographical errors, confusing application flow, and even 
+              crashes.</li>
+          <li>Getting the feedback, the project team can fix the problems before
+              releasing the software to the actual users.</li>
+          <li>The more issues you fix that solve real user problems, the higher 
+              the quality of your application will be.</li>
+          <li>Having a higher-quality application when you release it to the 
+              general public will increase customer satisfaction.</li>
+        </ul>
+
+        <h4>Non-Functional Testing</h4>
+        <p> Non-functional testing involves testing 
+            a software from the requirements which are nonfunctional in nature 
+            but important such as performance, security, user interface, 
+            etc.</p>
+
+        <h5>Performance Testing</h5>
+        <p>It is mostly used to identify any bottlenecks or performance issues 
+            rather than finding bugs in a software. There are different causes 
+            that contribute in lowering the performance of a software:</p>
+
+        <ul>
+          <li>Network delay</li>
+          <li>Client-side processing</li>
+          <li>Database transaction processing</li>
+          <li>Load balancing between servers</li>
+          <li>Data rendering</li>
+        </ul>
+
+        <p>Performance testing is considered as one of the important and 
+            mandatory testing type in terms of the following aspects:</p>
+        
+        <ul>
+          <li>Speed (i.e. Response Time, data rendering and accessing)</li>
+          <li>Capacity</li>
+          <li>Stability</li>
+          <li>Scalability</li>
+        </ul>
+        
+        <p>Performance testing can be either qualitative or quantitative and 
+            can be divided into different sub-types such as Load testing and 
+            Stress testing.</p>
+
+        <h5>Load Testing</h5>
+        <p>It is a process of testing the behavior of a software by applying 
+            maximum load in terms of software accessing and manipulating large 
+            input data. It can be done at both normal and peak load conditions. 
+            This type of testing identifies the maximum capacity of software and
+            its behavior at peak time.</p>
+        <p>Most of the time, load testing is performed with the help of 
+            automated tools such as Load Runner, AppLoader, IBM Rational 
+            Performance Tester, Apache JMeter, Silk Performer, Visual Studio 
+            Load Test, etc.</p>
+        <p>Virtual users (VUsers) are defined in the automated testing tool and 
+            the script is executed to verify the load testing for the software. 
+            The number of users can be increased or decreased concurrently or 
+            incrementally based upon the requirements.</p>
+
+        <h5>Stress Testing</h5>
+        <p>Stress testing includes testing the behavior of a software under 
+            abnormal conditions. For example, it may include taking away some 
+            resources or applying a load beyond the actual load limit.</p>
+
+        <p>The aim of stress testing is to test the software by applying the 
+            load to the system and taking over the resources used by the 
+            software to identify the breaking point. This testing can be 
+            performed by testing different scenarios such as:</p>
+
+        <ul>
+          <li>Shutdown or restart of network ports randomly</li>
+          <li>Turning the database on or off</li>
+          <li>Running different processes that consume resources such as CPU, 
+              memory, server, etc.</li>
+        </ul>
+          
+        <h5>Usability Testing</h5>
+        <p>Usability testing is a black-box technique and is used to identify 
+            any error(s) and improvements in the software by observing the 
+            users through their usage and operation.</p>
+        <p>According to Nielsen, usability can be defined in terms of five 
+            factors, i.e. efficiency of use, learn-ability, memory-ability, 
+            errors/safety, and satisfaction. According to him, the usability 
+            of a product will be good and the system is usable if it possesses 
+            the above factors.</p>
+        <p>Nigel Bevan and Macleod considered that usability is the quality 
+            requirement that can be measured as the outcome of interactions 
+            with a computer system. This requirement can be fulfilled and the 
+            end-user will be satisfied if the intended goals are achieved 
+            effectively with the use of proper resources.</p>
+        <p>Molich in 2000 stated that a user-friendly system should fulfill the 
+            following five goals, i.e., easy to Learn, easy to remember, 
+            efficient to use, satisfactory to use, and easy to understand.</p>
+        <p>In addition to the different definitions of usability, there are 
+            some standards and quality models and methods that define usability 
+            in the form of attributes and sub-attributes such as ISO-9126, 
+            ISO-9241-11, ISO-13407, and IEEE std.610.12, etc.</p>
+
+        <h5>UI vs Usability Testing</h5>
+        <p>UI testing involves testing the Graphical User Interface of the 
+            Software. UI testing ensures that the GUI functions according to the
+            requirements and tested in terms of color, alignment, size, and 
+            other properties.</p>
+        <p>On the other hand, usability testing ensures a good and user-friendly 
+            GUI that can be easily handled. UI testing can be considered as a 
+            sub-part of usability testing.</p>
+
+        <h5>Security Testing</h5>
+        <p>Security testing involves testing a software in order to identify any
+            flaws and gaps from security and vulnerability point of view. 
+            Listed below are the main aspects that security testing should 
+            ensure:</p>
+
+        <ul>
+          <li>Confidentiality</li>
+          <li>Integrity</li>
+          <li>Authentication</li>
+          <li>Availability</li>
+          <li>Authorization</li>
+          <li>Non-repudiation</li>
+          <li>Software is secure against known and unknown vulnerabilities</li>
+          <li>Software data is secure</li>
+          <li>Software is according to all security regulations</li>
+          <li>Input checking and validation</li>
+          <li>SQL insertion attacks</li>
+          <li>Injection flaws</li>
+          <li>Session management issues</li>
+          <li>Cross-site scripting attacks</li>
+          <li>Buffer overflows vulnerabilities</li>
+          <li>Directory traversal attacks</li>
+        </ul>
+        
+        <h5>Portability Testing</h5>
+        <p>Portability testing includes testing a software with the aim to 
+            ensure its reusability and that it can be moved from another 
+            software as well. Following are the strategies that can be used for 
+            portability testing:</p>
+
+        <ul>
+          <li>Transferring an installed software from one computer to 
+              another.</li>
+          <li>Building executable (.exe) to run the software on different 
+              platforms.</li>
+        </ul>
+
+        <p>Portability testing can be considered as one of the sub-parts of 
+            system testing, as this testing type includes overall testing of a 
+            software with respect to its usage over different environments. 
+            Computer hardware, operating systems, and browsers are the major 
+            focus of portability testing. Some of the pre-conditions for 
+            portability testing are as follows:</p>
+        
+        <ul>
+          <li>Software should be designed and coded, keeping in mind the 
+              portability requirements.</li>
+          <li>Unit testing has been performed on the associated components.</li>
+          <li>Integration testing has been performed.</li>
+          <li>Test environment has been established.</li>
+        </ul>
+
+        
+        <h4>Testing Documentation</h4>
+
+        <p>Testing documentation involves the documentation of artifacts that 
+            should be developed before or during the testing of Software.</p>
+        
+        <p>Documentation for software testing helps in estimating the testing 
+            effort required, test coverage, requirement tracking/tracing, etc. 
+            Commonly used documented artifacts related to software testing 
+            such as:</p>
+
+        <ul>
+          <li>Test Plan</li>
+          <li>Test Scenario</li>
+          <li>Test Case</li>
+          <li>Traceability Matrix</li>
+        </ul>
+
+        <p><sup>See <a href="../documentation-version/index.html">
+                Documentation &amp; Version Control</a> for more...</sup></p>
+
+        <h5>Test Plan</h5>
+        <p>A test plan outlines the strategy that will be used to test an 
+            application, the resources that will be used, the test environment 
+            in which testing will be performed, and the limitations of the 
+            testing and the schedule of testing activities. Typically the 
+            Quality Assurance Team Lead will be responsible for writing a Test 
+            Plan.</p>
+
+        <p>A test plan includes the following:</p>
+
+        <ul>
+          <li>Introduction to the Test Plan document</li>
+          <li>Assumptions while testing the application</li>
+          <li>List of test cases included in testing the application</li>
+          <li>List of features to be tested</li>
+          <li>What sort of approach to use while testing the software</li>
+          <li>List of deliverables that need to be tested</li>
+          <li>The resources allocated for testing the application</li>
+          <li>Any risks involved during the testing process</li>
+          <li>A schedule of tasks and milestones to be achieved</li>          
+        </ul>
+
+        <h5>Test Scenario</h5>
+        <p>It is a one line statement that notifies what area in the application
+            will be tested. Test scenarios are used to ensure that all process 
+            flows are tested from end to end. A particular area of an 
+            application can have as little as one test scenario to a few hundred
+            scenarios depending on the magnitude and complexity of the 
+            application.</p>
+        
+        <p>The terms 'test scenario' and 'test cases' are used interchangeably, 
+            however a test scenario has several steps, whereas a test case has 
+            a single step. Viewed from this perspective, test scenarios are test
+            cases, but they include several test cases and the sequence that 
+            they should be executed. Apart from this, each test is dependent on 
+            the output from the previous test.</p>
+
+        <h5>Test Case</h5>
+        <p>Test cases involve a set of steps, conditions, and inputs that can be
+            used while performing testing tasks. The main intent of this 
+            activity is to ensure whether a software passes or fails in terms 
+            of its functionality and other aspects. There are many types of test 
+            cases such as functional, negative, error, logical test cases, 
+            physical test cases, UI test cases, etc.</p>
+        
+        <p>Furthermore, test cases are written to keep track of the testing 
+            coverage of a software. Generally, there are no formal templates 
+            that can be used during test case writing. However, the following 
+            components are always available and included in every test case:</p>
+
+        <ul>
+          <li>Test case ID</li>
+          <li>Product module</li>
+          <li>Product version</li>
+          <li>Revision history</li>
+          <li>Purpose</li>
+          <li>Assumptions</li>
+          <li>Pre-conditions</li>
+          <li>Steps</li>
+          <li>Expected outcome</li>
+          <li>Actual outcome</li>
+          <li>Post-conditions</li>
+        </ul>
+
+        <p>Many test cases can be derived from a single test scenario. In 
+            addition, sometimes multiple test cases are written for a single 
+            software which are collectively known as test suites.</p>
+
+        <h5>Traceability Matrix</h5>
+        <p>Traceability Matrix (also known as Requirement Traceability Matrix - 
+            RTM) is a table that is used to trace the requirements during the 
+            Software Development Life Cycle. It can be used for forward tracing 
+            (i.e. from Requirements to Design or Coding) or backward (i.e. from 
+            Coding to Requirements). There are many user-defined templates for 
+            RTM.</p>
+        
+        <p>Each requirement in the RTM document is linked with its associated 
+            test case so that testing can be done as per the mentioned 
+            requirements. Furthermore, Bug ID is also included and linked with 
+            its associated requirements and test case. The main goals for this 
+            matrix are:</p>
+
+        <ul>
+          <li>Make sure the software is developed as per the mentioned 
+              requirements.</li>
+          <li>Helps in finding the root cause of any bug.</li>
+          <li>Helps in tracing the developed documents during different phases 
+              of SDLC.</li>
+        </ul>
+
+
+        <h4>Estimation Techniques</h4>
+
+        <p>Estimating the efforts required for testing is one of the major and 
+            important tasks in SDLC. Correct estimation helps in testing the 
+            software with maximum coverage. This section describes some of the 
+            techniques that can be useful in estimating the efforts required 
+            for testing.</p>
+
+        <h5>Functional Point Analysis</h5>
+        <p>This method is based on the analysis of functional user requirements 
+            of the software with the following categories:</p>
+        
+        <ul>
+          <li>Outputs</li>
+          <li>Inquiries</li>
+          <li>Inputs</li>
+          <li>Internal files</li>
+          <li>External files</li>
+        </ul>
+        
+        <h5>Test Point Analysis</h5>
+        <p>This estimation process is used for function point analysis for 
+            black-box or acceptance testing. The main elements of this method 
+            are: Size, Productivity, Strategy, Interfacing, Complexity, and 
+            Uniformity.</p>
+
+        <h5>Mark-II Method</h5>
+        <p>It is an estimation method used for analyzing and measuring the 
+            estimation based on end-user’s functional view. The procedure for 
+            Mark-II method is as follows:</p>
+
+        <ul>
+          <li>Determine the viewpoint</li>
+          <li>Purpose and type of count</li>
+          <li>Define the boundary of count</li>
+          <li>Identify the logical transactions</li>
+          <li>Identify and categorize data entity types</li>
+          <li>Count the input data element types</li>
+          <li>Count the functional size</li>
+          <li>Miscellaneous</li>
+        </ul>
+        
+        <p>You can use other popular estimation techniques such as:</p>
+
+        <ul>
+          <li>Delphi Technique</li>
+          <li>Analogy Based Estimation</li>
+          <li>Test Case Enumeration Based Estimation</li>
+          <li>Task (Activity) based Estimation</li>
+          <li>IFPUG method</li>
+        </ul>
+        
+<hr/>
+
+        <h3><a name="take-five" class="anchor" href="#take-five">
+          <span class="header-link"></span></a>
+          Review</h3>
+          
+        <p>Alright, let's recap what I've just learned:</p>
+    
+        <ul>             
+          <li>There are 2 types which can be classified in testing manual 
+            and automation</li>                          
+          <li>There are many methods of software testing including 
+            reviews, walkthroughs, or inspections are referred to as 
+            static testing, whereas actually executing programmed code 
+            with a given set of test cases is referred to as dynamic 
+            testing.</li>
+          <li>There are two main levels of software testing which are 
+            functional broken down into unit, integration, system and 
+            acceptance; non-functional broken down into defined 
+            technical qualities.</li>
+          <li>Commonly used documentation related to testing are Test 
+            Plans, Test Scenarios, Test Cases, and Traceability 
+            Matrixes</li>                
+            <li>Estimating the efforts required for testing is one of the 
+                major and important tasks in SDLC.</li>                         
+        </ul>
+        
+    <p>You can read more at: 
+        <a href="https://en.wikipedia.org/wiki/Software_testing" target="_blank">
+           <small>https://en.wikipedia.org/wiki/Software_testing</small></a></p>
+
+      <!-- pagination -->
+       <a role="button" class="btn btn-primary float-left"  
+               href="../design-patterns/index.html">
+            &larr; PREVIOUS: Design Pattern</a>
+          
+      <a role="button" class="btn btn-primary float-right" 
+              href="../documentation-version/index.html">
+            NEXT: Document &rarr;</a><br/><br/>
+    </section>
+        
+    <!-- jQuery library -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+            crossorigin="anonymous"></script>         
+    <script src="../../assets/javascripts/scale.fix.js"></script>
+  </body>
+</html>
+
+        
+        

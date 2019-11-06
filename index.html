@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html> 
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Code Journal</title>
     <!-- Latest compiled and minified CSS -->
-    <!-- Font Awesome 5.0.13 -->
+    <!-- Font Awesome 5.7.0 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+    crossorigin="anonymous">
+    <!-- Bootstrap 4.3.1 -->    
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">   
+    <!-- Highlight.js 9.13.1 -->     
     <link rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-          crossorigin="anonymous">    
-    <!-- Bootstrap 3.3.7 -->    
-    <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-          crossorigin="anonymous">    
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>        
     <!-- Custom Style Pygment and Icons -->
     <link rel="stylesheet" href="assets/stylesheets/styles.css">
     <link rel="stylesheet" href="assets/stylesheets/pygment_trac.css">
@@ -38,23 +42,23 @@
             <a href="https://github.com/keeyanajones/Journal" target="_blank">
             <span class="fab fa-github"></span> 
               View the Code Journal on GitHub</a></p>
-                      
-                        
-            <button class="btn btn-md btn-default" type="button">
+              
+            <!-- Buttons -->                        
+           <a class="btn btn-md btn-default" href="appendix-projects/index.html#java" role="button">            
                 <span class="fab fa-java fa-2x"></span> 
-            </button>                
+            </a>                   
             
-            <button class="btn btn-md btn-default" type="button">
+           <a class="btn btn-md btn-default" href="appendix-projects/index.html#python" role="button">
                 <span class="fab fa-python fa-2x"></span> 
-            </button>                        
+            </a>                        
 
-            <button class="btn btn-md btn-default" type="button">
+           <a class="btn btn-md btn-default" href="appendix-projects/index.html#r" role="button">
                 <span class="fab fa-r-project  fa-2x"></span> 
-            </button>                
+            </a>                
             
-            <button class="btn btn-md btn-default" type="button">
-            <span class="fab fa-js fa-2x"></span> 
-            </button>                              
+           <a class="btn btn-md btn-default" href="appendix-projects/index.html#javascript" role="button">
+                <span class="fab fa-js fa-2x"></span> 
+            </a>                              
 
             <br/><br/>
             
@@ -79,7 +83,7 @@
     <!-- ./header --> 
     </div>
       
-    <section>        
+    <section>                             
         <h2><span class="fa fa-list-alt" aria-hidden="true"></span>
           <a name="about-this-journal" class="anchor" 
              href="#about-this-journal">
@@ -87,89 +91,121 @@
           About this Code Journal</h2>
 
         <p><sup><span class="fa fa-calendar"></span> 
-                Last updated on May 6th, 2019</sup></p>
-        
-        <p>This Github Repository is a series of essays of all types, finished 
-           and in progress about Software Engineering. It covers Java, 
-           JavaScript, Python, R, and typical language sub-disciplines. 
+                Last updated on October 22nd, 2019</sup></p>
+         
+        <p>This Github Repository is a series of in progress writings about 
+           experiences as a Software Engineer. It covers Java, JavaScript, 
+           Python, R, SQL, and typical language sub-disciplines related to 
+           Computer Science.<br/><br/>
            
         <img src="assets/images/desk.png" class="img-fluid rounded" 
-             style="float:left; padding: 5px;" alt="my desk"/>          
+             style="float:left; padding: 16px;" alt="my desk"/><br/>
           
-        <p>What works best for me when learning how to implement and apply 
-           any new technology (or algorithms) is to keep a journal, understand 
-           performance analysis, parsing and formatting text, math, data 
-           structures, graphs and trees, dynamic programming, and computational 
-           geometry.<br/>
+           What works best for me when learning how to implement any new 
+           technology is to keep a hand written journal, to understand 
+           analysis, parsing and formatting text, math, data structures, 
+           code snippets, diagrams, programming paradigms, dynamic 
+           programming, and geometry.<br/><br/>
 
-        <p>I use the journal to write common topics related to things I am working 
-           on, my success logs, things to revisit later, goals, and lessons learned. 
-           I also unexpectedly realized how important the communication of the 
-           process is to solving the problem. Since, you often work with others 
-           you need to clearly communicate as you step through the process.</p> 
-           
-        <p><sup><span class="far fa-eye"></span><span class="far fa-eye"></span> 
+           I use the journal to keep things I am working on hand so I can 
+           write down random thoughts, my success logs, things to revisit 
+           later, goals, and lessons learned. Over the last decade, I also 
+           unexpectedly realized how important the communication of the 
+           process is to solving the problem. Since, I don't often work with 
+           others now a days I see the need to clearly communicate as you step 
+           through the process.</p>
+                   
+        <p><small><sup><span class="far fa-eye"></span><span class="far fa-eye"></span> 
            </sup> See <a href="opening-essay/index.html">
-           The Opening Essay</a></p>
+           The Opening</a></small></p>
            
         <a name="contents" id="contents" class="anchor" href="#contents"></a>
         <h3><span class="fa fa-th-list" aria-hidden="true"></span>
             Table of Contents</h3>
 
         <ol>
-           <li><a href="getting-started/index.html">Getting Started</a></li>
-           <li><a href="learning-plan/index.html">Learning Plan</a></li>                
-           <li><a href="experiments/index.html">Experiments</a>*</li>           
-           <ul>
-            <small>                               
-               <li><a href="experiments/node/bot.html">Bots</a> Mixer, Twitch, Youtube, Facebook, and Discord*</li>
-               <li><a href="experiments/node/mixplay.html">Mixer's Mixplay</a>*</li>
-               <li><a href="experiments/node/extensions.html">Twitch Extensions</a>*</li>
-               <li><a href="experiments/node/code.html">Discord Code Playground</a>*</li>
-               <li><a href="experiments/node/warmup.html">Facebook Warm Up Marketing</a>*</li>               
-               <li><a href="experiments/node/playlist.html">GamePlay and Music Playlist</a>*</li>
-               <li><a href="experiments/node/youtube.html">Youtube's player, subscribe, and upload-widget</a>*</li>
-               
-            </small>               
-           </ul>           
-           <li><a href="ooad-process/index.html">OOAD and UML Diagrams</a></li>
-           <li><a href="quality-factors/index.html">Quality Factors 
-                   Classification</a></li>
-           <li><a href="data-structures/index.html">Data Structures</a></li>
-           <li><a href="algorithms/index.html">Algorithms</a></li>
-           <li><a href="big-o-notations/index.html">Big O' Notations</a></li>
-           <li><a href="uml/index.html">Unified Modeling Language (UML)</a></li>
-           <li><a href="design-patterns/index.html">Design Patterns</a></li>
-           <li><a href="testing/index.html">Testing</a></li>
-           <ul>
-            <small>                     
-             <li><a href="testing/manual.html">Manual</a>*</li>             
-             <li><a href="testing/automation.html">Automation</a>*</li>                        
-            </small>                                   
-           </ul>           
-           <li><a href="documentation-version/index.html">Documentation &amp; 
-                   Version Control</a></li>
-           <ul>
-            <small>                     
-             <li><a href="documentation-version/logging.html">Logging</a>*</li>
-            </small>                                   
-           </ul>               
-           <li><a href="appendix/index.html">Appendix</a></li>           
-           <ul>
-            <small>               
-               <li><a href="appendix-colors/index.html">Color</a></li>
-               <li><a href="appendix-images/index.html">Images</a></li>
-               <li><a href="appendix-ux/index.html">UX/UI</a>*</li>                
-               <li><a href="appendix-projects/index.html">Projects</a>*</li>
-               <li><a href="appendix-notes/index.html">Notes</a>*</li>                            
-               <li><a href="appendix-references/index.html">Reference</a></li>
-            </small>               
-           </ul>
-        </ol>
-
-        <p><a role="button" class="btn btn-primary"
+          <li><a href="getting-started/index.html">GETTING STARTED</a></li>           
+          <li><a href="learning-plan/index.html">LEARNING PLAN</a></li>                                 
+           <small>
+            <ul>
+              <li><a href="livestream/index.html">LIVESTREAM</a></li>              
+           
+              <li><a href="gaming/index.html">GAMES</a></li>             
+                <ul>  
+                  <li><a href="esports/index.html">eSports</a></li>             
+                  <li><a href="pachinko/index.html">Pachinko</a></li>
+                </ul>  
+          
+              <li><a href="labs/index.html">LABS</a></li>            
+              <ul>
+                <li><a href="labs/lab1.html">
+                   Latest Lab : JAVASCRIPT</a></li>
+                <li><a href="labs/lab2.html">
+                   Lab : SCALA</a></li>
+                <li><a href="labs/lab3.html">
+                   Lab : SMALLTALK</a><br/>
+                <a href="labs/index.html">
+                  <span class="far fa-folder-open fa-2x"></span> View All Labs</a></li>
+              </ul>
+              
+              <li><a href="field-reports/index.html">REPORTS</a></li> 
+              <ul>
+                <li><a href="field-reports/report1.html"></a>
+                   Latest Report : Social Media</li>
+                <li><a href="field-reports/report2.html"></a>
+                    Report : Data Science</li>
+                <li><a href="field-reports/report3.html"></a>
+                    Report : Game Development<br/> 
+                <a href="field-reports/index.html">
+                  <span class="far fa-folder-open fa-2x"></span> View All Reports</a></li>                                   
+              </ul>              
+              
+              <li><a href="experiments/index.html">EXPERIMENTS</a></li>           
+              <ul>           
+                <li><a href="experiments/experiment1.html">Latest Experiment : 
+                    Chatbots</a></li>   
+                </li> 
+                <li><a href="experiments/experiment2.html"></a>
+                    Experiment : Features</li>
+                <li><a href="experiments/experiment3.html"></a>
+                    Experiment : Emotes<br/>
+                    <a href="experiments/index.html">
+                      <span class="far fa-folder-open fa-2x"></span> View All Experiments</a></li>
+               </ul>
+            </ul>   
+             </small>
+            <li><a href="business/index.html">BUSINESS</a></li>            
+             <small>
+              <ul>
+                <li><a href="business/index.html#services">
+                   Latest project : Services</a></li>
+                <li><a href="business/index.html#training">
+                   Project : Training</a></li>
+                <li><a href="business/index.html#studio">
+                   Project : Studio</a><br/>
+                <a href="business/index.html">
+                  <span class="far fa-folder-open fa-2x"></span> View All Projects</a></li>
+              </ul>
+             </small> 
+          </ol> 
+          
+          <ul>
+            <li><a href="appendix/index.html">APPENDIX</a></li>                              
+            <small>
+              <ul>  
+               <li><a href="appendix-ux/index.html">UX/UI</a></li>                
+               <li><a href="appendix-projects/index.html">Projects</a></li>
+               <li><a href="appendix-notes/index.html">Notes</a></li>                            
+               <li><a href="appendix-references/index.html">Reference</a></li>               
+              </ul>  
+            </small>  
+          </ul> 
+        
+        <p class="float-right"><a role="button" class="btn btn-primary"
               href="getting-started/index.html">
             NEXT: Getting Started &rarr;</a></p>
+            
+        <br/><br/><br/>
 
         <p><sup>See the Releases section of our GitHub project for changelogs 
                 for each release version of the project. Release announcement 
@@ -177,63 +213,75 @@
                 <a href="https://keeyanajones.github.io/website/"
                    target="_blank"> blog</a> contain summaries of the most 
                    noteworthy changes made in each release.</sup></p>
-
+            
         <a name="contact" id="contact"class="anchor" href="#contact"></a>
         <h3><span class="fa fa-users" aria-hidden="true"></span>
             Contact</h3>
 
         <p><a href="https://github.com/keeyanajones"  target="_blank">
-            Keeyana Jones - <span class="fa fa-user fa-2x" aria-hidden="true"></span>
-            </a></p>
+            Keeyana Jones - @keeyanajones
+            <span class="fa fa-user" aria-hidden="true"></span>
+            </a><br/><br/>
 
         <a href="https://Keeyanajones.github.io/website/"  target="_blank">
-            <span class="fab fa-github-alt" aria-hidden="true"></span> -
+            <span class="fab fa-github-alt fa-2x" aria-hidden="true"></span> -
             https://Keeyanajones.github.io/website</a><br/>
+            
+        <a href="https://gitlab.com/keeyanajones"  target="_blank">
+            <span class="fab fa-gitlab fa-2x" aria-hidden="true"></span> -
+            https://gitlab.com/keeyanajones</a><br/>
 
         <a href="https://twitter.com/keeyanajones" target="_blank">
-            <span class="fab fa-twitter" aria-hidden="true"></span> -
+            <span class="fab fa-twitter fa-2x" aria-hidden="true"></span> -
             @keeyanajones</a><br/>            
             
         <a href="https://www.linkedin.com/in/keeyana-jones-5a275514"
            target="_blank">
-            <span class="fab fa-linkedin" aria-hidden="true" ></span> -
+            <span class="fab fa-linkedin fa-2x" aria-hidden="true" ></span> -
               https://www.linkedin.com</a><br/>
 
         <a href="mailto:keeyanajones@yahoo.com">
-            <span class="fa fa-envelope" aria-hidden="true"></span> -
+            <span class="fa fa-envelope fa-2x" aria-hidden="true"></span> -
             @keeyanajones</a><br/>
 
         <a href="https://steamcommunity.com/profiles/76561198858171230/"
            target="_blank">
-            <span class="fab fa-steam" aria-hidden="true" ></span> -
+            <span class="fab fa-steam fa-2x" aria-hidden="true" ></span> -
               https://steamcommunity.com</a><br/>
             
         <a href="https://www.youtube.com/keeyanajones"
            target="_blank">
-            <span class="fab fa-youtube" aria-hidden="true" ></span> -
+            <span class="fab fa-youtube fa-2x" aria-hidden="true" ></span> -
               https://www.youtube.com</a><br/>
 
         <a href="https://www.twitch.tv/agent_kee"
            target="_blank">
-            <span class="fab fa-twitch" aria-hidden="true" ></span> -
+            <span class="fab fa-twitch fa-2x" aria-hidden="true" ></span> -
               https://www.twitch.tv</a><br/>
 
         <a href="https://www.mixer.com/agent_kee"
            target="_blank">
-            <span class="fab fa-microsoft" aria-hidden="true" ></span> -
+            <span class="fab fa-microsoft fa-2x" aria-hidden="true" ></span> -
               https://www.mixer.com</a><br/>              
               
         <a href="https://discord.gg/rmuqPZ7"
            target="_blank">
-            <span class="fab fa-discord" aria-hidden="true" ></span> -
-              https://www.discord.gg</a><br/><br/>            
+            <span class="fab fa-discord fa-2x" aria-hidden="true" ></span> -
+              https://www.discord.gg</a><br/>
+            </p>
+
     </section>
    
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
             crossorigin="anonymous"></script>
     <script src="../assets/javascripts/scale.fix.js"></script>
   </body>

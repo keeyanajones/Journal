@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Code Journal: Tree Algorithms</title>   
+    <!-- Latest compiled and minified CSS -->
+    <!-- Font Awesome 5.7.0 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+    crossorigin="anonymous">
+    <!-- Bootstrap 4.3.1 -->    
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">   
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>        
+    
+    <!-- Custom Style Pygment and Icons -->     
+    <link rel="stylesheet" href="../../../assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="../../../assets/stylesheets/pygment_trac.css">
+    <link rel="icon" href="../../../assets/images/favicon.ico" type="image/gif">
+    <link rel="shortcut icon" href="../../../assets/images/favicon.png">    
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+    <div class="wrapper">               
+    <!-- Header -->         
+      <header>
+          <img src="../../../assets/images/pb_Image.png" class="img-fluid" alt="me"/>
+        <p class="view">A Code Journal for 
+            <span class="fab fa-git-square" aria-hidden="true"></span>
+                Hub Pages<br/>        
+                
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
+            <span class="fab fa-github"></span> 
+              View the Code Journal on GitHub</a></p>
+                      
+            <!-- Buttons -->                        
+           <a class="btn btn-md btn-default" href="../../../appendix-projects/index.html#java" role="button">            
+                <span class="fab fa-java fa-2x"></span> 
+            </a>                   
+            
+           <a class="btn btn-md btn-default" href="../../../appendix-projects/index.html#python" role="button">
+                <span class="fab fa-python fa-2x"></span> 
+            </a>                        
+
+           <a class="btn btn-md btn-default" href="../../../appendix-projects/index.html#r" role="button">
+                <span class="fab fa-r-project  fa-2x"></span> 
+            </a>                
+            
+           <a class="btn btn-md btn-default" href="../../../appendix-projects/index.html#javascript" role="button">
+                <span class="fab fa-js fa-2x"></span> 
+            </a>                              
+
+            <br/><br/>
+            
+            <a href="https://github.com/keeyanajones/">
+            <small><span class="fab fa-github-alt"></span>                 
+            Repositories and latest Contribution Activity</small></a>                 
+              
+        <br/>
+        
+        <!-- Download, Clone, or Fork -->
+        <ul>    
+          <li><a href="https://github.com/keeyanajones/Journal/archive/master.zip">
+              <span class="fa fa-file-archive" aria-hidden="true"></span><br/>
+                  Download <br/> ZIP</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-clone" aria-hidden="true"></span><br/>
+                  Clone <br/> Desktop</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-code-branch" aria-hidden="true"></span><br/>
+                  Fork On <br/> GitHub</a></li>
+        </ul>                                 
+      </header>
+    <!-- ./header --> 
+    </div>          
+      
+    <section>
+        <h2><span class="fa fa-project-diagram " aria-hidden="true"></span>
+              <a name="trees" class="anchor" href="#trees">
+              <span class="header-link"></span></a>
+          Algorithms <sup>in Java : <em>Trees</em></sup></h2>                  
+     
+        <p><sup><span class="fa fa-calendar"></span>
+                Last updated on August 7th, 2019</sup></p>
+                                                 
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <span class="fa fa-bookmark"></span> 
+        <a href="../../../index.html">Home</a></li>      
+    <li class="breadcrumb-item">
+        <a href="../../../appendix/index.html"> 
+        <span class="fa fa-bookmark"></span> Appendix</a></li>
+    <li class="breadcrumb-item">
+        <a href="../../index.html"> 
+        <span class="fa fa-bookmark"></span> References</a></li>                                        
+    <li class="breadcrumb-item">
+        <a href="../index.html">
+        <span class="fa fa-bookmark"></span> Algorithms</a></li>                              
+    <li class="breadcrumb-item active" aria-current="tree">        
+        <span class="fa fa-bookmark"></span> Tree</li>        
+  </ol>
+</nav>                 
+                                                          
+        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+          <div class="card-body">
+            <p class="card-text">
+                A tree is a widely used abstract data type (ADT)—or data 
+                structure implementing this ADT—that simulates a hierarchical 
+                tree structure, with a root value and subtrees of children with 
+                a parent node, represented as a set of linked nodes. A tree data
+                structure can be defined recursively (locally) as a collection 
+                of nodes (starting at a root node), where each node is a data 
+                structure consisting of a value, together with a list of 
+                references to nodes (the "children"), with the constraints that 
+                no reference is duplicated, and none points to the root.</p>
+
+            <p><sup>see <a href="../../data-structures/index.html#tree">
+                        Data Structures</a> to learn more...</sup></p>            
+            
+                <p>Tree represents the nodes connected by edges. 
+                We will discuss binary tree or binary search tree specifically.
+                Binary Tree is a special data structure used for data storage 
+                purposes. A binary tree has a special condition that each node 
+                can have a maximum of two children. A binary tree has the 
+                benefits of both an ordered array and a linked list as search 
+                is as quick as in a sorted array and insertion or deletion 
+                operation are as fast as in linked list.</p>
+
+            <h3>Important Terms</h3>
+            <p>Following are the important terms:</p>
+
+            <ul>
+              <li>Path − Path refers to the sequence of nodes along the edges 
+                         of a tree.</li>
+              <li>Root − The node at the top of the tree is called root. There 
+                         is only one root per tree and one path from the root 
+                         node to any node.</li>
+              <li>Parent − Any node except the root node has one edge upward to 
+                           a node called parent.</li>
+              <li>Child − The node below a given node connected by its edge 
+                          downward is called its child node.</li>
+              <li>Leaf − The node which does not have any child node is called 
+                         the leaf node.</li>
+              <li>Subtree − Subtree represents the descendants of a node.</li>
+              <li>Visiting − Visiting refers to checking the value of a node 
+                              when control is on the node.</li>
+              <li>Traversing − Traversing means passing through nodes in a 
+                               specific order.</li>
+              <li>Levels − Level of a node represents the generation of a node. 
+                           If the root node is at level 0, then its next child 
+                           node is at level 1, its grandchild is at level 2, 
+                           and so on.</li>
+              <li>keys − Key represents a value of a node based on which a 
+                         search operation is to be carried out for a node.</li>
+            </ul>
+
+            <h4>Binary Search Tree Representation</h4>
+            <p>Binary Search tree exhibits a special behavior. A node's left 
+               child must have a value less than its parent's value and the 
+               node's right child must have a value greater than its parent 
+               value.</p>
+
+            <p>We're going to implement tree using node object and connecting 
+               them through references.</p>
+
+            <h4>Tree Node</h4>
+            <p>The code to write a tree node would be similar to what is given 
+               below. It has a data part and references to its left and right 
+               child nodes.</p>
+
+<pre>
+<code class="java">            
+struct node {
+   int data;   
+   struct node *leftChild;
+   struct node *rightChild;
+};
+</code>
+</pre>
+
+            <p>In a tree, all nodes share common construct.</p>
+            
+            <h4>BST Basic Operations</h4>
+            <p>The basic operations that can be performed on a binary search 
+               tree data structure, are the following:</p>
+            
+            <ul>            
+              <li>Insert − Inserts an element in a tree/create a tree.</li>
+              <li>Search − Searches an element in a tree.</li>
+              <li>Preorder Traversal − Traverses a tree in a pre-order 
+                                        manner.</li>
+              <li>Inorder Traversal − Traverses a tree in an in-order 
+                                       manner.</li>
+              <li>Postorder Traversal − Traverses a tree in a post-order 
+                                         manner.</li>
+            </ul>
+            
+            <p>We shall learn creating (inserting into) a tree structure and 
+               searching a data item in a tree in this chapter. We shall learn 
+               about tree traversing methods in the coming chapter.</p>
+
+            <h4>Insert Operation</h4>
+            <p>The very first insertion creates the tree. Afterwards, whenever 
+               an element is to be inserted, first locate its proper location. 
+               Start searching from the root node, then if the data is less 
+               than the key value, search for the empty location in the left 
+               subtree and insert the data. Otherwise, search for the empty 
+               location in the right subtree and insert the data.</p>
+
+ALGORITHM 
+
+<pre>
+<code>
+If root is NULL 
+   then create root node
+return
+
+If root exists then
+   compare the data with node.data
+   
+   while until insertion position is located
+
+      If data is greater than node.data
+         goto right subtree
+      else
+         goto left subtree
+
+   endwhile 
+   
+   insert data
+	
+end If      
+</code>
+</pre>
+
+<h4>Implementation</h4>
+<p>The implementation of insert function should look like this:</p>
+
+<pre>
+<code class="java">
+void insert(int data) {
+   struct node *tempNode = 
+               (struct node*) malloc(sizeof(struct node));
+   struct node *current;
+   struct node *parent;
+
+   tempNode->data = data;
+   tempNode->leftChild = NULL;
+   tempNode->rightChild = NULL;
+
+   //if tree is empty, create root node
+   if(root == NULL) {
+      root = tempNode;
+   } else {
+      current = root;
+      parent  = NULL;
+
+      while(1) {                
+         parent = current;
+
+         //go to left of the tree
+         if(data < parent->data) {
+            current = current->leftChild;                
+            
+            //insert to the left
+            if(current == NULL) {
+               parent->leftChild = tempNode;
+               return;
+            }
+         }
+			
+         //go to right of the tree
+         else {
+            current = current->rightChild;
+            
+            //insert to the right
+            if(current == NULL) {
+               parent->rightChild = tempNode;
+               return;
+            }
+         }
+      }            
+   }
+}
+</code>
+</pre>
+
+            <h4>Search Operation</h4>
+            <p>Whenever an element is to be searched, start searching from the 
+               root node, then if the data is less than the key value, search 
+               for the element in the left subtree. Otherwise, search for the 
+               element in the right subtree. Follow the same algorithm for 
+               each node.</p>
+
+ALGORITHM 
+
+<pre>
+<code>
+If root.data is equal to search.data
+   return root
+else
+   while data not found
+
+      If data is greater than node.data
+         goto right subtree
+      else
+         goto left subtree
+         
+      If data found
+         return node
+
+   endwhile 
+   
+   return data not found
+   
+end if      
+</code>
+</pre>
+
+<p>The implementation of this algorithm should look like this.</p>
+
+<pre>
+<code class="java">
+struct node* search(int data) {
+   struct node *current = root;
+   printf("Visiting elements: ");
+
+   while(current->data != data) {
+      if(current != NULL)
+      printf("%d ",current->data); 
+      
+      //go to left tree
+
+      if(current->data > data) {
+         current = current->leftChild;
+      }
+      //else go to right tree
+      else {                
+         current = current->rightChild;
+      }
+
+      //not found
+      if(current == NULL) {
+         return NULL;
+      }
+
+      return current;
+   }  
+}         
+</code>
+</pre>          
+          
+
+            <h4>Tree Traversal</h4>
+            <p>Traversal is a process to visit all the nodes of a tree and may 
+               print their values too. Because, all nodes are connected via 
+               edges (links) we always start from the root (head) node. That 
+               is, we cannot randomly access a node in a tree. There are three 
+               ways which we use to traverse a tree:</p>
+            
+            <ul>
+              <li>In-order Traversal</li>
+              <li>Pre-order Traversal</li>
+              <li>Post-order Traversal</li>
+            </ul>
+
+            <p>Generally, we traverse a tree to search or locate a given item                 
+               or key in the tree or to print all the values it contains.</p>
+
+            <h4>In-order Traversal</h4>
+            <p>In this traversal method, the left subtree is visited first, then
+               the root and later the right sub-tree. We should always remember 
+               that every node may represent a subtree itself.</p>
+
+            <p>If a binary tree is traversed in-order, the output will produce 
+                sorted key values in an ascending order.</p>
+
+            <p>We start from A, and following in-order traversal, we move to 
+               its left subtree B. B is also traversed in-order. The process 
+               goes on until all the nodes are visited. The output of inorder 
+               traversal of this tree will be:</p>
+
+<pre>
+<code>            
+D → B → E → A → F → C → G
+</code>
+</pre>
+            
+ALGORITHM 
+
+            <p>Until all nodes are traversed:</p>
+<pre>
+<code>
+Step 1 − Recursively traverse left subtree.
+Step 2 − Visit root node.
+Step 3 − Recursively traverse right subtree.
+</code>
+</pre>
+            
+            
+            <h4>Pre-order Traversal</h4>
+            <p>In this traversal method, the root node is visited first, then 
+               the left subtree and finally the right subtree.</p>
+
+            <p>We start from A, and following pre-order traversal, we first 
+               visit A itself and then move to its left subtree B. B is also 
+               traversed pre-order. The process goes on until all the nodes are 
+               visited. The output of pre-order traversal of this tree will 
+               be:</p>
+
+<pre>
+<code>            
+A → B → D → E → C → F → G
+</code>
+</pre>
+
+ALGORITHM 
+            <p>Until all nodes are traversed:</p>
+
+            <ul>
+              <li>Step 1 − Visit root node.</li>
+              <li>Step 2 − Recursively traverse left subtree.</li>
+              <li>Step 3 − Recursively traverse right subtree.</li>
+            </ul>
+
+            <h4>Post-order Traversal</h4>
+            <p>In this traversal method, the root node is visited last, hence 
+               the name. First we traverse the left subtree, then the right 
+               subtree and finally the root node.</p>
+
+            <p>We start from A, and following Post-order traversal, we first 
+               visit the left subtree B. B is also traversed post-order. The 
+               process goes on until all the nodes are visited. The output of 
+               post-order traversal of this tree will be:</p>
+            
+<pre>
+<code>
+D → E → B → F → G → C → A
+</code>
+</pre>
+
+ALGORITHM 
+            <p>Until all nodes are traversed:</p>
+
+            <ul>
+              <li>Step 1 − Recursively traverse left subtree.</li>
+              <li>Step 2 − Recursively traverse right subtree.</li>
+              <li>Step 3 − Visit root node.</li>
+            </ul>
+            
+            <h4>Binary Search Tree</h4>
+
+            <p>A Binary Search Tree (BST) is a tree in which all the nodes 
+               follow the below-mentioned properties:</p>
+
+            <ul>
+              <li>The left sub-tree of a node has a key less than or equal to 
+                  its parent node's key.</li>
+              <li>The right sub-tree of a node has a key greater than to its 
+                  parent node's key.</li>
+            </ul>
+
+            <p>Thus, BST divides all its sub-trees into two segments; the left 
+               sub-tree and the right sub-tree and can be defined as:</p>
+
+<pre>
+<code>            
+left_subtree (keys)  ≤  node (key)  ≤  right_subtree (keys)
+</code>
+</pre>
+
+            <h4>Representation</h4>
+            <p>BST is a collection of nodes arranged in a way where they 
+               maintain BST properties. Each node has a key and an associated 
+               value. While searching, the desired key is compared to the keys 
+               in BST and if found, the associated value is retrieved.</p>
+
+            <h4>Binary Search Tree</h4>
+            <p>We observe that the root node key (27) has all less-valued keys 
+               on the left sub-tree and the higher valued keys on the right 
+               sub-tree.</p>
+
+            <h4>Basic Operations</h4>
+            <p>Following are the basic operations of a tree:</p>
+
+            <ul>
+              <li>Search − Searches an element in a tree.</li>
+              <li>Insert − Inserts an element in a tree.</li>
+              <li>Pre-order Traversal − Traverses a tree in a pre-order 
+                                        manner.</li>
+              <li>In-order Traversal − Traverses a tree in an in-order 
+                                        manner.</li>
+              <li>Post-order Traversal − Traverses a tree in a post-order 
+                                         manner.</li>
+            </ul>
+
+            <h4>Node</h4>
+            <p>Define a node having some data, references to its left and right 
+               child nodes.</p>
+
+<pre>
+<code class="java">
+struct node {
+   int data;   
+   struct node *leftChild;
+   struct node *rightChild;
+};
+</code>
+</pre>
+
+            <h4>Search Operation</h4>
+            <p>Whenever an element is to be searched, start searching from the 
+               root node. Then if the data is less than the key value, search 
+               for the element in the left subtree. Otherwise, search for the 
+               element in the right subtree. Follow the same algorithm for 
+               each node.</p>
+
+ALGORITHM 
+<pre>
+<code class="java">
+struct node* search(int data){
+   struct node *current = root;
+   printf("Visiting elements: ");
+	
+   while(current->data != data){
+	
+      if(current != NULL) {
+         printf("%d ",current->data);
+			
+         //go to left tree
+         if(current->data > data){
+            current = current->leftChild;
+         }//else go to right tree
+         else {                
+            current = current->rightChild;
+         }
+			
+         //not found
+         if(current == NULL){
+            return NULL;
+         }
+      }			
+   }
+   return current;
+}
+</code>
+</pre>
+
+            <h4>Insert Operation</h4>
+            <p>Whenever an element is to be inserted, first locate its proper 
+               location. Start searching from the root node, then if the data 
+               is less than the key value, search for the empty location in the 
+               left subtree and insert the data. Otherwise, search for the empty 
+               location in the right subtree and insert the data.</p>
+
+ALGORITHM 
+<pre>
+<code class="java">
+void insert(int data) {
+   struct node *tempNode = 
+               (struct node*) malloc(sizeof(struct node));
+   struct node *current;
+   struct node *parent;
+
+   tempNode->data = data;
+   tempNode->leftChild = NULL;
+   tempNode->rightChild = NULL;
+
+   //if tree is empty
+   if(root == NULL) {
+      root = tempNode;
+   } else {
+      current = root;
+      parent = NULL;
+
+      while(1) {                
+         parent = current;
+			
+         //go to left of the tree
+         if(data < parent->data) {
+            current = current->leftChild;                
+            //insert to the left
+				
+            if(current == NULL) {
+               parent->leftChild = tempNode;
+               return;
+            }
+         }//go to right of the tree
+         else {
+            current = current->rightChild;
+            
+            //insert to the right
+            if(current == NULL) {
+               parent->rightChild = tempNode;
+               return;
+            }
+         }
+      }            
+   }
+}        
+</code>
+</pre>
+
+            <h4>AVL Trees</h4>
+            <p>What if the input to binary search tree comes in a sorted 
+               (ascending or descending) manner?</p>
+               
+            <p>It is observed that BST's worst-case performance is closest to 
+               linear search algorithms, that is Ο(n). In real-time data, we 
+               cannot predict data pattern and their frequencies. So, a need 
+               arises to balance out the existing BST.</p>
+
+            <p>Named after their inventor Adelson, Velski &amp; Landis, AVL 
+               trees are height balancing binary search tree. AVL tree checks 
+               the height of the left and the right sub-trees and assures that 
+               the difference is not more than 1. This difference is called the 
+               Balance Factor.</p>
+
+<pre>            
+<code>
+BalanceFactor = height(left-sutree) − height(right-sutree)
+</code>
+</pre>
+
+            <p>If the difference in the height of left and right sub-trees is 
+               more than 1, the tree is balanced using some rotation 
+               techniques.</p>
+
+            <h4>AVL Rotations</h4>
+            <p>To balance itself, an AVL tree may perform the following four 
+               kinds of rotations:</p>
+
+            <ul>            
+              <li>Left rotation</li>
+              <li>Right rotation</li>
+              <li>Left-Right rotation</li>
+              <li>Right-Left rotation</li>
+            </ul>
+            
+            
+            <p>The first two rotations are single rotations and the next two 
+               rotations are double rotations. To have an unbalanced tree, we 
+               at least need a tree of height 2. With this simple tree, let's 
+               understand them one by one.</p>
+
+            <h4>Left Rotation</h4>
+            <p>If a tree becomes unbalanced, when a node is inserted into the 
+               right subtree of the right subtree, then we perform a single 
+               left rotation.</p>
+ 
+            <h4>Right Rotation</h4>
+            <p>AVL tree may become unbalanced, if a node is inserted in the 
+               left subtree of the left subtree. The tree then needs a right 
+               rotation.</p>
+ 
+            <h4>Left-Right Rotation</h4>
+            <p>Double rotations are slightly complex version of already 
+               explained versions of rotations. To understand them better, we 
+               should take note of each action performed while rotation. Let's 
+               first check how to perform Left-Right rotation. A left-right 
+               rotation is a combination of left rotation followed by right 
+               rotation.</p>
+
+<pre>
+<code class="plaintext nohighlight">            
+State                   Action
+--------------------------------------------------------------
+Right Rotation          A node has been inserted into the right 
+                        subtree of the left subtree. This makes 
+                        C an unbalanced node. These scenarios 
+                        cause AVL tree to perform left-right 
+                        rotation.
+Left Rotation           We first perform the left rotation on 
+                        the left subtree of C. This makes A, 
+                        the left subtree of B.
+Left Rotation           Node C is still unbalanced, however now,
+                        it is because of the left-subtree of the
+                        left-subtree.
+Right Rotation          We shall now right-rotate the tree, 
+                        making B the new root node of this 
+                        subtree. C now becomes the right 
+                        subtree of its own left subtree.
+Balanced Avl Tree	The tree is now balanced.
+</code>
+</pre>
+
+            <h4>Right-Left Rotation</h4>
+            <p>The second type of double rotation is Right-Left Rotation. It is 
+               a combination of right rotation followed by left rotation.</p>
+
+<pre>
+<code class="plaintext nohighlight">
+State                           Action
+--------------------------------------------------------------
+Left Subtree of Right Subtree	A node has been inserted into 
+                                the left subtree of the right 
+                                subtree. This makes A, an 
+                                unbalanced node with balance 
+                                factor 2.
+Subtree Right Rotation          First, we perform the right 
+                                rotation along C node, making 
+                                C the right subtree of its own 
+                                left subtree B. Now, B becomes 
+                                the right subtree of A.
+Right Unbalanced Tree           Node A is still unbalanced 
+                                because of the right subtree 
+                                of its right subtree and 
+                                requires a left rotation.
+Left Rotation                   A left rotation is performed 
+                                by making B the new root node 
+                                of the subtree. A becomes the 
+                                left subtree of its right 
+                                subtree B.
+Balanced AVL Tree               The tree is now balanced.
+</code>
+</pre>
+
+            <h4>Spanning Tree</h4>
+            <p>A spanning tree is a subset of Graph G, which has all the 
+               vertices covered with minimum possible number of edges. Hence, 
+               a spanning tree does not have cycles and it cannot be 
+               disconnected.</p>
+
+            <p>By this definition, we can draw a conclusion that every connected
+               and undirected Graph G has at least one spanning tree. A 
+               disconnected graph does not have any spanning tree, as it cannot 
+               be spanned to all its vertices.</p>
+
+            <p>We found three spanning trees off one complete graph. A complete 
+                undirected graph can have maximum n<sup>n-2</sup> number of 
+                spanning trees, where n is the number of nodes. In the above 
+                addressed example, 3<sup>3−2</sup> = 3 spanning trees are 
+                possible.</p>
+
+            <h4>General Properties of Spanning Tree</h4>
+            <p>We now understand that one graph can have more than one spanning 
+               tree. Following are a few properties of the spanning tree 
+               connected to graph G:</p>
+            
+            <ul>
+              <li>A connected graph G can have more than one spanning tree.</li>
+              <li>All possible spanning trees of graph G, have the same number 
+                  of edges and vertices.</li>
+              <li>The spanning tree does not have any cycle (loops).</li>
+              <li>Removing one edge from the spanning tree will make the graph 
+                  disconnected, i.e. the spanning tree is minimally 
+                  connected.</li>
+              <li>Adding one edge to the spanning tree will create a circuit or 
+                  loop, i.e. the spanning tree is maximally acyclic.</li>
+            </ul>
+
+            <h4>Mathematical Properties of Spanning Tree</h4>
+            
+            <ul>
+              <li>Spanning tree has n-1 edges, where n is the number of nodes 
+                  (vertices).</li>
+              <li>From a complete graph, by removing maximum e - n + 1 edges, 
+                  we can construct a spanning tree.</li>
+              <li>A complete graph can have maximum n<sup>n-2</sup> number of 
+                  spanning trees.</li>
+            </ul>
+            
+            <p>Thus, we can conclude that spanning trees are a subset of 
+               connected Graph G and disconnected graphs do not have spanning 
+               tree.</p>
+
+            <h4>Application of Spanning Tree</h4>
+            <p>Spanning tree is basically used to find a minimum path to connect
+               all nodes in a graph. Common application of spanning trees 
+               are:</p>
+
+            <ul>    
+              <li>Civil Network Planning</li>
+              <li>Computer Network Routing Protocol</li>
+              <li>Cluster Analysis</li>
+            </ul>
+
+            <p>Let us understand this through a small example. Consider, city 
+               network as a huge graph and now plans to deploy telephone lines 
+               in such a way that in minimum lines we can connect to all city 
+               nodes. This is where the spanning tree comes into picture.</p>
+
+            <h4>Minimum Spanning Tree (MST)</h4>
+            <p>In a weighted graph, a minimum spanning tree is a spanning tree 
+               that has minimum weight than all other spanning trees of the 
+               same graph. In real-world situations, this weight can be measured
+               as distance, congestion, traffic load or any arbitrary value 
+               denoted to the edges.</p>
+
+            <h4>Minimum Spanning-Tree Algorithm</h4>
+            <p>We shall learn about two most important spanning tree algorithms 
+               here:</p>
+
+            <ul>
+              <li>Kruskal's Algorithm</li>
+              <li>Prim's Algorithm</li>
+            </ul>
+
+            <p>Both are greedy algorithms.</p>
+
+            <h4>Heaps</h4>
+            <p>Heap is a special case of balanced binary tree data structure 
+               where the root-node key is compared with its children and 
+               arranged accordingly. If &alpha; has child node &beta; then:</p>
+
+<pre>
+<code>            
+key(α) ≥ key(β)
+</code>
+</pre>
+
+            <p>As the value of parent is greater than that of child, this 
+               property generates Max Heap. Based on this criteria, a heap can 
+               be of two types:</p>
+
+<pre>
+<code>            
+For Input → 35 33 42 10 14 19 27 44 26 31
+</code>
+</pre>
+
+            <ul>
+              <li>Min-Heap − Where the value of the root node is less than or 
+                             equal to either of its children.</li>
+              <li>Max-Heap − Where the value of the root node is greater than 
+                             or equal to either of its children.</li>
+            </ul>
+
+            <p>Both trees are constructed using the same input and order of 
+               arrival.</p>
+
+            <h4>Max Heap Construction Algorithm</h4>
+            <p>We shall use the same example to demonstrate how a Max Heap is 
+               created. The procedure to create Min Heap is similar but we go 
+               for min values instead of max values.</p>
+
+            <p>We are going to derive an algorithm for max heap by inserting 
+               one element at a time. At any point of time, heap must maintain 
+               its property. While insertion, we also assume that we are 
+               inserting a node in an already heapified tree.</p>
+
+<pre>
+<code>            
+Step 1 − Create a new node at the end of heap
+Step 2 − Assign new value to the node
+Step 3 − Compare the value of this child node with its parent
+Step 4 − If value of parent is less than child then swap them
+Step 5 − Repeat step 3 & 4 until Heap property holds
+</code>
+</pre>
+
+            <p>Note − In Min Heap construction algorithm, we expect the value 
+                      of the parent node to be less than that of the child 
+                      node.</p>
+
+            <p>Let's understand Max Heap construction by an animated 
+               illustration. We consider the same input sample that we 
+               used earlier.</p>
+
+            <h4>Max Heap Deletion Algorithm</h4>
+            <p>Let us derive an algorithm to delete from max heap. Deletion in 
+               Max (or Min) Heap always happens at the root to remove the 
+               Maximum (or minimum) value.</p>
+
+<pre>
+<code>
+Step 1 − Remove root node
+Step 2 − Move the last element of last level to root
+Step 3 − Compare the value of this child node with its parent
+Step 4 − If value of parent is less than child then swap them
+Step 5 − Repeat step 3 & 4 until Heap property holds
+</code>
+</pre>
+
+          </div>    
+        </div>
+        
+<hr/>
+
+        <h3><a name="take-five" class="anchor" href="#take-five">
+          <span class="header-link"></span></a>
+          Review</h3>
+          
+        <p>Alright, let's recap what I've just learned:</p>
+    
+        <ul>
+            <li>A tree is a widely used abstract data type (ADT)—or data 
+                structure implementing this ADT—that simulates a hierarchical 
+                tree structure, with a root value and subtrees of children with 
+                a parent node, represented as a set of linked nodes.</li>          
+        </ul>
+        
+    <p>You can read more at: 
+        <a href="https://go.java/" target="_blank">
+           <small>https://go.java</small></a></p>
+
+      <!-- pagination -->
+       <a role="button" class="btn btn-primary float-left"  
+               href="../index.html">
+            &larr; PREVIOUS: Algorithms</a>
+          
+      <a role="button" class="btn btn-primary float-right" 
+              href="../../uml/index.html">
+            NEXT: UML &rarr;</a><br/><br/>                       
+    </section>
+        
+    <!-- jQuery library -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+            crossorigin="anonymous"></script>        
+    <script src="../../../assets/javascripts/scale.fix.js"></script>
+  </body>
+</html>
+
+            
