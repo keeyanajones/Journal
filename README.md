@@ -19,15 +19,21 @@ See [The Opening Essay](https://keeyanajones.github.io/Journal/opening-essay)
     - [Lab : SMALLTALK](https://keeyanajones.github.io/Journal/labs/lab3.html)
     - [...View All Labs](https://keeyanajones.github.io/Journal/labs/index.html)
   + [REPORTS](https://keeyanajones.github.io/Journal/field-reports/index.html)
-    - [Latest Report : Social Media](https://keeyanajones.github.io/Journal/field-reports/report1.html)
-    - [Lab : Data Science](https://keeyanajones.github.io/Journal/field-reports/report2.html)
-    - [Lab : Game Development](https://keeyanajones.github.io/Journal/field-reports/report3.html)
+    - Latest Report : Social Media
+    - Lab : Data Science
+    - Lab : Game Development
     - [...View All Reports](https://keeyanajones.github.io/Journal/field-reports/index.html)
   + [EXPERIMENTS](https://keeyanajones.github.io/Journal/experiments/index.html)
     - [Latest Lab : Chatbots](https://keeyanajones.github.io/Journal/experiments/experiment1.html)
-    - [Lab : Features](https://keeyanajones.github.io/Journal/experiments/experiment2.html)
-    - [Lab : Emotes](https://keeyanajones.github.io/Journal/experiments/experiment3.html)
+    - Lab : Features
+    - Lab : Emotes
     - [...View All Experiments](https://keeyanajones.github.io/Journal/experiments/index.html)
+  + [BUSINESS](https://keeyanajones.github.io/Journal/business/index.html)
+    - Latest project : Services
+    - Project : Training
+    - Project : Studio
+    - [...View All Projects](https://keeyanajones.github.io/Journal/business/index.html)
+    
   + [APPENDIX](https://keeyanajones.github.io/Journal/appendix/index.html)
     - [UX/UI](https://keeyanajones.github.io/Journal/appendix-ux/index.html)
     - [Projects](https://keeyanajones.github.io/Journal/appendix-projects/index.html)
