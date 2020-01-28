@@ -1,6 +1,6 @@
 ## About My Code Journal
 
-[https://keeyanajones.github.io/Journal](https://keeyanajones.github.io/Journal)
+[https://keeyanajones.github.io/journal](https://keeyanajones.github.io/journal)
 
 This Github Repository is a series of essays of all types, finished and in progress about Software Engineering that cover Java SE Version 8, other languages, and typical sub-disciplines.
 
