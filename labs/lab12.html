@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Code Journal: Lab PHP</title>   
+    <!-- Latest compiled and minified CSS -->
+    <!-- Font Awesome 5.7.0 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+    crossorigin="anonymous">
+    <!-- Bootstrap 4.3.1 -->    
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">   
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>          
+
+    <!-- Custom Style Pygment and Icons -->
+    <link rel="stylesheet" href="../assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="../assets/stylesheets/pygment_trac.css">
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/gif">
+    <link rel="shortcut icon" href="../assets/images/favicon.png">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    </head>    
+
+  <body>
+    <div class="wrapper">               
+    <!-- Header -->         
+      <header>
+          <img src="../assets/images/pb_Image.png" class="img-fluid" alt="me"/>
+        <p class="view">A Code Journal for 
+            <span class="fab fa-git-square" aria-hidden="true"></span>
+                Hub Pages<br/>        
+                
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
+            <span class="fab fa-github"></span> 
+              View the Code Journal on GitHub</a></p>
+                      
+            <!-- Buttons -->                        
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#java" role="button">            
+                <span class="fab fa-java fa-2x"></span> 
+            </a>                   
+            
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#python" role="button">
+                <span class="fab fa-python fa-2x"></span> 
+            </a>                        
+
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#node" role="button">
+                <span class="fab fa-node fa-3x"></span> 
+            </a>                
+            
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#javascript" role="button">
+                <span class="fab fa-js fa-2x"></span> 
+            </a>                              
+
+            <br/><br/>
+            
+            <a href="https://github.com/keeyanajones/">
+            <small><span class="fab fa-github-alt"></span>                 
+            Repositories and latest Contribution Activity</small></a>                 
+              
+        <br/>
+        
+        <!-- Download, Clone, or Fork -->
+        <ul>    
+          <li><a href="https://github.com/keeyanajones/Journal/archive/master.zip">
+              <span class="fa fa-file-archive" aria-hidden="true"></span><br/>
+                  Download <br/> ZIP</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-clone" aria-hidden="true"></span><br/>
+                  Clone <br/> Desktop</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-code-branch" aria-hidden="true"></span><br/>
+                  Fork On <br/> GitHub</a></li>
+        </ul>                                 
+      </header>
+    <!-- ./header --> 
+    </div>          
+      
+    <section>
+        <h2><span class="fas fa-flask" aria-hidden="true"></span>
+              <a name="lab12" class="anchor" href="#lab12">
+              <span class="header-link"></span></a>
+                Lab: PHP </h2>                  
+     
+        <p><sup><span class="fa fa-calendar"></span>
+                Last updated on March 30th, 2020</sup></p>
+                                                                     
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <span class="fa fa-bookmark"></span> 
+                <a href="../index.html">Home</a></li>      
+            <li class="breadcrumb-item">
+                <span class="fa fa-bookmark"></span> 
+                <a href="../learning-plan/index.html">         
+                    Learning Plan</a></li>
+            <li class="breadcrumb-item">
+                <span class="fa fa-bookmark"></span> 
+                <a href="../labs/index.html">        
+                    Labs</a></li>    
+            <li class="breadcrumb-item active" aria-current="php">
+                <span class="fa fa-bookmark"></span>         
+                PHP</li>
+          </ol>
+        </nav>                  
+                
+        <a name="lab12" id="lab12"></a>            
+        <p>This section includes information about PHP labs.</p>
+
+         <h4>EXERCISES</h4>
+
+        <ul>
+            <li>Exercise 0 : PHP </li>
+            <li>Exercise 1 : Using PHP</li>
+        </ul>
+        
+        <p>PHP: Hypertext Preprocessor is a popular general-purpose scripting 
+         language that is especially suited to web development. 
+         PHP code is usually processed on a web server by a PHP interpreter 
+         implemented as a module, a daemon or as a Common Gateway Interface 
+         (CGI) executable.</p> 
+                  
+        <p>PHP can be used for many programming tasks outside of the web context, 
+         such as standalone graphical applications and robotic drone control. 
+         Arbitrary PHP code can also be interpreted and executed via command 
+         line interface (CLI).</p>
+         
+        <p>The standard PHP interpreter, powered by the Zend Engine, is free software 
+         released under the PHP License. PHP has been widely ported and can be 
+         deployed on most web servers on almost every operating system and 
+         platform, free of charge.
+        </p>
+            
+        <h4>REQUIRED RESOURCES</h4>
+        <p>You will need a text editor, preferably with syntax highlighting. 
+           A few options is Visual Studio, VSCode, Netbeans, Atom, Sublime Text, 
+           available on OS X, 
+           Windows and Linux. You will need a web browser that includes a 
+           debugger such as Chrome or Firefox or Edge. Apple disabled the Safari
+           debugger by default, so read instructions to enable it first.</p>
+
+        <h4>MATERIALS</h4>
+        <p>List everything needed to complete your experiment. <br/>
+            
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://www.php.net/" target="_blank"> 
+              https://www.php.net</a><br/>
+            
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://www.php.net/manual/en/getting-started.php" target="_blank"> 
+              https://www.php.net/getting-started.php</a><br/>
+			  
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://www.php.net/manual/en/install.php" target="_blank"> 
+              https://www.php.net/manual/en/install.php</a><br/>
+            
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://www.w3schools.com/php/" target="_blank"> 
+              https://www.w3schools.com/php</a><br/>            
+         </p>			  
+
+        <p>Please check the 
+            <a href="material.md" target="_blank">
+              materials.md</a> file.</p>  
+
+        <p>Download the files required 
+            <a href="lab1nodeRequired.zip" target="_blank">here</a> 
+            and the complete solution for this lab 
+            <a href="lab1nodeSolution.zip" target="_blank">here</a>.</p>
+
+
+         <h4>VIDEOS</h4>
+
+        <p>Helpful videos selected by me:</p>
+        
+        <span class="fas fa-external-link-alt"></span> 
+         PHP
+        
+        <ul>            
+          <li><a href="https://www.youtube.com/watch?v=OK_JCtrrv-c" target="_blank"> 
+            https://www.youtube.com/watch?v=OK_JCtrrv-c</a></li>
+        
+          <li><a href="https://www.youtube.com/watch?v=NihZYkNpslE" target="_blank"> 
+            https://www.youtube.com/watch?v=NihZYkNpslE</a></li>
+        </ul>
+             
+        <h4>OVERVIEW</h4> 
+        <p>In order to develop and run PHP Web pages three vital components 
+          need to be installed on your computer system:</p>
+
+        <ul>  
+          <li><strong><em>Server − </em></strong> 
+          PHP will work with virtually all Web Server software, including 
+          Microsoft's Internet Information Server (IIS) but then most often 
+          used is freely available Apache Server. Download Apache for free 
+          here − https://httpd.apache.org/download.cgi</li>
+      
+          <li><strong><em>Database − </em></strong>
+          PHP will work with virtually all database software, including 
+          Oracle and Sybase but most commonly used is freely available MySQL 
+          database. Download MySQL for free 
+          here − https://www.mysql.com/downloads</li>
+      
+          <li><strong><em>PHP Parser − </em></strong>
+          In order to process PHP script instructions a parser must be 
+          installed to generate HTML output that can be sent to the Web 
+          Browser. This tutorial will guide you how to install PHP parser 
+          on your computer.</li>
+        </ul>
+
+        <h4>Exercise 0: PHP</h4>
+      
+      <p>Before you proceed it is important to make sure that you have proper 
+        environment setup on your machine to develop your web programs using PHP.
+        Type the following address into your browser's address box.</p>
+
+<pre><code>      
+http://127.0.0.1/info.php
+</code></pre>
+
+      <p>If this displays a page showing your PHP installation related information 
+        then it means you have PHP and Webserver installed properly. Otherwise you 
+        have to follow given procedure to install PHP on your computer.
+        This section will guide you to install and configure PHP over the following 
+        four platforms:</p>
+
+      <ul>
+          <li>PHP Installation on Linux or Unix with Apache</li>
+          <li>PHP Installation on Mac OS X with Apache</li>
+          <li>PHP Installation on Windows NT/2000/XP with IIS</li>
+          <li>PHP Installation on Windows NT/2000/XP with Apache</li>
+      </ul>
+
+        <h5>Apache Configuration</h5>
+      
+        <p>If you are using Apache as a Web Server then this section will guide you 
+          to edit Apache Configuration Files.     
+          Just Check it here − PHP Configuration in Apache Server</p>
+      
+      <h5>PHP.INI File Configuration</h5>
+      
+      <p>The PHP configuration file, php.ini, is the final and most immediate way to affect 
+      PHP's functionality. Just Check it here − PHP.INI File Configuration</p>
+      
+      <h5>Windows IIS Configuration</h5>
+      
+      <p>To configure IIS on your Windows machine you can refer your IIS Reference Manual 
+        shipped along with IIS.</p>
+
+        <h5>INSTRUCTIONS</h5>
+        <p>To get a feel for PHP, first start with simple PHP scripts. Since 
+          "Hello, World!" is an essential example, first we will create a 
+          friendly little "Hello, World!" script. As mentioned earlier, PHP 
+          is embedded in HTML. That means that in amongst your normal HTML 
+          (or XHTML if you're cutting-edge) you'll have PHP statements like 
+          this:</p>
+          
+<pre><code>          
+&lt;html&gt;    
+  &lt;head&gt;
+    &lt;title&gt;Hello World&lt;/title&gt;
+  &lt;/head&gt;    
+  &lt;body&gt;
+    &lt;?php echo "Hello, World!";?&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+          <p>It will produce following result:</p>
+          
+<pre><code class="console">                    
+Hello, World!
+</code></pre>
+
+          <p>If you examine the HTML output of the above example, you'll notice 
+            that the PHP code is not present in the file sent from the server to 
+            your Web browser. All of the PHP present in the Web page is processed 
+            and stripped from the page; the only thing returned to the client from 
+            the Web server is pure HTML output.
+          
+          All PHP code must be included inside one of the three special markup 
+          tags ATE are recognized by the PHP Parser.</p>
+
+<pre><code>                    
+&lt;?php PHP code goes here ?&gt;
+&lt;? PHP code goes here ?&gt;
+&lt;script language = "php"&gt; PHP code goes here &lt;/script&gt;
+</code></pre>         
+
+        <p>A most common tag is the <?php...?></p>
+        
+        <h4>Exercise 1: Using PHP</h4>
+
+        <p>A PHP script is executed on the server, and the plain HTML result 
+          is sent back to the browser. A PHP script can be placed anywhere 
+          in the document. A PHP script starts with &lt;?php and ends with ?&gt;:
+        </p>
+
+<pre><code>
+&lt;?php
+// PHP code goes here
+?&gt;
+</code></pre>
+
+          <p>The default file extension for PHP files is ".php".
+          A PHP file normally contains HTML tags, and some PHP scripting code.
+          Below, we have an example of a simple PHP file, with a PHP script 
+          that uses a built-in PHP function "echo" to output the text 
+          "Hello World!" on a web page:</p>
+
+<pre><code>                    
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;h1&gt;My first PHP page&lt;/h1&gt;
+  &lt;?php
+echo "Hello World!";
+?&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+
+          <sup>Note: PHP statements end with a semicolon (;) and are Case Sensitivity.</sup>
+          
+          <p>In PHP, NO keywords (e.g. if, else, while, echo, etc.), classes, functions, 
+          and user-defined functions are case-sensitive.
+          In the example below, all three echo statements below are equal and legal:</p>
+
+<pre><code>          
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;body&gt;
+
+    &lt;?php
+ECHO "Hello World!&lt;br&gt;";
+echo "Hello World!&lt;br&gt;";
+EcHo "Hello World!&lt;br&gt;";
+?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+
+          <sup>Note: However; all variable names are case-sensitive!</sup>
+          
+          <p>Look at the example below; only the first statement will 
+          display the value of the $color variable! This is because 
+          $color, $COLOR, and $coLOR are treated as three different 
+          variables:</p>
+
+<pre><code>          
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;?php
+$color = "red";
+echo "My car is " . $color . "&lt;br&gt;";
+echo "My house is " . $COLOR . "&lt;br&gt;";
+echo "My boat is " . $coLOR . "&lt;br&gt;";
+?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt; 
+</code></pre>
+
+
+        <!-- pagination -->
+        <a role="button" class="btn btn-primary float-left" 
+        href="../labs/index.html">
+        &larr; PREVIOUS: Labs</a>
+
+        <a role="button" class="btn btn-primary float-right" 
+        href="../field-reports/index.html">
+        NEXT: Field Reports &rarr;</a><br/><br/>              
+        </section>      
+        
+    <!-- jQuery library -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+            crossorigin="anonymous"></script>       
+        <script src="../assets/javascripts/scale.fix.js"></script>   
+    </body>
+</html>

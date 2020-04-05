@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Code Journal: Experiment Atom Syntax and UI Theme</title>   
+    <title>Code Journal:  Overlay and Alerts</title>   
     <!-- Latest compiled and minified CSS -->
     <!-- Font Awesome 5.7.0 -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
@@ -53,8 +53,8 @@
                 <span class="fab fa-python fa-2x"></span> 
             </a>                        
 
-           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#r" role="button">
-                <span class="fab fa-r-project  fa-2x"></span> 
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#node" role="button">
+                <span class="fab fa-node fa-3x"></span> 
             </a>                
             
            <a class="btn btn-md btn-default" href="../appendix-projects/index.html#javascript" role="button">
@@ -87,12 +87,12 @@
       
     <section>
         <h2><span class="fas fa-flask" aria-hidden="true"></span>
-              <a name="atom" class="anchor" href="#atom">
+              <a name="overlay" class="anchor" href="#overlay">
               <span class="header-link"></span></a>
-                Atom Syntax and UI Theme</h2>                  
+              Overlay and Alerts</h2>                  
      
         <p><sup><span class="fa fa-calendar"></span>
-                Last updated on August 30th, 2019</sup></p>
+                Last updated on March 15th, 2020</sup></p>
                                                                      
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
@@ -107,32 +107,83 @@
         <span class="fa fa-bookmark"></span> 
         <a href="index.html">        
             Experiments</a></li>    
-    <li class="breadcrumb-item active" aria-current="atom">
+    <li class="breadcrumb-item active" aria-current="overlay">
         <span class="fa fa-bookmark"></span>         
-            Atom Syntax and UI Theme</li>
+          Overlay and Alerts</li>
   </ol>
 </nav>                  
                 
-        <a name="atom" id="atom"></a>            
-        <p>This section includes information about Atom Syntax and UI Theme 
+        <a name="overlays" id="overlays"></a>            
+        <p>This section includes information about Overlay and Alerts
             experiments.</p>
                    
-        <h2>atom-color-ui</h2>
-        A dynamic UI theme for Atom that follows Color Theory 
-        Design Guidelines.<br/> 
-                   
-        <sub>#ui #theme #color #md #dynamic </sub><br/><br/>
+        <h2>twitch-video-overlays</h2>
 
-        <em><strong>atom-color</strong></em><br/>
-               
-        <sub><strong>Downloads:</strong> 1,643,85 <br/>
+        An overlay can be a border around your webcam, or it can be a full 
+        image thing taking up the whole frame. It's basically a graphic 
+        (normally a transparent PNG file) that sits above your game capture 
+        window, and your webcam.<br/> 
+                   
+        <sub>#ui #stream #video #overlay #dynamic </sub><br/><br/>
+
+        <h3>Scenes</h3>
+<small>
+        <em><strong>starting-soon</strong></em><br/>
+        <em><strong>be-right-back</strong></em><br/>
+        <em><strong>live-coding</strong></em><br/>                       
+        <em><strong>gaming</strong></em><br/>
+        <em><strong>offline</strong></em><br/>                       
+        <em><strong>ending-soon</strong></em><br/>
+        <em><strong>watching-video</strong></em><br/>
+
+        <em><strong>mixer</strong></em><br/>
+        <em><strong>twitch</strong></em><br/>                       
+        <em><strong>youtube</strong></em><br/>
+        <em><strong>spotify</strong></em><br/>
+        <em><strong>instagram</strong></em><br/>                       
+        <em><strong>twitter</strong></em><br/>
+        <em><strong>discord</strong></em><br/>
+        <em><strong>facebook</strong></em><br/>
+
+        <em><strong>thumbnail</strong></em><br/>
+        <em><strong>start</strong></em><br/>
+        <em><strong>end</strong></em><br/>
+        <em><strong>chatting</strong></em><br/>                       
+        <em><strong>outline</strong></em><br/>
+        <em><strong>beauty-shot</strong></em><br/>
+        <em><strong>game-details</strong></em><br/>
+        <em><strong>art</strong></em><br/>
+        <em><strong>business</strong></em><br/>                       
+        <em><strong>think-tank</strong></em><br/>        
+</small>
+        <sub><strong>Downloads:</strong> 1,643,850 <br/>
              <strong>Stared:</strong> 1608</sub><br/><br/>
 
-        <p>Repo - Bugs -  Versions - License </p>
-        
-        <p>A dynamic UI theme for Atom that follows Color Theory Design 
-           Guidelines. Best with Atom Color Syntax. Inspired by Keeyana.</p>
+        <p><a href="https://github.com/keeyanajones/twitch-video-overlays"
+             target="_blank">          
+          Repoitory</a> - 
+          
+          <a href="https://github.com/keeyanajones/twitch-video-overlays/issues"
+             target="_blank">
+          Bugs</a> -  
 
+          <a href="https://github.com/keeyanajones/twitch-video-overlays/wiki"
+             target="_blank">
+          Versions</a> -
+
+          <a href="#license"> License</a> </p>
+
+          <br/>
+                   
+          <p><small><sup><span class="far fa-eye"></span><span class="far fa-eye"></span> 
+          </sup> See <a href="#widgets">
+           widgets</a></small></p>
+        
+          <p><small><sup><span class="far fa-eye"></span><span class="far fa-eye"></span> 
+          </sup> See <a href="#alerts">
+           alerts</a></small></p> 
+          
+        
         <h3>Installation</h3>
         <p>Fire up a console and type:</p>
     
@@ -143,10 +194,18 @@ apm install atom-color-ui
         <p>Or, inside Atom's settings select Install and then search for 
            this package.</p>
 
+
+
+
+
         <h3>Configuration</h3>
         <p>Atom Color UI supports different accent colors. To change it, go to Settings > 
         Themes and click the cog icon next to the theme selector.
         You'll find the color picker there.</p>
+
+
+
+
 
         <h3>Screenshots</h3>
         <p>Here's the obligatory screenshot. With Atom Color Syntax</p>
@@ -167,6 +226,8 @@ apm install atom-color-syntax-light
 apm install atom-color-syntax-dark
 </code></pre>
 
+
+
         <h3>Contributing</h3>
         <p>Please check the CONTRIBUTING.md file.</p>
 
@@ -176,7 +237,9 @@ apm install atom-color-syntax-dark
            ICO converted by Keeyana Jones.
 
         <h3>License</h3>
-        <p>Atom Color UI is licensed under MIT. View the license file here</p>
+        <a name="license" class="anchor" href="#license"></a>
+        <p>Twitch Video Overlays is licensed under MIT. View the 
+          license file here</p>
            
 <hr/>
       <!-- pagination -->

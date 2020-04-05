@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Code Journal: Lab Kotlin</title>   
+    <!-- Latest compiled and minified CSS -->
+    <!-- Font Awesome 5.7.0 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+    crossorigin="anonymous">
+    <!-- Bootstrap 4.3.1 -->    
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">   
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>          
+
+    <!-- Custom Style Pygment and Icons -->
+    <link rel="stylesheet" href="../assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="../assets/stylesheets/pygment_trac.css">
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/gif">
+    <link rel="shortcut icon" href="../assets/images/favicon.png">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    </head>    
+
+  <body>
+    <div class="wrapper">               
+    <!-- Header -->         
+      <header>
+          <img src="../assets/images/pb_Image.png" class="img-fluid" alt="me"/>
+        <p class="view">A Code Journal for 
+            <span class="fab fa-git-square" aria-hidden="true"></span>
+                Hub Pages<br/>        
+                
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
+            <span class="fab fa-github"></span> 
+              View the Code Journal on GitHub</a></p>
+                      
+            <!-- Buttons -->                        
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#java" role="button">            
+                <span class="fab fa-java fa-2x"></span> 
+            </a>                   
+            
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#python" role="button">
+                <span class="fab fa-python fa-2x"></span> 
+            </a>                        
+
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#node" role="button">
+                <span class="fab fa-node fa-3x"></span> 
+            </a>                
+            
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#javascript" role="button">
+                <span class="fab fa-js fa-2x"></span> 
+            </a>                              
+
+            <br/><br/>
+            
+            <a href="https://github.com/keeyanajones/">
+            <small><span class="fab fa-github-alt"></span>                 
+            Repositories and latest Contribution Activity</small></a>                 
+              
+        <br/>
+        
+        <!-- Download, Clone, or Fork -->
+        <ul>    
+          <li><a href="https://github.com/keeyanajones/Journal/archive/master.zip">
+              <span class="fa fa-file-archive" aria-hidden="true"></span><br/>
+                  Download <br/> ZIP</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-clone" aria-hidden="true"></span><br/>
+                  Clone <br/> Desktop</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-code-branch" aria-hidden="true"></span><br/>
+                  Fork On <br/> GitHub</a></li>
+        </ul>                                 
+      </header>
+    <!-- ./header --> 
+    </div>          
+      
+    <section>
+        <h2><span class="fas fa-flask" aria-hidden="true"></span>
+              <a name="lab8" class="anchor" href="#lab8">
+              <span class="header-link"></span></a>
+                Lab: Kotlin </h2>                  
+     
+        <p><sup><span class="fa fa-calendar"></span>
+                Last updated on March 17th, 2020</sup></p>
+                                                                     
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <span class="fa fa-bookmark"></span> 
+                <a href="../index.html">Home</a></li>      
+            <li class="breadcrumb-item">
+                <span class="fa fa-bookmark"></span> 
+                <a href="../learning-plan/index.html">         
+                    Learning Plan</a></li>
+            <li class="breadcrumb-item">
+                <span class="fa fa-bookmark"></span> 
+                <a href="../labs/index.html">        
+                    Labs</a></li>    
+            <li class="breadcrumb-item active" aria-current="kotlin">
+                <span class="fa fa-bookmark"></span>         
+               Kotlin</li>
+          </ol>
+        </nav>                  
+                
+        <a name="lab8" id="lab8"></a>            
+        <p>This section includes information about Kotlin labs.</p>
+
+        <h3>EXERCISES</h3>
+
+        <ul>
+            <li>Exercise 0 : Kotlin </li>
+            <li>Exercise 1 : for Web Development</li>
+            <li>Exercise 2 : with Javascript</li>            
+        </ul>
+        
+        <p>Kotlin relaxes Java's restriction of allowing static methods and 
+           variables to exist only within a class body. Static objects and 
+           functions can be defined at the top level of the package without 
+           needing a redundant class level. For compatibility with Java, Kotlin 
+           provides a JvmName annotation which specifies a class name used when 
+           the package is viewed from a Java project.</p> 
+           
+<pre><code class="kotlin">
+@file:JvmName("JavaClassName").            
+</code></pre> 
+            
+        <h4>REQUIRED RESOURCES</h4>
+        <p>You will need a text editor, preferably with syntax highlighting. 
+           There are a few options for example, Android Studio, Eclipse, and VSCode 
+           but I highly recommend IntelliJ IDEA version 15
+           or later because Kotlin is bundled with it. 
+           
+           In addition, because the focus 'here' is 
+           web development and javascript you will need a web browser that includes a 
+           debugger such as Chrome, Firefox or Edge. Apple disabled the Safari
+           debugger by default, so read instructions to enable it first.</p>
+
+        <h4>MATERIALS</h4>
+        <p>List everything needed to complete your experiment. <br/>
+            
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://kotlinlang.org/" target="_blank"> 
+               https://kotlinlang.org/</a><br/>
+            
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://kotlinlang.org/docs/reference/js-overview.html" target="_blank"> 
+               https://kotlinlang.org/docs/reference/js-overview.html</a><br/>
+			  
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://kotlinlang.org/docs/tutorials/javascript/kotlin-to-javascript/kotlin-to-javascript.html" target="_blank"> 
+               https://kotlinlang.org/docs/tutorials/kotlin-to-javascript.html</a><br/>
+            
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://developer.android.com/kotlin" target="_blank"> 
+               https://developer.android.com/kotlin</a><br/>            
+         </p>			  
+
+        <p>Please check the 
+            <a href="material.md" target="_blank">
+              materials.md</a> file.</p>  
+
+        <p>Download the files required 
+            <a href="lab1nodeRequired.zip" target="_blank">here</a> 
+            and the complete solution for this lab 
+            <a href="lab1nodeSolution.zip" target="_blank">here</a>.</p>
+
+        <h4>VIDEOS</h4>
+
+        <p>Helpful videos selected by me:</p>
+        
+        <span class="fas fa-external-link-alt"></span> 
+        Kotlin
+        
+        <ul>            
+          <li><a href="https://www.youtube.com/watch?v=F9UC9DY-vIU" target="_blank"> 
+            https://www.youtube.com/watch?v=F9UC9DY-vIU</a></li>
+        
+          <li><a href="https://www.youtube.com/watch?v=AeC4G-H-MQA" target="_blank"> 
+            https://www.youtube.com/watch?v=AeC4G-H-MQA</a></li>
+        </ul>
+                
+        <h4>OVERVIEW</h4> 
+        <p>Kotlin is a cross-platform, statically typed, general-purpose 
+           programming language with type inference. Kotlin is designed to 
+           interoperate fully with Java, and the JVM version of its standard 
+           library depends on the Java Class Library, but type inference allows 
+           its syntax to be more concise</p>
+
+        <h4>Exercise 0: Kotlin</h4>
+
+        <p>Kotlin is bundled with IntelliJ IDEA starting from version 15.<br/>
+
+          You can download the free Community Edition (or full-fledged Ultimate Edition) 
+          from the JetBrains website.<br/>
+          
+          As an alternative to using IntelliJ IDEA, you can compile and execute Kotlin 
+          applications using the command line compiler. For details, see Working with 
+          the Command Line Compiler.<br/>
+          
+          If you are new to the JVM and Java, check out the JVM Minimal Survival Guide. 
+          If you are new to IntelliJ IDEA, check out the The IntelliJ IDEA Minimal Survival Guide.
+        </p>  
+
+        <h5>INSTRUCTIONS</h5>
+        <p>Assuming you’ve already installed IntelliJ IDEA, create a directory to hold 
+           your application, and make that your working directory.</p>
+
+        <ol>   
+          <li>Create a new Project from File | New. Select the Kotlin | JVM | IDEA project type.</li>
+       
+          <li>Give your project a name and select an SDK version for it.<br/>            
+           Now you have the new project created with the default folder structure.</li>
+                   
+          <li>Create a new Kotlin file under the source folder. It can be named anything.</li> 
+             
+          <li>Once the file is created, add the main function which is the entry point to a Kotlin 
+            application. IntelliJ IDEA offers a template to do this quickly. Just type main and 
+            press tab.</li>
+                    
+          <li>Add a line of code to print out 'Hello, World!'.</li>
+
+<pre><code class="kotlin">
+fun main() {
+  println("Hello World!")
+}
+</code></pre>
+    
+             
+          <li>Now the application is ready to run. The easiest way is to 
+            click the green Run icon in the gutter and select Run 'YourFileKt'.
+            If everything went well, you'll see the result in the Run tool window.<br/>
+
+            Congratulations! You now have your first Kotlin application running.          
+          </li>
+      
+      </ol>
+      
+      <p>Please check the 
+        <a href="https://kotlinlang.org/docs/tutorials/getting-started.html" target="_blank">
+          https://kotlinlang.org</a> for more about getting started.</p>  
+
+
+
+           <h4>Exercise 1 : for web development</h4>
+
+           <p>Kotlin provides the ability to target JavaScript. It does so by 
+              transpiling Kotlin to JavaScript. The current implementation 
+              targets ECMAScript 5.1 but there are plans to eventually target 
+              ECMAScript 2015 as well.</p>
+
+           <p>When you choose the JavaScript target, any Kotlin code that is 
+              part of the project as well as the standard library that ships 
+              with Kotlin is transpiled to JavaScript. However, this excludes 
+              the JDK and any JVM or Java framework or library used. Any file 
+              that is not Kotlin will be ignored during compilation.</p>
+           
+           <p>The Kotlin compiler tries to comply with the following goals:</p>
+           
+           <ul>
+               <li>Provide output that is optimal in size</li>
+               <li>Provide output that is readable JavaScript</li>
+               <li>Provide interoperability with existing module systems</li>
+               <li>Provide the same functionality in the standard library whether 
+                   targeting JavaScript or the JVM (to the largest possible degree)</li>
+            </ul>
+               
+                
+           <h4>Exercise 2 : with javascript</h4>
+
+           <p>You may want to compile Kotlin to JavaScript in the following scenarios:</p>
+
+           <ul>
+              <li>Creating Kotlin code that targets client-side JavaScript</li>
+
+              <ul>
+                <li>Interacting with DOM elements. Kotlin provides a series of 
+                    statically typed interfaces to interact with the Document 
+                    Object Model, allowing creation and update of DOM elements.</li>
+                <li>Interacting with graphics such as WebGL. You can use Kotlin 
+                    to create graphical elements on a web page using WebGL.</li>
+              </ul>  
+
+              <li>Creating Kotlin code that targets server-side JavaScript</li>
+
+              <ul>    
+                <li>Working with server-side technology. You can use Kotlin to 
+                    interact with server-side JavaScript such as Node.js</li>
+              </ul>     
+           </ul>
+
+           <p>Kotlin can be used together with existing third-party libraries and 
+             frameworks, such as jQuery or React. To access third-party frameworks 
+             with a strongly-typed API, you can convert TypeScript definitions from 
+             the <a href="http://definitelytyped.org/" target="_blank">
+              Definitely Typed</a> type definitions repository to Kotlin using the 
+             <a href="https://github.com/kotlin/dukat" target="_blank">dukat</a>
+              tool. Alternatively, you can use the 
+             <a href="https://kotlinlang.org/docs/reference/dynamic-type.html" 
+                target="_blank">dynamic type</a> to access any 
+             framework without strong typing.</p>
+           
+           <p>JetBrains develops and maintains several tools specifically for the 
+             React community: 
+             <a href="https://github.com/JetBrains/kotlin-wrappers" target="_blank">
+              React bindings</a> as well as 
+             <a href="https://github.com/JetBrains/create-react-kotlin-app" 
+                target="_blank">Create React Kotlin App</a>. The 
+             latter helps you start building React apps with Kotlin with no build 
+             configuration.</p>
+           
+           <p>Kotlin is compatible with CommonJS, AMD and UMD, 
+             <a href="https://kotlinlang.org/docs/tutorials/javascript/working-with-modules/working-with-modules.html"
+                target="_blank">
+              making interaction with different</a> module systems straightforward.</p>
+
+              <p>Please check the 
+                <a href="https://kotlinlang.org/docs/reference/js-overview.html" target="_blank">
+                  https://kotlinlang.org</a> for more about javascript.</p>  
+        
+                  <p>Please check the 
+                    <a href="https://kotlinlang.org/docs/tutorials/javascript/kotlin-to-javascript/kotlin-to-javascript.html" 
+                       target="_blank">
+                      https://kotlinlang.org</a> for more about the Kotlin to JavaScript Tutorial.</p>  
+              
+                  
+
+
+
+        <!-- pagination -->
+        <a role="button" class="btn btn-primary float-left" 
+        href="../labs/index.html">
+        &larr; PREVIOUS: Labs</a>
+
+        <a role="button" class="btn btn-primary float-right" 
+        href="../field-reports/index.html">
+        NEXT: Field Reports &rarr;</a><br/><br/>              
+        </section>      
+        
+    <!-- jQuery library -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+            crossorigin="anonymous"></script>       
+        <script src="../assets/javascripts/scale.fix.js"></script>   
+    </body>
+</html>

@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Code Journal: Lab Go</title>   
+    <!-- Latest compiled and minified CSS -->
+    <!-- Font Awesome 5.7.0 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+    crossorigin="anonymous">
+    <!-- Bootstrap 4.3.1 -->    
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">   
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>          
+
+    <!-- Custom Style Pygment and Icons -->
+    <link rel="stylesheet" href="../assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="../assets/stylesheets/pygment_trac.css">
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/gif">
+    <link rel="shortcut icon" href="../assets/images/favicon.png">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    </head>    
+
+  <body>
+    <div class="wrapper">               
+    <!-- Header -->         
+      <header>
+          <img src="../assets/images/pb_Image.png" class="img-fluid" alt="me"/>
+        <p class="view">A Code Journal for 
+            <span class="fab fa-git-square" aria-hidden="true"></span>
+                Hub Pages<br/>        
+                
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
+            <span class="fab fa-github"></span> 
+              View the Code Journal on GitHub</a></p>
+                      
+            <!-- Buttons -->                        
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#java" role="button">            
+                <span class="fab fa-java fa-2x"></span> 
+            </a>                   
+            
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#python" role="button">
+                <span class="fab fa-python fa-2x"></span> 
+            </a>                        
+
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#node" role="button">
+                <span class="fab fa-node fa-3x"></span> 
+            </a>                
+            
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#javascript" role="button">
+                <span class="fab fa-js fa-2x"></span> 
+            </a>                              
+
+            <br/><br/>
+            
+            <a href="https://github.com/keeyanajones/">
+            <small><span class="fab fa-github-alt"></span>                 
+            Repositories and latest Contribution Activity</small></a>                 
+              
+        <br/>
+        
+        <!-- Download, Clone, or Fork -->
+        <ul>    
+          <li><a href="https://github.com/keeyanajones/Journal/archive/master.zip">
+              <span class="fa fa-file-archive" aria-hidden="true"></span><br/>
+                  Download <br/> ZIP</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-clone" aria-hidden="true"></span><br/>
+                  Clone <br/> Desktop</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-code-branch" aria-hidden="true"></span><br/>
+                  Fork On <br/> GitHub</a></li>
+        </ul>                                 
+      </header>
+    <!-- ./header --> 
+    </div>          
+      
+    <section>
+        <h2><span class="fas fa-flask" aria-hidden="true"></span>
+              <a name="lab9" class="anchor" href="#lab9">
+              <span class="header-link"></span></a>
+                Lab: Go </h2>                  
+     
+        <p><sup><span class="fa fa-calendar"></span>
+                Last updated on March 15th, 2020</sup></p>
+                                                                     
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <span class="fa fa-bookmark"></span> 
+                <a href="../index.html">Home</a></li>      
+            <li class="breadcrumb-item">
+                <span class="fa fa-bookmark"></span> 
+                <a href="../learning-plan/index.html">         
+                    Learning Plan</a></li>
+            <li class="breadcrumb-item">
+                <span class="fa fa-bookmark"></span> 
+                <a href="../labs/index.html">        
+                    Labs</a></li>    
+            <li class="breadcrumb-item active" aria-current="go">
+                <span class="fa fa-bookmark"></span>         
+                Go</li>
+          </ol>
+        </nav>                  
+                
+        <a name="lab9" id="lab9"></a>            
+        <p>This section includes information about Go labs.</p>
+
+        <h4>EXERCISES</h4>
+
+        <ul>
+            <li>Exercise 0 : Go</li>
+            <li>Exercise 1 : Using Go</li>
+            <li>Exercise 2 : Testing Go</li>            
+        </ul>
+        
+        <p>Go is a statically typed, compiled programming language designed at Google.
+           Go is syntactically similar to C, but with memory safety, garbage collection, 
+           structural typing, and CSP-style concurrency. There are two major 
+           implementations:</p>
+
+           <ul>
+             <li>Google's self-hosting compiler toolchain targeting 
+                 multiple operating systems, mobile devices, and WebAssembly.</li>
+             
+             <li>gccgo, a GCC frontend.</li>
+           </ul>
+
+        <p>A third-party transpiler GopherJS compiles Go to JavaScript for front-end 
+           web development.</p>
+            
+        <h4>REQUIRED RESOURCES</h4>
+        <p>You will need a text editor, preferably with syntax highlighting. 
+           A few options is VSCode, Atom, Vim, Goland, available on OS X, 
+           Windows and Linux. You will need a web browser that includes a 
+           debugger such as Chrome or Firefox or Edge. Apple disabled the Safari
+           debugger by default, so read instructions to enable it first.
+           The Go ecosystem provides a variety of editor plugins and IDEs to 
+           enhance your day-to-day editing, navigation, testing, and debugging 
+           experience.</p>
+       
+         <p>Note that these are only a few top solutions; a more comprehensive 
+            community-maintained list of 
+            <a href="https://github.com/golang/go/wiki/IDEsAndTextEditorPlugins" 
+               target="_blank">IDEs and text editor plugins</a>             
+            is available at the Wiki.</p>
+
+        <h4>MATERIALS</h4>
+        <p>List everything needed to complete your experiment. <br/>
+            
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://golang.org/" target="_blank"> 
+               https://golang.org/</a><br/>
+            
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://golang.org/doc/" target="_blank"> 
+               https://golang.org/doc/</a><br/>
+
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://golang.org/dl/" target="_blank"> 
+               https://golang.org/dl/</a><br/>               
+			  
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://github.com/golang/go" target="_blank"> 
+               https://github.com/golang/go</a><br/>
+        </p>			  
+
+        <p>Please check the 
+            <a href="material.md" target="_blank">
+              materials.md</a> file.</p>  
+
+        <p>Download the files required 
+            <a href="lab1nodeRequired.zip" target="_blank">here</a> 
+            and the complete solution for this lab 
+            <a href="lab1nodeSolution.zip" target="_blank">here</a>.</p>
+
+        <h4>VIDEOS</h4>
+
+        <p>Helpful videos selected by me:</p>
+
+        <span class="fas fa-external-link-alt"></span> 
+        Go 
+        
+        <ul>            
+          <li><a href="https://www.youtube.com/watch?v=YS4e4q9oBaU" target="_blank"> 
+            https://www.youtube.com/watch?v=YS4e4q9oBaU</a></li>
+        
+          <li><a href="https://www.youtube.com/watch?v=SqrbIlUwR0U" target="_blank"> 
+            https://www.youtube.com/watch?v=SqrbIlUwR0U</a></li>
+        </ul>
+              
+        <h4>OVERVIEW</h4> 
+        <p>Go is expressive, concise, clean, and efficient. Its concurrency 
+           mechanisms make it easy to write programs that get the most out 
+           of multicore and networked machines, while its novel type system 
+           enables flexible and modular program construction. Go compiles 
+           quickly to machine code yet has the convenience of garbage 
+           collection and the power of run-time reflection. It's a fast, 
+           statically typed, compiled language that feels like a dynamically 
+           typed, interpreted language.       
+        </p>
+        
+        <h4>Exercise 0 : Go</h4>
+        <p>Check that Go is installed correctly by building a simple program, 
+           as follows. Create a file named hello.go that looks like:</p>  
+
+<pre><code class="go">
+package main
+
+import "fmt"
+
+func main() {
+   fmt.Printf("hello, world\n")
+}
+</code></pre>
+
+        <p>Then build it with the go tool:</p>
+
+<pre><code class="console">        
+C:\Users\Gopher\go\src\hello> go build hello.go
+</code></pre>            
+
+        <p>The command above will build an executable named 
+           hello.exe in the current directory alongside your source 
+           code. Execute it to see the greeting:</p>
+
+<pre><code class="console">
+C:\Users\Gopher\go\src\hello> hello
+hello, world
+</code></pre>
+
+        <p>If you see the "hello, world" message then your Go installation 
+           is working.</p>
+           
+        <h5>INSTRUCTIONS</h5>
+        <p>Assuming you’ve already installed Go, create a directory to hold 
+           your application, and make that your working directory.</p>
+        
+<pre><code class="console">
+$ mkdir Go
+$ cd Go
+</code></pre>
+        
+        <h5>Code organization</h5>
+
+         <p>Go programs are organized into packages. A package is a collection of 
+            source files in the same directory that are compiled together. Functions, 
+            types, variables, and constants defined in one source file are visible to 
+            all other source files within the same package.</p>
+
+         <p>A repository contains one or more modules. A module is a collection of 
+            related Go packages that are released together. A Go repository typically 
+            contains only one module, located at the root of the repository. A file 
+            named go.mod there declares the module path: the import path prefix for all 
+            packages within the module. The module contains the packages in the 
+            directory containing its go.mod file as well as subdirectories of that 
+            directory, up to the next subdirectory containing another go.mod file
+            (if any).</p>
+
+         <p>Note that you don't need to publish your code to a remote repository before 
+            you can build it. A module can be defined locally without belonging to a 
+            repository. However, it's a good habit to organize your code as if you will 
+            publish it someday.</p>
+
+         <p>Each module's path not only serves as an import path prefix for its packages, 
+            but also indicates where the go command should look to download it. For example, 
+            in order to download the module golang.org/x/tools, the go command would 
+            consult the repository indicated by https://golang.org/x/tools </p>
+
+         <p>An import path is a string used to import a package. A package's import 
+            path is its module path joined with its subdirectory within the module. 
+            For example, the module github.com/google/go-cmp contains a package in the 
+            directory cmp/. That package's import path is github.com/google/go-cmp/cmp. 
+            Packages in the standard library do not have a module path prefix.</p>
+
+         <h5>Standard Go Project Layout</h5>
+
+         <p>This is a basic layout for Go application projects. It's not an official 
+            standard defined by the core Go dev team; however, it is a set of common 
+            historical and emerging project layout patterns in the Go ecosystem. Some 
+            of these patterns are more popular than others. It also has a number of 
+            small enhancements along with several supporting directories common to any 
+            large enough real world application.</p>
+
+<pre><code class="console">
+STANDARD DIRECTORIES
+├── cmd
+├── internal
+├── pkg
+├── vendor
+
+SERVICE DIRECTORIES
+├── api
+
+WEB DIRECTORIES
+├── web
+
+COMMON DIRECTORIES
+├── configs
+├── init
+├── scripts
+├── build
+├── deployments
+├── test
+
+OTHER DIRECTORIES
+├── doc
+├── tools
+├── examples
+├── third_party
+├── githooks
+├── assets
+├── website
+</code></pre>
+
+
+         <h4>Exercise 1 : Using Go</h4>
+
+         <p>To compile and run a simple program, first choose a 
+            module path (we'll use example.com/user/hello) and create 
+            a go.mod file that declares it:</p>
+
+<pre><code class="go">
+$ mkdir hello # Alternatively, clone if it 
+              # already exists in version control.
+$ cd hello
+$ go mod init example.com/user/hello
+go: creating new go.mod: module example.com/user/hello
+$ cat go.mod
+module example.com/user/hello
+
+go 1.14
+$
+</code></pre>
+
+         <p>The first statement in a Go source file must be package name. 
+            Executable commands must always use package main.<br/>
+
+            Next, create a file named hello.go inside that directory 
+            containing the following Go code:</p>
+
+<pre><code class="go">
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello, world.")
+}
+</code></pre>
+
+
+         <p>Now you can build and install that program with the go tool:</p>
+
+<pre><code class="go">
+$ go install example.com/user/hello
+$
+</code></pre>
+
+         <p>This command builds the hello command, producing an executable 
+            binary. It then installs that binary as $HOME/go/bin/hello (or, 
+            under Windows, %USERPROFILE%\go\bin\hello.exe).</p>
+
+         <p>The install directory is controlled by the GOPATH and GOBIN 
+            environment variables. If GOBIN is set, binaries are installed 
+            to that directory. If GOPATH is set, binaries are installed to 
+            the bin subdirectory of the first directory in the GOPATH list. 
+            Otherwise, binaries are installed to the bin subdirectory of the 
+            default GOPATH ($HOME/go or %USERPROFILE%\go).</p>
+
+         <p>You can use the go env command to portably set the default value 
+            for an environment variable for future go commands:</p>
+
+<pre><code class="go">            
+$ go env -w GOBIN=/somewhere/else/bin
+$
+</code></pre>
+
+         <p>To unset a variable previously set by go env -w, use go env -u:</p>
+
+<pre><code class="go">
+$ go env -u GOBIN
+$
+</code></pre>
+
+         <p>Commands like go install apply within the context of the module 
+            containing the current working directory. If the working directory 
+            is not within the example.com/user/hello module, go install may fail.</p>
+
+         <p>For convenience, go commands accept paths relative to the working 
+            directory, and default to the package in the current working directory 
+            if no other path is given. So in our working directory, the following 
+            commands are all equivalent:</p>
+
+<pre><code class="console">
+$ go install example.com/user/hello
+
+$ go install .
+
+$ go install
+</code></pre>
+
+         <p>Next, let's run the program to ensure it works. For added convenience, 
+            we'll add the install directory to our PATH to make running binaries 
+            easy:</p>
+
+<pre><code class="go">            
+# Windows users should consult 
+# https://github.com/golang/go/wiki/SettingGOPATH
+# for setting %PATH%.
+$ export PATH=$PATH:$(dirname $(go list -f '{{.Target}}' .))
+$ hello
+Hello, world.
+$
+</code></pre>
+
+         <p>If you're using a source control system, now would be a good time to 
+            initialize a repository, add the files, and commit your first change. 
+            Again, this step is optional: you do not need to use source control 
+            to write Go code.</p>
+
+<pre><code class="go">            
+$ git init
+Initialized empty Git repository in /home/user/hello/.git/
+$ git add go.mod hello.go
+$ git commit -m "initial commit"
+[master (root-commit) 0b4507d] initial commit
+ 1 file changed, 7 insertion(+)
+ create mode 100644 go.mod hello.go
+$
+</code></pre>
+
+         <p>The go command locates the repository containing a given module path 
+            by requesting a corresponding HTTPS URL and reading metadata embedded 
+            in the HTML response (see go help importpath). Many hosting services 
+            already provide that metadata for repositories containing Go code, so 
+            the easiest way to make your module available for others to use is 
+            usually to make its module path match the URL for the repository.</p>
+
+
+         <h5>Importing packages from your module</h5>
+
+         <p>Let's write a morestrings package and use it from the hello program. 
+            First, create a directory for the package named $HOME/hello/morestrings, 
+            and then a file named reverse.go in that directory with the following 
+            contents:</p>
+
+<pre><code class="go">            
+// Package morestrings implements additional functions to 
+// manipulate UTF-8 encoded strings, beyond what is 
+// provided in the standard "strings" package.
+package morestrings
+
+// ReverseRunes returns its argument string reversed 
+// rune-wise left to right.
+func ReverseRunes(s string) string {
+  r := []rune(s)
+   for i, j := 0, len(r)-1; i < len(r)/2; i, j = i+1, j-1 {
+     r[i], r[j] = r[j], r[i]
+  }
+  return string(r)
+}
+</code></pre>
+
+         <p>Because our ReverseRunes function begins with an upper-case 
+            letter, it is exported, and can be used in other packages that 
+            import our morestrings package.  Let's test that the package 
+            compiles with go build:</p>
+
+<pre><code class="go">            
+$ cd $HOME/hello/morestrings
+$ go build
+$
+</code></pre>
+
+         <p>This won't produce an output file. Instead it saves the 
+            compiled package in the local build cache.<br/>
+
+            After confirming that the morestrings package builds, let's use 
+            it from the hello program. To do so, modify your original 
+            $HOME/hello/hello.go to use the morestrings package:</p>
+
+<pre><code class="go">            
+package main
+
+import (
+  "fmt"
+
+  "example.com/user/hello/morestrings"
+)
+
+func main() {
+  fmt.Println(morestrings.ReverseRunes("!oG ,olleH"))
+}
+</code></pre>
+
+         <p>Install the hello program:</p>
+
+<pre><code class="go">         
+$ go install example.com/user/hello
+</code></pre>
+
+         <p>Running the new version of the program, you should 
+            see a new, reversed message:</p>
+
+<pre><code class="go">            
+$ hello
+Hello, Go!
+</code></pre>
+
+
+         <h5>Importing packages from remote modules</h5>
+
+         <p>An import path can describe how to obtain the package source 
+            code using a revision control system such as Git or Mercurial. 
+            The go tool uses this property to automatically fetch packages 
+            from remote repositories. For instance, to use 
+            github.com/google/go-cmp/cmp in your program:</p>
+
+<pre><code class="go">
+package main
+
+import (
+  "fmt"
+
+  "example.com/user/hello/morestrings"
+  "github.com/google/go-cmp/cmp"
+)
+
+func main() {
+  fmt.Println(morestrings.ReverseRunes("!oG ,olleH"))
+  fmt.Println(cmp.Diff("Hello World", "Hello Go"))
+}
+</code></pre>
+
+         <p>When you run commands like go install, go build, or go run, the 
+            go command will automatically download the remote module and record 
+            its version in your go.mod file:</p>
+
+<pre><code class="go">
+$ go install example.com/user/hello
+go: finding module for package github.com/google/go-cmp/cmp
+go: downloading github.com/google/go-cmp v0.4.0
+go: found github.com/google/go-cmp/cmp 
+    in github.com/google/go-cmp v0.4.0
+$ hello
+Hello, Go!
+  string(
+- 	"Hello World",
++ 	"Hello Go",
+  )
+$ cat go.mod
+module example.com/user/hello
+
+go 1.14
+
+require github.com/google/go-cmp v0.4.0
+$
+</code></pre>
+
+         <p>Module dependencies are automatically downloaded to the 
+            pkg/mod subdirectory of the directory indicated by the 
+            GOPATH environment variable. The downloaded contents for 
+            a given version of a module are shared among all other modules 
+            that require that version, so the go command marks those files 
+            and directories as read-only. To remove all downloaded modules, 
+            you can pass the -modcache flag to go clean:</p>
+
+<pre><code class="go">            
+$ go clean -modcache
+$
+</code></pre>
+
+
+         <h4>Exercise 2 : Testing Go</h4>
+       
+         <p>Go has a lightweight test framework composed of the go 
+            test command and the testing package.</p>
+
+         <p>You write a test by creating a file with a name ending in 
+            _test.go that contains functions named TestXXX with signature 
+            func (t *testing.T). The test framework runs each such function; 
+            if the function calls a failure function such as t.Error or t.Fail, 
+            the test is considered to have failed.</p>
+
+         <p>Add a test to the morestrings package by creating the file 
+            $HOME/hello/morestrings/reverse_test.go containing the following
+             Go code.</p>
+
+<pre><code class="go">
+package morestrings
+
+import "testing"
+
+func TestReverseRunes(t *testing.T) {
+  cases := []struct {
+    in, want string
+  }{
+    {"Hello, world", "dlrow ,olleH"},
+    {"Hello, 世界", "界世 ,olleH"},
+    {"", ""},
+  }
+  for _, c := range cases {
+    got := ReverseRunes(c.in)
+    if got != c.want {
+      t.Errorf("ReverseRunes(%q) == %q, want %q", 
+         c.in, got, c.want)
+    }
+  }
+}
+</code></pre>
+
+         <p>Then run the test with go test:</p>
+
+<pre><code class="go">
+$ go test
+PASS
+ok  example.com/user/morestrings 0.165s
+$
+</code></pre>
+
+         <p>Run go help test and see the testing package documentation 
+            for more detail.</p>
+
+        <!-- pagination -->
+        <a role="button" class="btn btn-primary float-left" 
+        href="../labs/index.html">
+        &larr; PREVIOUS: Labs</a>
+
+        <a role="button" class="btn btn-primary float-right" 
+        href="../field-reports/index.html">
+        NEXT: Field Reports &rarr;</a><br/><br/>              
+        </section>      
+        
+    <!-- jQuery library -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+            crossorigin="anonymous"></script>       
+        <script src="../assets/javascripts/scale.fix.js"></script>   
+    </body>
+</html>

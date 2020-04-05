@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Code Journal: Lab Rust</title>   
+    <!-- Latest compiled and minified CSS -->
+    <!-- Font Awesome 5.7.0 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+    crossorigin="anonymous">
+    <!-- Bootstrap 4.3.1 -->    
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">   
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>          
+
+    <!-- Custom Style Pygment and Icons -->
+    <link rel="stylesheet" href="../assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="../assets/stylesheets/pygment_trac.css">
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/gif">
+    <link rel="shortcut icon" href="../assets/images/favicon.png">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    </head>    
+
+  <body>
+    <div class="wrapper">               
+    <!-- Header -->         
+      <header>
+          <img src="../assets/images/pb_Image.png" class="img-fluid" alt="me"/>
+        <p class="view">A Code Journal for 
+            <span class="fab fa-git-square" aria-hidden="true"></span>
+                Hub Pages<br/>        
+                
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
+            <span class="fab fa-github"></span> 
+              View the Code Journal on GitHub</a></p>
+                      
+            <!-- Buttons -->                        
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#java" role="button">            
+                <span class="fab fa-java fa-2x"></span> 
+            </a>                   
+            
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#python" role="button">
+                <span class="fab fa-python fa-2x"></span> 
+            </a>                        
+
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#node" role="button">
+                <span class="fab fa-node fa-3x"></span> 
+            </a>                
+            
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#javascript" role="button">
+                <span class="fab fa-js fa-2x"></span> 
+            </a>                              
+
+            <br/><br/>
+            
+            <a href="https://github.com/keeyanajones/">
+            <small><span class="fab fa-github-alt"></span>                 
+            Repositories and latest Contribution Activity</small></a>                 
+              
+        <br/>
+        
+        <!-- Download, Clone, or Fork -->
+        <ul>    
+          <li><a href="https://github.com/keeyanajones/Journal/archive/master.zip">
+              <span class="fa fa-file-archive" aria-hidden="true"></span><br/>
+                  Download <br/> ZIP</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-clone" aria-hidden="true"></span><br/>
+                  Clone <br/> Desktop</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-code-branch" aria-hidden="true"></span><br/>
+                  Fork On <br/> GitHub</a></li>
+        </ul>                                 
+      </header>
+    <!-- ./header --> 
+    </div>          
+      
+    <section>
+        <h2><span class="fas fa-flask" aria-hidden="true"></span>
+              <a name="lab10" class="anchor" href="#lab10">
+              <span class="header-link"></span></a>
+                Lab: Rust </h2>                  
+     
+        <p><sup><span class="fa fa-calendar"></span>
+                Last updated on March 25th, 2020</sup></p>
+                                                                     
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <span class="fa fa-bookmark"></span> 
+                <a href="../index.html">Home</a></li>      
+            <li class="breadcrumb-item">
+                <span class="fa fa-bookmark"></span> 
+                <a href="../learning-plan/index.html">         
+                    Learning Plan</a></li>
+            <li class="breadcrumb-item">
+                <span class="fa fa-bookmark"></span> 
+                <a href="../labs/index.html">        
+                    Labs</a></li>    
+            <li class="breadcrumb-item active" aria-current="rust">
+                <span class="fa fa-bookmark"></span>         
+                Rust</li>
+          </ol>
+        </nav>                  
+                
+        <a name="lab10" id="lab10"></a>            
+        <p>This section includes information about Rust labs.</p>
+
+        <h4>EXERCISES</h4>
+
+        <ul>
+            <li>Exercise 0 : Rust </li>
+            <li>Exercise 1 : Using Rust</li>
+            <li>Exercise 2 : Dependencies in Rust</li>            
+        </ul>
+        
+        <p>Rust is a new open-source systems programming language created by 
+           Mozilla and a community of volunteers, designed to help developers 
+           create fast, secure applications which take full advantage of the 
+           powerful features of modern multi-core processors. It prevents 
+           segmentation faults and guarantees thread safety, all with an 
+           easy-to-learn syntax.</p>
+
+         <p>In addition, Rust offers zero-cost abstractions, move semantics, 
+            guaranteed memory safety, threads with no data races, trait-based 
+            generics, pattern matching, type inference, and efficient C bindings, 
+            with a minimum runtime size.</p>
+            
+        <h4>REQUIRED RESOURCES</h4>
+        <p>You will need a text editor, preferably with syntax highlighting. 
+           A few options is VS Code, Atom, Sublime Text, intellij Idea, Eclipse,
+           VIM, EMACS, Geany available on OS X, Windows and Linux. 
+           You will need a web browser that includes a 
+           debugger such as Chrome or Firefox or Edge. Apple disabled the Safari
+           debugger by default, so read instructions to enable it first.</p>
+
+        <h4>MATERIALS</h4>
+        <p>List everything needed to complete your experiment. <br/>
+            
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://www.rust-lang.org/" target="_blank"> 
+               https://www.rust-lang.org/</a><br/>
+			  
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://doc.rust-lang.org/book/" target="_blank"> 
+               https://doc.rust-lang.org/book/</a><br/>
+            
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://doc.rust-lang.org/cargo/index.html" target="_blank"> 
+               https://doc.rust-lang.org/cargo/index.html</a><br/>
+
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://www.rust-lang.org/tools/install" target="_blank"> 
+               https://www.rust-lang.org/tools/install</a><br/>            
+
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://github.com/rust-lang" target="_blank"> 
+               https://github.com/rust-lang</a><br/>
+         </p>			  
+
+        <p>Please check the 
+            <a href="material.md" target="_blank">
+              materials.md</a> file.</p>  
+
+        <p>Download the files required 
+            <a href="lab1nodeRequired.zip" target="_blank">here</a> 
+            and the complete solution for this lab 
+            <a href="lab1nodeSolution.zip" target="_blank">here</a>.</p>
+
+
+        <h4>VIDEOS</h4>
+
+        <p>Helpful videos selected by me:</p>
+        
+        <span class="fas fa-external-link-alt"></span> 
+         Rust
+        
+        <ul>            
+          <li><a href="https://www.youtube.com/watch?v=zF34dRivLOw" target="_blank"> 
+            https://www.youtube.com/watch?v=zF34dRivLOw</a></li>
+        
+          <li><a href="https://www.youtube.com/watch?v=vOMJlQ5B-M0&list=PLVvjrrRCBy2JSHf9tGxGKJ-bYAN_uDCUL" target="_blank"> 
+            https://www.youtube.com/RUST_PLAYLIST</a></li>
+        </ul>
+                       
+        <sup>NOTE: In the case of Rust, I learned years ago but now (since 2018) there are better videos
+                   about the language's specific use cases. I would suggest starting
+                   with a specific case and not an overview because you might get confused
+                   later.
+        </sup>
+
+        <h4>OVERVIEW</h4> 
+        <p>Rust is a multi-paradigm programming language focused on performance and safety, 
+           especially safe concurrency. Rust is syntactically similar to C++, but provides 
+           memory safety without using garbage collection.
+      </p>
+        
+        <h4>Exercise 0 : Rust</h4>
+        <p>You can try Rust online in the Rust Playground without installing 
+           anything on your computer. The primary way that folks install Rust 
+           is through a tool called Rustup, which is a Rust installer and version 
+           management tool.         
+         </p>  
+
+        <h5>INSTRUCTIONS</h5>
+        <p>To start using Rust, download the installer, then run the program and follow 
+           the onscreen instructions. See "Other Installation Methods" if you are not 
+           on Windows.</p>
+        
+        <p>If you’re a Windows Subsystem for Linux user run the following in your 
+           terminal, then follow the on-screen instructions to install Rust.</p>
+
+<pre><code>           
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+</code></pre>
+                      
+        <p>Rust updates very frequently. If you have installed Rustup some time 
+           ago, chances are your Rust version is out of date. Get the latest version 
+           of Rust by running rustup update.</p>
+        
+        <p>When you install Rustup you’ll also get the latest stable version of 
+           the Rust build tool and package manager, also known as Cargo. Cargo 
+           does lots of things:</p>
+
+         <ul>           
+           <li>build your project with cargo build</li>
+           <li>run your project with cargo run</li>
+           <li>test your project with cargo test</li>
+           <li>build documentation for your project with cargo doc</li>
+           <li>publish a library to crates.io with cargo publish</li>
+         </ul>
+
+        <p>To test that you have Rust and Cargo installed, you can run this 
+           in your terminal of choice:</p>
+
+<pre><code>
+cargo --version        
+</code></pre>
+
+        <p>You can install a code formatting tool (Rustfmt) with rustup 
+           component add rustfmt, and a linting tool (Clippy) with rustup 
+           component add clippy.</p>
+
+
+        <h4>Exercise 1 : Using Rust</h4>
+
+        <p>Let’s write a small application with our new Rust development 
+           environment. To start, we’ll use Cargo to make a new project for 
+           us. In your terminal of choice run:</p>
+
+
+<pre><code class="rust">
+cargo new hello-rust
+</code></pre>
+
+        <p>This will generate a new directory called hello-rust with the 
+           following files:</p>
+
+<pre><code>
+hello-rust
+|- Cargo.toml
+|- src
+  |- main.rs
+</code></pre>
+
+        <p>Cargo.toml is the manifest file for Rust. It’s where you keep 
+           metadata for your project, as well as dependencies.  src/main.rs 
+           is where we’ll write our application code.</p>
+
+        <p>cargo new generates a "Hello, world!" project for us! We can run 
+           this program by moving into the new directory that we made and 
+           running this in our terminal:</p>
+
+<pre><code class="rust">
+cargo run
+</code></pre>
+
+        <p>You should see this in your terminal:</p>
+
+<pre><code class="rust">
+$ cargo run
+   Compiling hello-rust v0.1.0 (/Users/ag_dubs/rust/hello-rust)
+    Finished dev [unoptimized + debuginfo] target(s) in 1.34s
+     Running `target/debug/hello-rust`
+Hello, world!
+</code></pre>
+
+      <h4>Exercise 2 : Dependencies in Rust</h4>
+
+      <p>Let’s add a dependency to our application. You can find all 
+        sorts of libraries on crates.io, the package registry for Rust. 
+        In Rust, we often refer to packages as “crates.”</p>
+      
+      <p>In this project, we’ll use a crate called ferris-says. In our 
+        Cargo.toml file we’ll add this information (that we got from 
+        the crate page):</p>
+
+<pre><code class="rust">      
+[dependencies]
+ferris-says = "0.1"
+</code></pre>
+
+      <p>Now we can run:</p>
+
+<pre><code class="rust">
+cargo build
+</code></pre>
+
+      <p>...and Cargo will install our dependency for us.</p>
+      
+      <p>You’ll see that running this command created a new file for us, 
+        Cargo.lock. This file is a log of the exact versions of the 
+        dependencies we are using locally.</p>
+      
+      <p>To use this dependency, we can open main.rs, remove everything that’s 
+        in there (it’s just another example), and add this line to it:</p>
+      
+<pre><code class="rust">      
+use ferris_says::say;
+</code></pre>
+
+      <p>This line means that we can now use the say function that the 
+        ferris-says crate exports for us.</p>
+            
+      <p>Now let’s write a small application with our new dependency. In 
+        our main.rs, add the following code:</p>
+      
+<pre><code class="rust">      
+use ferris_says::say; // from the previous step
+use std::io::{stdout, BufWriter};
+
+fn main() {
+    let stdout = stdout();
+    let out = b"Hello fellow Rustaceans!";
+    let width = 24;
+
+    let mut writer = BufWriter::new(stdout.lock());
+    say(out, width, &mut writer).unwrap();
+}
+</code></pre>          
+      
+      <p>Once we save that, we can run our application by typing:</p>
+      
+      cargo run <br/>
+      
+      <p>Assuming everything went well, you should see your application 
+        print this to the screen:</p>
+
+<pre><code class="rust">      
+----------------------------
+| Hello fellow Rustaceans! |
+----------------------------
+  \
+    \
+      _~^~^~_
+  \) /  o o  \ (/
+    '_   -   _'
+    / '-----' \
+</code></pre>          
+      
+      
+
+        <!-- pagination -->
+        <a role="button" class="btn btn-primary float-left" 
+        href="../labs/index.html">
+        &larr; PREVIOUS: Labs</a>
+
+        <a role="button" class="btn btn-primary float-right" 
+        href="../field-reports/index.html">
+        NEXT: Field Reports &rarr;</a><br/><br/>              
+        </section>      
+        
+    <!-- jQuery library -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+            crossorigin="anonymous"></script>       
+        <script src="../assets/javascripts/scale.fix.js"></script>   
+    </body>
+</html>

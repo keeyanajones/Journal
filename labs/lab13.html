@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Code Journal: Lab Swift</title>   
+    <!-- Latest compiled and minified CSS -->
+    <!-- Font Awesome 5.7.0 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+    crossorigin="anonymous">
+    <!-- Bootstrap 4.3.1 -->    
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">   
+    <!-- Highlight.js 9.13.1 -->     
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>          
+
+    <!-- Custom Style Pygment and Icons -->
+    <link rel="stylesheet" href="../assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="../assets/stylesheets/pygment_trac.css">
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/gif">
+    <link rel="shortcut icon" href="../assets/images/favicon.png">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    </head>    
+
+  <body>
+    <div class="wrapper">               
+    <!-- Header -->         
+      <header>
+          <img src="../assets/images/pb_Image.png" class="img-fluid" alt="me"/>
+        <p class="view">A Code Journal for 
+            <span class="fab fa-git-square" aria-hidden="true"></span>
+                Hub Pages<br/>        
+                
+            <a href="https://github.com/keeyanajones/Journal" target="_blank">
+            <span class="fab fa-github"></span> 
+              View the Code Journal on GitHub</a></p>
+                      
+            <!-- Buttons -->                        
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#java" role="button">            
+                <span class="fab fa-java fa-2x"></span> 
+            </a>                   
+            
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#python" role="button">
+                <span class="fab fa-python fa-2x"></span> 
+            </a>                        
+
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#node" role="button">
+                <span class="fab fa-node fa-3x"></span> 
+            </a>                
+            
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#javascript" role="button">
+                <span class="fab fa-js fa-2x"></span> 
+            </a>                              
+
+            <br/><br/>
+            
+            <a href="https://github.com/keeyanajones/">
+            <small><span class="fab fa-github-alt"></span>                 
+            Repositories and latest Contribution Activity</small></a>                 
+              
+        <br/>
+        
+        <!-- Download, Clone, or Fork -->
+        <ul>    
+          <li><a href="https://github.com/keeyanajones/Journal/archive/master.zip">
+              <span class="fa fa-file-archive" aria-hidden="true"></span><br/>
+                  Download <br/> ZIP</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-clone" aria-hidden="true"></span><br/>
+                  Clone <br/> Desktop</a></li>                  
+          <li><a href="https://github.com/keeyanajones/Journal">
+              <span class="fa fa-code-branch" aria-hidden="true"></span><br/>
+                  Fork On <br/> GitHub</a></li>
+        </ul>                                 
+      </header>
+    <!-- ./header --> 
+    </div>          
+      
+    <section>
+        <h2><span class="fas fa-flask" aria-hidden="true"></span>
+              <a name="lab13" class="anchor" href="#lab13">
+              <span class="header-link"></span></a>
+                Lab: Swift </h2>                  
+     
+        <p><sup><span class="fa fa-calendar"></span>
+                Last updated on March 31st, 2020</sup></p>
+                                                                     
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <span class="fa fa-bookmark"></span> 
+                <a href="../index.html">Home</a></li>      
+            <li class="breadcrumb-item">
+                <span class="fa fa-bookmark"></span> 
+                <a href="../learning-plan/index.html">         
+                    Learning Plan</a></li>
+            <li class="breadcrumb-item">
+                <span class="fa fa-bookmark"></span> 
+                <a href="../labs/index.html">        
+                    Labs</a></li>    
+            <li class="breadcrumb-item active" aria-current="Swift">
+                <span class="fa fa-bookmark"></span>         
+                Swift</li>
+          </ol>
+        </nav>                  
+                
+        <a name="lab13" id="lab13"></a>            
+        <p>This section includes information about Swift labs.</p>
+
+        <h4>EXERCISES</h4>
+
+        <ul>
+            <li>Exercise 0 : Swift </li>
+            <li>Exercise 1 : Using Swift</li>
+        </ul>
+        
+        <p>Swift is a general-purpose, multi-paradigm, compiled programming 
+           language developed by Apple Inc. for iOS, iPadOS, macOS, watchOS, 
+           tvOS, Linux, and z/OS. Swift is designed to work with Apple's Cocoa 
+           and Cocoa Touch frameworks and the large body of existing 
+           Objective-C code written for Apple products. </p>
+            
+        <h4>REQUIRED RESOURCES</h4>
+        <p>You will need a text editor, preferably with syntax highlighting. 
+           A few options is VSCODE, Atom, Sublime Text, available on OS X, 
+           Windows and Linux. You will need a web browser that includes a 
+           debugger such as Chrome or Firefox or Edge. Apple disabled the Safari
+           debugger by default, so read instructions to enable it first.</p>
+
+        <h4>MATERIALS</h4>
+        <p>List everything needed to complete your experiment. <br/>
+                           
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://swift.org" target="_blank"> 
+               https://swift.org</a><br/>
+            
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://swift.org/download" target="_blank"> 
+               https://swift.org/download</a><br/>
+			  
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://github.com/apple/swift" target="_blank"> 
+               https://github.com/apple/swift</a><br/>
+            
+            <span class="fas fa-external-link-alt"></span> 
+            <a href="https://swift.org/documentation" target="_blank"> 
+               https://swift.org/documentation</a><br/>            
+         </p>			  
+
+        <p>Please check the 
+            <a href="material.md" target="_blank">
+              materials.md</a> file.</p>  
+
+        <p>Download the files required 
+            <a href="lab1nodeRequired.zip" target="_blank">here</a> 
+            and the complete solution for this lab 
+            <a href="lab1nodeSolution.zip" target="_blank">here</a>.</p>
+
+        <h4>VIDEOS</h4>
+
+        <p>Helpful videos selected by me:</p>
+        
+        <span class="fas fa-external-link-alt"></span> 
+        Swift 
+        
+        <ul>            
+          <li><a href="https://www.youtube.com/watch?v=comQ1-x2a1Q" target="_blank"> 
+            https://www.youtube.com/watch?v=comQ1-x2a1Q</a></li>
+        
+          <li><a href="https://www.youtube.com/watch?v=Ulp1Kimblg0" target="_blank"> 
+            https://www.youtube.com/watch?v=Ulp1Kimblg0</a></li>
+
+          <li><a href="https://developer.apple.com/videos/developer-tools/swift" target="_blank"> 
+            https://developer.apple.com/videos/developer-tools/swift</a></li>
+  
+        </ul>
+        
+        
+        <h4>OVERVIEW</h4> 
+        <p>Swift is a general-purpose programming language built using a modern 
+           approach to safety, performance, and software design patterns.</p>
+
+         <p>The goal of the Swift project is to create the best available language 
+            for uses ranging from systems programming, to mobile and desktop apps, 
+            scaling up to cloud services. Most importantly, Swift is designed to 
+            make writing and maintaining correct programs easier for the developer. 
+            </p>
+         
+         <p>Tools are a critical part of the Swift ecosystem. We strive to 
+            integrate well within a developer’s toolset, to build quickly, to 
+            present excellent diagnostics, and to enable interactive development 
+            experiences. Tools can make programming so much more powerful, like 
+            Swift-based playgrounds do in Xcode, or a web-based REPL can when 
+            working with Linux server-side code.</p>
+        
+
+        <h4>Exercise 0: Swift</h4>
+        <p>The first step to using Swift is to download and install the compiler 
+           and other required components. Go to the Download page and follow the 
+           instructions for your target platform.      
+
+         In order to follow along with the examples below, make sure to add Swift 
+         to your $PATH.
+         
+         <h5>INSTRUCTIONS</h5>
+
+         <h5>On macOS</h5>
+         
+         <p>The default location for the downloadable toolchain on macOS is 
+            /Library/Developer/Toolchains. You can make the latest installed 
+            toolchain available for use from the terminal with the following 
+            command:</p>
+
+<pre><code>            
+$ export TOOLCHAINS=swift
+</code></pre>         
+
+         <p>To select any other installed toolchain, use its identifier in 
+            the TOOLCHAINS variable. The identifier can be found in toolchain’s 
+            Info.plist file.</p>
+
+<pre><code>
+$ /usr/libexec/PlistBuddy -c "Print CFBundleIdentifier:" 
+  /Library/Developer/Toolchains/swift-4.0-RELEASE.xctoolchain/Info.plist
+org.swift.4020170919
+
+$ export TOOLCHAINS=org.swift.4020170919
+</code></pre>         
+
+         <h5>On Linux</h5>
+         
+         <p>First, install clang:</p>
+      
+<pre><code>                     
+$ sudo apt-get install clang
+</code></pre>
+         
+         <p>If you installed the Swift toolchain on Linux to a directory 
+            other than the system root, you will need to run the following 
+            command, using the actual path of your Swift installation:</p>
+
+<pre><code>            
+$ export PATH=/path/to/Swift/usr/bin:"${PATH}"
+</code></pre>
+
+         <p>You can verify that you are running the expected version of 
+            Swift by entering the swift command and passing the 
+            --version flag:</p>
+
+<pre><code>                        
+$ swift --version
+Apple Swift version 2.2-dev (LLVM ..., Clang ..., Swift ...)
+</code></pre>
+
+         <p>The -dev suffix on the version number is used to indicate that 
+            it’s a development build, not a released version.</p>  
+
+        <h4>Exercise 1 : Using Swift</h4>
+
+        <h5>the REPL</h5>
+
+        <p>If you run the swift command without any other arguments, you’ll 
+          launch the REPL, an interactive shell that will read, evaluate, and 
+          print the results of any Swift code you enter.</p>
+
+<pre><code>          
+$ swift
+Welcome to Apple Swift version 2.2. Type :help for assistance.
+  1>
+</code></pre>
+
+        <p>Interacting with the REPL is a great way to experiment with Swift. 
+          For example, if you enter the expression 1 + 2, the result of the 
+          expression, 3, is printed on the next line:</p>
+
+<pre><code class="swift">          
+  1> 1 + 2
+$R0: Int = 3
+</code></pre>
+
+        <p>You can assign values to constants and variables, and use them in 
+          subsequent lines. For instance, the String value Hello, world! can 
+          be assigned to the constant greeting, and then passed as an argument 
+          to the print(_:) function:</p>
+
+<pre><code class="swift">          
+  2> let greeting = "Hello!"
+greeting: String = "Hello!"
+  3> print(greeting)
+Hello!
+</code></pre>
+
+        <p>If you enter an invalid expression, the REPL will print an 
+          error showing where the problem occurred:</p>
+
+<pre><code class="swift">          
+let answer = "forty"-"two"
+error: binary operator '-' cannot be applied to two 'String' operands
+let answer = "forty"-"two"
+              ~~~~~~~^~~~~~
+</code></pre>
+                     
+        <p>You can use the up-arrow and down-arrow keys (↑ and ↓) to 
+          cycle through previous lines entered into the REPL. This 
+          allows you to make a slight change to a previous expression 
+          without retyping the entire line, and is especially convenient 
+          for fixing errors like the one in the previous example:</p>
+
+<pre><code class="swift">          
+let answer = "forty-two"
+answer: String = "forty-two"
+</code></pre>
+
+        <p>Another useful feature of the REPL is that it can automatically 
+          suggest functions and methods that can be used in a particular 
+          context. For example, if you enter re after a dot operator on a 
+          String value and then hit the tab key (⇥), the REPL will give a 
+          list of available completions like remove(at:) and 
+          replaceSubrange(bounds:with:):</p>
+   
+<pre><code class="swift">                    
+5> "Hi!".re⇥
+Available completions:
+  remove(at: Index) -> Character
+  removeAll() -> Void
+  removeAll(keepingCapacity: Bool) -> Void
+  removeSubrange(bounds: ClosedRange&lt;Index&gt;) -> Void
+  removeSubrange(bounds: Range&lt;Index&gt;) -> Void
+  replaceSubrange(bounds: ClosedRange&lt;Index&gt;, with: C) -> Void
+  replaceSubrange(bounds: ClosedRange&lt;Index&gt;, with: String) -> Void
+  replaceSubrange(bounds: Range&lt;Index&gt;, with: C) -> Void
+  replaceSubrange(bounds: Range&lt;Index&gt;, with: String) -> Void
+  reserveCapacity(n: Int) -> Void
+</code></pre>  
+
+        <p>If you start a block of code, such as when iterating over an 
+          array with a for-in loop, the REPL will automatically indent the 
+          next line, and change the prompt character from > to . to indicate 
+          that code entered on that line will only be evaluated when the 
+          entire code block is evaluated.</p>
+
+<pre><code class="swift">                    
+  6> let numbers = [1,2,3]
+numbers: [Int] = 3 values {
+  [0] = 1
+  [1] = 2
+  [2] = 3
+}
+  7> for n in numbers.reversed() {
+  8.     print(n)
+  9. }
+3
+2
+1
+</code></pre>
+        
+        <p>All of the functionality of Swift is available to you from the 
+          REPL, from writing control flow statements to declaring and 
+          instantiating structures and classes.
+        
+        You can also import any available system modules, such as Darwin on 
+        macOS and Glibc on Linux:</p>
+       
+        <h5>On macOS</h5>
+
+<pre><code class="swift">                  
+1> import Darwin
+2> arc4random_uniform(10)
+$R0: UInt32 = 4
+</code></pre>
+
+        <h5>On Linux</h5>
+
+<pre><code class="swift">                  
+1> import Glibc
+2> random() % 10
+$R0: Int32 = 4
+</code></pre>
+
+        <h5>Using the Package Manager</h5>
+        
+        <p>Swift package manager provides a convention-based system for 
+          building libraries and executables, and sharing code across 
+          different packages.
+        
+        These examples assume you have made swift available in your path; 
+        see Installing for more information. Once available, you can invoke 
+        the package manager tools: swift package, swift run, swift build 
+        and swift test.</p>
+
+<pre><code>                  
+$ swift package --help
+OVERVIEW: Perform operations on Swift packages
+...
+</code></pre>
+
+        <h5>Creating a Package</h5>
+        
+        <p>To create a new Swift package, first create and enter a directory 
+          named Hello:</p>
+
+<pre><code>                    
+$ mkdir Hello
+$ cd Hello
+</code></pre> 
+
+        <p>Every package must have a manifest file called Package.swift in 
+          its root directory. You can create a minimal package named Hello 
+          using:</p>
+
+<pre><code>                    
+$ swift package init
+</code></pre>
+
+        <p>By default the init command will create a library package 
+          directory structure:</p>
+
+<pre><code>                    
+├── Package.swift
+├── README.md
+├── Sources
+│   └── Hello
+│       └── Hello.swift
+└── Tests
+    ├── HelloTests
+    │   └── HelloTests.swift
+    └── LinuxMain.swift
+</code></pre>
+
+        <p>You can use swift build to build a package. This will download, 
+          resolve and compile dependencies mentioned in the manifest file 
+          Package.swift.</p>
+
+<pre><code>                    
+$ swift build
+Compile Swift Module 'Hello' (1 sources)
+</code></pre>
+
+        <p>To run the tests for a package, use: swift test</p>
+
+<pre><code class="swift">                  
+$ swift test
+Compile Swift Module 'HelloTests' (1 sources)
+Linking ./.build/x86_64-apple-macosx10.10/debug/HelloPackageTests.xctest/Contents/MacOS/HelloPackageTests
+Test Suite 'All tests' started at 2016-08-29 08:00:31.453
+Test Suite 'HelloPackageTests.xctest' started at 2016-08-29 08:00:31.454
+Test Suite 'HelloTests' started at 2016-08-29 08:00:31.454
+Test Case '-[HelloTests.HelloTests testExample]' started.
+Test Case '-[HelloTests.HelloTests testExample]' passed (0.001 seconds).
+Test Suite 'HelloTests' passed at 2016-08-29 08:00:31.455.
+    Executed 1 test, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'HelloPackageTests.xctest' passed at 2016-08-29 08:00:31.455.
+    Executed 1 test, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'All tests' passed at 2016-08-29 08:00:31.455.
+    Executed 1 test, with 0 failures (0 unexpected) in 0.001 (0.002) seconds
+</code></pre>
+
+
+        <h5>Building an Executable</h5>
+        
+        <p>A target is considered as an executable if it contains a file 
+          named main.swift. The package manager will compile that file 
+          into a binary executable.
+        
+        In this example, the package will produce an executable named Hello 
+        that outputs “Hello, world!”.
+        
+        First create and enter a directory called Hello:</p>
+
+<pre><code>                  
+$ mkdir Hello
+$ cd Hello
+</code></pre>
+
+        <p>Now run the swift package’s init command with executable 
+          type:</p>
+
+<pre><code>                  
+$ swift package init --type executable
+</code></pre>
+
+        <p>Use the swift run command to build and run the executable:</p>
+
+<pre><code>                  
+$ swift run Hello
+Compile Swift Module 'Hello' (1 sources)
+Linking ./.build/x86_64-apple-macosx10.10/debug/Hello
+Hello, world!
+</code></pre>
+
+        <sup>NOTE: Since there is only one executable in this package, 
+          we can omit the executable name from the swift run command.
+        </sup>
+
+        <p>You can also compile the package by running the swift build 
+          command and then run the binary from .build directory:</p>
+
+<pre><code>                  
+$ swift build
+Compile Swift Module 'Hello' (1 sources)
+Linking ./.build/x86_64-apple-macosx10.10/debug/Hello
+
+$ .build/x86_64-apple-macosx10.10/debug/Hello
+Hello, world!
+</code></pre>
+
+        <p>As a next step, let’s define a new sayHello(name:) function in a
+           new source file, and have the executable call that instead of 
+           calling print(_:) directly.</p>
+
+
+        <h5>Working with Multiple Source Files</h5>
+        
+        <p>Create a new file in the Sources/Hello directory called 
+          Greeter.swift, and enter the following code:</p>
+
+<pre><code>          
+func sayHello(name: String) {
+    print("Hello, \(name)!")
+}
+</code></pre>
+
+        <p>The sayHello(name:) function takes a single String argument 
+          and prints our “Hello” greeting before, substituting the word 
+          “World” with the function argument.
+        
+        Now, open main.swift again, and replace the existing contents 
+        with the following code:</p>
+
+<pre><code>                  
+if CommandLine.arguments.count != 2 {
+    print("Usage: hello NAME")
+} else {
+    let name = CommandLine.arguments[1]
+    sayHello(name: name)
+}
+</code></pre>
+
+        <p>Rather than using a hardcoded name as before, main.swift now 
+          reads from the command line arguments. And instead of invoking 
+          print(_:) directly, main.swift now calls the sayHello(name:) 
+          method. Because the method is part of the Hello module, no 
+          import statement is necessary.
+        
+        Run swift run and try out the new version of Hello:</p>
+
+<pre><code>                  
+$ swift run Hello `whoami`
+</code></pre>
+
+        <p>To learn about the Swift Package Manager, including how to 
+          build modules, import dependencies, and map system libraries, 
+          see the Swift Package Manager section of the website.</p>
+        
+
+
+
+        <h5>Using the LLDB Debugger</h5>
+        
+        <p>You can use the LLDB debugger to run Swift programs step-by-step, 
+          set breakpoints, and inspect and modify program state.
+        
+        As an example, consider the following Swift code, which defines a 
+        factorial(n:) function, and prints the result of calling that 
+        function:</p>
+
+<pre><code>                  
+func factorial(n: Int) -> Int {
+    if n <= 1 { return n }
+    return n * factorial(n: n - 1)
+}
+
+let number = 4
+print("\(number)! is equal to \(factorial(n: number))")
+</code></pre>        
+
+        <p>Create a file named Factorial.swift with the code above, and run
+          the swiftc command, passing the filename as a command line argument, 
+          along with the -g option to generate debug information. This will 
+          create an executable named Factorial in the current directory.</p>
+
+<pre><code>                  
+$ swiftc -g Factorial.swift
+$ ls
+Factorial.dSYM
+Factorial.swift
+Factorial*
+</code></pre>
+
+        <p>Instead of running the Factorial program directly, run it through 
+          the LLDB debugger by passing it as a command line argument to the 
+          lldb command.</p>
+
+<pre><code>                    
+$ lldb Factorial
+(lldb) target create "Factorial"
+Current executable set to 'Factorial' (x86_64).
+</code></pre>
+
+        <p>This will start an interactive console that allows you to run LLDB 
+          commands.
+        
+          For more information about LLDB commands, see the LLDB Tutorial.
+        
+        Set a breakpoint on line 2 of the factorial(n:) function with the 
+        breakpoint set (b) command, to have the process break each time the 
+        function is executed.</p>
+
+<pre><code>                  
+(lldb) b 2
+Breakpoint 1: where = Factorial`Factorial.factorial (Swift.Int) -> Swift.Int + 12 at Factorial.swift:2, address = 0x0000000100000e7c
+</code></pre>        
+       
+        <p>Run the process with the run (r) command. The process will stop 
+          at the call site of the factorial(n:) function.</p>
+
+<pre><code>                  
+(lldb) r
+Process 40246 resuming
+Process 40246 stopped
+* thread #1: tid = 0x14dfdf, 0x0000000100000e7c Factorial`Factorial.factorial (n=4) -> Swift.Int + 12 at Factorial.swift:2, queue = 'com.apple.main-thread', stop reason = breakpoint 1.1
+   frame #0: 0x0000000100000e7c Factorial`Factorial.factorial (n=4) -> Swift.Int + 12 at Factorial.swift:2
+   1  func factorial(n: Int) -> Int {
+-> 2      if n <= 1 { return n }
+   3      return n * factorial(n: n - 1)
+   4  }
+   5
+   6  let number = 4
+   7  print("\(number)! is equal to \(factorial(n: number))")
+</code></pre>
+            
+        <p>Use the print (p) command to inspect the value of the n 
+          parameter.</p>
+
+<pre><code>                  
+(lldb) p n
+(Int) $R0 = 4
+</code></pre>
+
+        <p>The print command can evaluate Swift expressions as well.</p>
+
+<pre><code>                  
+(lldb) p n * n
+(Int) $R1 = 16
+</code></pre>
+
+        <p>Use the backtrace (bt) command to show the frames leading to 
+          factorial(n:) being called.</p>
+
+<pre><code>                  
+(lldb) bt
+* thread #1: tid = 0x14e393, 0x0000000100000e7c Factorial`Factorial.factorial (n=4) -> Swift.Int + 12 at Factorial.swift:2, queue = 'com.apple.main-thread', stop reason = breakpoint 1.1
+  * frame #0: 0x0000000100000e7c Factorial`Factorial.factorial (n=4) -> Swift.Int + 12 at Factorial.swift:2
+    frame #1: 0x0000000100000daf Factorial`main + 287 at Factorial.swift:7
+    frame #2: 0x00007fff890be5ad libdyld.dylib`start + 1
+    frame #3: 0x00007fff890be5ad libdyld.dylib`start + 1
+</code></pre>
+
+        <p>Use the continue (c) command to resume the process until the 
+          breakpoint is hit again.</p>
+
+<pre><code>                  
+(lldb) c
+Process 40246 resuming
+Process 40246 stopped
+* thread #1: tid = 0x14e393, 0x0000000100000e7c Factorial`Factorial.factorial (n=3) -> Swift.Int + 12 at Factorial.swift:2, queue = 'com.apple.main-thread', stop reason = breakpoint 1.1
+   frame #0: 0x0000000100000e7c Factorial`Factorial.factorial (n=3) -> Swift.Int + 12 at Factorial.swift:2
+   1  func factorial(n: Int) -> Int {
+-> 2    if n <= 1 { return n }
+   3     return n * factorial(n: n - 1)
+   4  }
+   5
+   6  let number = 4
+   7  print("\(number)! is equal to \(factorial(n: number))")
+</code></pre>
+
+        <p>Use the print (p) command again to inspect the value of the n 
+          parameter for the second call to factorial(n:).</p>
+
+<pre><code>                  
+(lldb) p n
+(Int) $R2 = 3
+</code></pre>
+
+        <p>Use the breakpoint disable (br di) command to disable all 
+          breakpoints and the continue (c) command to have the process 
+          run until it exits.</p>
+
+<pre><code>                  
+(lldb) br di
+All breakpoints disabled. (1 breakpoints)
+(lldb) c
+Process 40246 resuming
+4! is equal to 24
+Process 40246 exited with status = 0 (0x00000000)
+</code></pre>
+
+
+
+        <!-- pagination -->
+        <a role="button" class="btn btn-primary float-left" 
+        href="../labs/index.html">
+        &larr; PREVIOUS: Labs</a>
+
+        <a role="button" class="btn btn-primary float-right" 
+        href="../field-reports/index.html">
+        NEXT: Field Reports &rarr;</a><br/><br/>              
+        </section>      
+        
+    <!-- jQuery library -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+            crossorigin="anonymous"></script>       
+        <script src="../assets/javascripts/scale.fix.js"></script>   
+    </body>
+</html>

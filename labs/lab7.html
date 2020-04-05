@@ -53,8 +53,8 @@
                 <span class="fab fa-python fa-2x"></span> 
             </a>                        
 
-           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#r" role="button">
-                <span class="fab fa-r-project  fa-2x"></span> 
+           <a class="btn btn-md btn-default" href="../appendix-projects/index.html#node" role="button">
+                <span class="fab fa-node fa-3x"></span> 
             </a>                
             
            <a class="btn btn-md btn-default" href="../appendix-projects/index.html#javascript" role="button">
@@ -87,12 +87,12 @@
       
     <section>
         <h2><span class="fas fa-flask" aria-hidden="true"></span>
-              <a name="labs" class="anchor" href="#labs">
+              <a name="lab7" class="anchor" href="#lab7">
               <span class="header-link"></span></a>
                 Lab:  SQL &amp; R </h2>                  
      
         <p><sup><span class="fa fa-calendar"></span>
-                Last updated on September 20th, 2019</sup></p>
+                Last updated on March 17th, 2020</sup></p>
                                                                      
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -107,40 +107,24 @@
                 <span class="fa fa-bookmark"></span> 
                 <a href="../labs/index.html">        
                     Labs</a></li>    
-            <li class="breadcrumb-item active" aria-current="node">
+            <li class="breadcrumb-item active" aria-current="sqlr">
                 <span class="fa fa-bookmark"></span>         
                 SQL &amp; R</li>
           </ol>
         </nav>                  
                 
-        <a name="labs" id="labs"></a>            
+        <a name="lab7" id="lab7"></a>            
         <p>This section includes information about  SQL &amp; R labs.</p>
 
-        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-          <h4>Fall 2019 SQL &amp; R Lab</h4> 
-         <small>
-          This SQL &amp; R lab event was on [ Saturday, October 5, 2019 <br/>
-          at 10:30 P.M.], in the location [ Detroit, Michigan, USA ] <br/>
-          by me and no other lab partners.
-         </small>
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>       
-               
-        <p>This is a non-compulsory programming lab to help students familiarize 
-           themselves with programming with Node. <br/>
-           <sub>
-           LAST UPDATED:
-           [ Sunday, November 4, 2019 at 5:47 P.M.] 
-           </sub>
-        </p>
+        <h4>EXERCISES</h4>
 
         <ul>
             <li>Exercise 0 : SQL </li>
             <li>Exercise 1 : R</li>    
         </ul>
         
+
+        <a name="sql" class="anchor" href="#sql"></a>        
         <h3>Exercise 0 : SQL </h3>
         <p>SQL is a standard language for accessing and manipulating 
            databases.  
@@ -180,6 +164,55 @@
 
       <p>Note: Most of the SQL database programs also have their own proprietary 
                extensions in addition to the SQL standard!</p>
+
+               <h4>REQUIRED RESOURCES</h4>
+               <p>You will need a a text editor, preferably with syntax highlighting. 
+                  A few options is Netbeans, Atom, Sublime Text, available on OS X, 
+                  Windows and Linux. You will need a web browser that includes a 
+                  debugger such as Chrome or Firefox or Edge. Apple disabled the Safari
+                  debugger by default, so read instructions to enable it first.</p>
+       
+               <h4>MATERIALS</h4>
+               <p>List everything needed to complete your experiment. <br/>
+                   
+                   <span class="fas fa-external-link-alt"></span> 
+                   <a href="https://www.w3schools.com/sql/default.asp" target="_blank"> 
+                     https://www.w3schools.com/sql/default.asp</a><br/>
+                   
+                   <span class="fas fa-external-link-alt"></span> 
+                   <a href="https://www.w3schools.com/sql/sql_quickref.asp" target="_blank"> 
+                     https://www.w3schools.com/sql/sql_quickref.asp</a><br/>
+              
+                   <span class="fas fa-external-link-alt"></span> 
+                   <a href="https://en.wikipedia.org/wiki/SQL" target="_blank"> 
+                     https://en.wikipedia.org/wiki/SQL</a><br/>
+                   
+                </p>			  
+       
+               <p>Please check the 
+                   <a href="material.md" target="_blank">
+                     materials.md</a> file.</p>  
+       
+               <p>Download the files required 
+                   <a href="lab7Required.zip" target="_blank">here</a> 
+                   and the complete solution for this lab 
+                   <a href="lab7Solution.zip" target="_blank">here</a>.</p>
+       
+               <h4>VIDEOS</h4>
+       
+               <p>Helpful videos selected by me:</p>
+               
+               <span class="fas fa-external-link-alt"></span> 
+               SQL
+               
+               <ul>            
+                 <li><a href="https://www.youtube.com/watch?v=HXV3zeQKqGY" target="_blank"> 
+                  https://www.youtube.com/watch?v=HXV3zeQKqGY</a></li>
+               
+                 <li><a href="https://www.youtube.com/watch?v=7S_tz1z_5bA" target="_blank"> 
+                   https://www.youtube.com/watch?v=7S_tz1z_5bA</a></li>
+               </ul>
+               
 
       <h4>Using SQL in Your Web Site</h4>
 
@@ -223,7 +256,567 @@ SELECT * FROM Customers;
          <li>A column is a vertical entity in a table that contains all information 
             associated with a specific field in a table.</li>
          </ul>            
-         
+
+         <h3>SQL </h3>
+         <p>SQL is a domain-specific language used in programming and designed for 
+            managing data held in a relational database management system (RDBMS), 
+            or for stream processing in a relational data stream management system 
+            (RDSMS). It is particularly useful in handling structured data, i.e. 
+            data incorporating relations among entities and variables.<br/><br/>
+            
+            SQL offers two main advantages over older read–write APIs such as ISAM or 
+            VSAM. Firstly, it introduced the concept of accessing many records with 
+            one single command. Secondly, it eliminates the need to specify how to 
+            reach a record, e.g. with or without an index. Some of The Most Important 
+            SQL Commands:</p>
+ 
+          <ul>
+             <li>SELECT - extracts data from a database</li>
+             <li>UPDATE - updates data in a database</li>
+             <li>DELETE - deletes data from a database</li>
+             <li>INSERT INTO - inserts new data into a database</li>
+             <li>CREATE DATABASE - creates a new database</li>
+             <li>ALTER DATABASE - modifies a database</li>
+             <li>CREATE TABLE - creates a new table</li>
+             <li>ALTER TABLE - modifies a table</li>
+             <li>DROP TABLE - deletes a table</li>
+             <li>CREATE INDEX - creates an index (search key)</li>
+             <li>DROP INDEX - deletes an index</li>
+          </ul>
+ 
+          <h5>SQL EXAMPLE : SELECT - extracts data from a database</h5>
+ 
+          <p>The SELECT statement is used to select data from a database. The data 
+             returned is stored in a result table, called the result-set.</p>
+ 
+ <pre><code>
+ SELECT Syntax
+ SELECT column1, column2, ...
+ FROM table_name;
+ </code></pre>
+ 
+          <p>Here, column1, column2, ... are the field names of the table you want 
+             to select data from. If you want to select all the fields available in 
+             the table, use the following syntax:</p>
+ 
+ <pre><code>
+ SELECT * FROM table_name; 
+ </code></pre>
+ 
+ 
+ 
+          <h5>SQL EXAMPLE : UPDATE - updates data in a database</h5>
+ 
+ <p>The UPDATE statement is used to modify the existing records in a table.</p>
+ 
+ <pre><code>
+ UPDATE table_name
+ SET column1 = value1, column2 = value2, ...
+ WHERE condition;
+ </code></pre>
+ 
+          <p>Note: Be careful when updating records in a table! Notice the WHERE clause 
+                   in the UPDATE statement. The WHERE clause specifies which record(s) 
+                   that should be updated. If you omit the WHERE clause, all records in 
+                   the table will be updated!</p>
+ 
+          <h6>UPDATE Table</h6>
+ 
+          <p>The following SQL statement updates the first customer 
+             (CustomerID = 1) with a new contact person and a new city.</p>
+ 
+ <pre><code>
+ UPDATE Customers
+ SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
+ WHERE CustomerID = 1;
+ </code></pre>
+ 
+          <h6>UPDATE Multiple Records</h6>
+ 
+          <p>It is the WHERE clause that determines how many records will be updated.
+             The following SQL statement will update the contactname to "Juan" for all 
+             records where country is "Mexico":</p>
+ 
+ <pre><code>
+ UPDATE Customers
+ SET ContactName='Juan'
+ WHERE Country='Mexico';
+ </code></pre>
+ 
+          <h6>Update Warning!</h6>
+ 
+          <p>Be careful when updating records. If you omit the WHERE clause, ALL records 
+             will be updated!</p>
+ 
+ <pre><code>
+ UPDATE Customers
+ SET ContactName='Juan';
+ </code></pre>
+ 
+          <h5>SQL EXAMPLE : DELETE - deletes data from a database</h5>
+ 
+          <p>The DELETE statement is used to delete existing records in a table.</p>
+ 
+ <pre><code>
+ DELETE FROM table_name WHERE condition;
+ </code></pre>
+ 
+          <p>Note: Be careful when deleting records in a table! Notice the WHERE clause 
+                   in the DELETE statement. The WHERE clause specifies which record(s) 
+                   should be deleted. If you omit the WHERE clause, all records in the 
+                   table will be deleted!</p>
+ 
+          <p>The following SQL statement deletes the customer "Alfreds Futterkiste" 
+             from the "Customers" table:</p>
+ 
+ <pre><code>
+ DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
+ </code></pre>
+ 
+          <h6>Delete All Records</h6>
+ 
+          <p>It is possible to delete all rows in a table without deleting the table. 
+             This means that the table structure, attributes, and indexes will be intact:</p>
+ 
+ <pre><code>
+ DELETE FROM table_name;
+ </code></pre>
+ 
+          <p>The following SQL statement deletes all rows in the "Customers" table, 
+             without deleting the table:</p>
+ 
+ <pre><code>
+ DELETE FROM Customers;
+ </code></pre>
+ 
+          <h5>SQL EXAMPLE : INSERT INTO - inserts new data into a database</h5>
+ 
+          <p>The INSERT INTO statement is used to insert new records in a table.</p>
+ 
+          <h6>INSERT INTO Syntax</h6>
+ 
+          <p>It is possible to write the INSERT INTO statement in two ways.</p>
+ 
+          <ul>
+             <li>The first way specifies both the column names and the values to be inserted:</li>
+ 
+ <pre><code>
+ INSERT INTO table_name (column1, column2, column3, ...)
+ VALUES (value1, value2, value3, ...);
+ </code></pre>
+ 
+             <li>If you are adding values for all the columns of the table, you do not 
+                 need to specify the column names in the SQL query. However, make sure 
+                 the order of the values is in the same order as the columns in the 
+                 table. The INSERT INTO syntax would be as follows:</li>
+ 
+ <pre><code>
+ INSERT INTO table_name
+ VALUES (value1, value2, value3, ...); 
+ </code></pre>
+ 
+          </ul>
+ 
+          <h6>INSERT INTO Example</h6>
+ 
+          <p>The following SQL statement inserts a new record in the "Customers" table:</p>
+ 
+ <pre><code>
+ INSERT INTO Customers (CustomerName, 
+                        ContactName, 
+                        Address, 
+                        City, 
+                        PostalCode, 
+                        Country)
+ VALUES ('Cardinal', 
+         'Tom B. Erichsen', 
+         'Skagen 21', 
+         'Stavanger', 
+         '4006', 
+         'Norway');
+ </code></pre>
+ 
+          <h6>Insert Data Only in Specified Columns</h6>
+ 
+          <p>It is also possible to only insert data in specific columns.</p>
+          
+          <p>The following SQL statement will insert a new record, but only insert 
+             data in the "CustomerName", "City", and "Country" columns (CustomerID 
+             will be updated automatically):</p>
+ 
+ <pre><code>
+ INSERT INTO Customers (CustomerName, City, Country)
+ VALUES ('Cardinal', 'Stavanger', 'Norway');
+ </code></pre>
+ 
+          <h5>SQL EXAMPLE : CREATE DATABASE - creates a new database</h5>
+ 
+          <p>The CREATE DATABASE statement is used to create a new SQL database.</p>
+ 
+ <pre><code>   
+ CREATE DATABASE databasename;
+ CREATE DATABASE Example
+ </code></pre>
+ 
+          <p>The following SQL statement creates a database called "testDB":</p>
+ 
+ <pre><code>
+ CREATE DATABASE testDB;
+ </code></pre>
+ 
+          <p>Tip: Make sure you have admin privilege before creating any database. 
+                  Once a database is created, you can check it in the list of 
+                  databases with the following SQL command: SHOW DATABASES;</p>
+ 
+          <h5>SQL EXAMPLE : ALTER DATABASE - modifies a database</h5>
+          
+          <p>The ALTER DATABASE statement is used to modify, maintain, or recover 
+          an existing database.</p>
+ 
+ 
+ Oracle 10G and later:
+ ALTER TABLE table_name
+ MODIFY column_name datatype; 
+ 
+ 
+          <p>In SQL 2012 the alter command modifies a database or the file and 
+             filegroups which are associated with the database. You can add or 
+             remove files from as database, changes the attributes of a database 
+             or its files and filegroups, changes the database collation, and 
+             sets database options.</p>
+ 
+          <p>To a databases name, use the following syntax:</p>
+ 
+ <pre><code>
+ ALTER database database_name
+ </code></pre>
+ 
+ or
+ 
+ <pre><code>
+ ALTER DATABASE { database_name  | current } 
+    { 
+       MODIFY NAME = new_database_name 
+    }
+ </code></pre>
+ 
+ Alter database in PostgreSQL [9.2]
+ 
+ <pre><code>
+ ALTER DATABASE name [ [ WITH ] option [ ... ] ]
+ where option can be:
+     CONNECTION LIMIT connlimit
+ ALTER DATABASE name RENAME TO new_name
+ ALTER DATABASE name OWNER TO new_owner
+ ALTER DATABASE name SET TABLESPACE new_tablespace
+ ALTER DATABASE name SET configuration_parameter 
+    { TO | = } { value | DEFAULT }
+ ALTER DATABASE name SET configuration_parameter FROM CURRENT
+ ALTER DATABASE name RESET configuration_parameter
+ ALTER DATABASE name RESET ALL
+ </code></pre>
+ 
+ Alter database in MySQL [5.6]
+ 
+ <pre><code>
+ ALTER {DATABASE | SCHEMA} [db_name]
+     alter_specification ...
+ ALTER {DATABASE | SCHEMA} db_name
+     UPGRADE DATA DIRECTORY NAME
+ alter_specification:
+     [DEFAULT] CHARACTER SET [=] char set_name
+   | [DEFAULT] COLLATE [=] collation _name
+ 
+ </code></pre>
+ 
+       
+          <h5>SQL EXAMPLE : CREATE TABLE - creates a new table</h5>
+ 
+          <p>The CREATE TABLE statement is used to create a new table in a database.</p>
+ 
+ <pre><code>
+ CREATE TABLE table_name (
+     column1 datatype,
+     column2 datatype,
+     column3 datatype,
+    ....
+ );
+ </code></pre>
+ 
+          <p>The column parameters specify the names of the columns of the table.</p>
+ 
+          <p>The datatype parameter specifies the type of data the column can 
+             hold (e.g. varchar, integer, date, etc.).</p>
+ 
+          <p>Tip: For an overview of the available data types, go to our complete 
+                  Data Types Reference.</p>
+ 
+          <h6>SQL CREATE TABLE Example</h6>
+ 
+          <p>The following example creates a table called "Persons" that contains five
+             columns: PersonID, LastName, FirstName, Address, and City:
+ 
+ <pre><code>
+ CREATE TABLE Persons (
+     PersonID int,
+     LastName varchar(255),
+     FirstName varchar(255),
+     Address varchar(255),
+     City varchar(255)
+ );
+ </code></pre>
+ 
+          <p>The PersonID column is of type int and will hold an integer.</p>
+ 
+          <p>The LastName, FirstName, Address, and City columns are of type 
+             varchar and will hold characters, and the maximum length for these 
+             fields is 255 characters.</p>
+ 
+          <p>Tip: The empty "Persons" table can now be filled with data with the 
+                  SQL INSERT INTO statement.</p>
+ 
+          <h6>Create Table Using Another Table</h6>
+ 
+          <p>A copy of an existing table can also be created using CREATE TABLE.</p>
+ 
+          <p>The new table gets the same column definitions. All columns or specific 
+             columns can be selected.</p>
+ 
+          <p>If you create a new table using an existing table, the new table will 
+             be filled with the existing values from the old table.</p>
+ 
+ <pre><code>
+ CREATE TABLE new_table_name AS
+     SELECT column1, column2,...
+     FROM existing_table_name
+     WHERE ....;
+ </code></pre>
+ 
+          <p>The following SQL creates a new table called "TestTables" 
+          (which is a copy of the "Customers" table):</p>
+ 
+ <pre><code>
+ CREATE TABLE TestTable AS
+ SELECT customername, contactname
+ FROM customers; 
+ </code></pre>
+ 
+          <h5>SQL EXAMPLE : ALTER TABLE - modifies a table</h5>
+ 
+          <p>The ALTER TABLE statement is used to add, delete, or modify 
+             columns in an existing table.</p>
+ 
+          <p>The ALTER TABLE statement is also used to add and drop various 
+             constraints on an existing table.</p>
+ 
+          <h6>ALTER TABLE - ADD Column</h6>
+ 
+          <p>To add a column in a table, use the following syntax:</p>
+ 
+ <pre><code>
+ ALTER TABLE table_name
+ ADD column_name datatype;
+ </code></pre>
+ 
+          <p>The following SQL adds an "Email" column to the "Customers" table:</p>
+ 
+ <pre><code>
+ ALTER TABLE Customers
+ ADD Email varchar(255);
+ </code></pre>
+ 
+          <h6>ALTER TABLE - DROP COLUMN</h6>
+ 
+          <p>To delete a column in a table, use the following syntax 
+             (notice that some database systems don't allow deleting 
+             a column):</p>
+ 
+ <pre><code>            
+ ALTER TABLE table_name
+ DROP COLUMN column_name;
+ </code></pre>
+ 
+          <p>The following SQL deletes the "Email" column from the "Customers" table:</p>
+ 
+ <pre><code>
+ ALTER TABLE Customers
+ DROP COLUMN Email;
+ </code></pre>
+ 
+          <h6>ALTER TABLE - ALTER/MODIFY COLUMN</h6>
+ 
+          <p>To change the data type of a column in a table, use the following syntax:</p>
+ 
+ SQL Server / MS Access:
+ <pre><code>
+ ALTER TABLE table_name
+ ALTER COLUMN column_name datatype;
+ </code></pre>
+ 
+ My SQL / Oracle (prior version 10G):
+ <pre><code>
+ ALTER TABLE table_name
+ MODIFY COLUMN column_name datatype;
+ </code></pre>
+ 
+ Oracle 10G and later:
+ <pre><code>
+ ALTER TABLE table_name
+ MODIFY column_name datatype;
+ </code></pre>
+ 
+          <h6>SQL ALTER TABLE Example</h6>
+ 
+          <p>Now we want to add a column named "DateOfBirth" in the "Persons" 
+             table. We use the following SQL statement:</p>
+ 
+ <pre><code>
+ ALTER TABLE Persons
+ ADD DateOfBirth date;
+ </code></pre>
+ 
+          <p>Notice that the new column, "DateOfBirth", is of type date and is going 
+             to hold a date. The data type specifies what type of data the column can 
+             hold. For a complete reference of all the data types available in 
+             MS Access, MySQL, and SQL Server, go to our complete Data Types 
+             reference.</p>
+ 
+          <h6>Change Data Type Example</h6>
+ 
+          <p>Now we want to change the data type of the column named 
+             "DateOfBirth" in the "Persons" table.  We use the 
+             following SQL statement:</p>
+ 
+ <pre><code>
+ ALTER TABLE Persons
+ ALTER COLUMN DateOfBirth year;
+ </code></pre>
+ 
+          <p>Notice that the "DateOfBirth" column is now of type year and 
+             is going to hold a year in a two- or four-digit format.</p>
+ 
+ <pre><code>
+ DROP COLUMN Example
+ </code></pre>
+ 
+          <p>Next, we want to delete the column named "DateOfBirth" in the 
+             "Persons" table.  We use the following SQL statement:</p>
+ 
+ <pre><code>
+ ALTER TABLE Persons
+ DROP COLUMN DateOfBirth;
+ </code></pre>
+ 
+          <h5>SQL EXAMPLE : DROP TABLE - deletes a table</h5>
+ 
+          <p>The DROP TABLE statement is used to drop an existing table in a database.</p>
+ 
+ <pre><code>
+ DROP TABLE table_name;
+ </code></pre>
+ 
+          <p>Note: Be careful before dropping a table. Deleting a table 
+                   will result in loss of complete information stored in 
+                   the table!</p>
+ 
+          <h6>SQL DROP TABLE Example</h6>
+ 
+          <p>The following SQL statement drops the existing table "Shippers":</p>
+ 
+ <pre><code>
+ DROP TABLE Shippers;
+ </code></pre>
+ 
+          <h6>SQL TRUNCATE TABLE</h6>
+ 
+          <p>The TRUNCATE TABLE statement is used to delete the data inside a 
+             table, but not the table itself.</p>
+ 
+ <pre><code>
+ TRUNCATE TABLE table_name;
+ </code></pre>
+ 
+          <h5>SQL EXAMPLE : CREATE INDEX - creates an index (search key)</h5>
+ 
+          <p>The CREATE INDEX statement is used to create indexes in tables.</p>
+ 
+          <p>Indexes are used to retrieve data from the database very fast. The 
+             users cannot see the indexes, they are just used to speed up 
+             searches/queries.</p>
+ 
+          <p>Note: Updating a table with indexes takes more time than updating a 
+                   table without (because the indexes also need an update). So, 
+                   only create indexes on columns that will be frequently searched 
+                   against.</p>
+ 
+          <h6>CREATE INDEX Syntax</h6>
+ 
+          <p>Creates an index on a table. Duplicate values are allowed:</p>
+ 
+ <pre><code>
+ CREATE INDEX index_name
+ ON table_name (column1, column2, ...);
+ </code></pre>
+        
+          <h6>CREATE UNIQUE INDEX Syntax</h6>
+ 
+          <p>Creates a unique index on a table. Duplicate values are not allowed:</p>
+ 
+ <pre><code>
+ CREATE UNIQUE INDEX index_name
+ ON table_name (column1, column2, ...);
+ </code></pre>
+ 
+          <p>Note: The syntax for creating indexes varies among different 
+                   databases. Therefore: Check the syntax for creating indexes 
+                   in your database.</p>
+ 
+          <h6>CREATE INDEX Example</h6>
+ 
+          <p>The SQL statement below creates an index named "idx_lastname" on 
+             the "LastName" column in the "Persons" table:</p>
+ 
+ <pre><code>
+ CREATE INDEX idx_lastname
+ ON Persons (LastName);
+ </code></pre>
+ 
+          <p>If you want to create an index on a combination of columns, you can 
+             list the column names within the parentheses, separated by commas:</p>
+ 
+ <pre><code>
+ CREATE INDEX idx_pname
+ ON Persons (LastName, FirstName);
+ </code></pre>
+ 
+          <h5>SQL EXAMPLE : DROP INDEX - deletes an index (search key)</h5>
+ 
+          <p>The DROP INDEX statement is used to delete an index in a table.</p>
+ 
+ MS Access:
+ <pre><code>
+ DROP INDEX index_name ON table_name;
+ </code></pre>
+ 
+ SQL Server:
+ <pre><code>
+ DROP INDEX table_name.index_name;
+ </code></pre>
+ 
+ DB2/Oracle:
+ <pre><code>
+ DROP INDEX index_name;
+ </code></pre>
+ 
+ MySQL:
+ <pre><code>
+ ALTER TABLE table_name
+ DROP INDEX index_name; 
+ </code></pre>
+ 
+ 
+
+         <a name="r" class="anchor" href="#r"></a>        
         <h3>Exercise 1 : R</h3>
         <p>R is a programming language and free software environment for statistical 
            computing and graphics supported by the R Foundation for Statistical 
@@ -249,31 +842,19 @@ SELECT * FROM Customers;
             <li>Machine learning algorithm</li>
         </ul>
 
-        <h4>Required Resources</h4>
+        <h4>REQUIRED RESOURCES</h4>
         <p>You will need a a text editor, preferably with syntax highlighting. 
            A few options is Netbeans, Atom, Sublime Text, available on OS X, 
            Windows and Linux. You will need a web browser that includes a 
            debugger such as Chrome or Firefox or Edge. Apple disabled the Safari
            debugger by default, so read instructions to enable it first.</p>
 
-        <h4>Materials</h4>
+        <h4>MATERIALS</h4>
         <p>List everything needed to complete your experiment. <br/>
             
             <span class="fas fa-external-link-alt"></span> 
-            <a href="https://www.w3schools.com/sql/default.asp" target="_blank"> 
-              https://www.w3schools.com/sql/default.asp</a><br/>
-            
-            <span class="fas fa-external-link-alt"></span> 
-            <a href="https://www.w3schools.com/sql/sql_quickref.asp" target="_blank"> 
-              https://www.w3schools.com/sql/sql_quickref.asp</a><br/>
-
-            <span class="fas fa-external-link-alt"></span> 
             <a href="https://www.r-project.org" target="_blank"> 
               https://www.r-project.org</a><br/>
-
-            <span class="fas fa-external-link-alt"></span> 
-            <a href="https://en.wikipedia.org/wiki/SQL" target="_blank"> 
-              https://en.wikipedia.org/wiki/SQL</a><br/>
             
             <span class="fas fa-external-link-alt"></span> 
             <a href="https://en.wikipedia.org/wiki/R_(programming_language)" target="_blank"> 
@@ -297,18 +878,9 @@ SELECT * FROM Customers;
             and the complete solution for this lab 
             <a href="lab7Solution.zip" target="_blank">here</a>.</p>
 
+        <h4>VIDEOS</h4>
+
         <p>Helpful videos selected by me:</p>
-        
-        <span class="fas fa-external-link-alt"></span> 
-        SQL
-        
-        <ul>            
-          <li><a href="https://www.youtube.com/watch?v=HXV3zeQKqGY" target="_blank"> 
-           https://www.youtube.com/watch?v=HXV3zeQKqGY</a></li>
-        
-          <li><a href="https://www.youtube.com/watch?v=7S_tz1z_5bA" target="_blank"> 
-            https://www.youtube.com/watch?v=7S_tz1z_5bA</a></li>
-        </ul>
         
         <span class="fas fa-external-link-alt"></span> 
         R
@@ -320,574 +892,7 @@ SELECT * FROM Customers;
           <li><a href="https://www.youtube.com/watch?v=s3FozVfd7q4" target="_blank"> 
             https://www.youtube.com/watch?v=s3FozVfd7q4</a></li>
         </ul>
-        
-        <h3>SQL </h3>
-        <p>SQL is a domain-specific language used in programming and designed for 
-           managing data held in a relational database management system (RDBMS), 
-           or for stream processing in a relational data stream management system 
-           (RDSMS). It is particularly useful in handling structured data, i.e. 
-           data incorporating relations among entities and variables.<br/><br/>
-           
-           SQL offers two main advantages over older read–write APIs such as ISAM or 
-           VSAM. Firstly, it introduced the concept of accessing many records with 
-           one single command. Secondly, it eliminates the need to specify how to 
-           reach a record, e.g. with or without an index. Some of The Most Important 
-           SQL Commands:</p>
-
-         <ul>
-            <li>SELECT - extracts data from a database</li>
-            <li>UPDATE - updates data in a database</li>
-            <li>DELETE - deletes data from a database</li>
-            <li>INSERT INTO - inserts new data into a database</li>
-            <li>CREATE DATABASE - creates a new database</li>
-            <li>ALTER DATABASE - modifies a database</li>
-            <li>CREATE TABLE - creates a new table</li>
-            <li>ALTER TABLE - modifies a table</li>
-            <li>DROP TABLE - deletes a table</li>
-            <li>CREATE INDEX - creates an index (search key)</li>
-            <li>DROP INDEX - deletes an index</li>
-         </ul>
-
-         <h5>SQL EXAMPLE : SELECT - extracts data from a database</h5>
-
-         <p>The SELECT statement is used to select data from a database. The data 
-            returned is stored in a result table, called the result-set.</p>
-
-<pre><code>
-SELECT Syntax
-SELECT column1, column2, ...
-FROM table_name;
-</code></pre>
-
-         <p>Here, column1, column2, ... are the field names of the table you want 
-            to select data from. If you want to select all the fields available in 
-            the table, use the following syntax:</p>
-
-<pre><code>
-SELECT * FROM table_name; 
-</code></pre>
-
-
-
-         <h5>SQL EXAMPLE : UPDATE - updates data in a database</h5>
-
-<p>The UPDATE statement is used to modify the existing records in a table.</p>
-
-<pre><code>
-UPDATE table_name
-SET column1 = value1, column2 = value2, ...
-WHERE condition;
-</code></pre>
-
-         <p>Note: Be careful when updating records in a table! Notice the WHERE clause 
-                  in the UPDATE statement. The WHERE clause specifies which record(s) 
-                  that should be updated. If you omit the WHERE clause, all records in 
-                  the table will be updated!</p>
-
-         <h6>UPDATE Table</h6>
-
-         <p>The following SQL statement updates the first customer 
-            (CustomerID = 1) with a new contact person and a new city.</p>
-
-<pre><code>
-UPDATE Customers
-SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
-WHERE CustomerID = 1;
-</code></pre>
-
-         <h6>UPDATE Multiple Records</h6>
-
-         <p>It is the WHERE clause that determines how many records will be updated.
-            The following SQL statement will update the contactname to "Juan" for all 
-            records where country is "Mexico":</p>
-
-<pre><code>
-UPDATE Customers
-SET ContactName='Juan'
-WHERE Country='Mexico';
-</code></pre>
-
-         <h6>Update Warning!</h6>
-
-         <p>Be careful when updating records. If you omit the WHERE clause, ALL records 
-            will be updated!</p>
-
-<pre><code>
-UPDATE Customers
-SET ContactName='Juan';
-</code></pre>
-
-         <h5>SQL EXAMPLE : DELETE - deletes data from a database</h5>
-
-         <p>The DELETE statement is used to delete existing records in a table.</p>
-
-<pre><code>
-DELETE FROM table_name WHERE condition;
-</code></pre>
-
-         <p>Note: Be careful when deleting records in a table! Notice the WHERE clause 
-                  in the DELETE statement. The WHERE clause specifies which record(s) 
-                  should be deleted. If you omit the WHERE clause, all records in the 
-                  table will be deleted!</p>
-
-         <p>The following SQL statement deletes the customer "Alfreds Futterkiste" 
-            from the "Customers" table:</p>
-
-<pre><code>
-DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
-</code></pre>
-
-         <h6>Delete All Records</h6>
-
-         <p>It is possible to delete all rows in a table without deleting the table. 
-            This means that the table structure, attributes, and indexes will be intact:</p>
-
-<pre><code>
-DELETE FROM table_name;
-</code></pre>
-
-         <p>The following SQL statement deletes all rows in the "Customers" table, 
-            without deleting the table:</p>
-
-<pre><code>
-DELETE FROM Customers;
-</code></pre>
-
-         <h5>SQL EXAMPLE : INSERT INTO - inserts new data into a database</h5>
-
-         <p>The INSERT INTO statement is used to insert new records in a table.</p>
-
-         <h6>INSERT INTO Syntax</h6>
-
-         <p>It is possible to write the INSERT INTO statement in two ways.</p>
-
-         <ul>
-            <li>The first way specifies both the column names and the values to be inserted:</li>
-
-<pre><code>
-INSERT INTO table_name (column1, column2, column3, ...)
-VALUES (value1, value2, value3, ...);
-</code></pre>
-
-            <li>If you are adding values for all the columns of the table, you do not 
-                need to specify the column names in the SQL query. However, make sure 
-                the order of the values is in the same order as the columns in the 
-                table. The INSERT INTO syntax would be as follows:</li>
-
-<pre><code>
-INSERT INTO table_name
-VALUES (value1, value2, value3, ...); 
-</code></pre>
-
-         </ul>
-
-         <h6>INSERT INTO Example</h6>
-
-         <p>The following SQL statement inserts a new record in the "Customers" table:</p>
-
-<pre><code>
-INSERT INTO Customers (CustomerName, 
-                       ContactName, 
-                       Address, 
-                       City, 
-                       PostalCode, 
-                       Country)
-VALUES ('Cardinal', 
-        'Tom B. Erichsen', 
-        'Skagen 21', 
-        'Stavanger', 
-        '4006', 
-        'Norway');
-</code></pre>
-
-         <h6>Insert Data Only in Specified Columns</h6>
-
-         <p>It is also possible to only insert data in specific columns.</p>
-         
-         <p>The following SQL statement will insert a new record, but only insert 
-            data in the "CustomerName", "City", and "Country" columns (CustomerID 
-            will be updated automatically):</p>
-
-<pre><code>
-INSERT INTO Customers (CustomerName, City, Country)
-VALUES ('Cardinal', 'Stavanger', 'Norway');
-</code></pre>
-
-         <h5>SQL EXAMPLE : CREATE DATABASE - creates a new database</h5>
-
-         <p>The CREATE DATABASE statement is used to create a new SQL database.</p>
-
-<pre><code>   
-CREATE DATABASE databasename;
-CREATE DATABASE Example
-</code></pre>
-
-         <p>The following SQL statement creates a database called "testDB":</p>
-
-<pre><code>
-CREATE DATABASE testDB;
-</code></pre>
-
-         <p>Tip: Make sure you have admin privilege before creating any database. 
-                 Once a database is created, you can check it in the list of 
-                 databases with the following SQL command: SHOW DATABASES;</p>
-
-
-
-
-
-
-
-
-
-
-         <h5>SQL EXAMPLE : ALTER DATABASE - modifies a database</h5>
-         
-         <p>The ALTER DATABASE statement is used to modify, maintain, or recover 
-         an existing database.</p>
-
-Oracle 10G and later:
-ALTER TABLE table_name
-MODIFY column_name datatype; 
-
-
-         <p>In SQL 2012 the alter command modifies a database or the file and 
-            filegroups which are associated with the database. You can add or 
-            remove files from as database, changes the attributes of a database 
-            or its files and filegroups, changes the database collation, and 
-            sets database options.</p>
-
-         <p>To a databases name, use the following syntax:</p>
-
-<pre><code>
-ALTER database database_name
-</code></pre>
-
-or
-
-<pre><code>
-ALTER DATABASE { database_name  | current } 
-   { 
-      MODIFY NAME = new_database_name 
-   }
-</code></pre>
-
-Alter database in PostgreSQL [9.2]
-
-<pre><code>
-ALTER DATABASE name [ [ WITH ] option [ ... ] ]
-where option can be:
-    CONNECTION LIMIT connlimit
-ALTER DATABASE name RENAME TO new_name
-ALTER DATABASE name OWNER TO new_owner
-ALTER DATABASE name SET TABLESPACE new_tablespace
-ALTER DATABASE name SET configuration_parameter 
-   { TO | = } { value | DEFAULT }
-ALTER DATABASE name SET configuration_parameter FROM CURRENT
-ALTER DATABASE name RESET configuration_parameter
-ALTER DATABASE name RESET ALL
-</code></pre>
-
-Alter database in MySQL [5.6]
-
-<pre><code>
-ALTER {DATABASE | SCHEMA} [db_name]
-    alter_specification ...
-ALTER {DATABASE | SCHEMA} db_name
-    UPGRADE DATA DIRECTORY NAME
-alter_specification:
-    [DEFAULT] CHARACTER SET [=] char set_name
-  | [DEFAULT] COLLATE [=] collation _name
-
-</code></pre>
-
       
-         <h5>SQL EXAMPLE : CREATE TABLE - creates a new table</h5>
-
-         <p>The CREATE TABLE statement is used to create a new table in a database.</p>
-
-<pre><code>
-CREATE TABLE table_name (
-    column1 datatype,
-    column2 datatype,
-    column3 datatype,
-   ....
-);
-</code></pre>
-
-         <p>The column parameters specify the names of the columns of the table.</p>
-
-         <p>The datatype parameter specifies the type of data the column can 
-            hold (e.g. varchar, integer, date, etc.).</p>
-
-         <p>Tip: For an overview of the available data types, go to our complete 
-                 Data Types Reference.</p>
-
-         <h6>SQL CREATE TABLE Example</h6>
-
-         <p>The following example creates a table called "Persons" that contains five
-            columns: PersonID, LastName, FirstName, Address, and City:
-
-<pre><code>
-CREATE TABLE Persons (
-    PersonID int,
-    LastName varchar(255),
-    FirstName varchar(255),
-    Address varchar(255),
-    City varchar(255)
-);
-</code></pre>
-
-         <p>The PersonID column is of type int and will hold an integer.</p>
-
-         <p>The LastName, FirstName, Address, and City columns are of type 
-            varchar and will hold characters, and the maximum length for these 
-            fields is 255 characters.</p>
-
-         <p>Tip: The empty "Persons" table can now be filled with data with the 
-                 SQL INSERT INTO statement.</p>
-
-         <h6>Create Table Using Another Table</h6>
-
-         <p>A copy of an existing table can also be created using CREATE TABLE.</p>
-
-         <p>The new table gets the same column definitions. All columns or specific 
-            columns can be selected.</p>
-
-         <p>If you create a new table using an existing table, the new table will 
-            be filled with the existing values from the old table.</p>
-
-<pre><code>
-CREATE TABLE new_table_name AS
-    SELECT column1, column2,...
-    FROM existing_table_name
-    WHERE ....;
-</code></pre>
-
-         <p>The following SQL creates a new table called "TestTables" 
-         (which is a copy of the "Customers" table):</p>
-
-<pre><code>
-CREATE TABLE TestTable AS
-SELECT customername, contactname
-FROM customers; 
-</code></pre>
-
-         <h5>SQL EXAMPLE : ALTER TABLE - modifies a table</h5>
-
-         <p>The ALTER TABLE statement is used to add, delete, or modify 
-            columns in an existing table.</p>
-
-         <p>The ALTER TABLE statement is also used to add and drop various 
-            constraints on an existing table.</p>
-
-         <h6>ALTER TABLE - ADD Column</h6>
-
-         <p>To add a column in a table, use the following syntax:</p>
-
-<pre><code>
-ALTER TABLE table_name
-ADD column_name datatype;
-</code></pre>
-
-         <p>The following SQL adds an "Email" column to the "Customers" table:</p>
-
-<pre><code>
-ALTER TABLE Customers
-ADD Email varchar(255);
-</code></pre>
-
-         <h6>ALTER TABLE - DROP COLUMN</h6>
-
-         <p>To delete a column in a table, use the following syntax 
-            (notice that some database systems don't allow deleting 
-            a column):</p>
-
-<pre><code>            
-ALTER TABLE table_name
-DROP COLUMN column_name;
-</code></pre>
-
-         <p>The following SQL deletes the "Email" column from the "Customers" table:</p>
-
-<pre><code>
-ALTER TABLE Customers
-DROP COLUMN Email;
-</code></pre>
-
-         <h6>ALTER TABLE - ALTER/MODIFY COLUMN</h6>
-
-         <p>To change the data type of a column in a table, use the following syntax:</p>
-
-SQL Server / MS Access:
-<pre><code>
-ALTER TABLE table_name
-ALTER COLUMN column_name datatype;
-</code></pre>
-
-My SQL / Oracle (prior version 10G):
-<pre><code>
-ALTER TABLE table_name
-MODIFY COLUMN column_name datatype;
-</code></pre>
-
-Oracle 10G and later:
-<pre><code>
-ALTER TABLE table_name
-MODIFY column_name datatype;
-</code></pre>
-
-         <h6>SQL ALTER TABLE Example</h6>
-
-         <p>Now we want to add a column named "DateOfBirth" in the "Persons" 
-            table. We use the following SQL statement:</p>
-
-<pre><code>
-ALTER TABLE Persons
-ADD DateOfBirth date;
-</code></pre>
-
-         <p>Notice that the new column, "DateOfBirth", is of type date and is going 
-            to hold a date. The data type specifies what type of data the column can 
-            hold. For a complete reference of all the data types available in 
-            MS Access, MySQL, and SQL Server, go to our complete Data Types 
-            reference.</p>
-
-         <h6>Change Data Type Example</h6>
-
-         <p>Now we want to change the data type of the column named 
-            "DateOfBirth" in the "Persons" table.  We use the 
-            following SQL statement:</p>
-
-<pre><code>
-ALTER TABLE Persons
-ALTER COLUMN DateOfBirth year;
-</code></pre>
-
-         <p>Notice that the "DateOfBirth" column is now of type year and 
-            is going to hold a year in a two- or four-digit format.</p>
-
-<pre><code>
-DROP COLUMN Example
-</code></pre>
-
-         <p>Next, we want to delete the column named "DateOfBirth" in the 
-            "Persons" table.  We use the following SQL statement:</p>
-
-<pre><code>
-ALTER TABLE Persons
-DROP COLUMN DateOfBirth;
-</code></pre>
-
-         <h5>SQL EXAMPLE : DROP TABLE - deletes a table</h5>
-
-         <p>The DROP TABLE statement is used to drop an existing table in a database.</p>
-
-<pre><code>
-DROP TABLE table_name;
-</code></pre>
-
-         <p>Note: Be careful before dropping a table. Deleting a table 
-                  will result in loss of complete information stored in 
-                  the table!</p>
-
-         <h6>SQL DROP TABLE Example</h6>
-
-         <p>The following SQL statement drops the existing table "Shippers":</p>
-
-<pre><code>
-DROP TABLE Shippers;
-</code></pre>
-
-         <h6>SQL TRUNCATE TABLE</h6>
-
-         <p>The TRUNCATE TABLE statement is used to delete the data inside a 
-            table, but not the table itself.</p>
-
-<pre><code>
-TRUNCATE TABLE table_name;
-</code></pre>
-
-         <h5>SQL EXAMPLE : CREATE INDEX - creates an index (search key)</h5>
-
-         <p>The CREATE INDEX statement is used to create indexes in tables.</p>
-
-         <p>Indexes are used to retrieve data from the database very fast. The 
-            users cannot see the indexes, they are just used to speed up 
-            searches/queries.</p>
-
-         <p>Note: Updating a table with indexes takes more time than updating a 
-                  table without (because the indexes also need an update). So, 
-                  only create indexes on columns that will be frequently searched 
-                  against.</p>
-
-         <h6>CREATE INDEX Syntax</h6>
-
-         <p>Creates an index on a table. Duplicate values are allowed:</p>
-
-<pre><code>
-CREATE INDEX index_name
-ON table_name (column1, column2, ...);
-</code></pre>
-       
-         <h6>CREATE UNIQUE INDEX Syntax</h6>
-
-         <p>Creates a unique index on a table. Duplicate values are not allowed:</p>
-
-<pre><code>
-CREATE UNIQUE INDEX index_name
-ON table_name (column1, column2, ...);
-</code></pre>
-
-         <p>Note: The syntax for creating indexes varies among different 
-                  databases. Therefore: Check the syntax for creating indexes 
-                  in your database.</p>
-
-         <h6>CREATE INDEX Example</h6>
-
-         <p>The SQL statement below creates an index named "idx_lastname" on 
-            the "LastName" column in the "Persons" table:</p>
-
-<pre><code>
-CREATE INDEX idx_lastname
-ON Persons (LastName);
-</code></pre>
-
-         <p>If you want to create an index on a combination of columns, you can 
-            list the column names within the parentheses, separated by commas:</p>
-
-<pre><code>
-CREATE INDEX idx_pname
-ON Persons (LastName, FirstName);
-</code></pre>
-
-         <h5>SQL EXAMPLE : DROP INDEX - deletes an index (search key)</h5>
-
-         <p>The DROP INDEX statement is used to delete an index in a table.</p>
-
-MS Access:
-<pre><code>
-DROP INDEX index_name ON table_name;
-</code></pre>
-
-SQL Server:
-<pre><code>
-DROP INDEX table_name.index_name;
-</code></pre>
-
-DB2/Oracle:
-<pre><code>
-DROP INDEX index_name;
-</code></pre>
-
-MySQL:
-<pre><code>
-ALTER TABLE table_name
-DROP INDEX index_name; 
-</code></pre>
-
-
-
         <h3>R </h3>
         <p>R is a programming language and free software environment for statistical 
            computing and graphics supported by the R Foundation for Statistical 
@@ -2090,13 +2095,16 @@ R EXAMPLE : Sorting
 
 
 R EXAMPLE : Graphics in R - Basic Graphics
-------------------------------------------------------------------
-   Create plots with code
-   Replication and modification easy
-   Reproducibility
-   Graphics package
-   ggplot2, ggvis, lattice
+<ul>
+   <li>Create plots with code</li>
+   <li>Replication and modification easy</li>
+   <li>Reproducibility</li>
+   <li>Graphics package</li>
+   <li>ggplot2, ggvis, lattice</li>
+</ul>
    
+<br/><br/>
+
 R EXAMPLE : Graphics package
 <pre><code class="r">
    Many functions
@@ -2250,14 +2258,15 @@ R EXAMPLE : More Graphical Parameters
        pch= 4)
 </code></pre>
 
-
 R EXAMPLE : Multiple Plots
------------------------------------------------------------------------
-Graphics so far
------------------------------------------------------------------------
-   Plot single source of data
-   No combination of plots
-   No different layers
+
+<ul>
+  <li>Plot single source of data</li>
+  <li>No combination of plots</li>
+  <li>No different layers</li>
+</ul>
+
+<br/><br/>
 
 R EXAMPLE : Shop
 <pre><code class="r">
@@ -2465,11 +2474,14 @@ if(condition1) {
 </code></pre>
 
 R EXAMPLE : Logical Operators
----------------------------------------------------------------------
-   AND operator &
-   OR operator | 
-   NOT operator !
 
+<ul>
+   <li>AND operator &amp; </li>
+   <li>OR operator | </li>
+   <li>NOT operator ! </li>
+</ul>
+
+<br/><br/>
 
 R EXAMPLE : AND operator &amp;
 <pre><code class="r">
@@ -2617,7 +2629,7 @@ R EXAMPLE : < and >
 > "hello" > "goodbye"  # Alphabetical Order 
 [1] TRUE
 
-> TRUE < FALSE         # TRUE coerces to 1 and FALSE coerces to 0
+> TRUE < FALSE # TRUE coerces to 1 and FALSE coerces to 0
 [1] FALSE
 </code></pre>
 
@@ -2648,7 +2660,7 @@ R EXAMPLE : Relational Operators and vectors
 </code></pre>
 
 R EXAMPLE : Functions fundamentals
-R EXAMPLE : defining you own functions
+
 <pre><code class="r">
 my_fun <- function(arg1, arg2) {
   body
@@ -2715,20 +2727,8 @@ function(x) { x + 1 }
 [1] 3
 </code></pre>
 
-R EXAMPLE : Summary
--------------------------------------------------------------------------
-Three parts of a function:
-   Arguments
-   Body
-   Environment
-
-Return value is the last executed exprssion, or the first executed 
-return() statement
-Functions can be treated like usual R objects
 
 R EXAMPLE : Scoping 
-
-R EXAMPLE : Scoping describes how R looks up values by name
 <pre><code class="r">
 > x <- 10
 > x 
@@ -2837,6 +2837,8 @@ Summary
 </ul>
 
 R EXAMPLE : Data Structures
+
+<br/>
 
 R EXAMPLE : Two types of vectors in R
 <pre><code class="r">
