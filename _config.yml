@@ -1,1 +1,7 @@
+
 theme: jekyll-theme-minimal
+plugins:
+  - jekyll-feed
+title: Keeyana Jones’s blog
+description: Welcome to my Journal Blog
+author: Keeyana Jones
