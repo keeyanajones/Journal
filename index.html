@@ -1,358 +1,2045 @@
-<!DOCTYPE html>
-<html> 
+<!doctype html>
+<html lang="en">
+  <!-- head -->
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Code Journal</title>
-    <!-- Latest compiled and minified CSS -->
-    <!-- Font Awesome 5.7.0 -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
-    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
-    crossorigin="anonymous">
-    <!-- Bootstrap 4.3.1 -->    
-    <link rel="stylesheet" 
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
-          crossorigin="anonymous">   
-    <!-- Highlight.js 9.13.1 -->     
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>    
-    <script>hljs.initHighlightingOnLoad();</script>        
-    <!-- Custom Style Pygment and Icons -->
-    <link rel="stylesheet" href="assets/stylesheets/styles.css">
-    <link rel="stylesheet" href="assets/stylesheets/pygment_trac.css">
-    <link rel="icon" href="assets/images/favicon.ico" type="image/gif">
-    <link rel="shortcut icon" href="assets/images/favicon.png">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <!-- default favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- rss feed -->
+    <link rel="alternate" type="application/atom+xml" title="Keeyana Jones’s Journal Blog" 
+          href="https://keeyanajones.github.io/journal/feed.xml">
+    <script src="https://kit.fontawesome.com/b7fcbd6048.js" crossorigin="anonymous"></script>
+    <title>Journal</title>
   </head>
+  <!-- /.head -->
 
   <body>
-    <div class="wrapper">
-    <!-- Header -->         
-      <header>
-          <img src="assets/images/pb_Image.png" class="img-fluid rounded" alt="me"/>
-        <p class="view">A Code Journal for 
-            <span class="fab fa-git-square" aria-hidden="true"></span>
-                Hub Pages<br/>        
-                
-            <a href="https://github.com/keeyanajones/Journal" target="_blank">
-            <span class="fab fa-github"></span> 
-              View the Code Journal on GitHub</a></p>
-              
-            <!-- Buttons -->                        
-           <a class="btn btn-md btn-default" href="appendix-projects/index.html#java" role="button">            
-                <span class="fab fa-java fa-2x"></span> </a>                   
-            
-           <a class="btn btn-md btn-default" href="appendix-projects/index.html#python" role="button">
-                <span class="fab fa-python fa-2x"></span> </a>                        
-
-           <a class="btn btn-md btn-default" href="appendix-projects/index.html#node" role="button">
-                <span class="fab fa-node fa-3x"></span> </a>                
-            
-           <a class="btn btn-md btn-default" href="appendix-projects/index.html#javascript" role="button">
-                <span class="fab fa-js fa-2x"></span> </a>                              
-
-            <br/><br/>
-            
-            <a href="https://github.com/keeyanajones/">
-            <small><span class="fab fa-github-alt"></span>                 
-            Repositories and latest Contribution Activity</small></a>                 
-              
-        <br/>
-        
-        <ul>    
-          <li><a href="https://github.com/keeyanajones/Journal/archive/master.zip">
-              <span class="fa fa-file-archive" aria-hidden="true"></span><br/>
-                  Download <br/> ZIP</a></li>                  
-          <li><a href="https://github.com/keeyanajones/Journal">
-              <span class="fa fa-clone" aria-hidden="true"></span><br/>
-                  Clone <br/> Desktop</a></li>                  
-          <li><a href="https://github.com/keeyanajones/Journal">
-              <span class="fa fa-code-branch" aria-hidden="true"></span><br/>
-                  Fork On <br/> GitHub</a></li>
-        </ul>                         
+    <div class="container">
+      <!-- header -->
+      <header class="blog-header py-1">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1">
+            <a class="btn btn-rss text-muted" href="https://keeyanajones.github.io/journal/feed.xml" 
+               target="_blank">Subscribe</a>
+          </div>
+          <div class="col-4 text-center">
+            <a class="blog-header-logo text-dark" href="https://github.com/keeyanajones/journal" 
+               target="_blank">JOURNAL</a>
+          </div>
+          <div class="col-4 justify-content-end align-items-center">
+            <script async src="https://cse.google.com/cse.js?cx=005179419428746822391:hv4bekmlo69"></script>
+            <div class="gcse-search"></div>                
+          </div>
+        </div>
       </header>
-    <!-- ./header --> 
-    </div>
+      <!-- /.header -->
+
+      <!-- Navigation -->
+        <div class="nav-scroller py-1 mb-2">
+          <!-- Navbar content -->
+          <nav class="nav d-flex justify-content-between navbar navbar-light bg-light">
+            <a class="p-2 active" href="index.html">Home</a>
+            <a class="p-2 text-muted" href="exercises.html">Exercises</a>
+            <a class="p-2 text-muted" href="livestream.html">Live</a>                                    
+            <a class="p-2 text-muted" href="games.html">Games</a>
+            <a class="p-2 text-muted" href="utilities.html">Utilities</a>
+            <a class="p-2 text-muted" href="plugins.html">Plugins</a>
+            <a class="p-2 text-muted" href="widgets.html">Widgets</a>
+  
+          </nav>
+        </div>
+      <!-- /.navigation -->
+
+      <!-- Jumbotron -->
+        <div class="jumbotron jumbotron-fluid p-4 p-md-5 text-white rounded bg-dark" >
+          <div class="col-md-6 px-0">
+            <h1 class="display-4 font-italic">
+              8 Ideas for Positive Technology</h1>
+            
+            <p class="lead my-3">Want to come up with positive ideas to make a change? 
+              The First step, think locally. What exactly does your community need? Get to 
+              the root source of a social problem for change
+              </p>
+            <p class="lead mb-0">
+              <a href="#jumbotron" 
+                 class="btn btn-outline-secondary text-white font-weight-bold" role="button" 
+                 aria-pressed="true">Continue reading...</a></p>
+          </div>
+        </div>
+      <!-- /.jumbotron -->
       
-    <section>                             
-        <h2><span class="fa fa-list-alt" aria-hidden="true"></span>
-          <a name="about-this-journal" class="anchor" 
-             href="#about-this-journal">
-            <span class="header-link"></span></a>
-          About this Code Journal</h2>
+      <!-- Sub Navigation -->
+      <div class="py-1 mb-4">
+        <ul class="nav nav-tabs bg-light d-flex justify-content-between">
+          <!-- Nav content -->         
+            <li class="nav-item">
+              <a class="active" href="#livestream">Livestream</a></li>
+            <li class="nav-item">
+              <a href="#newreleases">New Releases</a></li>
+            <li class="nav-item">
+              <a href="#polls">Straw Polls</a></li>
+            <li class="nav-item">
+              <a href="#discussions">Discussions</a></li>
+            <li class="nav-item">
+              <a href="#development">Development</a></li>
+            <li class="nav-item">
+              <a href="#music">Music</a></li>
+            <li class="nav-item">          
+              <a href="#blog">Blog</a></li>
+          </ul>    
+      </div>
+      <!-- /.sub navigation-->
 
-        <p><sup><span class="fa fa-calendar"></span> 
-                Last updated on March 3rd, 2020</sup></p>
-         
-        <p>This Github Repository is a series of in progress writings about my work. 
-          It covers Java, JavaScript, Python, R, SQL, and typical language 
-          sub-disciplines related to Computer Science, Data Science, Artificial 
-          Intelligence, Cloud Computing, Game, and Application Development.</p>
+      <!-- Features CARDS -->      
+        <div class="row mb-2" >
+          <!-- Livestream -->
+          <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden 
+             flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <a name="livestream" id="livestream"></a>
+                <strong class="d-inline-block mb-2 text-primary">Livestream</strong>
+                <h3 class="mb-0"> <i class="fas fa-broadcast-tower"></i> LIVE</h3>
+                <div class="mb-1 text-muted"><i class="far fa-calendar-alt"></i> June 29th, 2020</div>
+                <p class="card-text mb-auto">
+                  Visit my 
+                  <a href="https://www.youtube.com/keeyanajones" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.twitch.tv/agent_kee" target="_blank"><i class="fab fa-twitch"></i></a>
+                    <a href="https://www.facebook.com/agentkee" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://discord.gg/amSp5r6" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.twitter.com/keeyanajones" target="_blank"><i class="fab fa-twitter"></i></a>
+                    
+                  live every week day <br/></p>
+                  <a href="#featured-livestream" 
+                     class="font-weight-bold" aria-pressed="true">the latest livestream...</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="assets/images/feature-twitch.png" alt="TWITCH.TV" class="ing-fluid rounded"/>
+              </div>
+            </div>
+          </div>
+          <!-- New Releases -->
+          <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden 
+            flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <a name="newreleases" id="newreleases"></a>
+                <strong class="d-inline-block mb-2 text-secondary">New Releases</strong>
+                <h3 class="mb-0">Bot <i class="fas fa-robot"></i></h3>
+                <div class="mb-1 text-muted"><i class="far fa-calendar-alt"></i> June 30th, 2020</div>
+                <p class="mb-auto">
+                  run automated tasks (scripts) over the Internet 
+                  faster than a person could
+                </p>
+                <a href="#featured-bot" 
+                   class="font-weight-bold"aria-pressed="true">the latest ai projects...</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="assets/images/thumbnail-feature-bot.png" alt="Game Bot" class="img-fluid rounded"/>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <img src="assets/images/socialmedia.jpg" 
-            class="img-fluid rounded" 
-            width="30%" height="30%"
-            style="float:left; padding: 16px;" alt="my desk"/><br/>
-          
-        <p>What works best for me when learning how to implement any new technology 
-          is to keep a hand written journal,  to keep things I am working on hand so 
-          I can write down random thoughts, my success logs, things to revisit later, 
-          goals, and lessons learned. I try to read through and recreate the pages of 
-          analysis, parsing and formatting text, math, data structures, code snippets, 
-          diagrams, programming paradigms, dynamic programming, and geometry in this 
-          repository.</p>  
+        <div class="row mb-2" >
+          <!-- Straw Poll -->
+          <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <a name="polls" id="polls"></a>
+                <strong class="d-inline-block mb-2 text-success">Straw Poll</strong>
+                <h3 class="mb-0"><i class="fas fa-poll-h"></i> POLL</h3>
+                <div class="mb-1 text-muted"><i class="far fa-calendar-alt"></i> July 1st 2020</div>
+                <p class="card-text mb-auto">
+                  Take my latest
+                    <i class="fas fa-poll-h"></i> Strawpolls
+                  every week</p>
+                  <a href="#featured-strawpolls" 
+                    class="font-weight-bold" aria-pressed="true">the latest poll...</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="assets/images/feature-straw-poll.png" alt="poll" class="ing-fluid rounded"/>
+              </div>
 
-              Development Stream Weekdays @ 11am EST
-              
-        <p><button type="button" class="btn btn-sm btn-outline-dark">
-              <a href="https://www.twitch.tv/agent_kee" target="_blank">  
-                <span class="fab fa-twitch fa-2x"></span>                 
-                <span class="badge badge-pill badge-dark"> TWITCH</span>
-              </a>
-            </button>
-            
-            <button type="button" class="btn btn-sm btn-outline-dark">
-              <a href="https://www.youtube.com/user/keeyanajones" target="_blank">  
-                <span class="fab fa-youtube fa-2x"></span>                 
-                <span class="badge badge-pill badge-dark"> YOUTUBE</span>
-              </a>
-            </button>
-           
-            <button type="button" class="btn btn-sm btn-outline-dark">
-              <a href="https://www.facebook.com/keeyana.jones" target="_blank">  
-                <span class="fab fa-facebook fa-2x"></span>                 
-                <span class="badge badge-pill badge-dark"> FACEBOOK</span>
-              </a>
-            </button>
-          </p>
+            </div>
+          </div>
+          <!-- Discussion Question -->
+          <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <a name="discussions" id="discussions"></a>
+                <strong class="d-inline-block mb-2 text-danger">Discussion Question</strong>
+                <h3 class="mb-0">Youtube VOD <i class="fab fa-youtube"></i></h3>
+                <div class="mb-1 text-muted"><i class="far fa-calendar-alt"></i> July 2nd 2020</div>
+                <p class="card-text mb-auto">
+                  watch <i class="far fa-list-alt"></i> 
+                  <a href="https://www.youtube.com/user/keeyanajones" 
+                      target="_blank">gameplay</a> video and answer a different 
+                  <a href="https://www.youtube.com/user/keeyanajones/discussion" target="_blank">
+                    question</a> <i class="fas fa-question"></i> weekly<br/><br/>
+                    </p>
+                  <a href="https://www.youtube.com/user/keeyanajones/discussion" 
+                    class="font-weight-bold" aria-pressed="true" target="_blank">the latest discussion...</a>               
+                </p>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="assets/images/feature-youtube-discussion.png" alt="youtube discussion" class="img-fluid rounded"/>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          Gaming Stream Weekdays @ 6pm EST
-          
-        <p>  
-          <strong> 
-            <button type="button" class="btn btn-sm btn-outline-dark">
-              <a href="https://www.mixer.com/agent_kee" target="_blank">  
-                <span class="fab fa-microsoft fa-2x"></span>                 
-                <span class="badge badge-pill badge-dark"> MIXER</span>
-              </a>
-            </button>    
-          </strong>
-        </p>          
-                   
-        <p><small><sup><span class="far fa-eye"></span><span class="far fa-eye"></span> 
-           </sup> See <a href="opening-essay/index.html">
-           The Opening</a></small></p>
-           
-        <a name="contents" id="contents" class="anchor" href="#contents"></a>
-        <h3><span class="fa fa-th-list" aria-hidden="true"></span>
-            Table of Contents</h3>
+        <div class="row mb-2" >
+          <!-- Development -->
+          <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <a name="development" id="development"></a>
+                <strong class="d-inline-block mb-2 text-warning">Development</strong>
+                <h3 class="mb-0"><i class="fas fa-bullhorn"></i> My Campaign</h3>
+                <div class="mb-1 text-muted"><i class="far fa-calendar-alt"></i> July 3rd 2020</div>
+                <p class="card-text mb-auto">
+                  my campaign
+                  <a href="https://www.facebook.com/agentkee" 
+                     target="_blank">
+                    <i class="fab fa-facebook"></i></a>
 
-        <strong>
-        <ol>
-          <li><a href="getting-started/index.html">GETTING STARTED</a></li>
-          <small>
-            <ul>
-              <li><a href="opening-essay/index.html">Opening</a></li>
-            </ul>
-          </small>
-                                   
-          <li><a href="learning-plan/index.html">LEARNING PLAN</a></li>                                 
-           <small>
-            <ul>
-              <li><a href="livestream/index.html">LIVESTREAM</a></li>              
-              <li><a href="gaming/index.html">GAMING</a></li>             
-              <ul>  
-                <li><a href="gaming/index.html#esports"> eSports</a></li>             
-                <li><a href="gaming/index.html#pachinko"> Pachinko</a></li>
-                <li><a href="gaming/index.html#development"> Development</a></li>
-                <li><a href="gaming/index.html#emulation"> Emulation</a></li>
-               </ul>  
-          
-              <li><a href="labs/index.html">LABS</a></li>            
-              <ul>
-                <li><a href="labs/lab1.html"> Lab 1</a> : JAVASCRIPT </li>           
-                <li><a href="labs/lab2.html"> Lab 2</a> : SCALA  </li>
-                <li><a href="labs/lab3.html"> Lab 3</a> : SMALLTALK  </li>
-                <li><a href="labs/lab4.html"> Lab 4</a> : PROLOG  </li>
-                <li><a href="labs/lab5.html"> Lab 5</a> : LISP  </li> 
+                  <a href="https://www.instagram.com/keeyanajones" 
+                     target="_blank">
+                    <i class="fab fa-instagram"></i></a> 
 
-                <li><a href="labs/lab6.html"> Lab 6</a> : PYTHON </li>   
-                <li><a href="labs/lab7.html"> Lab 7</a> : SQL &amp; R </li>  
-                <li><a href="labs/lab8.html"> Lab 8</a> : Kotlin </li>
-                <li><a href="labs/lab9.html"> Lab 9</a> : GO </li>
-                <li><a href="labs/lab10.html"> Lab 10</a> : RUST </li>               
-                
-                <li><a href="labs/lab11.html"> Lab 11</a> : C#</li>               
-                <li><a href="labs/lab12.html"> Lab 12</a> : PHP </li>                      
-                <li><a href="labs/lab13.html"> Lab 13</a> : SWIFT</li>
-                <li><a href="labs/lab14.html"> Lab 14</a> : TYPESCRIPT</li>
-                <li><a href="labs/lab15.html"> Lab 15</a> : MATLAB</li>
-              </ul>    
-              
-              
-              <li><a href="field-reports/index.html">REPORTS</a></li>         
-              <ul>
-                <li><a href="field-reports/report1.html"></a>Report 1 : Social Media </li>              
-                <li><a href="field-reports/report2.html"></a>Report 2 : Data Science </li>
-                <li><a href="field-reports/report3.html"></a>Report 3 : Game Development </li>
-                <li><a href="field-reports/report4.html"></a>Report 4 : Machine Learning </li>
-                <li><a href="field-reports/report5.html"></a>Report 5 : eSports </li> 
+                  <a href="https://www.twitter.com/keeyanajones" 
+                     target="_blank">
+                    <i class="fab fa-twitter"></i></a>                             
 
-                <li><a href="field-reports/report6.html"></a> Report 6 : AI </li>
-                <li><a href="field-reports/report7.html"></a> Report 7 : Music </li>
-                <li><a href="field-reports/report8.html"></a> Report 8 : Game Play</li>
-                <li><a href="field-reports/report9.html"></a> Report 9 : Gaming</li>
-                <li><a href="field-reports/report10.html"></a> Report 10 : Live</li>
-                
-                <li><a href="field-reports/report11.html"></a> Report 11 : Think Tank </li>              
-                <li><a href="field-reports/report12.html"></a> Report 12 : Ecosystem </li>
-                <li><a href="field-reports/report13.html"></a> Report 13 : VR/AR/XR </li>
-                <li><a href="field-reports/report14.html"></a> Report 14 : Adjacent </li>
-                <li><a href="field-reports/report15.html"></a> Report 15 : Reality </li>                                                                             
-              </ul>              
-              
-              <li><a href="experiments/index.html">EXPERIMENTS</a></li>           
-              <ul>           
-                <li><a href="experiments/experiment1.html"></a> Experiment 1 : Conversational AI Chatbot </li>
-                <li><a href="experiments/experiment2.html"></a> Experiment 2 : Engagement Features </li>
-                <li><a href="experiments/experiment3.html"></a> Experiment 3 : Themes</li>
-                <li><a href="experiments/experiment4.html"></a> Experiment 4 : Overlay and Alerts</li>
-                <li><a href="experiments/experiment5.html"></a> Experiment 5 : Widgets </li>
-                <li><a href="experiments/experiment6.html"></a> Experiment 6 : Loyalty System </li>
-                <li><a href="experiments/experiment7.html"></a> Experiment 7 : Games</li>
-                <li><a href="experiments/experiment8.html"></a> Experiment 8 : Subscriber Options </li>
-                <li><a href="experiments/experiment9.html"></a> Experiment 9 : Competition Events </li>
-                <li><a href="experiments/experiment10.html"></a> Experiment 10 : Developers</li>
-                <li><a href="experiments/experiment11.html"></a> Experiment 11 : Artist</li>
-                <li><a href="experiments/experiment12.html"></a> Experiment 12 : Community</li>
-                <li><a href="experiments/experiment13.html"></a> Experiment 13 : Friends</li>
-                <li><a href="experiments/experiment14.html"></a> Experiment 14 : Collaborations</li>
-                <li><a href="experiments/experiment15.html"></a> Experiment 15 : Lifestyle</li>                
-              </ul>
-            </ul>   
-            </small>
-        
-            <li><a href="business/index.html">BUSINESS</a></li>            
-             <small>
-              <ul>
-                <li><a href="business/index.html#services">Project 1</a> : Services</li>
-                <li><a href="business/index.html#training">Project 2</a> : Training</li>
-                <li><a href="business/index.html#studio">Project 3</a> : Studio</li>
-                <li><a href="business/index.html#thinktank">Project 4</a> : Think Tank</li>
-                <li><a href="business/index.html#other">Project 5</a> : Other</li>
-              </ul>
-             </small>              
-          </ol> 
-          
-          <ul>
-            <li><a href="appendix/index.html">APPENDIX</a></li>                              
-            <small>
-              <ul>  
-               <li><a href="appendix-ux/index.html">Appendix 1</a> : UX/UI</li>                
-               <li><a href="appendix-projects/index.html">Appendix 2</a> : Projects</li>
-               <li><a href="appendix-notes/index.html">Appendix 3</a> : Notes</li>                            
-               <li><a href="appendix-references/index.html">Appendix 4</a> : Reference</li>               
-              </ul>  
-            </small>  
-          </ul> 
-        </strong>
-
-        <p class="float-right"><a role="button" class="btn btn-primary"
-              href="getting-started/index.html">
-            NEXT: Getting Started &rarr;</a></p>
-            
-        <br/><br/><br/>
-
-        <p><small>[1] See the Releases section of our GitHub project for changelogs 
-                for each release version of the project. Release announcement 
-                posts on my official 
-                <a href="blog/index.html"
-                   target="_blank"> blog</a> contain summaries of the most 
-                   noteworthy changes made in each release.</small></p>
-            
-        <a name="contact" id="contact"class="anchor" href="#contact"></a>
-        <h3><span class="fa fa-users" aria-hidden="true"></span>
-            Contact</h3>
-
-        <p><a href="https://github.com/keeyanajones" target="_blank">
-            Keeyana Jones - @keeyanajones
-            <span class="fa fa-user" aria-hidden="true"></span>
-            </a><br/><br/>
-
-        <span class="fab fa-github-alt fa-2x" aria-hidden="true"></span> -
-            https://Keeyanajones.github.io/journal<br/>
-            
-        <a href="https://gitlab.com/keeyanajones"  target="_blank">
-          <span class="fab fa-gitlab fa-2x" aria-hidden="true"></span> -
-            https://gitlab.com/keeyanajones</a><br/>
-
-        <a href="https://twitter.com/keeyanajones" target="_blank">
-          <span class="fab fa-twitter fa-2x" aria-hidden="true"></span> -
-            @keeyanajones</a><br/>            
-            
-        <a href="https://www.linkedin.com/in/keeyana-jones-5a275514" target="_blank">
-          <span class="fab fa-linkedin fa-2x" aria-hidden="true" ></span> -
-              https://www.linkedin.com</a><br/>
-
-        <a href="mailto:keeyanajones@yahoo.com">
-          <span class="fa fa-envelope fa-2x" aria-hidden="true"></span> -
-            @keeyanajones</a><br/>
-
-        <a href="https://steamcommunity.com/profiles/76561198858171230/" target="_blank">
-          <span class="fab fa-steam fa-2x" aria-hidden="true" ></span> -
-              https://steamcommunity.com</a><br/>
-            
-        <a href="https://www.youtube.com/keeyanajones" target="_blank">
-          <span class="fab fa-youtube fa-2x" aria-hidden="true" ></span> -
-              https://www.youtube.com</a><br/>
-
-        <a href="https://www.twitch.tv/agent_kee" target="_blank">
-          <span class="fab fa-twitch fa-2x" aria-hidden="true" ></span> -
-              https://www.twitch.tv</a><br/>
-
-        <a href="https://www.mixer.com/agent_kee" target="_blank">
-          <span class="fab fa-microsoft fa-2x" aria-hidden="true" ></span> -
-              https://www.mixer.com</a><br/>              
-              
-        <a href="https://discord.gg/amSp5r6" target="_blank">
-          <span class="fab fa-discord fa-2x" aria-hidden="true" ></span> -
-              https://www.discord.gg</a><br/>
-
-        <a href="https://instagram.com/keeyanajones" target="_blank">
-          <span class="fab fa-instagram fa-2x" aria-hidden="true" ></span> -   
-              https://www.Instagram.com</a><br/>
-
-        <a href="https://open.spotify.com/user/keeyanajones" target="_blank">
-          <span class="fab fa-spotify fa-2x" aria-hidden="true" ></span> -
-              http://www.Spotify.com</a><br/>
-
-        <a href="https://soundcloud.com/keeyana-jones" target="_blank">
-          <span class="fab fa-soundcloud fa-2x" aria-hidden="true" ></span> -
-              https://www.SoundCloud.com</a><br/>
-
-        <a href="https://www.patreon.com/keeyanajones" target="_blank">
-          <span class="fab fa-patreon fa-2x" aria-hidden="true" ></span> -
-              http://www.Patreon.com</a><br/>
+                    live to check out what I'm currently working on</p>
+                  <a href="https://github.com/keeyanajones" target="_blank" 
+                     class="font-weight-bold" aria-pressed="true">the latest github activity...</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="assets/images/thumbnail-feature-campaign.png" alt="TWITCH.TV" class="ing-fluid rounded"/>
+              </div>
+            </div>
+          </div>
+          <!-- Music -->
+          <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <a nam="music" id="music"></a>
+              <strong class="d-inline-block mb-2 text-dark">Music</strong>
+              <h3 class="mb-0">Playlist <i class="fas fa-music"></i></i></h3>
+              <div class="mb-1 text-muted"><i class="far fa-calendar-alt"></i> July 4th 2020</div>
+              <p class="mb-auto">
+                <small>
+                  <i class="fab fa-youtube"></i>  - <i class="far fa-list-alt"></i> 
+                  <a href="https://www.youtube.com/watch?v=RxabLA7UQ9k&list=PLNX7BvOCmjdhDO2Ko-3M_179ioCfE2bC" 
+                      target="_blank">soundtracks</a> 
+                  <i class="far fa-list-alt"></i> <a href="https://www.youtube.com/playlist?list=PLNX7BvOCmjdj5d5P1lycUBkd3xY8nGXKi" 
+                     target="_blank">meditation</a><br/>          
+                  <i class="fab fa-spotify"></i> - <i class="far fa-list-alt"></i> 
+                    <a href="https://open.spotify.com/playlist/21s2KUvv1yf139vLkntS8H" target="_blank">NSFW from the radio</a><br/>
+                  <i class="fab fa-soundcloud"></i> - <i class="far fa-list-alt"></i> 
+                    <a href="https://soundcloud.com/keeyana-jones/likes" target="_blank">recent</a><br/>
+                </small>  
+              </p>
+              <a href="https://open.spotify.com/user/keeyanajones" target="_blank" 
+                 class="font-weight-bold" aria-pressed="true">the latest music...</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="assets/images/thumbnail-feature-playlist.png" alt="Game Bot" class="img-fluid rounded"/>
+            </div>
+          </div>
+          </div>
+        </div>
+      <!-- /.features -->
+      </div>
+      
+      <p>
+        <div class="container-fluid d-flex justify-content-center">
+          <a href="#"><i class="far fa-arrow-alt-circle-up fa-2x"></i></a>
+        </div>
       </p>
-    </section>
-   
-    <!-- jQuery library -->
+      
+
+
+      <!-- Blog -->
+      <main role="main" class="container">
+        <div class="row">
+          <div class="col-md-8 blog-main">
+            <a name="blog" id="blog"></a>
+
+            <h3 class="pb-4 mb-4 font-italic border-bottom">
+              From the Laptop <i class="fas fa-laptop"></i>
+            </h3>
+
+
+
+
+            <!-- Pagination -->
+            <div class="container-fluid d-flex justify-content-center">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination pagination-sm justify-content-end">
+                  <li class="page-item">
+                    <a class="page-link" href="#1" tabindex="-1" 
+                      aria-disabled="true">Oldest</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#10">10</a></li>
+                  <li class="page-item"><a class="page-link" href="#11">11</a></li>
+                  <li class="page-item"><a class="page-link" href="#12">12</a></li>
+                  <li class="page-item"><a class="page-link" href="#13">13</a></li>
+                  <li class="page-item"><a class="page-link" href="#14">14</a></li>
+                  <li class="page-item"><a class="page-link" href="#15">15</a></li>
+                  <li class="page-item"><a class="page-link" href="#16">16</a></li>
+                  <li class="page-item"><a class="page-link" href="#17">17</a></li>
+                  <li class="page-item"><a class="page-link" href="#18">18</a></li>
+                  <li class="page-item"><a class="page-link" href="#19">19</a></li>            
+                  <li class="page-item active"><a class="page-link" href="#blog">20</a></li>
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#blog">Newest</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- /.pagination -->
+
+            <hr/>
+
+
+            <!-- Jumbotron: blog-post -->
+            <a name="jumbotron" id="jumbotron"></a>
+            <div class="blog-post">
+              <h2 class="blog-post-title">8 Ideas for Positive Technology</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> June 22nd, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>
+      
+              <h3>8 Ideas
+              <i class="far fa-lightbulb"></i> for Positive Technology</h3>
+              <ol>
+                <li>security and personal safety</li> 
+                <li>community activism and volunteerism</li>  
+                <li>bonding with people faraway</li>
+                <li>health wearables and mental illness</li>
+                <li>creative expression </li>
+                <li>disaster preparedness</li> 
+                <li>teaching and advanced education</li>
+                <li>access to learning resources</li>
+              </ol>
+            
+              <hr/>
+            
+            </div>
+            <!-- /.blog-post -->
+            
+
+
+
+            <!-- Featured Livestream: blog-post -->
+            <a name="featured-livestream" id="featured-livestream"></a>            
+            <div class="blog-post">
+              <h2 class="blog-post-title"><i class="fab fa-twitch"></i> Twitch.tv</h2>
+              <p class="blog-post-meta">
+                <sup>
+                  <i class="far fa-calendar-alt"></i> CREATED June 24th, 2020 <br/> 
+                  <i class="far fa-calendar-alt"></i> UPDATED July 27th, 2020 by 
+                  <a href="mailto:keeyanajones@yahoo.com">Keeyana</a>
+                </sup>  
+              </p>
+      
+              <h3><i class="fab fa-twitch"></i> Twitch.tv / Agent_Kee</h3>
+
+              <p>Opensource Development Projects</p>
+              <ul>
+                <li>chat bot</li>
+                <li>engagement</li>
+                <li>themes</li>
+                <li>overlays and alerts</li>
+                <li>widgets</li>
+                <li>loyalty system</li>
+                <li>games</li>
+                <li>subscribers</li>
+                <li>competition</li>
+                <li>polls</li>
+                <li>discussions</li>
+                <li><i class="fab fa-twitch"></i> Twitch.tv / Agent_Kee</li>
+                <li><i class="fab fa-facebook"></i> Facebook Gaming / AgentKee</li>
+                <li><i class="fab fa-youtube"></i> Youtube / keeyanajones</li>
+                <li><i class="fab fa-twitter"></i> Twitter / Agent_Kee</li>
+              </ul>
+            
+              <hr/>
+            
+            </div>
+            <!-- /.blog-post -->
+            
+            <!-- Featured BOT: blog-post -->
+            <a name="featured-bot" id="featured-bot"></a>
+            <div class="blog-post">
+              <h2 class="blog-post-title">Bot <i class="fas fa-robot"></i></h2>
+              <p class="blog-post-meta">
+                <sup>
+                  <i class="far fa-calendar-alt"></i> CREATED June 24th, 2020 <br/> 
+                  <i class="far fa-calendar-alt"></i> UPDATED July 27th, 2020 by 
+                  <a href="mailto:keeyanajones@yahoo.com">Keeyana</a>
+                </sup>  
+              </p>
+      
+              <h3>Bot</h3>
+
+              <h4>The chat bot project</h4>
+              <ul>
+                <li>goals</li>
+                <li>the channel</li>
+                <li>architecture</li>
+                <li>dialog flow with storyboards</li>
+                <li>integrations</li>
+                <li>data</li>
+                <li>platforms</li>
+                <li>implementation</li>
+                <li>testing</li>
+                <li>revisions</li>
+                <li>deployment</li>
+              </ul>
+            
+              <hr/>
+            
+            </div>
+            <!-- /.blog-post -->
+            
+
+
+            <a name="featured-strawpolls" id="featured-strawpolls"></a>
+
+            
+
+      <!-- WEEKLY July 27 2020 thru August 1 2020 -->
+            <!-- Weekly: blog-post -->
+            <div class="blog-post">
+              <a name="26" id="26"></a>
+              <h2 class="blog-post-title">This Week: July 27th - August 1st 2020</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> July 27th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>
+
+              <h3>Happening This Week</h3>  
+
+              <p>Monday July 27, 2020<br/><br/> 
+
+                is the 209 day of the year. There are 157 days left in 2020.
+                It is also the 30th Monday of 2020 on the 31st week of 2020 (using US standard 
+                week number calculation). The 37th day of Summer and there are 57 days left till 
+                Fall.  The birthstones for the day are Ruby and Onyx.  The 
+                zodiac Sign is Leo.              
+              </p>          
+
+              <h4>Holidays &amp; Popular Observances</h4>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/July-27-2020" target="_blank">
+              July 27</a>
+              <ul>
+                <li>National New Jersey Day</li>
+                <li>Revolution Anniversary Celebration (Aniversario de la Revolución) - Cuba</li>
+                <li>National Sleepy Head Day (Seven Sleepers Day) (Unikeonpäivä) - Finland</li>
+              </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/July-28-2020" target="_blank">
+              July 28</a>
+              <ul>
+                <li>World Hepatitis Day</li>
+                <li>Peru Independence Day</li>
+                <li>World Hepatitis Day - Canada & India</li>
+                <li>Baptism of Kyivan Rus (Хрещення Русі) - Ukraine</li>
+                <li>Independence Day of Peru (Independencia del Perú) - Peru</li>
+                <li>Indigenous Day (Día del Indio) - Chile</li>
+              </ul>
+          
+              <a href="https://www.wincalendar.com/Calendar/Date/July-29-2020" target="_blank">
+              July 29</a>
+                <ul>
+                  <li>National Lasagna Day</li>
+                  <li>July 29, 2020 is the 1st day of Hajj (Muslim Obsrvance). </li>               
+                  <li>Armed Forces Day (Día de las Fuerzas Armadas) - Peru</li>
+                  <li>Constitution Day (Ziua Constituţiei) - Moldova</li>
+                  <li>National Anthem Day (Ziua Imnului naţional) - Romania</li>
+                  <li>Olaf's Wake/St. Olaf's Day (Olsokdagen) - Norway</li>
+                  <li>World Tiger Day - India</li>
+                </ul>
+  
+              <a href="https://www.wincalendar.com/Calendar/Date/July-30-2020" target="_blank">
+              July 30</a>
+                <ul>
+                  <li>World Day against Trafficking in Persons</li>
+                  <li>Day of Arafat Starts</li>
+                  <li>International Day of Friendship</li>
+                  <li>National Intern Day</li>
+                  <li>Tisha B'Av Starts</li>
+                  <li>July 30, 2020 is the 2nd day of Hajj (Muslim Obsrvance).</li>
+                  <li>National Cheesecake Day - Canada/US</li>
+                  <li>National Intern Day - Canada</li>
+                  <li>Tisha B'Av - Isreal</li>
+                  <li>World Day against Trafficking in Persons</li>
+                  <li>International Day Against the Trafficking of People (Dia Contra o Tráfico de Seres Humanos)</li>
+                  <li>Teacher Day (Día del Maestro) - Venezuela</li>
+                  <li>Tax Day (Impuesto a la Renta) - Latin America</li>
+                </ul>                    
+              
+              <a href="https://www.wincalendar.com/Calendar/Date/July-31-2020" target="_blank">              
+              July 31</a>
+                <ul>
+                  <li>National Avocado Day</li>
+                  <li>Eid al Adha Starts</li>
+                  <li>July 31, 2020 is the 3rd day of Hajj (Muslim Obsrvance).</li>
+                  <li>National Avocado Day - Canada, United Kingdom & New Zealand</li>
+                  <li>National Tree Day - Australia</li>
+                  <li>Bakr Id/Eid ul-Adha (बकर-ईद) - India</li>
+                  <li>Id el Kabir - Nigeria</li>
+                </ul>
+  
+              <a href="https://www.wincalendar.com/Calendar/Date/August-1-2020" target="_blank">                
+              August 1</a>
+                <ul>
+                  <li>National Girlfriend Day</li>
+                  <li>August 1, 2020 is the 4th day of Hajj (Muslim Obsrvance).</li>
+                  <li>Food Day Canada - Canada</li>
+                  <li>National Girlfriends Day - Canada & United Kingdom</li>
+                  <li>Id el Kabir 2nd Day - Nigeria</li>
+                  <li>International Descent of Sella (Descenso Intl. del Sella)</li>
+                  <li>Swiss National Holiday - Switzerland & Germany</li>
+                  <li>World Breastfeeding Week begins - India</li>
+                </ul>    
+
+                <hr/>
+
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a>
+              </div>              
+            </div>
+            <!-- /.blog-post -->
+
+            <!-- Weekly New Releases: blog-post -->
+            <div class="blog-post">
+              <a name="25" id="25"></a>              
+              <h2 class="blog-post-title">Weekly New Releases</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> July 28th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>            
+
+              <h3>New Releases</h3>
+              
+              <ul>
+                <li>Ageless [PC, Switch] – July 28</li>
+                <li>Destroy All Humans! Remake [PC, PS4, XBO] – July 28</li>
+                <li>Grounded [PC, XBO] – July 28</li>
+                <li>Maid of Sker [PC, PS4, XBO] – July 28</li>
+                <li>Rocket Arena Season 1 [PC, PS4, XBO] – July 28</li>
+                <li>Skater XL [PC, PS4, XBO] – July 28</li>
+                <li>Terrorarium [PC] – July 28</li>
+                <li>Blightbound [PC] – July 29</li>
+                <li>For The People [PC] – July 30</li>
+                <li>Hellpoint [PC, PS4, XBO, Switch] – July 30</li>
+                <li>Imperiums: Greek Wars [PC] – July 30</li>
+                <li>Necronator: Dead Wrong [PC] – July 30</li>
+                <li>Nioh 2: The Tengu's Disciple DLC [PS4] – July 30</li>
+                <li>What Happened [PC] – July 30</li>
+                <li>Yakuza Kiwami 2 [PC, XBO] – July 30</li>
+                <li>CastleStorm 2 [PC, PS4, XBO, Switch] – July 31</li>
+                <li>Cat Quest + Cat Quest 2 Pawsome Pack [PS4, Switch] – July 31</li>
+                <li>Fairy Tail [PC, PS4, Switch] – July 31</li>                 
+              </ul>  
+
+              <hr/>
+
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>
+            </div>
+            <!-- /.blog-post -->
+            
+            <!-- Weekly Discussion and Poll: blog-post -->
+            <div class="blog-post">
+              <a name="24" id="24"></a>
+              <h2 class="blog-post-title">Weekly Discussion and Poll</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> July 29th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>
+      
+              <h4> <i class="far fa-comments"></i> Discussion</h4>
+              Gaming: What game have you spent the most amount of hours on? <br/>
+              <a href="https://www.youtube.com/user/keeyanajones/discussion" target="_blank">
+                <i class="fab fa-youtube text-left"></i> Youtube Discussion</a></i><br/>
+                </i><i class="fas fa-comment-dots"></i> @keeyanajones <br/>                                
+              <hr/>
+              
+              <h4> <i class="fas fa-poll-h"></i> Poll</h4>
+              No Poll this week
+
+              <hr/>
+            
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>              
+            </div>
+            <!-- /.blog-post -->
+
+
+
+      <!-- WEEKLY July 20 2020 thru July 25 2020 -->
+            <!-- Weekly: blog-post -->
+            <div class="blog-post">
+              <a name="23" id="23"></a>
+              <h2 class="blog-post-title">This Week: July 20th - 25th 2020</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> July 20th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>
+
+              <h3>Happening This Week</h3>  
+
+              <p>Monday July 20, 2020 
+                         
+                is the 202th day of the year. There are 164 days left in 2020.
+                It is also the 29th Monday of 2020 on the 30th week of 2020 (using US standard 
+                week number calculation). The 30th day of Summer and there are 64 days left till 
+                Fall.  The birthstones for the day are Ruby and Onyx.  The 
+                zodiac Sign is Cancer.              
+              </p>          
+
+              <h4>Holidays &amp; Popular Observances</h4>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/July-20-2020" target="_blank">
+              July 20</a>
+              <ul>
+                <li>National Moon Day</li>
+                <li>Crownprince Haakon Magnus' birthday (Kronprins Haakon Magnus fødelsdag) - Norway</li>
+                <li>Independence Day (Independencia de Colombia) - Colombia</li>
+              </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/July-21-2020" target="_blank">
+              July 21</a>
+              <ul>
+                <li>Belgian National Day - Belgium & Netherlands</li>
+                <li>National Law Day (Día del Derecho) - Argentina</li>
+              </ul>
+          
+              <a href="https://www.wincalendar.com/Calendar/Date/July-22-2020" target="_blank">
+              July 22</a>
+                <ul>
+                  <li>National Hot Dog Day - US/Canada</li>
+                </ul>
+  
+              <a href="https://www.wincalendar.com/Calendar/Date/July-23-2020" target="_blank">
+              July 23</a>
+                <ul>
+                  <li>National Vanilla Ice Cream Day</li>
+                </ul>                    
+              
+              <a href="https://www.wincalendar.com/Calendar/Date/July-24-2020" target="_blank">              
+              July 24</a>
+                <ul>
+                  <li>International Self Care Day</li>
+                  <li>National Tequila Day - US/United Kingdom</li>
+                  <li>The Restoration of Democracy (Αποκατάσταση της Δημοκρατίας) - Greece</li>
+                  <li>Birthday of Simon Bolivar - Ecuador & Venezuela</li>
+                </ul>
+  
+              <a href="https://www.wincalendar.com/Calendar/Date/July-25-2020" target="_blank">                
+              July 25</a>
+                <ul>
+                  <li>St James TG</li>
+                  <li>Annexation of Guanacaste (Anexión de Guanacaste) - Costa Rica</li>
+                  <li>Galicia National Day (Día Nal. de Galicia) - Spain</li>
+                  <li>Founding of Caracas City (Fundación de la Ciudad de Caracas) - Venezuela</li>
+                  <li>Revolution Anniversary (Aniversario de la Revolución) - Cuba</li>
+                </ul>    
+
+                <hr/>
+
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a>
+              </div>              
+            </div>
+            <!-- /.blog-post -->
+
+            <!-- Weekly New Releases: blog-post -->
+            <div class="blog-post">
+              <a name="22" id="22"></a>              
+              <h2 class="blog-post-title">Weekly New Releases</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> July 21th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>            
+
+              <h3>New Releases</h3>
+              
+              <ul>
+                <li>Into the Radius [PC] – July 20</li>
+                <li>Rock Of Ages 3: Make & Break [PC, PS4, XBO, Switch, Stadia] – July 21</li>
+                <li>Carrion [PC, XBO, Switch] – July 23</li>
+                <li>Dying Light: Hellraid DLC [PC, PS4, XBO] – July 23</li>
+                <li>Röki [PC] – July 23</li>                 
+              </ul>  
+
+              <hr/>
+
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>
+            </div>
+            <!-- /.blog-post -->
+            
+            <!-- Weekly Discussion and Poll: blog-post -->
+            <div class="blog-post">
+              <a name="21" id="21"></a>
+              <h2 class="blog-post-title">Weekly Discussion and Poll</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> July 22th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>
+      
+              <h4> <i class="far fa-comments"></i> Discussion</h4>
+              Gaming: What game have you spent the most amount of hours on? <br/>
+              <a href="https://www.youtube.com/user/keeyanajones/discussion" target="_blank">
+                <i class="fab fa-youtube text-left"></i> Youtube Discussion</a></i><br/>
+                </i><i class="fas fa-comment-dots"></i> @keeyanajones <br/>                                
+              <hr/>
+              
+              <h4> <i class="fas fa-poll-h"></i> Poll</h4>
+              No Poll this week
+
+              <hr/>
+            
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>              
+            </div>
+            <!-- /.blog-post -->
+
+
+
+      <!-- WEEKLY July 13 2020 thru July 18 2020 -->
+            <!-- Weekly: blog-post -->
+            <div class="blog-post">
+              <a name="20" id="20"></a>
+              <h2 class="blog-post-title">This Week: July 13th - 18th 2020</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> July 13th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>
+
+              <h3>Happening This Week</h3>  
+
+              <p>Monday July 13, 2020 is the 195th day of the year. There are 171 days left in 2020.
+                It is also the 28th Monday of 2020 on the 29th week of 2020 (using US standard 
+                week number calculation). The 23nd day of Summer and there are 71 days left till 
+                Fall.  The birthstones for the day are Ruby and Onyx.  The 
+                zodiac Sign is Cancer.              
+              </p>          
+
+              <h4>United States Holidays &amp; Popular Observances</h4>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/July-13-2020" target="_blank">
+              July 13</a>
+              <ul>
+                <li>National French Fry Day</li>
+              </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/July-14-2020" target="_blank">
+              July 14</a>
+              <ul>
+                <li>Bastille Day (France)</li>
+                <li>Cow Appreciation Day</li>
+                <li>National Mac And Cheese Day</li>
+              </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/July-15-2020" target="_blank">
+              July 15</a>
+                <ul>
+                  <li>World Youth Skills Day</li>
+                </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/July-16-2020" target="_blank">
+              July 16</a>
+                <ul>
+                  <li>There are no major holidays or observances in the United States for this date.</li>
+                </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/July-17-2020" target="_blank">              
+              July 17</a>
+                <ul>
+                  <li>World Emoji Day</li>
+                  <li>National Tattoo Day</li>
+                </ul>  
+
+              <a href="https://www.wincalendar.com/Calendar/Date/July-18-2020" target="_blank">                
+              July 18</a>
+                <ul>
+                  <li>Nelson Mandela International Day</li>
+                </ul>  
+                            
+              <h4>Popular Holidays &amp; Observances Worldwide</h4>
+
+              July 13         
+              <ul>          
+                <li>National French Fry Day - Canada</li>
+                <li>Orangeman's Day - Canada</li>
+              </ul>
+
+              July 14
+              <ul>
+                <li>Bastille Day</li>
+                <li>Cow Appreciation Day - Canada</li>
+                <li>Crownprincess Victoria's birthday (Kronprinsessans födelsedag) - Sweden</li>
+              </ul>
+          
+              July 15
+              <ul>
+                <li>World Youth Skills Day</li>
+                <li>National Secretary Day (Día de la Secretaria (México)) - Mexico</li>
+              </ul>
+
+              July 16
+              <ul>
+                <li>National Peace Day (Día de la Paz) - Bolivia</li>
+                <li>National Secretary Day (Día de la Secretaria) - Mexico</li>
+              </ul>                    
+            
+              July 17
+              <ul>
+                <li>National Tattoo Day - Canada</li>
+                <li>World Emoji Day</li>
+              </ul>
+
+              July 18
+              <ul>
+                <li>Nelson Mandela International Day</li>
+                <li>Canada Parks Day - Canada</li>
+                <li>Constitution Day of Uruguay (Día de la Constitución) - Uruguay</li>
+              </ul>    
+
+              <hr/>
+
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>              
+            </div>
+            <!-- /.blog-post -->
+
+            <!-- Weekly New Releases: blog-post -->
+            <div class="blog-post">
+              <a name="19" id="19"></a>              
+              <h2 class="blog-post-title">Weekly New Releases</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> July 13th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>            
+
+              <h3>New Releases</h3>
+              
+              <ul>
+                <li>Death Stranding [PC] – July 14 (Death Stranding price)</li>
+                <li>Neon Abyss [PC, PS4, XBO, Switch] – July 14</li>
+                <li>Rocket Arena [PC, PS4, XBO] – July 14</li>
+                <li>Story of Seasons: Friends of Mineral Town [Switch] (US) – July 14</li>
+                <li>Ooblets [PC, XBO] – July 15</li>
+                <li>Bounty Battle [PC, PS4, XBO, Switch] – July 16</li>
+                <li>Hunting Simulator 2 [PC] – July 16</li>
+                <li>Neversong [PS4, XBO, Switch] – July 16</li>
+                <li>Radical Rabbit Stew [PC, PS4, XBO, Switch] – July 16</li>
+                <li>Drake Hollow [PC, XBO] – July 17</li>
+                <li>Ghost of Tsushima [PS4] – July 17 (Ghost of Tsushima pre-order)</li>
+                <li>Paper Mario: The Origami King [Switch] – July 17 (Paper Mario The Origami King pre-order)</li>                 
+              </ul>  
+
+              <hr/>
+
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>
+            </div>
+            <!-- /.blog-post -->
+            
+            <!-- Weekly Discussion and Poll: blog-post -->
+            <div class="blog-post">
+              <a name="18" id="18"></a>
+              <h2 class="blog-post-title">Weekly Discussion and Poll</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> July 14th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>
+      
+              <h4> <i class="far fa-comments"></i> Discussion</h4>
+              No Question this week <br/>
+              <a href="https://www.youtube.com/user/keeyanajones/discussion" target="_blank">
+                <i class="fab fa-youtube text-left"></i> Youtube Discussion</a></i><br/>
+                </i><i class="fas fa-comment-dots"></i> @keeyanajones <br/>                                
+              <hr/>
+              
+              <h4> <i class="fas fa-poll-h"></i> Poll</h4>
+              No Poll this week
+
+              <hr/>
+            
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>              
+            </div>
+            <!-- /.blog-post -->
+     
+            
+
+      <!-- WEEKLY July 6 2020 thru July 11 2020 -->
+            <!-- Weekly New Releases: blog-post -->
+            <div class="blog-post">
+              <a name="17" id="17"></a>              
+              <h2 class="blog-post-title">Weekly New Releases</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> July 8th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>            
+
+              <h3>New Releases</h3>
+              
+              <ul>
+                <li>Catherine: Full Body [Switch] – July 7</li>
+                <li>Superliminal [PS4, XBO, Switch] – July 7</li>
+                <li>CrossCode [PS4, Switch] – July 9</li>
+                <li>Bloodstained: Curse of the Moon 2 [PC, PS4, XBO, Switch] – July 10</li>
+                <li>Deadly Premonition 2: A Blessing in Disguise [Switch] – July 10</li>
+                <li>F1 2020 [PC, PS4, XBO, Stadia] – July 10</li>
+                <li>Story of Seasons: Friends of Mineral Town [Switch] (EU) – July 10</li>
+                <li>Sword Art Online: Alicization Lycoris [PC, PS4, XBO] – July 10</li>                 
+              </ul>  
+
+              <hr/>
+
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>
+            </div>
+            <!-- /.blog-post -->
+            
+            <!-- Weekly Discussion and Poll: blog-post -->
+            <div class="blog-post">
+              <a name="16" id="16"></a>
+              <h2 class="blog-post-title">Weekly Discussion and Poll</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> July 7th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>
+      
+              <h4> <i class="far fa-comments"></i> Discussion</h4>
+              No Question this week <br/>
+              <a href="https://www.youtube.com/user/keeyanajones/discussion" target="_blank">
+                <i class="fab fa-youtube text-left"></i> Youtube Discussion</a></i><br/>
+                </i><i class="fas fa-comment-dots"></i> @keeyanajones <br/>                                
+              <hr/>
+              
+              <h4> <i class="fas fa-poll-h"></i> Poll</h4>
+              No Poll this week
+
+              <hr/>
+            
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>              
+            </div>
+            <!-- /.blog-post -->
+                        
+            <!-- Weekly: blog-post -->
+            <div class="blog-post">
+              <a name="15" id="15"></a>
+              <h2 class="blog-post-title">This Week: July 6th - 11th 2020</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> July 6th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>
+
+              <h3>Happening This Week</h3>  
+
+              <p>Monday July 6, 2020 is the 188st day of the year. There are 178 days left in 2020.
+                It is also the 27th Monday of 2020 on the 28th week of 2020 (using US standard 
+                week number calculation). The 16nd day of Summer and there are 78 days left till 
+                Fall.  The birthstones for the day are Ruby and Onyx.  The 
+                zodiac Sign is Cancer.              
+              </p>          
+
+              <h4>United States Holidays &amp; Popular Observances</h4>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/July-6-2020" target="_blank">
+              July 6</a>
+              <ul>
+                <li>National Fried Chicken Day</li>
+                <li>International Kissing Day</li>
+              </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/July-7-2020" target="_blank">
+              July 7</a>
+              <ul>
+                <li>World Chocolate Day</li>
+              </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/July-8-2020" target="_blank">
+              July 8</a>
+                <ul>
+                  <li>There are no major holidays or observances in the United States for this date.</li>
+                </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/July-9-2020" target="_blank">
+              July 9</a>
+                <ul>
+                  <li>National Sugar Cookie Day</li>
+                </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/July-10-2020" target="_blank">              
+              July 10</a>
+                <ul>
+                  <li>National Pina Colada Day</li>
+                </ul>  
+
+              <a href="https://www.wincalendar.com/Calendar/Date/July-11-2020" target="_blank">                
+              July 11</a>
+                <ul>
+                  <li>7 Eleven Day</li>
+                  <li>All American Pet Photo Day</li>
+                  <li>World Population Day</li>
+                </ul>  
+                            
+              <h4>Popular Holidays &amp; Observances Worldwide</h4>
+
+              July 6         
+              <ul>          
+                <li>International Kissing Day</li>
+                <li>Jan Hus Day (Den upálení mistra Jana Husa) - Czech Republic</li>
+                <li>National Fried Chicken Day - Canada</li>
+                <li>Statehood Day (Valstybės Diena) - Lithuania</li>
+                <li>birthday of the poet Eino Leino / celebration of poetry and summer (Eino Leinon ja runon ja suven päivä) - Finland</li>
+                <li>Kupalle - 1st Day (Купалле) - Belarus</li>
+                <li>Saint Fermin (San Fermín) - Spain</li>
+                <li>Teacher Day (Día del Maestro) - Peru</li>
+              </ul>
+
+              July 7
+              <ul>
+                <li>World Chocolate Day - Australia, Canada & India</li>
+                <li>Kupala Night (День Івана Купали) - Ukraine</li>
+                <li>Kupalle - 2nd Day (Купалле) - Belarus</li>
+              </ul>
+          
+              July 8 
+              <ul>
+                <li>Family Day (День родини) - Ukraine</li>
+              </ul>
+
+              July 9
+              <ul>
+                <li>Nunavut Day - Canada</li>
+                <li>Independence Day (Día de la Independencia) - Argentina</li>
+                <li>National Flag Day (Día Nal. de la Bandera) - Chile</li>
+              </ul>                    
+            
+              July 10
+              <ul>
+                <li>Sea Festival Starts (Jūras Svētki Sākas) - Latvia</li>
+              </ul>
+
+              July 11
+              <ul>
+                <li>World Population Day</li>
+                <li>Day of the Flemish Community (Vlaamse feestdag) - Belgium</li>
+                <li>National Journalist Day (Día del Periodista) - Chile</li>
+              </ul>    
+
+              <hr/>
+
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>              
+            </div>
+            <!-- /.blog-post -->
+
+
+
+            <a name="july-2020" id="july-2020"></a>            
+
+
+
+      <!-- WEEKLY June 29 2020 thru July 4 2020 -->
+            <!-- Weekly New Releases: blog-post -->
+            <div class="blog-post">
+              <a name="14" id="14"></a>              
+              <h2 class="blog-post-title">Weekly New Releases</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> June 29th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>            
+
+              <h3>New Releases</h3>
+              
+              <ul>
+                <li>Fairy Tail (PlayStation 4, Switch, PC) – June 26</li>
+                <li>Seven Doors (PC) – June 26</li>
+                <li>Tower Of Time (Xbox One) – June 26</li>
+                <li>Yes, Your Grace (Xbox One, Switch) – June 26</li>
+                <li>Hunting Simulator 2 (PlayStation 4, Xbox One) – June 30</li>
+                <li>The Legend of Heroes: Trails Of Cold Steel III (Switch) – June 30 </li>
+                <li>SinoAlice (iOS, Android) – July 1</li>
+                <li>Trackmania (PC) – July 1</li>
+                <li>Infliction: Extended Cut (Switch) – July 2</li>
+                <li>Marvel's Iron Man VR (PlayStation VR) – July 3</li>                 
+              </ul>  
+
+              <hr/>
+
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>
+            </div>
+            <!-- /.blog-post -->
+                        
+            <!-- Weekly Discussion and Poll: blog-post -->
+            <div class="blog-post">
+              <a name="13" id="13"></a>
+              <h2 class="blog-post-title">Weekly Discussion</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> June 30th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>
+      
+              <h4> <i class="far fa-comments"></i> Live streams: Do you live stream?</h4>
+              <a href="https://www.youtube.com/user/keeyanajones/discussion" target="_blank">
+
+                <i class="fab fa-youtube text-left"></i> Youtube Discussion</a></i><br/>
+                </i><i class="fas fa-comment-dots"></i> @keeyanajones <br/>                                
+              <hr/>
+                          
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>              
+            </div>
+            <!-- /.blog-post -->
+                        
+            <!-- Weekly: blog-post -->
+            <div class="blog-post">
+              <a name="12" id="12"></a>
+              <h2 class="blog-post-title">This Week: June 29th - 4th 2020</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> June 22nd, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>
+
+              <h3>Happening This Week</h3>  
+
+              <p>Monday June 29, 2020 is the 181st day of the year. There are 185 days left in 2020.
+                It is also the 26th Monday of 2020 on the 27th week of 2020 (using US standard 
+                week number calculation). The 2nd day of Summer and there are 85 days left till 
+                Fall.  The birthstones for the day are Alexandrite, Pearl, & Moonstone.  The 
+                zodiac Sign is Cancer.              
+              </p>          
+
+              <h4>United States Holidays &amp; Popular Observances</h4>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/June-29-2020" target="_blank">
+              June 29</a>
+              <ul>
+                <li>National Camera Day</li>
+                <li>NBA Awards</li>
+                <li>St Peters</li>
+                <li>International Day of the Tropics</li>
+              </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/June-30-2020" target="_blank">
+              June 30</a>
+              <ul>
+                <li>International Asteroid Day</li>
+                <li>International Day of Parliamentarism</li>
+              </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/July-1-2020" target="_blank">
+              July 1</a>
+                <ul>
+                  <li>Canada Day</li>
+                </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/July-2-2020" target="_blank">
+              July 2</a>
+                <ul>
+                  <li>World UFO Day</li>
+                  <li>Anniversary of the wedding of King Albert II and Queen Paola (Huwelijksverjaardag van Koning Albert II en Koningin Paola) - Belgium</li>
+                </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/July-3-2020" target="_blank">              
+              July 3</a>
+                <ul>
+
+                  <li>St Thomas Day</li>
+                </ul>  
+
+              <a href="https://www.wincalendar.com/Calendar/Date/July-4-2020" target="_blank">                
+              July 4</a>
+                <ul>
+                  <li>Independence Day</li>
+                  <li>International Day of Cooperatives</li>
+                </ul>  
+                            
+              <h4>Popular Holidays &amp; Observances Worldwide</h4>
+
+              June 29          
+              <ul>          
+                <li>International D0ay of the Tropics</li>
+                <li>NBA Awards - United Kingdom & India</li>
+                <li>Malta: Feast of St Peter & St Paul (L-Imnarja) - Malta</li>
+                <li>National Statistics Day - India</li>
+                <li>St. Peter and Paul (San Pedro y San Pablo) - Venezuela</li>
+              </ul>
+
+              June 30
+              <ul>
+                <li>International Asteroid Day</li>
+                <li>International Day of Parliamentarism</li>
+              </ul>
+          
+              July 1
+              <ul>
+                <li>Canada Day - Canada</li>
+                <li>Territory Day - Australia</li>
+                <li>National Doctors Day - India</li>
+                <li>National Architect Day (Día del Arquitecto) - Argentina</li>
+              </ul>
+
+              July 2
+              <ul>
+                <li>World UFO Day</li>
+                <li>Anniversary of the wedding of King Albert II and Queen Paola (Huwelijksverjaardag van Koning Albert II en Koningin Paola) - Belgium</li>                  
+              </ul>                    
+            
+              July 3
+              <ul>
+                <li>St Thomas - India</li>
+                <li>Children's Day (Kinderfest) - Switzerland</li>
+                <li>Independence Day of the Republic of Belarus (Дзень Незалежнасці Рэспублікі Беларусь) - Belarus</li>
+              </ul>
+
+              July 4
+              <ul>
+                <li>International Day of Cooperatives</li>
+                <li>Day of Glvocide Against the Jews (Genocīda Diena Pret Ebrejiem) - Latvia</li>
+                <li>Queen Sonja's birthday (Dronning Sonjas fødelsdag) - Norway</li>
+                <li>National Architect Day (Día del Arquitecto) - Venezuela</li>
+                <li>Day of Genocide Against the Jews (Genocīda Diena Pret Ebrejiem) - Latvia</li>
+              </ul>    
+
+              <hr/>
+
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>              
+            </div>
+            <!-- /.blog-post -->
+            
+            
+
+      <!-- WEEKLY June 22 2020 thru June 27 2020 -->
+            <!-- Weekly New Releases: blog-post -->
+            <div class="blog-post">
+              <a name="11" id="11"></a>
+              <h2 class="blog-post-title">Weekly New Releases</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> June 22nd, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>            
+
+              <h3>New Releases</h3>
+              
+              <ul>
+                <li>The Innsmouth Case [PC] – June 23</li>
+                <li>SpongeBob SquarePants: Battle for Bikini Bottom - Rehydrated [PC, PS4, XBO, Switch] – June 23</li>
+                <li>Star Wars Episode 1: Racer [PS4, Switch] – June 23</li>
+                <li>Ultracore [PS4, Switch] – June 23</li>
+                <li>Ninjala [Switch] – June 24</li>
+                <li>The Almost Gone [PC, Switch] – June 25</li>
+                <li>Blair Witch [Switch] – June 25</li>
+                <li>Borderlands 3: Bounty of Blood DLC [PC, PS4, XBO] – June 25</li>
+                <li>Control: The Foundation DLC [XBO] – June 25</li>
+                <li>Hunting Simulator 2 [PS4, XBO] – June 25</li>
+                <li>Mr. Driller DrillLand [PC, Switch] – June 25</li>
+              </ul>  
+
+              <hr/>
+
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>
+            </div>
+            <!-- /.blog-post -->
+                        
+            <!-- Weekly Discussion and Poll: blog-post -->
+            <div class="blog-post">
+              <a name="10" id="10"></a>
+              <h2 class="blog-post-title">Weekly Discussion and Poll</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> June 23rd, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>
+      
+              <h4>Anime: What's the best anime series of all time?</h4>
+              <a href="https://www.youtube.com/user/keeyanajones/discussion" target="_blank">
+                Youtube Discussion</a>
+
+              <hr/>
+              
+              <h4>Poll: Favorites</h4>
+              
+              <iframe src="http://www.strawpoll.me/embed_1/20418898" 
+                      style="width:680px;height:449px;border:0;" name="poll2">Loading poll...</iframe> 
+
+              <p><sub>https://www.strawpoll.me/20418898
+              </sub></p>
+            
+              <hr/>
+            
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>              
+            </div>
+            <!-- /.blog-post -->
+            
+            <!-- Weekly: blog-post -->
+            <div class="blog-post">
+              <a name="9" id="9"></a>
+              <h2 class="blog-post-title">This Week: June 22nd - 27th 2020</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> June 22nd, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>
+
+              <h3>Happening This Week</h3>  
+                
+              <p>Monday June 22, 2020 is the 174th day of the year. There are 192 days left in 2020.
+                It is also the 25th Monday of 2020 on the 26th week of 2020 (using US standard 
+                week number calculation). The 2nd day of Summer and there are 92 days left till 
+                Fall.  The birthstones for the day are Alexandrite, Pearl, & Moonstone.  The 
+                zodiac Sign is Cancer.              
+              </p>          
+
+              <h4>United States Holidays &amp; Popular Observances</h4>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/June-22-2020" target="_blank">
+              June 22</a>
+              <ul>
+                <li>There are no major holidays or observances in the United States for this date.</li>
+              </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/June-23-2020" target="_blank">
+              June 23</a>
+              <ul>
+                <li>United Nations Public Service Day</li>
+                <li>International Widows' Day</li>
+              </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/June-24-2020" target="_blank">
+              June 24</a>
+                <ul>
+                  <li>St John the Baptist</li>
+                </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/June-25-2020" target="_blank">
+              June 25</a>
+                <ul>
+                  <li>National Handshake Day</li>
+                  <li>Day of the Seafarer</li>
+                </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/June-26-2020" target="_blank">              
+              June 26</a>
+                <ul>
+                  <li>International Day against Drug Abuse and Illicit Trafficking</li>
+                  <li>Take Your Dog To Work Day</li>
+                  <li>United Nations International Day in Support of Victims of Torture</li>
+                </ul>  
+
+              <a href="https://www.wincalendar.com/Calendar/Date/June-27-2020" target="_blank">                
+              June 27</a>
+                <ul>
+                  <li>National Ice Cream Cake Day</li>
+                  <li>Micro, Small and Medium-sized Enterprises Day</li>
+                  <li>National Sunglasses Day</li>
+                </ul>  
+                            
+              <h4>Popular Holidays &amp; Observances Worldwide</h4>
+
+              June 22          
+              <ul>          
+                <li>Anti-Fascist Resistance Day (Dan Antifašističkog Otpora) - Croatia</li>
+                <li>Discovery Day - Canada</li>
+                <li>Heroes' Commemoration Day (Varoņu Piemiņas Diena) - Latvia</li>
+                <li>Remembrance Day of Victims of the Great Patriotic War (Дзень усенароднай памяці ахвяр Вялікай Айчыннай вайны) - Belarus</li>
+                <li>Anti-Fascist Resistance Day (Dan Antifašističkog Otpora) - Croatia</li>
+                <li>Day of the Farmer (Día del Campesino) - Colombia</li>
+              </ul>
+
+              June 23
+              <ul>
+                <li>Grand Duke's Birthday (De Groussherzog Gebuertsdag) - Luxembourg</li>
+                <li>International Widows' Day</li>
+                <li>United Nations Public Service Day</li>
+                <li>Victory Day (Võidupüha) - Estonia</li>
+                <li>Father's Day (Dzień Ojca) - Poland</li>
+                <li>Jura Independence Day (Fest der Unabhängigkeit Jura) - Switzerland
+                <li>Līgo Day Starts (Līgo Diena Sākas) - Latvia</li>
+                <li>Midsummer Eve - Estonia & Norway</li>
+                <li>Rath Yatra (रथ यात्रा) - India</li>
+                <li>Statehood Day (Ziua Suveranităţii) - Moldova</li>
+                <li>Day of the Public Servant (Día del Servidor Público) - Latin America</li>
+                <li>Sankt Hans Aften - Denmark, Estonia & Norway</li>
+              </ul>
+          
+              June 24
+              <ul>
+                <li>Midsummer Day - Denmark, Estonia, United Kingdom & Norway</li>
+                <li>St. John's Day - Bolivia, Lithuania & Peru</li>
+                <li>Quebec's National Day - Canada</li>
+                <li>Saint John (San Juan) - Peru</li>
+                <li>Sun Festival (Inti Raymi (Fiesta del Sol)) - Peru</li>
+                <li>Carabobo Battle (Batalla de Carabobo) - Venezuela</li>
+                <li>National Indigenous Day (Día del Indio) - Peru</li>
+              </ul>
+
+              June 25
+              <ul>
+                <li>Day of the Seafarer</li>
+                <li>Statehood Day - Croatia & Slovenia</li>
+                <li>Independence Day (Dia da Independência Nacional) - Mozambique</li>
+              </ul>                    
+            
+              June 26
+              <ul>
+                <li>International Day against Drug Abuse and Illicit Trafficking</li>
+                <li>Take Your Dog To Work Day - Australia, Canada & United Kingdom</li>
+                <li>United Nations International Day in Support of Victims of Torture</li>
+                <li>Anti Drugs Day - India</li>
+                <li>Flag Day (Ziua Tricolorului) - Romania</li>
+                <li>Princess Alexia's birthday (Verjaardag Prinses Alexia) - Netherlands</li>
+              </ul>
+
+              June 27
+              <ul>
+                <li>Micro-, Small and Medium-sized Enterprises Day</li>
+                <li>National Sunglasses Day - Canada</li>
+                <li>Veterans Day (Veteranendag) - Netherlands</li>
+                <li>National Journalist Day (Día del Periodista) - Venezuela</li>
+                <li>National Coffee Day (Día Nal. del Café) - Colombia</li>
+              </ul>    
+
+              <hr/>
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>              
+            </div>
+            <!-- /.blog-post -->
+            
+
+
+      <!-- WEEKLY June 15 2020 thru June 20 2020 -->
+            <!-- Weekly New Releases: blog-post -->
+            <div class="blog-post">
+              <a name="8" id="8"></a>
+              <h2 class="blog-post-title">Weekly New Releases</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> June 17th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>            
+
+              <h3>New Releases</h3>
+              
+              <ul>
+                <li>Griftlands [PC] – June 15</li>
+                <li>Darius Cozmic Collection Arcade/Console [PS4, Switch] – June 16</li>
+                <li>Desperados 3 [PC, PS4, XBO] – June 16</li>
+                <li>Disintegration [PC, PS4, XBO] – June 16</li>
+                <iframe width="560" height="315" 
+                src="https://www.youtube-nocookie.com/embed/vVuzWtkegq8" 
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                name="video1" allowfullscreen></iframe>
+              <hr/>
+                <li>The Elder Scrolls Online [Stadia] – June 16</li>
+                <li>Farming Simulator 19: Kverneland & Vicon Equipment Pack DLC [PC, PS4, XBO] – June 16</li>
+                <li>Summer in Mara [PC, Switch] – June 16</li>
+                <li>Curious Expedition 2 [PC] – June 17</li>
+                <li>Fortnite Chapter 2 Season 3 [PC, PS4, XBO, Switch] – June 17</li>
+                <li>Pokemon Sword and Shield: The Isle of Armor expansion [Switch] – June 17</li>
+                <li>Best Friend Forever [PC, Switch] – June 18</li>
+                <li>NAMCO Museum Archives Volume 1 and 2 [PC, PS4, XBO, Switch] – June 18</li>
+                <li>Waking [PC, XBO] – June 18</li>
+                <li>The Academy: The First Riddle [PC] – June 19</li>
+                <li>Burnout Paradise Remastered [Switch] – June 19</li>
+                <li>The Coma 2: Vicious Sisters [PS4, Switch] – June 19</li>
+                <li>The Last of Us 2 [PS4] – June 19 (The Last of Us 2 pre-order)</li>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/yLC6_nfAEWk" 
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+              <hr/>  
+                <li>Ys: Memories of Celceta Remaster [PS4] – June 19</li>
+              </ul>  
+
+              <hr/>
+
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>
+            </div>
+            <!-- /.blog-post -->
+            
+            <!-- Weekly Discussion and Poll: blog-post -->
+            <div class="blog-post">
+              <a name="7" id="7"></a>
+              <h2 class="blog-post-title">Weekly Discussion and Poll</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> June 15th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>
+      
+              <h4>Favorites: What's your favorite game of all time? </h4>
+              <a href="https://www.youtube.com/user/keeyanajones/discussion" target="_blank">
+                Youtube Discussion</a>
+
+              <hr/>
+              
+              <h4>Poll: Favorites</h4>
+              
+              <iframe src="http://www.strawpoll.me/embed_1/20373254" 
+              style="width:680px;height:449px;border:0;" name="poll1">Loading poll...</iframe> 
+
+              <p><sub>https://www.strawpoll.me/20373254<br/>
+                https://www.businessinsider.com/best-video-games-metacritic-2017-11
+              </sub></p>
+            
+              <hr/>
+            
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>              
+            </div>
+            <!-- /.blog-post -->
+                      
+            <!-- Weekly: blog-post -->
+            <div class="blog-post">
+              <a name="6" id="6"></a>
+              <h2 class="blog-post-title">This Week: June 15th - 20th 2020</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> June 15th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>
+
+              <h3>Happening This Week</h3>  
+                
+              <p>Monday June 15, 2020 is the 167th day of the year. There are 199 days left in 2020.
+                It is also the 24th Monday of 2020 on the 25th week of 2020 (using US standard 
+                week number calculation). The 88th day of Spring and there are 6 days left till 
+                Summer.  The birthstones for the day are Alexandrite, Pearl, & Moonstone.  The 
+                zodiac Sign is Gemini.              
+              </p>
+
+              <h4>United States Holidays &amp; Popular Observances</h4>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/June-15-2020" target="_blank">
+              June 15</a>
+              <ul>
+                <li>World Elder Abuse Awareness Day</li>
+                <li>MTV Movie and TV Awards</li>
+              </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/June-16-2020" target="_blank">
+              June 16</a>
+              <ul>
+                <li>International Day of Family Remittances</li>
+                <li>National Mascot Day</li>
+              </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/June-17-2020" target="_blank">
+                June 17</a>
+                <ul>
+                  <li>NHL Awards</li>
+                  <li>World Day to Combat Desertification and Drought</li>
+                 </ul>
+
+                <a href="https://www.wincalendar.com/Calendar/Date/June-18-2020" target="_blank">
+                  June 18</a>
+                <ul>
+                  <li>International Picnic Day</li>
+                  <li>Sustainable Gastronomy Day</li>
+                </ul>
+
+                <a href="https://www.wincalendar.com/Calendar/Date/June-19-2020" target="_blank">              
+                June 19</a>
+                <ul>
+                  <li>National Flip Flop Day</li>
+                  <li>Juneteenth</li>
+                </ul>  
+
+                <a href="https://www.wincalendar.com/Calendar/Date/June-20-2020" target="_blank">                
+                June 20</a>
+                <ul>
+                  <li>World Refugee Day</li>
+                  <li>Beginning of Summer (Summer Solstice)</li>
+                </ul>  
+                            
+              <h4>Popular Holidays &amp; Observances Worldwide</h4>
+
+              June 15          
+              <ul>          
+                <li>MTV Movie and TV Awards - Australia, Canada, United Kingdom & South Africa</li>
+                <li>World Elder Abuse Awareness Day</li>
+                <li>Day of Valdemar and Reunion Day (Valdemarsdag) - Denmark</li>
+                <li>National Book Day (Día Nal. del Libro) - Argentina</li>
+                <li>Pass to Immortality of Gen. Don Martín de Güemes (Observed) (Paso a la Inmortalidad del Gral. Don Martín de Güemes) - Argentina</li>
+              </ul>
+
+              June 16
+              <ul>
+                <li>International Day of Family Remittances</li>
+                <li>Youth's Day - South Africa</li>
+              </ul>
+          
+              June 17
+              <ul>
+                <li>NHL Awards - Canada</li>
+                <li>Purple Bra Day - Australia</li>
+                <li>World Day to Combat Desertification and Drought</li>
+                <li>Anniversary of the Uprising of 1953 in East German (Jahrestag des 17. Juni 1953) - Germany</li>
+                <li>Iceland's Independence Day (Islands Självständighetsdag) - Sweden</li>
+                <li>Occupation of the Republic of Latvia (Latvijas Republikas Okupācija) - Latvia</li>
+                <li>Pass to Immortality of Gen. Don Martín de Güemes (Paso a la Inmortalidad del Gral. Don Martín de Güemes) - Argentina</li>
+              </ul>
+
+              June 18
+              <ul>
+                <li>International Picnic Day</li>
+                <li>Sustainable Gastronomy Day</li>
+              </ul>                    
+            
+              June 19
+              <ul>
+                <li>Midsummer Eve - Finland & Sweden</li>
+                <li>Father's Day (Día del Padre) - Chile</li>
+                <li>Artigas Birthdate Anniversary (Natalicio de Artigas) - Uruguay</li>
+              </ul>
+
+              June 20
+              <ul>
+                <li>Beginning of Summer (Summer Solstice)</li>
+                <li>Midsummer Day - Finland & Sweden</li>
+                <li>World Refugee Day</li>
+                <li>Day of the Finnish flag (Suomen lipun päivä) - Finland</li>
+                <li>Peruvian Pork Rind Day (Día del Chicharrón Peruano) - Peru</li>
+                <li>Summer Begins (Sommar Börjar) - Sweden</li>
+                <li>Winter Solstice - Peru & South Africa</li>
+                <li>National Flag Day / Pass to Immortality of Gen. Manuel Belgrano (Día de la Bandera / Paso a la Inmortalidad del Gral. Manuel Belgrano) - Argentina</li>
+              </ul>    
+
+              <hr/>
+
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>              
+            </div>
+            <!-- /.blog-post -->
+      
+            
+
+      <!-- WEEKLY June 8 2020 thru June 13 2020 -->
+            <!-- Weekly Video: blog-post -->
+            <div class="blog-post">
+              <a name="5" id="5"></a>
+              <h2 class="blog-post-title">Weekly Video</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> June 10th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>
+      
+              <h4>Premiered: Old Gameplay Videos</h4>
+              
+              <h5>Noby Noby Boy</h5>
+
+              <p>A video game for the PlayStation 3 and iOS, developed by Keita Takahashi and published 
+                by Namco Bandai. The PlayStation 3 game was released worldwide on February 19, 2009
+                while the iOS version was released the following year on February 18, 2010.</p>
+
+              <iframe width="560" height="315" 
+                      src="https://www.youtube-nocookie.com/embed/xMhmD9v_GMg" 
+                      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      name="video0" allowfullscreen></iframe>
+
+              <p>In the game, the player controls the character Boy, who can stretch his body. One of 
+                the meanings of "nobi" is "stretch" in Japanese. "Nobinobi" also means "carefree" in 
+                Japanese, so the game's title is a play on words with both of these meanings. I 
+                still play this game from time to time.  
+              </p>
+
+              <p><sub>https://www.youtube.com/watch?v=xMhmD9v_GMg</sub></p>
+            
+              <hr/>
+
+              <h4>New Releases</h4>
+              
+              <h5>Project Warlock</h5>
+              <iframe width="560" height="315" 
+              src="https://www.youtube-nocookie.com/embed/v32MbzxFp6s" 
+              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              name="video2a" allowfullscreen></iframe>
+<hr/>  
+
+              <h5>Atomicrops</h5>
+              <iframe width="560" height="315" 
+              src="https://www.youtube-nocookie.com/embed/8ogRbJpr3Nk" 
+              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              name="video3" allowfullscreen></iframe>
+<hr/>
+
+              <h5>Clubhouse Games 51 Worldwide Classics</h5>
+              <iframe width="560" height="315" 
+              src="https://www.youtube-nocookie.com/embed/z9GSlR9zZ9Y" 
+              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              name="video4" allowfullscreen></iframe>
+<hr/>
+
+              <h5>Command and Conquer Remastered</h5>
+              <iframe width="560" height="315" 
+              src="https://www.youtube-nocookie.com/embed/s3dfULd0l7Q" 
+              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              name="video5" allowfullscreen></iframe>
+<hr/>
+              <h5>Valorant</h5>
+              <iframe width="560" height="315" 
+              src="https://www.youtube-nocookie.com/embed/s6o6-9pVOwU" 
+              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              name="video6" allowfullscreen></iframe>
+              <hr/>
+
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>              
+
+            </div>
+            <!-- /.blog-post -->
+            
+            <!-- Weekly Discussion and Poll: blog-post -->
+            <div class="blog-post">
+              <a name="4" id="4"></a>              
+              <h2 class="blog-post-title">Weekly Discussion and Poll</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> June 8th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>
+      
+              <h4>New releases: What Are You Buying/Post your buys? </h4>
+              <a href="https://www.youtube.com/user/keeyanajones/discussion" target="_blank">
+                Youtube Discussion</a>
+
+              <hr/>
+              
+              <h4>Poll: PC Gamers</h4>
+              
+              <iframe src="http://www.strawpoll.me/embed_1/20294609" 
+                      style="width:560px;height:550px;border:0;"
+                      class="embed-responsive-item" name="poll">
+                      Loading poll...</iframe>      
+              
+              <p><sub>http://www.strawpoll.me/20294609</sub></p>
+            
+              <hr/>
+
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>            
+            </div>
+            <!-- /.blog-post -->
+                        
+            <!-- Weekly: blog-post -->
+            <div class="blog-post">
+              <a name="3" id="3"></a>
+              <h2 class="blog-post-title">This Week: June 8th - 13th 2020</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> June 8th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>
+
+              <h3>Happening This Week</h3>  
+                
+              <p>Monday June 8, 2020 is the 160th day of the year. There are 206 days left in 2020.
+                It is also the 23rd Monday of 2020 on the 24th week of 2020 (using US standard 
+                week number calculation). The 81st day of Spring and there are 13 days left till 
+                Summer.  The birthstones for the day are Alexandrite, Pearl, & Moonstone.  The 
+                zodiac Sign is Gemini.</p>
+
+              <h4>United States Holidays &amp; Popular Observances</h4>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/June-8-2020" target="_blank">
+              June 8</a>
+              <ul>
+                <li>National Best Friend Day</li>
+                <li>CFDA Fashion Awards</li>
+                <li>World Oceans Day</li>
+              </ul>
+
+              <a href="https://www.wincalendar.com/Calendar/Date/June-9-2020" target="_blank">
+              June 9</a>
+              <ul>
+                <li>There are no major holidays or observances in the United States for this date.</li>
+              </ul>  
+
+              <a href="https://www.wincalendar.com/Calendar/Date/June-10-2020" target="_blank">
+                June 10</a>
+                <ul>
+                  <li>There are no major holidays or observances in the United States for this date.</li>
+                </ul>  
+
+                <a href="https://www.wincalendar.com/Calendar/Date/June-11-2020" target="_blank">
+                  June 11</a>
+                <ul>
+                  <li>Corpus Christi</li>
+                </ul>
+
+                <a href="https://www.wincalendar.com/Calendar/Date/June-12-2020" target="_blank">              
+                June 12</a>
+                <ul>
+                  <li>World Day Against Child Labour</li>
+                  <li>Philippines Independence Day</li>
+                </ul>  
+
+                <a href="https://www.wincalendar.com/Calendar/Date/June-13-2020" target="_blank">                
+                June 13</a>
+                <ul>
+                  <li>International Albinism Awareness Day</li>
+                  <li>Saint Anthony</li>
+                </ul>  
+
+
+              <h4>Popular Holidays &amp; Observances Worldwide</h4>
+
+              June 8          
+              <ul>
+                <li>National Best Friend Day</li>
+                <li>Queen's Birthday - Australia</li>
+                <li>World Oceans Day</li>
+                <li>Holy Spirit Monday (Αγιου Πνευματος) - Greece</li>
+                <li>Orthodox Pentecost Holiday (Трійця - відзначається) - Ukraine</li>
+                <li>Orthodox Pentecost Monday (Doua zi de Rusalii) - Romania</li>
+                <li>Peltecost Monday (Orthodox) (Πεντηκοστή Πέμπτη) - Cyprus</li>
+                <li>Primož Trubar Day (Dan Primoža Trubarja) - Slovenia</li>
+                <li>Social Workers' Day (День социального работника) - Russia</li>
+                <li>National Architect Day (Día del Arquitecto) - Peru</li>
+                <li>National Engineers' Day (Día del Ingeniero) - Peru</li>
+                <li>National Hommage Day for those who died for France in Indochina (Journée nationale d'hommage auxmorts pour la FranceenIndochine) - France</li>
+                <li>Pentecost Monday (Orthodox) (Πεντηκοστή Πέμπτη) - Cyprus</li>
+              </ul>
+
+              June 9
+              <ul>
+                <li>Autonomy Day of Åland (Ahvenanmaan itsehallintopäivä) - Finland</li>
+                <li>Day of the Murcia and la Rioja Regions (Día de la Región de Murcia y de la Rioja) - Spain</li>
+              </ul>
+
+              June 10
+              <ul>
+                <li>Portugal Day - Canada, United Kingdom & Portugal</li>
+              </ul>
+
+              June 11
+              <ul>
+                <li>Corpus Christi</li>
+                <li>Birthday of Prince Henrik (Prins Henriks fødselsdag) - Denmark</li>
+                <li>Birthday of Queen Fabiola (Verjaardag van Koningin Fabiola) - Belgium</li>
+              </ul>                    
+
+              June 12
+              <ul>
+                <li>World Day Against Child Labour</li>
+                <li>Russian Day (День России) - Russia</li>
+                <li>Valentine's Day (Dia dos Namorados) - Brazil</li>
+                <li>Peace of Chaco (Paz del Chaco) - Paraguay</li>
+              </ul>
+
+              June 13
+              <ul>
+                <li>International Albinism Awareness Day</li>
+                <li>Queens Birthday - United Kingdom</li>
+              </ul>            
+
+              <hr/>
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>              
+            </div>
+            <!-- /.blog-post -->
+                        
+            <!-- Redesigning: blog-post -->
+            <div class="blog-post">
+              <a name="2" id="2"></a>
+              <h2 class="blog-post-title">Redesigning my Code Journal Blog</h2>
+              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> June 8th, 2020 by 
+                <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>
+          
+                <h3>Redesigned</h3> 
+                
+                <p>Redesigning my coding journal blog website has been on my mind for a 
+                  while.  I really need to boost conversions about what I am working on.  
+                  The old design was so time consuming.</p>  
+
+                <p>I tried to start with data, the current trends in gaming, live streaming, 
+                  and other video on demand metrics.  I love to do my research. Knowing what 
+                  people are doing helps me see whats effective.  I am always surprised and 
+                  delighted at what people come up with.</p>
+                  
+                <p>I tried to get make this website look and feel more blog like.  While an 
+                  increase in revenue is the end goal of any website redesign, improving the 
+                  user experience and flow through your site is certainly a bonus!</p>
+            <hr/>
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>
+            </div>
+            <!-- /.blog-post -->
+
+            <a name="june-2020" id="june-2020"></a>
+                        
+            <!-- Introduction: blog-post -->
+            <div class="blog-post">
+              <a name="1" id="1"></a>
+              <h2 class="blog-post-title">Welcome to my Code Journal</h2>
+                <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> June 8th, 2020 by 
+                  <a href="mailto:keeyanajones@yahoo.com">Keeyana</a></p>
+                              
+                <h3>Introduction</h3>
+
+                <p>I am enjoying my life and I love what I do. I watch live streams and 
+                  social media trends all day, reading most of the day while writing in my 
+                  journal. I have a clipboard, talk a lot and like to draw people out of 
+                  their shells. I consider the people online my digital friends. The idea 
+                  is to take part in the social observations to grow an essential 
+                  understanding of the latest key trends and industry observations critical 
+                  to success.</p>
+
+                <p>A vital unexpected result of the observations made is how common it is 
+                  for successful communities to use the value of a knowledge management 
+                  system to easily store, disseminate, and effective use lessons learned 
+                  during the content cycle. This requires disciplined, descriptive, and 
+                  mechanistic analysis of several technologies, tools, and quantifiable 
+                  approaches.</p>
+
+                <p>I enjoy all media even radio and the process of development. Putting 
+                  both of these things together to build something while trying new things 
+                  to make games and adjacent apps is exciting. I have found that applying 
+                  the principles of problem solving to make technology often spent gathering 
+                  details, factors, and explanations is always critical to my success.</p>
+
+                <p>In addition, team work skills like communications, persuasion, and 
+                  negotiation are involved to find solutions. In this Github recreation or 
+                  my journal, I map out the methods, results, discussions to revisit, goals, 
+                  explain what I have learned, definitions, key questions, theories, and my 
+                  background. At the end of each page I summarize to give a clear overview 
+                  of what I think is worth noting.</p>
+                  
+                <h3>Core Competencies</h3>
+
+                <ul>  
+                  <li>Identify opportunities and risks while managing development and platforms</li>
+                  <li>Monitor technologies and social trends that impact while researching and analyzing trends in local, international, and online gaming</li>
+                  <li>Lead the strategy for gaming platforms, rewards and bonusing, intellectual property, and mathematics</li>
+                  <li>Creating overall code standards and practices and ensure adherence </li>
+                  <li>Managing customer product roadmap, define the vision of the product and ensure that each item the team commits to is aligned with that vision</li>
+                  <li>Ability to learn new technologies quickly and assist at all team levels to lead by example with a hands on approach</li>
+                  <li>An analytical and predictive sense based on experience and thorough review of current and historical facts coupled with the ability to see where the company might be going, anticipate future needs, formulate non traditional approaches and solutions to problems, and able to communicate the opportunities associated with these solutions</li>
+                  <li>Ability to think, plan, prototype, launch, and implement solutions in a team environment, taking advantage of the companies strengths </li>
+                  <li>Build relationships with stakeholders and navigate challenges together</li>
+                  <li>Attention to detail and desire to probe further into data</li>
+                </ul>
+
+                <h3>Technologies</h3>
+                <p>Angular, API, Bootstrap, C#, CSS3, Ember, Express, Facebook, Go, HTML, Java, 
+                  JavaScript,  Jquery, Kotlin, Lisp, Matlab, Mean, Mongodb, MySQL, .Net, Node, 
+                  PHP, Prolog, Python, R, React, Ruby on Rails, Rust, Scala, Smalltalk, Swift, 
+                  SQL, and NoSQL databases types, and Typescript</p>
+                          
+                <h3>Professional Experience</h3> 
+
+                <ul>
+                  <li>Founder Web Servisual</li>
+                  <li>Consultant Systems Analyst Advantage Technical Resourcing/Ford Motor Company</li>
+                  <li>Application Developer Adv. Strategic Staffing/Blue Cross Blue Shield of Michigan</li>
+                  <li>Consultant Trialon/DBSI/Daimler Chrysler</li> 
+                  <li>Web Engineer  BriteSource/The SoftAd Group/Dealer Connection</li> 
+                  <li>Consultant Ciber Inc./Ford Motor Company</li>
+                  <li>Sr. Media Developer Sapphire/Triad Performance</li>
+                  <li>Consultant/System Designer InfoSys/Ameritech (SBC/AT&T)</li>
+                  <li>Consultant Forte' Systems /General Motors</li>
+                  <li>Consultant AIC (Analyst International Corp.) / Home Depot</li>
+                  <li>Consultant Maxim Group/M-Care</li>
+                  <li>Consultant Maxim Group/Ford Motor Company</li>
+                  <li>Developer/Designer Matrix Staffing Corp.</li>
+                  <li>Developer/Analysts Matrix Staffing Corp./The Bing Group</li>
+                  <li>Developer/Analysts NCS/Lucent Technologies/AT&T</li>                
+                </ul>
+                
+                <p>You can read more about my career @ 
+                  <a href="https://www.linkedin.com/in/keeyana-jones-5a275514/" target="_blank">
+                    LinkedIn</a>
+                </p>    
+                <hr/>
+            </div>
+            <!-- /.blog-post -->
+            
+
+            <!-- Pagination -->
+            <div class="container-fluid d-flex justify-content-center">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination pagination-sm justify-content-end">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#1" tabindex="-1" 
+                       aria-disabled="true">Oldest</a>
+                  </li>
+
+                  <li class="page-item active"><a class="page-link active" href="#1">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#2">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#3">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#4">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#5">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#6">6</a></li>
+                  <li class="page-item"><a class="page-link" href="#7">7</a></li>
+                  <li class="page-item"><a class="page-link" href="#8">8</a></li>
+                  <li class="page-item"><a class="page-link" href="#9">9</a></li>
+                  <li class="page-item"><a class="page-link" href="#10">10</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#blog">Newest</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- /.pageination -->
+
+          </div>
+          <!-- /.blog-main -->
+      
+
+
+          <!-- Blog-Sidebar -->
+          <aside class="col-md-4 blog-sidebar bg-light">
+            <!-- About -->
+            <div class="p-4 mb-3 bg-light rounded">
+              <h4 class="font-italic">ABOUT</h4>
+              <p class="mb-0">An big-picture thinker that brings 
+                passion and energy for technology product trends 
+                to successfully deploy challenging projects; while 
+                advocating for users and synthesizing feedback into 
+                priorities...</p>
+            </div>
+            <!-- Archives -->
+            <div class="p-4">
+              <h4 class="font-italic">ARCHIVES</h4>
+              <ol class="list-unstyled">
+                <li><i class="fas fa-calendar"></i> August 2020</a></li>
+                <li><a href="#july-2020"><i class="far fa-calendar"></i> July 2020</a></li>
+                <ul>
+                  <li><i class="fas fa-calendar-week"></i> July 6th - 11th 2020</li>
+                  <li><i class="fas fa-calendar-week"></i> July 13th - 18th 2020</li>
+                  <li><i class="fas fa-calendar-week"></i> July 20th - 25th 2020</li>
+                  
+                  <li class="bg-warning"> <i class="fas fa-angle-right"></i>  
+                      <i class="fas fa-calendar-week"></i>  
+                      <strong>July 27th - August 1st 2020</strong></li>
+                </ul> 
+            
+                <li><a href="#june-2020"><i class="far fa-calendar"></i> June 2020</a></li>                
+                <li><i class="fas fa-calendar"></i> May 2020</a></li>
+                <li><i class="fas fa-calendar"></i> April 2020</a></li>
+                <li><i class="fas fa-calendar"></i> March 2020</a></li>
+                <li><i class="fas fa-calendar"></i> February 2020</a></li>
+                <li><i class="fas fa-calendar"></i> January 2020</a></li>
+                <li><i class="fas fa-calendar"></i> December 2019</a></li>
+                <li><i class="fas fa-calendar"></i> November 2019</a></li>
+                <li><i class="fas fa-calendar"></i> October 2019</a></li>
+                <li><i class="fas fa-calendar"></i> September 2019</a></li>
+              </ol>
+            </div>
+            <!-- Elsewhere -->
+            <div class="p-4">
+              <h4 class="font-italic">ELSEWHERE</h4>
+              <ol class="list-unstyled">
+                <li><i class="fab fa-github"></i> <a href="https://www.github.com/keeyanajones" target="_blank">GitHub</a></li>
+                <li><i class="fab fa-gitlab"></i> <a href="https://gitlab.com/keeyanajones" target="_blank">GitLab</a></li>
+                <li><i class="fab fa-twitter"></i> <a href="https://www.twitter.com/keeyanajones" target="_blank">Twitter</a></li>
+                <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/keeyanajones" target="_blank">Instagram</a></li>                
+                <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/keeyana.jones" target="_blank">Facebook</a></li>
+                <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/agentkee" target="_blank">Fan Page</a></li>                
+                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/keeyana-jones-5a275514/" target="_blank">LinkedIn</a></li>
+                <li><i class="fab fa-discord"></i> <a href="https://discord.gg/amSp5r6" target="_blank">Discord</a></li>              
+                <li><i class="fab fa-youtube"></i> <a href="https://www.youtube.com/keeyanajones" target="_blank">Youtube</a></li>
+                
+                <li><i class="fab fa-twitch"></i> <a href="https://www.twitch.tv/agent_kee" target="_blank">Twitch.tv</a></li>
+                <li><i class="fab fa-spotify"></i> <a href="https://open.spotify.com/user/keeyanajones" target="_blank">Spotify</a></li>
+                <li><i class="fab fa-soundcloud"></i> <a href="https://soundcloud.com/keeyana-jones" target="_blank">Sound Cloud</a></li>
+                <li><i class="fab fa-patreon"></i> <a href="https://www.patreon.com/keeyanajones" target="_blank">Patreon</a></li>
+                <li><i class="fab fa-steam"></i> <a href="https://steamcommunity.com/profiles/76561198858171230/" target="_blank">Steam</a></li>
+              </ol>
+            </div>
+          </aside>
+          <!-- /.blog-sidebar -->
+        </div>
+        <!-- /.row -->
+
+
+
+        <!-- Footer -->
+        <footer class="blog-footer">
+            <div class="container-fluid d-flex justify-content-center">
+              <a href="#"><i class="far fa-arrow-alt-circle-up"></i> Back to Top</a></div>
+        </footer>
+        <!-- /.footer -->
+
+      </main>
+      <!-- /.container -->
+
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
-            crossorigin="anonymous"></script>
-    <script src="../assets/javascripts/scale.fix.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>
-
